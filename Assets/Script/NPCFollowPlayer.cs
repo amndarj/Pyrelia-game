@@ -7,6 +7,7 @@ public class NPCFollowPlayer : MonoBehaviour
     public float followDistance = 1.2f;
 
     private bool isFollowing;
+    private bool hasBeenDropped;
     private Animator animator;
     private SpriteRenderer spriteRenderer;
 
@@ -61,7 +62,15 @@ public class NPCFollowPlayer : MonoBehaviour
                 }
             }
         }
-        else if (animator != null)
+        else
+        {
+            SetIdle();
+        }
+    }
+
+    private void SetIdle()
+    {
+        if (animator != null)
         {
             animator.SetBool("IsMoving", false);
         }
@@ -69,16 +78,23 @@ public class NPCFollowPlayer : MonoBehaviour
 
     public void StartFollowing()
     {
+        if (hasBeenDropped)
+            return;
+
         isFollowing = true;
     }
 
     public void StopFollowing()
     {
         isFollowing = false;
+        hasBeenDropped = true;
 
         if (animator != null)
         {
             animator.SetBool("IsMoving", false);
+            animator.Play("NPC_gokil_Idle", 0, 0f);
         }
+
+        Debug.Log("NPC sudah sampai di Safe Zone dan kembali Idle!");
     }
 }
