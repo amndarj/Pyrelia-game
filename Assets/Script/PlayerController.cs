@@ -1,9 +1,8 @@
-
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 7f;
 
@@ -26,6 +25,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
             if (Keyboard.current.aKey.isPressed ||
                 Keyboard.current.leftArrowKey.isPressed)
                 input.x = -1;
+
             else if (Keyboard.current.dKey.isPressed ||
                      Keyboard.current.rightArrowKey.isPressed)
                 input.x = 1;
@@ -33,20 +33,21 @@ public class NewMonoBehaviourScript : MonoBehaviour
             if (Keyboard.current.wKey.isPressed ||
                 Keyboard.current.upArrowKey.isPressed)
                 input.y = 1;
+
             else if (Keyboard.current.sKey.isPressed ||
                      Keyboard.current.downArrowKey.isPressed)
                 input.y = -1;
         }
 
-        // Prioritaskan gerakan horizontal.
+        // Prioritaskan gerakan horizontal
         if (input.x != 0)
             input.y = 0;
 
-        // Simpan arah terakhir.
+        // Simpan arah terakhir
         if (input != Vector2.zero)
             lastInput = input;
 
-        // Mulai bergerak jika tidak sedang bergerak.
+        // Mulai bergerak jika tidak sedang bergerak
         if (!isMoving && input != Vector2.zero)
         {
             if (animator != null)
@@ -62,7 +63,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
             StartCoroutine(Move(targetPos));
         }
 
-        // Perbarui animasi.
+        // Perbarui animasi
         if (animator != null)
         {
             animator.SetBool("IsMoving", isMoving);
@@ -79,9 +80,6 @@ public class NewMonoBehaviourScript : MonoBehaviour
     {
         isMoving = true;
 
-        if (animator != null)
-            animator.SetBool("IsMoving", true);
-
         while ((targetPos - transform.position).sqrMagnitude > 0.0001f)
         {
             transform.position = Vector3.MoveTowards(
@@ -95,8 +93,5 @@ public class NewMonoBehaviourScript : MonoBehaviour
 
         transform.position = targetPos;
         isMoving = false;
-
-        if (animator != null)
-            animator.SetBool("IsMoving", false);
     }
 }
