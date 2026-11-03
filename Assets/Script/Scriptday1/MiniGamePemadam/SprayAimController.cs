@@ -5,7 +5,9 @@ public class SprayAimController : MonoBehaviour
     public VirtualJoystick virtualJoystick;
     public RectTransform tanganDamkar;
 
-    public float jarakGeser = 150f;
+    public float kecepatanGeser = 300f;
+    public float batasKiri = -500f;
+    public float batasKanan = 500f;
 
     private Vector2 posisiAwal;
 
@@ -20,9 +22,12 @@ public class SprayAimController : MonoBehaviour
 
         if (Mathf.Abs(arahX) > 0.01f)
         {
-            posisiAwal += new Vector2(
-                arahX * jarakGeser * Time.deltaTime,
-                0f
+            posisiAwal.x += arahX * kecepatanGeser * Time.deltaTime;
+
+            posisiAwal.x = Mathf.Clamp(
+                posisiAwal.x,
+                batasKiri,
+                batasKanan
             );
 
             tanganDamkar.anchoredPosition = posisiAwal;

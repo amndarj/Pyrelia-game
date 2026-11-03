@@ -8,6 +8,8 @@ public class FirePoint : MonoBehaviour
     public GameObject warningMarker;
     public float fadeDuration = 2f;
 
+    public FireCounterManager fireCounterManager;
+
     private bool isExtinguished = false;
 
     public void Extinguish()
@@ -16,6 +18,12 @@ public class FirePoint : MonoBehaviour
             return;
 
         isExtinguished = true;
+
+        if (fireCounterManager != null)
+        {
+            fireCounterManager.AddExtinguishedFire();
+        }
+
         StartCoroutine(FadeOut());
     }
 

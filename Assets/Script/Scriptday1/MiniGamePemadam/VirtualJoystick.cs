@@ -36,6 +36,8 @@ public class VirtualJoystick : MonoBehaviour,
 
             joystickHandle.anchoredPosition =
                 InputDirection * handleRange;
+
+            Debug.Log("Joystick input: " + InputDirection);
         }
     }
 
