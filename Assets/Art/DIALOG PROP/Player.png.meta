@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 6b77e80bf294e4506a5f01d771b211bb
+guid: ea3efa1ed1c3c8e4eb0b52bf879734e5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4030514886533273847
-    second: Tak berjudul133_20261030211633_0
+      213: -2311659948842064771
+    second: Player_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,17 +96,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tak berjudul133_20261030211633_0
+      name: Player_0
       rect:
         serializedVersion: 2
-        x: 44
+        x: 39
         y: 0
-        width: 2196
-        height: 2650
+        width: 2206
+        height: 2911
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 907a246b01cb018c0800000000000000
-      internalID: -4030514886533273847
+      spriteID: d7465c336855befd0800000000000000
+      internalID: -2311659948842064771
       vertices: []
       indices: 
       edges: []
@@ -135,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Tak berjudul133_20261030211633_0: -4030514886533273847
+      Player_0: -2311659948842064771
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

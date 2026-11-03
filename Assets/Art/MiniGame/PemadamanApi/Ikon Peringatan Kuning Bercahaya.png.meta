@@ -1,0 +1,3094 @@
+fileFormatVersion: 2
+guid: 921a8febe91e89445a8f29a7a74c8498
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7776795075202139261
+    second: Ikon Peringatan Kuning Bercahaya_0
+  - first:
+      213: 2704489274468264036
+    second: Ikon Peringatan Kuning Bercahaya_1
+  - first:
+      213: -5395999615938952544
+    second: Ikon Peringatan Kuning Bercahaya_2
+  - first:
+      213: 1505320814109379130
+    second: Ikon Peringatan Kuning Bercahaya_3
+  - first:
+      213: 5979727462898542993
+    second: Ikon Peringatan Kuning Bercahaya_4
+  - first:
+      213: 2831157227289648666
+    second: Ikon Peringatan Kuning Bercahaya_5
+  - first:
+      213: 5269284669628428053
+    second: Ikon Peringatan Kuning Bercahaya_6
+  - first:
+      213: 5520549535158895375
+    second: Ikon Peringatan Kuning Bercahaya_7
+  - first:
+      213: 2566086987486464337
+    second: Ikon Peringatan Kuning Bercahaya_8
+  - first:
+      213: -3480315797992510569
+    second: Ikon Peringatan Kuning Bercahaya_9
+  - first:
+      213: -6578582561070701383
+    second: Ikon Peringatan Kuning Bercahaya_10
+  - first:
+      213: -5466515396724898983
+    second: Ikon Peringatan Kuning Bercahaya_11
+  - first:
+      213: 2549258200562887303
+    second: Ikon Peringatan Kuning Bercahaya_12
+  - first:
+      213: -3262462456512769175
+    second: Ikon Peringatan Kuning Bercahaya_13
+  - first:
+      213: 5492941523024535667
+    second: Ikon Peringatan Kuning Bercahaya_14
+  - first:
+      213: 8201198077710631037
+    second: Ikon Peringatan Kuning Bercahaya_15
+  - first:
+      213: 6749111763599684434
+    second: Ikon Peringatan Kuning Bercahaya_16
+  - first:
+      213: -1362827303947100194
+    second: Ikon Peringatan Kuning Bercahaya_17
+  - first:
+      213: -3994764949286970578
+    second: Ikon Peringatan Kuning Bercahaya_18
+  - first:
+      213: 1977848663115454382
+    second: Ikon Peringatan Kuning Bercahaya_19
+  - first:
+      213: -67028407899279648
+    second: Ikon Peringatan Kuning Bercahaya_20
+  - first:
+      213: -8882916355446478687
+    second: Ikon Peringatan Kuning Bercahaya_21
+  - first:
+      213: -4183786920340547613
+    second: Ikon Peringatan Kuning Bercahaya_22
+  - first:
+      213: -7264922224124581890
+    second: Ikon Peringatan Kuning Bercahaya_23
+  - first:
+      213: 3008578100982001582
+    second: Ikon Peringatan Kuning Bercahaya_24
+  - first:
+      213: -7654028975256530015
+    second: Ikon Peringatan Kuning Bercahaya_25
+  - first:
+      213: -685532593023234255
+    second: Ikon Peringatan Kuning Bercahaya_26
+  - first:
+      213: -197548700909641443
+    second: Ikon Peringatan Kuning Bercahaya_27
+  - first:
+      213: -2880911556987814509
+    second: Ikon Peringatan Kuning Bercahaya_28
+  - first:
+      213: -8136024249073801832
+    second: Ikon Peringatan Kuning Bercahaya_29
+  - first:
+      213: -4166374403461960022
+    second: Ikon Peringatan Kuning Bercahaya_30
+  - first:
+      213: 8336045427947810743
+    second: Ikon Peringatan Kuning Bercahaya_31
+  - first:
+      213: 7841632345892531299
+    second: Ikon Peringatan Kuning Bercahaya_32
+  - first:
+      213: 5522284739240717254
+    second: Ikon Peringatan Kuning Bercahaya_33
+  - first:
+      213: 4215178358075124154
+    second: Ikon Peringatan Kuning Bercahaya_34
+  - first:
+      213: 5679667937009552254
+    second: Ikon Peringatan Kuning Bercahaya_35
+  - first:
+      213: -4387370502349243452
+    second: Ikon Peringatan Kuning Bercahaya_36
+  - first:
+      213: 7555246953653534782
+    second: Ikon Peringatan Kuning Bercahaya_37
+  - first:
+      213: 3381722620362402204
+    second: Ikon Peringatan Kuning Bercahaya_38
+  - first:
+      213: -5052770935737134823
+    second: Ikon Peringatan Kuning Bercahaya_39
+  - first:
+      213: -2887054697324336684
+    second: Ikon Peringatan Kuning Bercahaya_40
+  - first:
+      213: -1341020526964590099
+    second: Ikon Peringatan Kuning Bercahaya_41
+  - first:
+      213: -1842824892544630186
+    second: Ikon Peringatan Kuning Bercahaya_42
+  - first:
+      213: -3737587094350689664
+    second: Ikon Peringatan Kuning Bercahaya_43
+  - first:
+      213: -4427010878430923335
+    second: Ikon Peringatan Kuning Bercahaya_44
+  - first:
+      213: 4076580601631508304
+    second: Ikon Peringatan Kuning Bercahaya_45
+  - first:
+      213: 7175717132758666761
+    second: Ikon Peringatan Kuning Bercahaya_46
+  - first:
+      213: 3087063198316477255
+    second: Ikon Peringatan Kuning Bercahaya_47
+  - first:
+      213: 1271621962578886922
+    second: Ikon Peringatan Kuning Bercahaya_48
+  - first:
+      213: -4303527502975649236
+    second: Ikon Peringatan Kuning Bercahaya_49
+  - first:
+      213: 5732302255336730278
+    second: Ikon Peringatan Kuning Bercahaya_50
+  - first:
+      213: 1484347422882508943
+    second: Ikon Peringatan Kuning Bercahaya_51
+  - first:
+      213: -3858489982467010759
+    second: Ikon Peringatan Kuning Bercahaya_52
+  - first:
+      213: 1732027925978268583
+    second: Ikon Peringatan Kuning Bercahaya_53
+  - first:
+      213: 3105391903709915437
+    second: Ikon Peringatan Kuning Bercahaya_54
+  - first:
+      213: 5443810710851337653
+    second: Ikon Peringatan Kuning Bercahaya_55
+  - first:
+      213: 204562701352709132
+    second: Ikon Peringatan Kuning Bercahaya_56
+  - first:
+      213: 6204273930209272162
+    second: Ikon Peringatan Kuning Bercahaya_57
+  - first:
+      213: 1408656706581234744
+    second: Ikon Peringatan Kuning Bercahaya_58
+  - first:
+      213: 2891743948109125770
+    second: Ikon Peringatan Kuning Bercahaya_59
+  - first:
+      213: 2370797103469908767
+    second: Ikon Peringatan Kuning Bercahaya_60
+  - first:
+      213: 8793480638228284565
+    second: Ikon Peringatan Kuning Bercahaya_61
+  - first:
+      213: -5495993970755504916
+    second: Ikon Peringatan Kuning Bercahaya_62
+  - first:
+      213: -8584371979956555488
+    second: Ikon Peringatan Kuning Bercahaya_63
+  - first:
+      213: -1855431790232939163
+    second: Ikon Peringatan Kuning Bercahaya_64
+  - first:
+      213: 5191358350403204496
+    second: Ikon Peringatan Kuning Bercahaya_65
+  - first:
+      213: -2152460910033159229
+    second: Ikon Peringatan Kuning Bercahaya_66
+  - first:
+      213: 7807523705660769068
+    second: Ikon Peringatan Kuning Bercahaya_67
+  - first:
+      213: 2921442807745434477
+    second: Ikon Peringatan Kuning Bercahaya_68
+  - first:
+      213: -3375322293643452492
+    second: Ikon Peringatan Kuning Bercahaya_69
+  - first:
+      213: -7336429401689955072
+    second: Ikon Peringatan Kuning Bercahaya_70
+  - first:
+      213: -4979590422991884324
+    second: Ikon Peringatan Kuning Bercahaya_71
+  - first:
+      213: 2632156104810547038
+    second: Ikon Peringatan Kuning Bercahaya_72
+  - first:
+      213: 4444008451901681734
+    second: Ikon Peringatan Kuning Bercahaya_73
+  - first:
+      213: -6733186410351846250
+    second: Ikon Peringatan Kuning Bercahaya_74
+  - first:
+      213: 6248448711823106958
+    second: Ikon Peringatan Kuning Bercahaya_75
+  - first:
+      213: 5333884944941627768
+    second: Ikon Peringatan Kuning Bercahaya_76
+  - first:
+      213: -8582681861126985651
+    second: Ikon Peringatan Kuning Bercahaya_77
+  - first:
+      213: 8723475034381203117
+    second: Ikon Peringatan Kuning Bercahaya_78
+  - first:
+      213: 48412580038845837
+    second: Ikon Peringatan Kuning Bercahaya_79
+  - first:
+      213: 4857362640586233888
+    second: Ikon Peringatan Kuning Bercahaya_80
+  - first:
+      213: 3648443872248517535
+    second: Ikon Peringatan Kuning Bercahaya_81
+  - first:
+      213: 4996363441632139487
+    second: Ikon Peringatan Kuning Bercahaya_82
+  - first:
+      213: -3655784424935563816
+    second: Ikon Peringatan Kuning Bercahaya_83
+  - first:
+      213: 6036719227643261832
+    second: Ikon Peringatan Kuning Bercahaya_84
+  - first:
+      213: 2823089108595046365
+    second: Ikon Peringatan Kuning Bercahaya_85
+  - first:
+      213: 5527152829531936564
+    second: Ikon Peringatan Kuning Bercahaya_86
+  - first:
+      213: -8785632944702537055
+    second: Ikon Peringatan Kuning Bercahaya_87
+  - first:
+      213: -6735867775578226478
+    second: Ikon Peringatan Kuning Bercahaya_88
+  - first:
+      213: 7601471224690160847
+    second: Ikon Peringatan Kuning Bercahaya_89
+  - first:
+      213: 4707623402259860777
+    second: Ikon Peringatan Kuning Bercahaya_90
+  - first:
+      213: 3601716354800589087
+    second: Ikon Peringatan Kuning Bercahaya_91
+  - first:
+      213: 7059778134417384106
+    second: Ikon Peringatan Kuning Bercahaya_92
+  - first:
+      213: 2173783832053795649
+    second: Ikon Peringatan Kuning Bercahaya_93
+  - first:
+      213: -4770609087928402235
+    second: Ikon Peringatan Kuning Bercahaya_94
+  - first:
+      213: -1969367923527180499
+    second: Ikon Peringatan Kuning Bercahaya_95
+  - first:
+      213: -423051635746665122
+    second: Ikon Peringatan Kuning Bercahaya_96
+  - first:
+      213: -6897705161832524792
+    second: Ikon Peringatan Kuning Bercahaya_97
+  - first:
+      213: -8309129119786069435
+    second: Ikon Peringatan Kuning Bercahaya_98
+  - first:
+      213: 7373806028288638624
+    second: Ikon Peringatan Kuning Bercahaya_99
+  - first:
+      213: -4135292184952557974
+    second: Ikon Peringatan Kuning Bercahaya_100
+  - first:
+      213: -4849038761464441128
+    second: Ikon Peringatan Kuning Bercahaya_101
+  - first:
+      213: 6796456214735646633
+    second: Ikon Peringatan Kuning Bercahaya_102
+  - first:
+      213: 2975598227654841643
+    second: Ikon Peringatan Kuning Bercahaya_103
+  - first:
+      213: -3363081670936237450
+    second: Ikon Peringatan Kuning Bercahaya_104
+  - first:
+      213: 7810229371303832903
+    second: Ikon Peringatan Kuning Bercahaya_105
+  - first:
+      213: -9131556768536321300
+    second: Ikon Peringatan Kuning Bercahaya_106
+  - first:
+      213: 1193248296521387700
+    second: Ikon Peringatan Kuning Bercahaya_107
+  - first:
+      213: -5961694176867185498
+    second: Ikon Peringatan Kuning Bercahaya_108
+  - first:
+      213: -5527429825188579846
+    second: Ikon Peringatan Kuning Bercahaya_109
+  - first:
+      213: 922285193189520664
+    second: Ikon Peringatan Kuning Bercahaya_110
+  - first:
+      213: 3029182396199895778
+    second: Ikon Peringatan Kuning Bercahaya_111
+  - first:
+      213: -6854031123312888668
+    second: Ikon Peringatan Kuning Bercahaya_112
+  - first:
+      213: 6877881055536194420
+    second: Ikon Peringatan Kuning Bercahaya_113
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 849
+        width: 49
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38bb1931516431490800000000000000
+      internalID: -7776795075202139261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_1
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 871
+        width: 123
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 468e8878aa6488520800000000000000
+      internalID: 2704489274468264036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_2
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 0
+        width: 1328
+        height: 1018
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a280d340fe8d15b0800000000000000
+      internalID: -5395999615938952544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_3
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 976
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3acdfd0e49f3e410800000000000000
+      internalID: 1505320814109379130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_4
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 999
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19927bf02724cf250800000000000000
+      internalID: 5979727462898542993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_5
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 967
+        width: 35
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1e11e38f7a4a4720800000000000000
+      internalID: 2831157227289648666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_6
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 975
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51f2d993d72402940800000000000000
+      internalID: 5269284669628428053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_7
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 857
+        width: 95
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0308189d8eec9c40800000000000000
+      internalID: 5520549535158895375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_8
+      rect:
+        serializedVersion: 2
+        x: 1358
+        y: 991
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15902e7f4829c9320800000000000000
+      internalID: 2566086987486464337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_9
+      rect:
+        serializedVersion: 2
+        x: 1392
+        y: 849
+        width: 125
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79be972a83f63bfc0800000000000000
+      internalID: -3480315797992510569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_10
+      rect:
+        serializedVersion: 2
+        x: 1392
+        y: 967
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b42dc9f30e24b4a0800000000000000
+      internalID: -6578582561070701383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_11
+      rect:
+        serializedVersion: 2
+        x: 1398
+        y: 965
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9534203a5390324b0800000000000000
+      internalID: -5466515396724898983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_12
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 912
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78a6d4da3d8c06320800000000000000
+      internalID: 2549258200562887303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_13
+      rect:
+        serializedVersion: 2
+        x: 1262
+        y: 925
+        width: 29
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 963128a5ea769b2d0800000000000000
+      internalID: -3262462456512769175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_14
+      rect:
+        serializedVersion: 2
+        x: 1316
+        y: 925
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 370eedb5639da3c40800000000000000
+      internalID: 5492941523024535667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_15
+      rect:
+        serializedVersion: 2
+        x: 1442
+        y: 911
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d700f8a233280d170800000000000000
+      internalID: 8201198077710631037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_16
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 895
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 253f4c20469a9ad50800000000000000
+      internalID: 6749111763599684434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_17
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 884
+        width: 57
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edf9702a9c3461de0800000000000000
+      internalID: -1362827303947100194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_18
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 903
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2b919c917ebf88c0800000000000000
+      internalID: -3994764949286970578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_19
+      rect:
+        serializedVersion: 2
+        x: 1318
+        y: 853
+        width: 33
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea75a7841eab27b10800000000000000
+      internalID: 1977848663115454382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_20
+      rect:
+        serializedVersion: 2
+        x: 1438
+        y: 882
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0eead45a40ed11ff0800000000000000
+      internalID: -67028407899279648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_21
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 865
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a8ea1073aa89b480800000000000000
+      internalID: -8882916355446478687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_22
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 839
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e71d2d66f330f5c0800000000000000
+      internalID: -4183786920340547613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_23
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 858
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef7a6367abfcd2b90800000000000000
+      internalID: -7264922224124581890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_24
+      rect:
+        serializedVersion: 2
+        x: 1298
+        y: 863
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eaf2d0cb7dd90c920800000000000000
+      internalID: 3008578100982001582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_25
+      rect:
+        serializedVersion: 2
+        x: 1446
+        y: 855
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a39945233d67c590800000000000000
+      internalID: -7654028975256530015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_26
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 831
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13fc5ee1dbf7c76f0800000000000000
+      internalID: -685532593023234255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_27
+      rect:
+        serializedVersion: 2
+        x: 1326
+        y: 839
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d11e070d08a224df0800000000000000
+      internalID: -197548700909641443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_28
+      rect:
+        serializedVersion: 2
+        x: 1346
+        y: 785
+        width: 67
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39d7c60e332f408d0800000000000000
+      internalID: -2880911556987814509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_29
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 761
+        width: 37
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 895edfd4d09071f80800000000000000
+      internalID: -8136024249073801832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_30
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 791
+        width: 29
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaeae50fd801e26c0800000000000000
+      internalID: -4166374403461960022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_31
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 805
+        width: 21
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bf295486259fa370800000000000000
+      internalID: 8336045427947810743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_32
+      rect:
+        serializedVersion: 2
+        x: 1328
+        y: 817
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36c2324621313dc60800000000000000
+      internalID: 7841632345892531299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_33
+      rect:
+        serializedVersion: 2
+        x: 1333
+        y: 815
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cbe00746b813ac40800000000000000
+      internalID: 5522284739240717254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_34
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 803
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab96bf932625f7a30800000000000000
+      internalID: 4215178358075124154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_35
+      rect:
+        serializedVersion: 2
+        x: 1464
+        y: 705
+        width: 51
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7b41a385eb32de40800000000000000
+      internalID: 5679667937009552254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_36
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 783
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cb327df5cdec13c0800000000000000
+      internalID: -4387370502349243452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_37
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 775
+        width: 7
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e300fde2311a9d860800000000000000
+      internalID: 7555246953653534782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_38
+      rect:
+        serializedVersion: 2
+        x: 1374
+        y: 797
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c99aa9b5eca4eee20800000000000000
+      internalID: 3381722620362402204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_39
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 785
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91158fbca93f0e9b0800000000000000
+      internalID: -5052770935737134823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_40
+      rect:
+        serializedVersion: 2
+        x: 1392
+        y: 773
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d92cde8c0f1fe7d0800000000000000
+      internalID: -2887054697324336684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_41
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 765
+        width: 41
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de9b4cd8fecb36de0800000000000000
+      internalID: -1341020526964590099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_42
+      rect:
+        serializedVersion: 2
+        x: 1422
+        y: 769
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65241a02688fc66e0800000000000000
+      internalID: -1842824892544630186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_43
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 741
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08a842c175c612cc0800000000000000
+      internalID: -3737587094350689664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_44
+      rect:
+        serializedVersion: 2
+        x: 1376
+        y: 741
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b5b556bf091092c0800000000000000
+      internalID: -4427010878430923335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_45
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 645
+        width: 103
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0578e72657ce29830800000000000000
+      internalID: 4076580601631508304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_46
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 715
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90ec3c2b6b4459360800000000000000
+      internalID: 7175717132758666761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_47
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 697
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74bb5d67f9377da20800000000000000
+      internalID: 3087063198316477255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_48
+      rect:
+        serializedVersion: 2
+        x: 1436
+        y: 705
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0189180075b5a110800000000000000
+      internalID: 1271621962578886922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_49
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 647
+        width: 37
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2a3300898cc644c0800000000000000
+      internalID: -4303527502975649236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_50
+      rect:
+        serializedVersion: 2
+        x: 1438
+        y: 661
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ae248ab78a3d8f40800000000000000
+      internalID: 5732302255336730278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_51
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 559
+        width: 72
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f80bd20ed16799410800000000000000
+      internalID: 1484347422882508943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_52
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 629
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93f86a9ddc3e37ac0800000000000000
+      internalID: -3858489982467010759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_53
+      rect:
+        serializedVersion: 2
+        x: 1411
+        y: 575
+        width: 34
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a3cdf4d836690810800000000000000
+      internalID: 1732027925978268583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 415
+        width: 113
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d29e00dbb71981b20800000000000000
+      internalID: 3105391903709915437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_55
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 599
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bdb2ccbffc4c8b40800000000000000
+      internalID: 5443810710851337653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_56
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 543
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0c2c6c61b0c6d200800000000000000
+      internalID: 204562701352709132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_57
+      rect:
+        serializedVersion: 2
+        x: 1422
+        y: 495
+        width: 31
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 261275394420a1650800000000000000
+      internalID: 6204273930209272162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_58
+      rect:
+        serializedVersion: 2
+        x: 1446
+        y: 543
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8340f3eafcd8c8310800000000000000
+      internalID: 1408656706581234744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_59
+      rect:
+        serializedVersion: 2
+        x: 1494
+        y: 541
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a881e68bcc9812820800000000000000
+      internalID: 2891743948109125770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_60
+      rect:
+        serializedVersion: 2
+        x: 1412
+        y: 519
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1359d29763c6e020800000000000000
+      internalID: 2370797103469908767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_61
+      rect:
+        serializedVersion: 2
+        x: 1486
+        y: 502
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5944fd4fc08b80a70800000000000000
+      internalID: 8793480638228284565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_62
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 461
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce4fd654a9e4ab3b0800000000000000
+      internalID: -5495993970755504916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_63
+      rect:
+        serializedVersion: 2
+        x: 1422
+        y: 373
+        width: 29
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0217fda8a2f2ed880800000000000000
+      internalID: -8584371979956555488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_64
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 449
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 565d2360e9e2046e0800000000000000
+      internalID: -1855431790232939163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_65
+      rect:
+        serializedVersion: 2
+        x: 1438
+        y: 415
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0957a892ae86b0840800000000000000
+      internalID: 5191358350403204496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_66
+      rect:
+        serializedVersion: 2
+        x: 1458
+        y: 437
+        width: 27
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cb3f80e43ce022e0800000000000000
+      internalID: -2152460910033159229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_67
+      rect:
+        serializedVersion: 2
+        x: 1492
+        y: 395
+        width: 31
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c230a5bb175e95c60800000000000000
+      internalID: 7807523705660769068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_68
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 353
+        width: 37
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d63594351cc0b8820800000000000000
+      internalID: 2921442807745434477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_69
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 351
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bfdce4d1427821d0800000000000000
+      internalID: -3375322293643452492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_70
+      rect:
+        serializedVersion: 2
+        x: 1392
+        y: 309
+        width: 51
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 005e9884454cf2a90800000000000000
+      internalID: -7336429401689955072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_71
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 289
+        width: 57
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdfa1aea4e0f4eab0800000000000000
+      internalID: -4979590422991884324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_72
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 219
+        width: 83
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e57cb94180c478420800000000000000
+      internalID: 2632156104810547038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_73
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 317
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 640fe62442a4cad30800000000000000
+      internalID: 4444008451901681734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_74
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 309
+        width: 53
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69c9d7c32aaee82a0800000000000000
+      internalID: -6733186410351846250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_75
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 325
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e83a6796ff2f6b650800000000000000
+      internalID: 6248448711823106958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_76
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 311
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 879bc08e814c50a40800000000000000
+      internalID: 5333884944941627768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_77
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 291
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d48665ff15034e880800000000000000
+      internalID: -8582681861126985651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_78
+      rect:
+        serializedVersion: 2
+        x: 1416
+        y: 287
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da6b7472352001970800000000000000
+      internalID: 8723475034381203117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_79
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 275
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8520eb2cfefba000800000000000000
+      internalID: 48412580038845837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_80
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 257
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02855611691d86340800000000000000
+      internalID: 4857362640586233888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_81
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 251
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f93d25c1f50e1a230800000000000000
+      internalID: 3648443872248517535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_82
+      rect:
+        serializedVersion: 2
+        x: 1376
+        y: 257
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd85b3b0416a65540800000000000000
+      internalID: 4996363441632139487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_83
+      rect:
+        serializedVersion: 2
+        x: 1438
+        y: 238
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dd5f484f6b044dc0800000000000000
+      internalID: -3655784424935563816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_84
+      rect:
+        serializedVersion: 2
+        x: 1496
+        y: 247
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8837274572cb6c350800000000000000
+      internalID: 6036719227643261832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_85
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 249
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd7f41f3690ad2720800000000000000
+      internalID: 2823089108595046365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_86
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 229
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 437db8fd63464bc40800000000000000
+      internalID: 5527152829531936564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_87
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 221
+        width: 9
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a249049269231680800000000000000
+      internalID: -8785632944702537055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_88
+      rect:
+        serializedVersion: 2
+        x: 1262
+        y: 235
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d0c8ae32f36582a0800000000000000
+      internalID: -6735867775578226478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_89
+      rect:
+        serializedVersion: 2
+        x: 1466
+        y: 215
+        width: 33
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc4b206fdc9dd7960800000000000000
+      internalID: 7601471224690160847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_90
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 140
+        width: 47
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92dc304da86d45140800000000000000
+      internalID: 4707623402259860777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_91
+      rect:
+        serializedVersion: 2
+        x: 1222
+        y: 188
+        width: 45
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f199a9521fddbf130800000000000000
+      internalID: 3601716354800589087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_92
+      rect:
+        serializedVersion: 2
+        x: 1262
+        y: 177
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa2a4071fce59f160800000000000000
+      internalID: 7059778134417384106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_93
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 181
+        width: 75
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14bcd08c0e4da2e10800000000000000
+      internalID: 2173783832053795649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_94
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 141
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cef6cf6f446bcdb0800000000000000
+      internalID: -4770609087928402235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_95
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 159
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2f1d16ce466ba4e0800000000000000
+      internalID: -1969367923527180499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_96
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 151
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5d0ca957c4012af0800000000000000
+      internalID: -423051635746665122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_97
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 114
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 804189f63bd6640a0800000000000000
+      internalID: -6897705161832524792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_98
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 33
+        width: 45
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5421c46d61b00bc80800000000000000
+      internalID: -8309129119786069435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_99
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 101
+        width: 33
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ae37ceb385055660800000000000000
+      internalID: 7373806028288638624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_100
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 129
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6e2471eaad7c96c0800000000000000
+      internalID: -4135292184952557974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_101
+      rect:
+        serializedVersion: 2
+        x: 1432
+        y: 49
+        width: 91
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d6dfc010f0c4bcb0800000000000000
+      internalID: -4849038761464441128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_102
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 103
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9af60da0becd15e50800000000000000
+      internalID: 6796456214735646633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_103
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 79
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2516a992d27b4920800000000000000
+      internalID: 2975598227654841643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_104
+      rect:
+        serializedVersion: 2
+        x: 1264
+        y: 103
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67ae735e90fe351d0800000000000000
+      internalID: -3363081670936237450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_105
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 95
+        width: 21
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74d23ea9b32836c60800000000000000
+      internalID: 7810229371303832903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_106
+      rect:
+        serializedVersion: 2
+        x: 1366
+        y: 85
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce224150081364180800000000000000
+      internalID: -9131556768536321300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_107
+      rect:
+        serializedVersion: 2
+        x: 1374
+        y: 69
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4be4ffae0054f8010800000000000000
+      internalID: 1193248296521387700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_108
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 23
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ac01588bbec34da0800000000000000
+      internalID: -5961694176867185498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_109
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 47
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af53cbc0cdf9a43b0800000000000000
+      internalID: -5527429825188579846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_110
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 22
+        width: 23
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 815f9a92f7d9ccc00800000000000000
+      internalID: 922285193189520664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_111
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 9
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e28c5d0751d90a20800000000000000
+      internalID: 3029182396199895778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_112
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 9
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a4b67fe10791e0a0800000000000000
+      internalID: -6854031123312888668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikon Peringatan Kuning Bercahaya_113
+      rect:
+        serializedVersion: 2
+        x: 1370
+        y: 0
+        width: 45
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 473af922164237f50800000000000000
+      internalID: 6877881055536194420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Ikon Peringatan Kuning Bercahaya_0: -7776795075202139261
+      Ikon Peringatan Kuning Bercahaya_1: 2704489274468264036
+      Ikon Peringatan Kuning Bercahaya_10: -6578582561070701383
+      Ikon Peringatan Kuning Bercahaya_100: -4135292184952557974
+      Ikon Peringatan Kuning Bercahaya_101: -4849038761464441128
+      Ikon Peringatan Kuning Bercahaya_102: 6796456214735646633
+      Ikon Peringatan Kuning Bercahaya_103: 2975598227654841643
+      Ikon Peringatan Kuning Bercahaya_104: -3363081670936237450
+      Ikon Peringatan Kuning Bercahaya_105: 7810229371303832903
+      Ikon Peringatan Kuning Bercahaya_106: -9131556768536321300
+      Ikon Peringatan Kuning Bercahaya_107: 1193248296521387700
+      Ikon Peringatan Kuning Bercahaya_108: -5961694176867185498
+      Ikon Peringatan Kuning Bercahaya_109: -5527429825188579846
+      Ikon Peringatan Kuning Bercahaya_11: -5466515396724898983
+      Ikon Peringatan Kuning Bercahaya_110: 922285193189520664
+      Ikon Peringatan Kuning Bercahaya_111: 3029182396199895778
+      Ikon Peringatan Kuning Bercahaya_112: -6854031123312888668
+      Ikon Peringatan Kuning Bercahaya_113: 6877881055536194420
+      Ikon Peringatan Kuning Bercahaya_12: 2549258200562887303
+      Ikon Peringatan Kuning Bercahaya_13: -3262462456512769175
+      Ikon Peringatan Kuning Bercahaya_14: 5492941523024535667
+      Ikon Peringatan Kuning Bercahaya_15: 8201198077710631037
+      Ikon Peringatan Kuning Bercahaya_16: 6749111763599684434
+      Ikon Peringatan Kuning Bercahaya_17: -1362827303947100194
+      Ikon Peringatan Kuning Bercahaya_18: -3994764949286970578
+      Ikon Peringatan Kuning Bercahaya_19: 1977848663115454382
+      Ikon Peringatan Kuning Bercahaya_2: -5395999615938952544
+      Ikon Peringatan Kuning Bercahaya_20: -67028407899279648
+      Ikon Peringatan Kuning Bercahaya_21: -8882916355446478687
+      Ikon Peringatan Kuning Bercahaya_22: -4183786920340547613
+      Ikon Peringatan Kuning Bercahaya_23: -7264922224124581890
+      Ikon Peringatan Kuning Bercahaya_24: 3008578100982001582
+      Ikon Peringatan Kuning Bercahaya_25: -7654028975256530015
+      Ikon Peringatan Kuning Bercahaya_26: -685532593023234255
+      Ikon Peringatan Kuning Bercahaya_27: -197548700909641443
+      Ikon Peringatan Kuning Bercahaya_28: -2880911556987814509
+      Ikon Peringatan Kuning Bercahaya_29: -8136024249073801832
+      Ikon Peringatan Kuning Bercahaya_3: 1505320814109379130
+      Ikon Peringatan Kuning Bercahaya_30: -4166374403461960022
+      Ikon Peringatan Kuning Bercahaya_31: 8336045427947810743
+      Ikon Peringatan Kuning Bercahaya_32: 7841632345892531299
+      Ikon Peringatan Kuning Bercahaya_33: 5522284739240717254
+      Ikon Peringatan Kuning Bercahaya_34: 4215178358075124154
+      Ikon Peringatan Kuning Bercahaya_35: 5679667937009552254
+      Ikon Peringatan Kuning Bercahaya_36: -4387370502349243452
+      Ikon Peringatan Kuning Bercahaya_37: 7555246953653534782
+      Ikon Peringatan Kuning Bercahaya_38: 3381722620362402204
+      Ikon Peringatan Kuning Bercahaya_39: -5052770935737134823
+      Ikon Peringatan Kuning Bercahaya_4: 5979727462898542993
+      Ikon Peringatan Kuning Bercahaya_40: -2887054697324336684
+      Ikon Peringatan Kuning Bercahaya_41: -1341020526964590099
+      Ikon Peringatan Kuning Bercahaya_42: -1842824892544630186
+      Ikon Peringatan Kuning Bercahaya_43: -3737587094350689664
+      Ikon Peringatan Kuning Bercahaya_44: -4427010878430923335
+      Ikon Peringatan Kuning Bercahaya_45: 4076580601631508304
+      Ikon Peringatan Kuning Bercahaya_46: 7175717132758666761
+      Ikon Peringatan Kuning Bercahaya_47: 3087063198316477255
+      Ikon Peringatan Kuning Bercahaya_48: 1271621962578886922
+      Ikon Peringatan Kuning Bercahaya_49: -4303527502975649236
+      Ikon Peringatan Kuning Bercahaya_5: 2831157227289648666
+      Ikon Peringatan Kuning Bercahaya_50: 5732302255336730278
+      Ikon Peringatan Kuning Bercahaya_51: 1484347422882508943
+      Ikon Peringatan Kuning Bercahaya_52: -3858489982467010759
+      Ikon Peringatan Kuning Bercahaya_53: 1732027925978268583
+      Ikon Peringatan Kuning Bercahaya_54: 3105391903709915437
+      Ikon Peringatan Kuning Bercahaya_55: 5443810710851337653
+      Ikon Peringatan Kuning Bercahaya_56: 204562701352709132
+      Ikon Peringatan Kuning Bercahaya_57: 6204273930209272162
+      Ikon Peringatan Kuning Bercahaya_58: 1408656706581234744
+      Ikon Peringatan Kuning Bercahaya_59: 2891743948109125770
+      Ikon Peringatan Kuning Bercahaya_6: 5269284669628428053
+      Ikon Peringatan Kuning Bercahaya_60: 2370797103469908767
+      Ikon Peringatan Kuning Bercahaya_61: 8793480638228284565
+      Ikon Peringatan Kuning Bercahaya_62: -5495993970755504916
+      Ikon Peringatan Kuning Bercahaya_63: -8584371979956555488
+      Ikon Peringatan Kuning Bercahaya_64: -1855431790232939163
+      Ikon Peringatan Kuning Bercahaya_65: 5191358350403204496
+      Ikon Peringatan Kuning Bercahaya_66: -2152460910033159229
+      Ikon Peringatan Kuning Bercahaya_67: 7807523705660769068
+      Ikon Peringatan Kuning Bercahaya_68: 2921442807745434477
+      Ikon Peringatan Kuning Bercahaya_69: -3375322293643452492
+      Ikon Peringatan Kuning Bercahaya_7: 5520549535158895375
+      Ikon Peringatan Kuning Bercahaya_70: -7336429401689955072
+      Ikon Peringatan Kuning Bercahaya_71: -4979590422991884324
+      Ikon Peringatan Kuning Bercahaya_72: 2632156104810547038
+      Ikon Peringatan Kuning Bercahaya_73: 4444008451901681734
+      Ikon Peringatan Kuning Bercahaya_74: -6733186410351846250
+      Ikon Peringatan Kuning Bercahaya_75: 6248448711823106958
+      Ikon Peringatan Kuning Bercahaya_76: 5333884944941627768
+      Ikon Peringatan Kuning Bercahaya_77: -8582681861126985651
+      Ikon Peringatan Kuning Bercahaya_78: 8723475034381203117
+      Ikon Peringatan Kuning Bercahaya_79: 48412580038845837
+      Ikon Peringatan Kuning Bercahaya_8: 2566086987486464337
+      Ikon Peringatan Kuning Bercahaya_80: 4857362640586233888
+      Ikon Peringatan Kuning Bercahaya_81: 3648443872248517535
+      Ikon Peringatan Kuning Bercahaya_82: 4996363441632139487
+      Ikon Peringatan Kuning Bercahaya_83: -3655784424935563816
+      Ikon Peringatan Kuning Bercahaya_84: 6036719227643261832
+      Ikon Peringatan Kuning Bercahaya_85: 2823089108595046365
+      Ikon Peringatan Kuning Bercahaya_86: 5527152829531936564
+      Ikon Peringatan Kuning Bercahaya_87: -8785632944702537055
+      Ikon Peringatan Kuning Bercahaya_88: -6735867775578226478
+      Ikon Peringatan Kuning Bercahaya_89: 7601471224690160847
+      Ikon Peringatan Kuning Bercahaya_9: -3480315797992510569
+      Ikon Peringatan Kuning Bercahaya_90: 4707623402259860777
+      Ikon Peringatan Kuning Bercahaya_91: 3601716354800589087
+      Ikon Peringatan Kuning Bercahaya_92: 7059778134417384106
+      Ikon Peringatan Kuning Bercahaya_93: 2173783832053795649
+      Ikon Peringatan Kuning Bercahaya_94: -4770609087928402235
+      Ikon Peringatan Kuning Bercahaya_95: -1969367923527180499
+      Ikon Peringatan Kuning Bercahaya_96: -423051635746665122
+      Ikon Peringatan Kuning Bercahaya_97: -6897705161832524792
+      Ikon Peringatan Kuning Bercahaya_98: -8309129119786069435
+      Ikon Peringatan Kuning Bercahaya_99: 7373806028288638624
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: eba642716c9b64169a67716b8130a1b7
+guid: 3563edd6f8de948d4aca31e283b9ad26
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4670891115054034340
-    second: Tak berjudul134_20261030211648_0
+      213: -4460339154325814672
+    second: file_00000000010c8211ab4f7c5530b832b9(6) 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tak berjudul134_20261030211648_0
+      name: file_00000000010c8211ab4f7c5530b832b9(6) 1_0
       rect:
         serializedVersion: 2
-        x: 43
+        x: 0
         y: 0
-        width: 2231
-        height: 2852
+        width: 512
+        height: 352
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4ade251c8b652d040800000000000000
-      internalID: 4670891115054034340
+      spriteID: 072c4a8cb21b912c0800000000000000
+      internalID: -4460339154325814672
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Tak berjudul134_20261030211648_0: 4670891115054034340
+      file_00000000010c8211ab4f7c5530b832b9(6) 1_0: -4460339154325814672
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
