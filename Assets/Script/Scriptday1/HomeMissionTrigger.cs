@@ -1,3 +1,4 @@
+
 using UnityEngine;
 
 public class HomeMissionTrigger : MonoBehaviour
@@ -21,6 +22,17 @@ public class HomeMissionTrigger : MonoBehaviour
 
         phoneCallStarted = true;
         phoneCallDialogue.StartPhoneCall();
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (!other.CompareTag("Player"))
+            return;
+
+        if (!phoneCallFinished && dialogueUI != null)
+        {
+            dialogueUI.CloseDialogue();
+        }
     }
 
     private void Update()

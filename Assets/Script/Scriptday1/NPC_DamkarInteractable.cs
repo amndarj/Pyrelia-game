@@ -1,3 +1,4 @@
+
 using UnityEngine;
 
 public class NPC_DamkarInteractable : MonoBehaviour, IInteractable
@@ -8,14 +9,30 @@ public class NPC_DamkarInteractable : MonoBehaviour, IInteractable
     private bool dialogueStarted = false;
     private bool dialogueFinished = false;
     private bool decisionMade = false;
+    private bool missionCompleted = false;
 
     private string[] dialogueLines =
     {
         "Halo, saya petugas pemadam kebakaran.",
         "Kami sudah menerima laporan mengenai kebakaran hutan.",
         "Kondisi api masih perlu segera ditangani.",
-        "Kami akan atasi kebakarannya!"
+        "Bisakah kamu membantu kami dalam proses pemadaman?"
     };
+
+    private void Start()
+    {
+        missionCompleted =
+            PlayerPrefs.GetInt("MisiPemadamanSelesai", 0) == 1;
+
+        if (missionCompleted)
+        {
+            dialogueStarted = true;
+            decisionMade = true;
+
+            if (choicePanel != null)
+                choicePanel.SetActive(false);
+        }
+    }
 
     private void OnEnable()
     {
@@ -31,7 +48,7 @@ public class NPC_DamkarInteractable : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        if (dialogueStarted || decisionMade)
+        if (missionCompleted || dialogueStarted || decisionMade)
             return;
 
         dialogueStarted = true;
@@ -40,20 +57,33 @@ public class NPC_DamkarInteractable : MonoBehaviour, IInteractable
 
     private void OnDialogueFinished()
     {
-        if (!dialogueStarted || dialogueFinished)
+        if (!dialogueStarted || dialogueFinished || missionCompleted)
             return;
 
         dialogueFinished = true;
-        choicePanel.SetActive(true);
+
+        if (choicePanel != null)
+            choicePanel.SetActive(true);
+    }
+
+    public void CloseInteractionUI()
+    {
+        if (dialogueUI != null)
+            dialogueUI.CloseDialogue();
+
+        if (choicePanel != null)
+            choicePanel.SetActive(false);
     }
 
     public void StartFirefighting()
     {
-        if (decisionMade)
+        if (decisionMade || missionCompleted)
             return;
 
         decisionMade = true;
-        choicePanel.SetActive(false);
+
+        if (choicePanel != null)
+            choicePanel.SetActive(false);
 
         Debug.Log("Minigame pemadaman api dimulai.");
     }

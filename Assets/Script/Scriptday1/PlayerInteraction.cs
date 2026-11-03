@@ -1,3 +1,4 @@
+
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -7,7 +8,9 @@ public class PlayerInteraction : MonoBehaviour
 
     private void Update()
     {
-        if (currentInteractable != null && Keyboard.current.eKey.wasPressedThisFrame)
+        if (currentInteractable != null &&
+            Keyboard.current != null &&
+            Keyboard.current.eKey.wasPressedThisFrame)
         {
             currentInteractable.Interact();
         }
@@ -28,16 +31,24 @@ public class PlayerInteraction : MonoBehaviour
     {
         IInteractable interactable = other.GetComponent<IInteractable>();
 
-        if (interactable != null && currentInteractable == interactable)
+        if (interactable == null || currentInteractable != interactable)
+            return;
+
+        NPC_Korban npcKorban = other.GetComponent<NPC_Korban>();
+
+        if (npcKorban != null && npcKorban.dialogueUI != null)
         {
-            NPC_Korban npc = other.GetComponent<NPC_Korban>();
-
-            if (npc != null && npc.dialogueUI != null)
-            {
-                npc.dialogueUI.CloseDialogue();
-            }
-
-            currentInteractable = null;
+            npcKorban.dialogueUI.CloseDialogue();
         }
+
+        NPC_DamkarInteractable npcDamkar =
+            other.GetComponent<NPC_DamkarInteractable>();
+
+        if (npcDamkar != null)
+        {
+            npcDamkar.CloseInteractionUI();
+        }
+
+        currentInteractable = null;
     }
 }

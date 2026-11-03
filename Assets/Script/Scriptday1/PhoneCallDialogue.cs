@@ -1,3 +1,4 @@
+
 using UnityEngine;
 
 public class PhoneCallDialogue : MonoBehaviour
@@ -55,7 +56,6 @@ public class PhoneCallDialogue : MonoBehaviour
 
     public void StartPhoneCall()
     {
-        // Mengisi gambar setiap pembicara
         foreach (DialogueLine line in dialogueLines)
         {
             if (line.speakerName == "Player")
@@ -65,5 +65,14 @@ public class PhoneCallDialogue : MonoBehaviour
         }
 
         dialogueUI.StartDialogue(dialogueLines);
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (!other.CompareTag("Player"))
+            return;
+
+        if (dialogueUI != null)
+            dialogueUI.CloseDialogue();
     }
 }
