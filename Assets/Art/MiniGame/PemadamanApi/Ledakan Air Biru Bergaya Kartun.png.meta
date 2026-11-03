@@ -1,0 +1,1612 @@
+fileFormatVersion: 2
+guid: 985df0c38fca3d644afdc8351a827847
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6766438061916726577
+    second: Ledakan Air Biru Bergaya Kartun_0
+  - first:
+      213: -4018986046466815501
+    second: Ledakan Air Biru Bergaya Kartun_1
+  - first:
+      213: 7732418160042286421
+    second: Ledakan Air Biru Bergaya Kartun_2
+  - first:
+      213: 2107227396959371014
+    second: Ledakan Air Biru Bergaya Kartun_3
+  - first:
+      213: -2072137010740002621
+    second: Ledakan Air Biru Bergaya Kartun_4
+  - first:
+      213: -6001457289682534465
+    second: Ledakan Air Biru Bergaya Kartun_5
+  - first:
+      213: -3447660277882638992
+    second: Ledakan Air Biru Bergaya Kartun_6
+  - first:
+      213: -1227066729779622277
+    second: Ledakan Air Biru Bergaya Kartun_7
+  - first:
+      213: -6482589259581750166
+    second: Ledakan Air Biru Bergaya Kartun_8
+  - first:
+      213: -5860930886491492508
+    second: Ledakan Air Biru Bergaya Kartun_9
+  - first:
+      213: 2060587784550719640
+    second: Ledakan Air Biru Bergaya Kartun_10
+  - first:
+      213: 9005165922774830124
+    second: Ledakan Air Biru Bergaya Kartun_11
+  - first:
+      213: -5830473360623370969
+    second: Ledakan Air Biru Bergaya Kartun_12
+  - first:
+      213: -7031934575880999921
+    second: Ledakan Air Biru Bergaya Kartun_13
+  - first:
+      213: 2978942414507387737
+    second: Ledakan Air Biru Bergaya Kartun_14
+  - first:
+      213: -8021325706144417008
+    second: Ledakan Air Biru Bergaya Kartun_15
+  - first:
+      213: 6341315352208025713
+    second: Ledakan Air Biru Bergaya Kartun_16
+  - first:
+      213: -6958156855654691061
+    second: Ledakan Air Biru Bergaya Kartun_17
+  - first:
+      213: 7547603456902649167
+    second: Ledakan Air Biru Bergaya Kartun_18
+  - first:
+      213: -5634649731159149140
+    second: Ledakan Air Biru Bergaya Kartun_19
+  - first:
+      213: 2833913542540117710
+    second: Ledakan Air Biru Bergaya Kartun_20
+  - first:
+      213: -6241281823219471522
+    second: Ledakan Air Biru Bergaya Kartun_21
+  - first:
+      213: 3209198627538642811
+    second: Ledakan Air Biru Bergaya Kartun_22
+  - first:
+      213: 6768876007566256979
+    second: Ledakan Air Biru Bergaya Kartun_23
+  - first:
+      213: -2170705839166511544
+    second: Ledakan Air Biru Bergaya Kartun_24
+  - first:
+      213: -9218780560252291859
+    second: Ledakan Air Biru Bergaya Kartun_25
+  - first:
+      213: -8384155818159143145
+    second: Ledakan Air Biru Bergaya Kartun_26
+  - first:
+      213: -700249614546136528
+    second: Ledakan Air Biru Bergaya Kartun_27
+  - first:
+      213: 5379311580416587791
+    second: Ledakan Air Biru Bergaya Kartun_28
+  - first:
+      213: -6649923105228614911
+    second: Ledakan Air Biru Bergaya Kartun_29
+  - first:
+      213: -2752137194301491493
+    second: Ledakan Air Biru Bergaya Kartun_30
+  - first:
+      213: 1927975753019943795
+    second: Ledakan Air Biru Bergaya Kartun_31
+  - first:
+      213: -69618300450187889
+    second: Ledakan Air Biru Bergaya Kartun_32
+  - first:
+      213: -3154050195491684334
+    second: Ledakan Air Biru Bergaya Kartun_33
+  - first:
+      213: 567575760487547289
+    second: Ledakan Air Biru Bergaya Kartun_34
+  - first:
+      213: 3977467985295199053
+    second: Ledakan Air Biru Bergaya Kartun_35
+  - first:
+      213: 586008253909138735
+    second: Ledakan Air Biru Bergaya Kartun_36
+  - first:
+      213: -904829029318349315
+    second: Ledakan Air Biru Bergaya Kartun_37
+  - first:
+      213: 1823352892367747338
+    second: Ledakan Air Biru Bergaya Kartun_38
+  - first:
+      213: 7320413131465323419
+    second: Ledakan Air Biru Bergaya Kartun_39
+  - first:
+      213: -8743841961163043563
+    second: Ledakan Air Biru Bergaya Kartun_40
+  - first:
+      213: 5216855475110067224
+    second: Ledakan Air Biru Bergaya Kartun_41
+  - first:
+      213: -3486664546495251147
+    second: Ledakan Air Biru Bergaya Kartun_42
+  - first:
+      213: 167136534377992610
+    second: Ledakan Air Biru Bergaya Kartun_43
+  - first:
+      213: -609960026523304820
+    second: Ledakan Air Biru Bergaya Kartun_44
+  - first:
+      213: 1520561214512772750
+    second: Ledakan Air Biru Bergaya Kartun_45
+  - first:
+      213: 3772854726848680318
+    second: Ledakan Air Biru Bergaya Kartun_46
+  - first:
+      213: 3890930676783432351
+    second: Ledakan Air Biru Bergaya Kartun_47
+  - first:
+      213: -3739964889142283556
+    second: Ledakan Air Biru Bergaya Kartun_48
+  - first:
+      213: 6667577319061453766
+    second: Ledakan Air Biru Bergaya Kartun_49
+  - first:
+      213: -74100469673236459
+    second: Ledakan Air Biru Bergaya Kartun_50
+  - first:
+      213: -8135935587626029227
+    second: Ledakan Air Biru Bergaya Kartun_51
+  - first:
+      213: 9162938927862395925
+    second: Ledakan Air Biru Bergaya Kartun_52
+  - first:
+      213: 1742665366716887719
+    second: Ledakan Air Biru Bergaya Kartun_53
+  - first:
+      213: -4528960905762448222
+    second: Ledakan Air Biru Bergaya Kartun_54
+  - first:
+      213: -4840332904915732076
+    second: Ledakan Air Biru Bergaya Kartun_55
+  - first:
+      213: 5575977690663579742
+    second: Ledakan Air Biru Bergaya Kartun_56
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_0
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 961
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fca55ccce68c812a0800000000000000
+      internalID: -6766438061916726577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_1
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 925
+        width: 39
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f90817fb71b938c0800000000000000
+      internalID: -4018986046466815501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_2
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 0
+        width: 1331
+        height: 1008
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55d991439511f4b60800000000000000
+      internalID: 7732418160042286421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_3
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 990
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60ffbb827206e3d10800000000000000
+      internalID: 2107227396959371014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_4
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 992
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c007ec0e5a4e33e0800000000000000
+      internalID: -2072137010740002621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_5
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 989
+        width: 31
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbf3bc1646a86bca0800000000000000
+      internalID: -6001457289682534465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_6
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 975
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07da4966e337720d0800000000000000
+      internalID: -3447660277882638992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_7
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 977
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7e09cf7f4598fee0800000000000000
+      internalID: -1227066729779622277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_8
+      rect:
+        serializedVersion: 2
+        x: 1226
+        y: 979
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a640ed52a673906a0800000000000000
+      internalID: -6482589259581750166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_9
+      rect:
+        serializedVersion: 2
+        x: 1390
+        y: 909
+        width: 131
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46f2f89496ac9aea0800000000000000
+      internalID: -5860930886491492508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_10
+      rect:
+        serializedVersion: 2
+        x: 1468
+        y: 987
+        width: 33
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 890a7ae2cada89c10800000000000000
+      internalID: 2060587784550719640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_11
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 939
+        width: 51
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2c427202b6c8fc70800000000000000
+      internalID: 9005165922774830124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_12
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 975
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72d7aa3ae5ff51fa0800000000000000
+      internalID: -5830473360623370969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_13
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 965
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0c63d092cc896e90800000000000000
+      internalID: -7031934575880999921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_14
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 847
+        width: 97
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95bae07c754575920800000000000000
+      internalID: 2978942414507387737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_15
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 867
+        width: 79
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01b7d81e4c68ea090800000000000000
+      internalID: -8021325706144417008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_16
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 957
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 178271117b0e00850800000000000000
+      internalID: 6341315352208025713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_17
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 961
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0fc047a439af6f90800000000000000
+      internalID: -6958156855654691061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_18
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 951
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f45513aea597eb860800000000000000
+      internalID: 7547603456902649167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_19
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 943
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca532845ce3bdc1b0800000000000000
+      internalID: -5634649731159149140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_20
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 897
+        width: 37
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec6c54b2a55145720800000000000000
+      internalID: 2833913542540117710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_21
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 935
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5ba6efdf338269a0800000000000000
+      internalID: -6241281823219471522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_22
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 935
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b77ac10162d598c20800000000000000
+      internalID: 3209198627538642811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_23
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 899
+        width: 47
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35ba6a7add0efed50800000000000000
+      internalID: 6768876007566256979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_24
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 863
+        width: 71
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8462d984a8a10e1e0800000000000000
+      internalID: -2170705839166511544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_25
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 911
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de4b2e37cef401080800000000000000
+      internalID: -9218780560252291859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 795
+        width: 39
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 717891d54be75ab80800000000000000
+      internalID: -8384155818159143145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_27
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 871
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0329fd68fa63846f0800000000000000
+      internalID: -700249614546136528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_28
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 800
+        width: 43
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0830eea16727aa40800000000000000
+      internalID: 5379311580416587791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_29
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 859
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1039f292b2ab6b3a0800000000000000
+      internalID: -6649923105228614911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_30
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 849
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd6f480adc17ec9d0800000000000000
+      internalID: -2752137194301491493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_31
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 853
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37be1568bbb81ca10800000000000000
+      internalID: 1927975753019943795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_32
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 798
+        width: 100
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f85dccb468aa80ff0800000000000000
+      internalID: -69618300450187889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_33
+      rect:
+        serializedVersion: 2
+        x: 1490
+        y: 868
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21087fdde009a34d0800000000000000
+      internalID: -3154050195491684334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_34
+      rect:
+        serializedVersion: 2
+        x: 1496
+        y: 834
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9918bf2a52f60e700800000000000000
+      internalID: 567575760487547289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_35
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 869
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4b42012f0ec23730800000000000000
+      internalID: 3977467985295199053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 725
+        width: 61
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2d73b1f66be12800800000000000000
+      internalID: 586008253909138735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_37
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 695
+        width: 65
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfda405bac66173f0800000000000000
+      internalID: -904829029318349315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_38
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 675
+        width: 83
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a09b2c98bc9dd4910800000000000000
+      internalID: 1823352892367747338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_39
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 661
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b93781635f4579560800000000000000
+      internalID: 7320413131465323419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_40
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 689
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51dc8bc2012a7a680800000000000000
+      internalID: -8743841961163043563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_41
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 518
+        width: 51
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81cbc7e1a6ef56840800000000000000
+      internalID: 5216855475110067224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_42
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 556
+        width: 177
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53db33f6111ec9fc0800000000000000
+      internalID: -3486664546495251147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_43
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 513
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a11790eac9c15200800000000000000
+      internalID: 167136534377992610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_44
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 515
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8cf3eb669cf887f0800000000000000
+      internalID: -609960026523304820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_45
+      rect:
+        serializedVersion: 2
+        x: 1462
+        y: 455
+        width: 72
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e86354a4e5e1a1510800000000000000
+      internalID: 1520561214512772750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_46
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 243
+        width: 183
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7118f6726fdb5430800000000000000
+      internalID: 3772854726848680318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_47
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 495
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f92c853e5dc5ff530800000000000000
+      internalID: 3890930676783432351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_48
+      rect:
+        serializedVersion: 2
+        x: 1514
+        y: 491
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd2bd3e9fb9f81cc0800000000000000
+      internalID: -3739964889142283556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_49
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 465
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cbfb1fce3ef78c50800000000000000
+      internalID: 6667577319061453766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_50
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 473
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 518ef63f30eb8fef0800000000000000
+      internalID: -74100469673236459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_51
+      rect:
+        serializedVersion: 2
+        x: 1446
+        y: 471
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55f671860b9571f80800000000000000
+      internalID: -8135935587626029227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_52
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 415
+        width: 33
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51436d5586c492f70800000000000000
+      internalID: 9162938927862395925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_53
+      rect:
+        serializedVersion: 2
+        x: 1358
+        y: 338
+        width: 147
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a239810be03f2810800000000000000
+      internalID: 1742665366716887719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_54
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 35
+        width: 193
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2acd56a3d06e521c0800000000000000
+      internalID: -4528960905762448222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_55
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 241
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 499fcdf3edea3dcb0800000000000000
+      internalID: -4840332904915732076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ledakan Air Biru Bergaya Kartun_56
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 15
+        width: 29
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e507187ba2ad16d40800000000000000
+      internalID: 5575977690663579742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Ledakan Air Biru Bergaya Kartun_0: -6766438061916726577
+      Ledakan Air Biru Bergaya Kartun_1: -4018986046466815501
+      Ledakan Air Biru Bergaya Kartun_10: 2060587784550719640
+      Ledakan Air Biru Bergaya Kartun_11: 9005165922774830124
+      Ledakan Air Biru Bergaya Kartun_12: -5830473360623370969
+      Ledakan Air Biru Bergaya Kartun_13: -7031934575880999921
+      Ledakan Air Biru Bergaya Kartun_14: 2978942414507387737
+      Ledakan Air Biru Bergaya Kartun_15: -8021325706144417008
+      Ledakan Air Biru Bergaya Kartun_16: 6341315352208025713
+      Ledakan Air Biru Bergaya Kartun_17: -6958156855654691061
+      Ledakan Air Biru Bergaya Kartun_18: 7547603456902649167
+      Ledakan Air Biru Bergaya Kartun_19: -5634649731159149140
+      Ledakan Air Biru Bergaya Kartun_2: 7732418160042286421
+      Ledakan Air Biru Bergaya Kartun_20: 2833913542540117710
+      Ledakan Air Biru Bergaya Kartun_21: -6241281823219471522
+      Ledakan Air Biru Bergaya Kartun_22: 3209198627538642811
+      Ledakan Air Biru Bergaya Kartun_23: 6768876007566256979
+      Ledakan Air Biru Bergaya Kartun_24: -2170705839166511544
+      Ledakan Air Biru Bergaya Kartun_25: -9218780560252291859
+      Ledakan Air Biru Bergaya Kartun_26: -8384155818159143145
+      Ledakan Air Biru Bergaya Kartun_27: -700249614546136528
+      Ledakan Air Biru Bergaya Kartun_28: 5379311580416587791
+      Ledakan Air Biru Bergaya Kartun_29: -6649923105228614911
+      Ledakan Air Biru Bergaya Kartun_3: 2107227396959371014
+      Ledakan Air Biru Bergaya Kartun_30: -2752137194301491493
+      Ledakan Air Biru Bergaya Kartun_31: 1927975753019943795
+      Ledakan Air Biru Bergaya Kartun_32: -69618300450187889
+      Ledakan Air Biru Bergaya Kartun_33: -3154050195491684334
+      Ledakan Air Biru Bergaya Kartun_34: 567575760487547289
+      Ledakan Air Biru Bergaya Kartun_35: 3977467985295199053
+      Ledakan Air Biru Bergaya Kartun_36: 586008253909138735
+      Ledakan Air Biru Bergaya Kartun_37: -904829029318349315
+      Ledakan Air Biru Bergaya Kartun_38: 1823352892367747338
+      Ledakan Air Biru Bergaya Kartun_39: 7320413131465323419
+      Ledakan Air Biru Bergaya Kartun_4: -2072137010740002621
+      Ledakan Air Biru Bergaya Kartun_40: -8743841961163043563
+      Ledakan Air Biru Bergaya Kartun_41: 5216855475110067224
+      Ledakan Air Biru Bergaya Kartun_42: -3486664546495251147
+      Ledakan Air Biru Bergaya Kartun_43: 167136534377992610
+      Ledakan Air Biru Bergaya Kartun_44: -609960026523304820
+      Ledakan Air Biru Bergaya Kartun_45: 1520561214512772750
+      Ledakan Air Biru Bergaya Kartun_46: 3772854726848680318
+      Ledakan Air Biru Bergaya Kartun_47: 3890930676783432351
+      Ledakan Air Biru Bergaya Kartun_48: -3739964889142283556
+      Ledakan Air Biru Bergaya Kartun_49: 6667577319061453766
+      Ledakan Air Biru Bergaya Kartun_5: -6001457289682534465
+      Ledakan Air Biru Bergaya Kartun_50: -74100469673236459
+      Ledakan Air Biru Bergaya Kartun_51: -8135935587626029227
+      Ledakan Air Biru Bergaya Kartun_52: 9162938927862395925
+      Ledakan Air Biru Bergaya Kartun_53: 1742665366716887719
+      Ledakan Air Biru Bergaya Kartun_54: -4528960905762448222
+      Ledakan Air Biru Bergaya Kartun_55: -4840332904915732076
+      Ledakan Air Biru Bergaya Kartun_56: 5575977690663579742
+      Ledakan Air Biru Bergaya Kartun_6: -3447660277882638992
+      Ledakan Air Biru Bergaya Kartun_7: -1227066729779622277
+      Ledakan Air Biru Bergaya Kartun_8: -6482589259581750166
+      Ledakan Air Biru Bergaya Kartun_9: -5860930886491492508
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

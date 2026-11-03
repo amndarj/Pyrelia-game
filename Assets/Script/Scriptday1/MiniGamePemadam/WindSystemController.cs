@@ -1,3 +1,4 @@
+
 using UnityEngine;
 using TMPro;
 
@@ -27,12 +28,19 @@ public class WindSystemController : MonoBehaviour
     void Start()
     {
         UpdateWind();
+
         InvokeRepeating(nameof(ChangeWind), 10f, 10f);
     }
 
     void ChangeWind()
     {
-        currentDirection = (currentDirection + 1) % directions.Length;
+        int previousDirection = currentDirection;
+
+        do
+        {
+            currentDirection = Random.Range(0, directions.Length);
+        }
+        while (currentDirection == previousDirection);
 
         UpdateWind();
 
@@ -44,7 +52,9 @@ public class WindSystemController : MonoBehaviour
         windDirectionText.text = "Angin: " + directions[currentDirection];
 
         windArrow.rotation = Quaternion.Euler(
-            0f, 0f, rotations[currentDirection]
+            0f,
+            0f,
+            rotations[currentDirection]
         );
     }
 

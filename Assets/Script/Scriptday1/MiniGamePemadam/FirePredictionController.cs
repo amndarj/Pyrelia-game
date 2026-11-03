@@ -1,3 +1,4 @@
+
 using UnityEngine;
 using TMPro;
 using System.Collections.Generic;
@@ -8,12 +9,11 @@ public class FirePredictionController : MonoBehaviour
     public TMP_Text predictionText;
 
     public Transform[] firePoints;
+    public GameObject[] warningMarkers;
 
-    public int mainFireIndex = 0;
+    public float predictionDistance = 11f;
 
-    public float predictionDistance = 5f;
-
-    private List<int> predictedFires = new List<int>();
+    private HashSet<int> predictedFires = new HashSet<int>();
 
     void Start()
     {
@@ -24,34 +24,35 @@ public class FirePredictionController : MonoBehaviour
     public void UpdatePrediction()
     {
         if (windSystem == null || predictionText == null ||
-            firePoints == null || firePoints.Length == 0)
+            firePoints == null || warningMarkers == null)
             return;
 
         predictedFires.Clear();
 
-        if (mainFireIndex < 0 || mainFireIndex >= firePoints.Length)
-            return;
+        Vector2 windDirection =
+            GetWindVector(windSystem.GetWindDirection());
 
-        Transform mainFire = firePoints[mainFireIndex];
-
-        if (mainFire == null)
-            return;
-
-        Vector2 windDirection = GetWindVector(
-            windSystem.GetWindDirection()
-        );
-
+        // Setiap titik api menjadi sumber prediksi.
         for (int i = 0; i < firePoints.Length; i++)
         {
-            if (i == mainFireIndex || firePoints[i] == null)
+            if (firePoints[i] == null)
                 continue;
 
-            Vector2 offset = firePoints[i].position - mainFire.position;
-
-            float distance = offset.magnitude;
-
-            if (distance > 0 && distance <= predictionDistance)
+            // Periksa titik api lain sebagai target.
+            for (int j = 0; j < firePoints.Length; j++)
             {
+                if (i == j || firePoints[j] == null)
+                    continue;
+
+                Vector2 offset =
+                    (Vector2)firePoints[j].position -
+                    (Vector2)firePoints[i].position;
+
+                float distance = offset.magnitude;
+
+                if (distance <= 0 || distance > predictionDistance)
+                    continue;
+
                 float dot = Vector2.Dot(
                     offset.normalized,
                     windDirection
@@ -59,11 +60,12 @@ public class FirePredictionController : MonoBehaviour
 
                 if (dot > 0.5f)
                 {
-                    predictedFires.Add(i);
+                    predictedFires.Add(j);
                 }
             }
         }
 
+        UpdateWarningMarkers();
         ShowPrediction();
     }
 
@@ -88,22 +90,42 @@ public class FirePredictionController : MonoBehaviour
         }
     }
 
+    void UpdateWarningMarkers()
+    {
+        for (int i = 0; i < warningMarkers.Length; i++)
+        {
+            if (warningMarkers[i] != null)
+            {
+                warningMarkers[i].SetActive(
+                    predictedFires.Contains(i)
+                );
+            }
+        }
+    }
+
     void ShowPrediction()
     {
         if (predictedFires.Count == 0)
         {
             predictionText.text =
-                "Prediksi: Belum ada titik api yang terancam.";
+                "Belum ada titik api yang diprediksi menyebar.";
             return;
         }
 
-        string result = "Prediksi penyebaran api: ";
+        List<int> sortedFires =
+            new List<int>(predictedFires);
 
-        foreach (int index in predictedFires)
+        sortedFires.Sort();
+
+        string result =
+            "Angin berpotensi menyebarkan api ke titik: ";
+
+        foreach (int index in sortedFires)
         {
-            result += "Fire_" + (index + 1) + " ";
+            result += (index + 1) + ", ";
         }
 
-        predictionText.text = result;
+        predictionText.text =
+            result.TrimEnd(',', ' ') + "!";
     }
 }
