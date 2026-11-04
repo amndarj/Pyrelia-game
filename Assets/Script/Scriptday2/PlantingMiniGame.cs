@@ -21,6 +21,9 @@ public class PlantingMiniGame : MonoBehaviour
     public TMP_Text feedbackText;
     public GameObject successPanel;
 
+    [Header("Pohon di Map")]
+    public GameObject pohonHasilTanam;
+
     private int tahap = 0;
 
     private void Start()
@@ -68,7 +71,8 @@ public class PlantingMiniGame : MonoBehaviour
         {
             tanahBibitTanamanImage.SetActive(false);
             tanahBibitTanamanTumbuhImage.SetActive(true);
-
+            pohonHasilTanam.SetActive(true);
+            
             tahap = 3;
             instructionText.text = "Yeay! Pohon berhasil ditanam!";
             feedbackText.text = "Penanaman selesai!";
