@@ -2,24 +2,33 @@ using UnityEngine;
 
 public class PlantingPointInteractable : MonoBehaviour, IInteractable
 {
-    public GameObject plantingMinigamePanel;
+    [Header("Pengaturan Menanam")]
+    public PlantingMiniGame plantingMiniGame;
+    public GameObject pohonHasilTanam;
 
     private bool sudahDitanam = false;
 
     public void Interact()
     {
         if (sudahDitanam)
-            return;
-
-        if (plantingMinigamePanel != null)
         {
-            plantingMinigamePanel.SetActive(true);
-            Debug.Log("Minigame menanam pohon dimulai!");
+            Debug.Log("Pohon di titik ini sudah ditanam!");
+            return;
+        }
+
+        if (plantingMiniGame != null)
+        {
+            plantingMiniGame.MulaiMenanam(pohonHasilTanam, this);
         }
         else
         {
-            Debug.LogError("Planting Minigame Panel belum dihubungkan!");
+            Debug.LogError("Planting Mini Game belum dihubungkan!");
         }
     }
-}
 
+    public void SelesaikanPenanaman()
+    {
+        sudahDitanam = true;
+        Debug.Log("Penanaman di " + gameObject.name + " selesai!");
+    }
+}
