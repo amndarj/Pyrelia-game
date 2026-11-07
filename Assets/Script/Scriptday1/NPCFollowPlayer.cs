@@ -1,3 +1,4 @@
+
 using UnityEngine;
 
 public class NPCFollowPlayer : MonoBehaviour
@@ -8,6 +9,8 @@ public class NPCFollowPlayer : MonoBehaviour
 
     private bool isFollowing;
     private bool hasBeenDropped;
+    private bool isPaused;
+
     private Animator animator;
     private SpriteRenderer spriteRenderer;
 
@@ -16,15 +19,12 @@ public class NPCFollowPlayer : MonoBehaviour
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
 
-        if (animator != null)
-        {
-            animator.SetBool("IsMoving", false);
-        }
+        SetIdle();
     }
 
     private void Update()
     {
-        if (!isFollowing || player == null)
+        if (!isFollowing || isPaused || player == null)
             return;
 
         float distance = Vector2.Distance(
@@ -81,17 +81,35 @@ public class NPCFollowPlayer : MonoBehaviour
         if (hasBeenDropped)
             return;
 
+        isPaused = false;
+        isFollowing = true;
+    }
+
+    public void PauseFollowing()
+    {
+        isPaused = true;
+        SetIdle();
+    }
+
+    public void ResumeFollowing()
+    {
+        if (hasBeenDropped)
+            return;
+
+        isPaused = false;
         isFollowing = true;
     }
 
     public void StopFollowing()
     {
         isFollowing = false;
+        isPaused = false;
         hasBeenDropped = true;
+
+        SetIdle();
 
         if (animator != null)
         {
-            animator.SetBool("IsMoving", false);
             animator.Play("NPC_gokil_Idle", 0, 0f);
         }
 
