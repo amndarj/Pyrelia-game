@@ -1,10 +1,14 @@
 
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class NPC_DamkarInteractable : MonoBehaviour, IInteractable
 {
     public DialogueUI dialogueUI;
     public GameObject choicePanel;
+
+    [Header("Mini Game")]
+    public string miniGameSceneName = "MiniGame_PemadamanApi";
 
     private bool dialogueStarted = false;
     private bool dialogueFinished = false;
@@ -85,6 +89,8 @@ public class NPC_DamkarInteractable : MonoBehaviour, IInteractable
         if (choicePanel != null)
             choicePanel.SetActive(false);
 
-        Debug.Log("Minigame pemadaman api dimulai.");
+        Debug.Log("Memulai mini-game pemadaman api.");
+
+        SceneManager.LoadScene(miniGameSceneName);
     }
 }

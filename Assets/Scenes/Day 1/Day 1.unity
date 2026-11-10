@@ -786,7 +786,7 @@ GameObject:
   - component: {fileID: 131088812}
   m_Layer: 0
   m_Name: pohon kering_20261027205059_0 (9)
-  m_TagString: Untagged
+  m_TagString: Pohon Terbakar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1063,7 +1063,7 @@ GameObject:
   - component: {fileID: 212979450}
   m_Layer: 0
   m_Name: pohon kering_20261027205059_0 (4)
-  m_TagString: Untagged
+  m_TagString: Pohon Terbakar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1161,7 +1161,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &231011703
 SpriteRenderer:
   serializedVersion: 3
@@ -1251,6 +1251,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPC_DamkarInteractable
   dialogueUI: {fileID: 1265615256}
   choicePanel: {fileID: 564043027}
+  miniGameSceneName: MiniGame_PemadamanApi
 --- !u!70 &231011706
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1286,7 +1287,7 @@ CapsuleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 18, y: 29.200003}
+  m_Size: {x: 20, y: 29.200003}
   m_Direction: 0
 --- !u!1 &231979472
 GameObject:
@@ -1300,7 +1301,7 @@ GameObject:
   - component: {fileID: 231979474}
   m_Layer: 0
   m_Name: cemara gunung_20261027210719_0 (3)
-  m_TagString: Untagged
+  m_TagString: Pohon Terbakar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3203,7 +3204,7 @@ GameObject:
   - component: {fileID: 686298674}
   m_Layer: 0
   m_Name: pohon_20261027204814_0 (3)
-  m_TagString: Untagged
+  m_TagString: Pohon Terbakar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3814,7 +3815,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &785374659
 Transform:
   m_ObjectHideFlags: 0
@@ -4029,7 +4030,7 @@ GameObject:
   - component: {fileID: 814889779}
   m_Layer: 0
   m_Name: pohon kering_20261027205059_0 (10)
-  m_TagString: Untagged
+  m_TagString: Pohon Terbakar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4213,7 +4214,7 @@ GameObject:
   - component: {fileID: 824121330}
   m_Layer: 0
   m_Name: cemara gunung_20261027210719_0 (5)
-  m_TagString: Untagged
+  m_TagString: Pohon Terbakar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4305,7 +4306,7 @@ GameObject:
   - component: {fileID: 891800778}
   m_Layer: 0
   m_Name: pohon kering_20261027205059_0
-  m_TagString: Untagged
+  m_TagString: Pohon Terbakar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4397,7 +4398,7 @@ GameObject:
   - component: {fileID: 921996170}
   m_Layer: 0
   m_Name: pohon kering_20261027205059_0 (1)
-  m_TagString: Untagged
+  m_TagString: Pohon Terbakar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4702,6 +4703,53 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!1 &964981834
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 964981836}
+  - component: {fileID: 964981835}
+  m_Layer: 0
+  m_Name: FireMissionReturnManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &964981835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 964981834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2adf649ad5694e54ba163d4d4ccbcb52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FireMissionReturnManager
+  gokilNPC: {fileID: 785374658}
+  normalTreeSprite: {fileID: 1859496188688049370, guid: 1e68c95ca6f55a54fb43b5bc5c7f2d18, type: 3}
+  missionObjective: {fileID: 610913746}
+--- !u!4 &964981836
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 964981834}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -27, y: 13.32, z: 0}
+  m_LocalScale: {x: 0.20799585, y: 0.20799585, z: 0.20799585}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &970630347
 GameObject:
   m_ObjectHideFlags: 0
@@ -4882,7 +4930,7 @@ GameObject:
   - component: {fileID: 981349474}
   m_Layer: 0
   m_Name: cemara gunung_20261027210719_0 (6)
-  m_TagString: Untagged
+  m_TagString: Pohon Terbakar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6640,7 +6688,7 @@ GameObject:
   - component: {fileID: 1274432478}
   m_Layer: 0
   m_Name: pohon kering_20261027205059_0 (7)
-  m_TagString: Untagged
+  m_TagString: Pohon Terbakar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7197,7 +7245,7 @@ GameObject:
   - component: {fileID: 1374150445}
   m_Layer: 0
   m_Name: cemara gunung_20261027210719_0 (1)
-  m_TagString: Untagged
+  m_TagString: Pohon Terbakar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7369,6 +7417,50 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!1 &1394814830
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1394814832}
+  - component: {fileID: 1394814831}
+  m_Layer: 0
+  m_Name: ResetMissionData
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1394814831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394814830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6716525fc6f85b94a96e408cb9742014, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResetMissionData
+--- !u!4 &1394814832
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394814830}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -12.26, y: -9.55, z: 0}
+  m_LocalScale: {x: 1.1273, y: 1.1273, z: 1.1273}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1415512804
 GameObject:
   m_ObjectHideFlags: 0
@@ -7474,7 +7566,7 @@ GameObject:
   - component: {fileID: 1420690351}
   m_Layer: 0
   m_Name: pohon_20261027204814_0 (2)
-  m_TagString: Untagged
+  m_TagString: Pohon Terbakar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8989,7 +9081,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1580496563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9400,7 +9492,7 @@ GameObject:
   - component: {fileID: 1658345000}
   m_Layer: 0
   m_Name: cemara gunung_20261027210719_0 (11)
-  m_TagString: Untagged
+  m_TagString: Pohon Terbakar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9898,7 +9990,7 @@ GameObject:
   - component: {fileID: 1788656162}
   m_Layer: 0
   m_Name: pohon kering_20261027205059_0 (6)
-  m_TagString: Untagged
+  m_TagString: Pohon Terbakar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10070,7 +10162,7 @@ GameObject:
   - component: {fileID: 1850450617}
   m_Layer: 0
   m_Name: cemara gunung_20261027210719_0 (2)
-  m_TagString: Untagged
+  m_TagString: Pohon Terbakar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10408,7 +10500,7 @@ GameObject:
   - component: {fileID: 1866759114}
   m_Layer: 0
   m_Name: pohon kering_20261027205059_0 (5)
-  m_TagString: Untagged
+  m_TagString: Pohon Terbakar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10500,7 +10592,7 @@ GameObject:
   - component: {fileID: 1868668664}
   m_Layer: 0
   m_Name: pohon kering_20261027205059_0 (8)
-  m_TagString: Untagged
+  m_TagString: Pohon Terbakar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10665,7 +10757,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1882335092}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -27, y: 13.32, z: 0}
   m_LocalScale: {x: 0.20799585, y: 0.20799585, z: 0.20799585}
   m_ConstrainProportionsScale: 0
@@ -11143,7 +11235,7 @@ GameObject:
   - component: {fileID: 1977666587}
   m_Layer: 0
   m_Name: pohon kering_20261027205059_0 (3)
-  m_TagString: Untagged
+  m_TagString: Pohon Terbakar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11511,7 +11603,7 @@ GameObject:
   - component: {fileID: 2049058113}
   m_Layer: 0
   m_Name: pohon kering_20261027205059_0 (2)
-  m_TagString: Untagged
+  m_TagString: Pohon Terbakar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11787,7 +11879,7 @@ GameObject:
   - component: {fileID: 2075761042}
   m_Layer: 0
   m_Name: pohon_20261027204814_0 (1)
-  m_TagString: Untagged
+  m_TagString: Pohon Terbakar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12004,11 +12096,13 @@ SceneRoots:
   - {fileID: 1886459627}
   - {fileID: 1229620894}
   - {fileID: 1577609192}
+  - {fileID: 1394814832}
   - {fileID: 1855245562}
   - {fileID: 200594347}
   - {fileID: 2049700033}
   - {fileID: 247340662}
   - {fileID: 1330257207}
+  - {fileID: 964981836}
   - {fileID: 231011704}
   - {fileID: 306404844}
   - {fileID: 1882335094}

@@ -1,3 +1,4 @@
+
 using UnityEngine;
 using TMPro;
 using UnityEngine.Events;
@@ -13,8 +14,7 @@ public class FireTimer : MonoBehaviour
 
     public GameObject missionFailedPanel;
     public CanvasGroup missionFailedCanvasGroup;
-    public float fadeDuration = 5f;
-    public string namaSceneDesa = "Day 1";
+    public float fadeDuration = 2f;
 
     private float waktuTersisa;
     private bool timerBerjalan = false;
@@ -27,6 +27,7 @@ public class FireTimer : MonoBehaviour
 
         waktuTersisa = waktuAwal;
         UpdateTimerText();
+
         timerBerjalan = true;
     }
 
@@ -41,6 +42,7 @@ public class FireTimer : MonoBehaviour
         {
             waktuTersisa = 0f;
             timerBerjalan = false;
+
             UpdateTimerText();
 
             if (!misiSelesai)
@@ -57,6 +59,9 @@ public class FireTimer : MonoBehaviour
 
     private void UpdateTimerText()
     {
+        if (timerText == null)
+            return;
+
         int menit = Mathf.FloorToInt(waktuTersisa / 60f);
         int detik = Mathf.FloorToInt(waktuTersisa % 60f);
 
@@ -72,7 +77,14 @@ public class FireTimer : MonoBehaviour
 
     private IEnumerator ShowMissionFailed()
     {
+        if (missionFailedPanel == null)
+            yield break;
+
         missionFailedPanel.SetActive(true);
+
+        if (missionFailedCanvasGroup == null)
+            yield break;
+
         missionFailedCanvasGroup.alpha = 0f;
 
         float elapsedTime = 0f;
@@ -89,6 +101,13 @@ public class FireTimer : MonoBehaviour
 
         missionFailedCanvasGroup.alpha = 1f;
 
-        SceneManager.LoadScene(namaSceneDesa);
+        Debug.Log("Misi gagal. Pemain dapat mencoba kembali.");
+    }
+
+    public void UlangiMiniGame()
+    {
+        SceneManager.LoadScene(
+            SceneManager.GetActiveScene().buildIndex
+        );
     }
 }

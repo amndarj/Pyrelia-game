@@ -18,7 +18,8 @@ public class PlayerInteraction : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        IInteractable interactable = other.GetComponent<IInteractable>();
+        IInteractable interactable =
+            other.GetComponentInParent<IInteractable>();
 
         if (interactable != null)
         {
@@ -29,12 +30,14 @@ public class PlayerInteraction : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        IInteractable interactable = other.GetComponent<IInteractable>();
+        IInteractable interactable =
+            other.GetComponentInParent<IInteractable>();
 
         if (interactable == null || currentInteractable != interactable)
             return;
 
-        NPC_Korban npcKorban = other.GetComponent<NPC_Korban>();
+        NPC_Korban npcKorban =
+            other.GetComponentInParent<NPC_Korban>();
 
         if (npcKorban != null && npcKorban.dialogueUI != null)
         {
@@ -42,7 +45,7 @@ public class PlayerInteraction : MonoBehaviour
         }
 
         NPC_DamkarInteractable npcDamkar =
-            other.GetComponent<NPC_DamkarInteractable>();
+            other.GetComponentInParent<NPC_DamkarInteractable>();
 
         if (npcDamkar != null)
         {
