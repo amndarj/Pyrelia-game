@@ -21,6 +21,9 @@ public class PoskoMaskerInteractable : MonoBehaviour, IInteractable
             return;
         }
 
+        if (!Day2MissionManager.instance.BolehInteraksiMasker)
+        return;
+
         Day2MissionManager.instance.AmbilMasker(jumlahMasker);
 
         sudahDiambil = true;

@@ -1,4 +1,3 @@
-
 using UnityEngine;
 
 public class NPCMaskerInteractable : MonoBehaviour, IInteractable
@@ -24,6 +23,10 @@ public class NPCMaskerInteractable : MonoBehaviour, IInteractable
     public void Interact()
     {
         if (sudahMenerimaMasker)
+            return;
+
+        if (Day2MissionManager.instance == null ||
+            !Day2MissionManager.instance.BolehInteraksiMasker)
             return;
 
         if (dialogueUI == null)

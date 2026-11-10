@@ -10,6 +10,9 @@ public class PlantingPointInteractable : MonoBehaviour, IInteractable
 
     public void Interact()
     {
+        if (Day2MissionManager.instance == null ||
+            !Day2MissionManager.instance.BolehTanamPohon)
+            return;
         if (sudahDitanam)
         {
             Debug.Log("Pohon di titik ini sudah ditanam!");

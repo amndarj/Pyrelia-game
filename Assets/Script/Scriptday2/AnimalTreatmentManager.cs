@@ -31,6 +31,12 @@ public class AnimalTreatmentManager : MonoBehaviour
 
     public void BukaPanelPerawatan(AnimalTreatmentInteractable hewan)
     {
+        if (Day2MissionManager.instance == null ||
+            !Day2MissionManager.instance.BolehRawatHewan)
+        {
+            Debug.Log("Misi perawatan hewan belum terbuka!");
+            return;
+        }
 
         if (panelTerbuka || hewan == null)
             return;

@@ -125,7 +125,12 @@ public class PlantingMiniGame : MonoBehaviour
                 }
             jumlahPohonDitanam++;
             UpdateMissionProgress();
-            
+
+            if (Day2MissionManager.instance != null)
+            {
+                Day2MissionManager.instance.CatatPohonDitanam();
+            }
+                        
             tahap = 3;
             instructionText.text = "Yeay! Pohon berhasil ditanam!";
             feedbackText.text = "Penanaman selesai!";
