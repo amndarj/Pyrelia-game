@@ -13,6 +13,10 @@ public class FirstAidMiniGame : MonoBehaviour
     public GameObject questObjective;
 
     public MissionObjective missionObjective;
+    public GameObject firstAidPanelRoot;
+
+    [Header("Day 1 Ending")]
+    public GameObject day1CompletePanel;
 
     public void PasangKayuBerhasil()
     {
@@ -32,28 +36,34 @@ public class FirstAidMiniGame : MonoBehaviour
 
         perbanDrag.SetActive(false);
 
-        // Mengubah sprite NPC menjadi sudah diperban
         npcKorban.SetTreated();
 
-        // Menghilangkan objective lama
+        PlayerPrefs.SetInt("MisiPertolonganSelesai", 1);
+        PlayerPrefs.Save();
+
         questObjective.SetActive(false);
 
-        // Mengubah objective berikutnya
         if (missionObjective != null)
         {
             missionObjective.UpdateObjective(
-                "Pertolongan pertama kepada anak SMA selesai!"
+                "Semua misi Day 1 berhasil diselesaikan!"
             );
         }
 
-        // Menampilkan panel keberhasilan
+        // Hanya tampilkan panel keberhasilan.
         successPanel.SetActive(true);
 
-        Debug.Log("Perban berhasil dipasang!");
+        Debug.Log("Pertolongan pertama berhasil!");
     }
 
     public void CloseMiniGame()
     {
-        gameObject.SetActive(false);
+        // Tutup FirstAidPanel.
+        firstAidPanelRoot.SetActive(false);
+
+        // Baru tampilkan ending.
+        day1CompletePanel.SetActive(true);
+
+        Debug.Log("DAY 1 COMPLETED!");
     }
 }

@@ -1,4 +1,3 @@
-
 using UnityEngine;
 
 public class FireMissionReturnManager : MonoBehaviour
@@ -12,36 +11,66 @@ public class FireMissionReturnManager : MonoBehaviour
     [Header("Objective")]
     public MissionObjective missionObjective;
 
+    [Header("Ending Day 1")]
+    public GameObject day1CompletePanel;
+
     private void Start()
     {
-        if (PlayerPrefs.GetInt("MisiPemadamanSelesai", 0) != 1)
-            return;
+        bool pemadamanSelesai =
+            PlayerPrefs.GetInt("MisiPemadamanSelesai", 0) == 1;
 
-        // Mengubah semua pohon dengan tag PohonTerbakar
-        GameObject[] allTrees = GameObject.FindGameObjectsWithTag("PohonTerbakar");
+        bool evakuasiSelesai =
+            PlayerPrefs.GetInt("MisiEvakuasiGokilSelesai", 0) == 1;
 
-        foreach (GameObject tree in allTrees)
+        bool pertolonganSelesai =
+            PlayerPrefs.GetInt("MisiPertolonganSelesai", 0) == 1;
+
+        // Jika pemadaman selesai, ubah pohon menjadi normal.
+        if (pemadamanSelesai)
         {
-            SpriteRenderer renderer = tree.GetComponent<SpriteRenderer>();
+            GameObject[] allTrees =
+                GameObject.FindGameObjectsWithTag("PohonTerbakar");
 
-            if (renderer != null)
+            foreach (GameObject tree in allTrees)
             {
-                renderer.sprite = normalTreeSprite;
+                SpriteRenderer renderer =
+                    tree.GetComponent<SpriteRenderer>();
+
+                if (renderer != null)
+                    renderer.sprite = normalTreeSprite;
             }
         }
 
-        // Memunculkan Gokil
-        if (gokilNPC != null)
-            gokilNPC.SetActive(true);
-
-        // Mengubah objective
-        if (missionObjective != null)
+        // Tentukan objective berdasarkan progres terakhir.
+        if (!pemadamanSelesai)
         {
+            Debug.Log("Misi pemadaman api belum selesai.");
+        }
+        else if (!evakuasiSelesai)
+        {
+            if (gokilNPC != null)
+                gokilNPC.SetActive(true);
+
             missionObjective.UpdateObjective(
                 "Temui Gokil di hutan dan antarkan ke posko pengungsian."
             );
         }
+        else if (!pertolonganSelesai)
+        {
+            missionObjective.UpdateObjective(
+                "Temui anak SMA yang terluka dan berikan pertolongan pertama."
+            );
+        }
+        else
+        {
+            missionObjective.UpdateObjective(
+                "Semua misi Day 1 berhasil diselesaikan!"
+            );
 
-        Debug.Log("Semua pohon berhasil diubah menjadi normal.");
+            if (day1CompletePanel != null)
+                day1CompletePanel.SetActive(true);
+
+            Debug.Log("DAY 1 COMPLETED!");
+        }
     }
 }

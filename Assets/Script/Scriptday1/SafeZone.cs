@@ -6,6 +6,12 @@ public class SafeZone : MonoBehaviour
 
     private bool missionCompleted;
 
+    private void Start()
+    {
+        missionCompleted =
+            PlayerPrefs.GetInt("MisiEvakuasiGokilSelesai", 0) == 1;
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (missionCompleted)
