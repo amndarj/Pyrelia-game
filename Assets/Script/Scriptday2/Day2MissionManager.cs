@@ -85,10 +85,10 @@ public class Day2MissionManager : MonoBehaviour
                     "MISI 1: BAGIKAN MASKER",
                     new string[]
                     {
-                        "Ambil 3 masker di posko.",
-                        "Berikan masker kepada warga pertama.",
-                        "Berikan masker kepada warga kedua.",
-                        "Berikan masker kepada warga ketiga."
+                        "Ambil masker di posko.",
+                        "Berikan masker kepada warga yang tidak memakai masker.",
+                        "Berikan masker kepada warga yang tidak memakai masker.",
+                        "Berikan masker kepada warga yang tidak memakai masker."
                     });
                 break;
 
@@ -109,7 +109,7 @@ public class Day2MissionManager : MonoBehaviour
                     new string[]
                     {
                         "Kumpulkan 6 sampah di sekitar lingkungan.",
-                        "Pilah semua sampah sesuai kategorinya."
+                        "Cari tempat sampah dan pilah sesuai kategorinya."
                     });
                 break;
 
