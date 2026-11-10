@@ -8,16 +8,17 @@ public class ForestMissionTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (missionStarted)
+        if (missionStarted || !other.CompareTag("Player"))
             return;
 
-        if (other.CompareTag("Player"))
-        {
-            missionStarted = true;
+        // Jangan ulangi objektif lama setelah pemadaman selesai.
+        if (PlayerPrefs.GetInt("MisiPemadamanSelesai", 0) == 1)
+            return;
 
-            missionObjective.UpdateObjective(
-                "Kembali ke rumah dan ambil handphone."
-            );
-        }
+        missionStarted = true;
+
+        missionObjective.UpdateObjective(
+            "Kembali ke rumah dan ambil handphone."
+        );
     }
 }

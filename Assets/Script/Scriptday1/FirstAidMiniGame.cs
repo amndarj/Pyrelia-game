@@ -12,6 +12,8 @@ public class FirstAidMiniGame : MonoBehaviour
     public GameObject successPanel;
     public GameObject questObjective;
 
+    public MissionObjective missionObjective;
+
     public void PasangKayuBerhasil()
     {
         kakiSakitImage.SetActive(false);
@@ -33,8 +35,16 @@ public class FirstAidMiniGame : MonoBehaviour
         // Mengubah sprite NPC menjadi sudah diperban
         npcKorban.SetTreated();
 
-        // Menghilangkan objective "Rawat kaki korban"
+        // Menghilangkan objective lama
         questObjective.SetActive(false);
+
+        // Mengubah objective berikutnya
+        if (missionObjective != null)
+        {
+            missionObjective.UpdateObjective(
+                "Pertolongan pertama kepada anak SMA selesai!"
+            );
+        }
 
         // Menampilkan panel keberhasilan
         successPanel.SetActive(true);

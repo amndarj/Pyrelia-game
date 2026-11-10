@@ -4030,7 +4030,7 @@ GameObject:
   - component: {fileID: 814889779}
   m_Layer: 0
   m_Name: pohon kering_20261027205059_0 (10)
-  m_TagString: Pohon Terbakar
+  m_TagString: PohonTerbakar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4412,7 +4412,7 @@ Transform:
   m_GameObject: {fileID: 921996168}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.4, y: 15.7, z: 0}
+  m_LocalPosition: {x: -12.400002, y: 15.699999, z: 0}
   m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7433,7 +7433,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1394814831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9081,7 +9081,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1580496563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9796,7 +9796,7 @@ GameObject:
   - component: {fileID: 1718339918}
   m_Layer: 0
   m_Name: Background
-  m_TagString: Untagged
+  m_TagString: Pohon Terbakar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9978,6 +9978,7 @@ MonoBehaviour:
   npcKorban: {fileID: 1580496563}
   successPanel: {fileID: 1426875173}
   questObjective: {fileID: 1108235469}
+  missionObjective: {fileID: 610913746}
 --- !u!1 &1788656160
 GameObject:
   m_ObjectHideFlags: 0
@@ -11000,6 +11001,7 @@ MonoBehaviour:
   hasCloth: 0
   questStarted: 0
   questObjective: {fileID: 1108235469}
+  missionObjective: {fileID: 610913746}
 --- !u!4 &1941815973
 Transform:
   m_ObjectHideFlags: 0
@@ -11774,6 +11776,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6222495540afec6459b8004d588f6401, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SafeZone
+  missionObjective: {fileID: 610913746}
 --- !u!1 &2065058807
 GameObject:
   m_ObjectHideFlags: 0

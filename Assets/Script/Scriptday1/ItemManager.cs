@@ -1,3 +1,4 @@
+
 using UnityEngine;
 
 public class ItemManager : MonoBehaviour
@@ -7,6 +8,9 @@ public class ItemManager : MonoBehaviour
     public bool questStarted = false;
 
     public GameObject questObjective;
+    public MissionObjective missionObjective;
+
+    private bool itemsCollected = false;
 
     public bool HasFirstAidItems()
     {
@@ -15,9 +19,21 @@ public class ItemManager : MonoBehaviour
 
     public void CheckItems()
     {
-        if (HasFirstAidItems())
+        if (HasFirstAidItems() && !itemsCollected)
         {
-            questObjective.SetActive(true);
+            itemsCollected = true;
+
+            if (questObjective != null)
+                questObjective.SetActive(true);
+
+            if (missionObjective != null)
+            {
+                missionObjective.UpdateObjective(
+                    "Berikan pertolongan pertama kepada anak SMA."
+                );
+            }
+
+            Debug.Log("Kayu dan perban berhasil dikumpulkan!");
         }
     }
 }

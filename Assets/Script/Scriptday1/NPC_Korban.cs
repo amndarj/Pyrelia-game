@@ -66,6 +66,18 @@ public class NPC_Korban : MonoBehaviour, IInteractable
         };
     }
 
+    private void OnEnable()
+    {
+        if (dialogueUI != null)
+            dialogueUI.OnDialogueFinished += OnDialogueFinished;
+    }
+
+    private void OnDisable()
+    {
+        if (dialogueUI != null)
+            dialogueUI.OnDialogueFinished -= OnDialogueFinished;
+    }
+
     public void Interact()
     {
         if (dialogueFinished)
@@ -75,18 +87,24 @@ public class NPC_Korban : MonoBehaviour, IInteractable
         {
             dialogueStarted = true;
             dialogueUI.StartDialogue(dialogueLines);
-            return;
         }
-
-        if (dialogueUI.IsDialogueActive())
+        else if (dialogueUI.IsDialogueActive())
         {
             dialogueUI.NextLine();
+        }
+    }
 
-            if (!dialogueUI.IsDialogueActive())
-            {
-                dialogueFinished = true;
-                itemManager.questStarted = true;
-            }
+    private void OnDialogueFinished()
+    {
+        if (!dialogueStarted || dialogueFinished)
+            return;
+
+        dialogueFinished = true;
+
+        if (itemManager != null)
+        {
+            itemManager.questStarted = true;
+            Debug.Log("Misi pertolongan pertama dimulai! Quest Started = true.");
         }
     }
 

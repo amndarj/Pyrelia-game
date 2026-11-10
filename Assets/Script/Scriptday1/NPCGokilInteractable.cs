@@ -1,7 +1,7 @@
 
 using UnityEngine;
 
-public class NPCNarsisInteractable : MonoBehaviour, IInteractable
+public class NPCGokilInteractable : MonoBehaviour, IInteractable
 {
     public DialogueUI dialogueUI;
     public NPCFollowPlayer npcFollowPlayer;
@@ -126,12 +126,16 @@ public class NPCNarsisInteractable : MonoBehaviour, IInteractable
         if (!other.CompareTag("Player"))
             return;
 
+        if (decisionMade)
+            return;
+
         if (dialogueUI != null)
             dialogueUI.CloseDialogue();
 
         if (choicePanel != null)
             choicePanel.SetActive(false);
     }
+
 
     public void AcceptEvacuation()
     {
