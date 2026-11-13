@@ -1,3 +1,4 @@
+
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -5,6 +6,9 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 7f;
+
+    // Referensi joystick
+    public VirtualJoystick joystick;
 
     private bool isMoving;
     private Vector2 input;
@@ -20,7 +24,20 @@ public class PlayerController : MonoBehaviour
     {
         input = Vector2.zero;
 
-        if (Keyboard.current != null)
+        // Input joystick
+        if (joystick != null &&
+            joystick.InputDirection.magnitude > 0.2f)
+        {
+            Vector2 joyInput = joystick.InputDirection;
+
+            // Prioritaskan arah yang paling dominan
+            if (Mathf.Abs(joyInput.x) > Mathf.Abs(joyInput.y))
+                input.x = Mathf.Sign(joyInput.x);
+            else
+                input.y = Mathf.Sign(joyInput.y);
+        }
+        // Input keyboard untuk testing di PC
+        else if (Keyboard.current != null)
         {
             if (Keyboard.current.aKey.isPressed ||
                 Keyboard.current.leftArrowKey.isPressed)
