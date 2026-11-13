@@ -324,6 +324,7 @@ GameObject:
   m_Component:
   - component: {fileID: 217315879}
   - component: {fileID: 217315878}
+  - component: {fileID: 217315880}
   m_Layer: 0
   m_Name: Kamar Nyaman untuk Bermain Gim_0
   m_TagString: Untagged
@@ -406,6 +407,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &217315880
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 217315877}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3c467f8c10c4240a52367ba1faf8c3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &261999396
 GameObject:
   m_ObjectHideFlags: 0
@@ -498,6 +521,7 @@ GameObject:
   - component: {fileID: 274167498}
   - component: {fileID: 274167501}
   - component: {fileID: 274167502}
+  - component: {fileID: 274167503}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -645,6 +669,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &274167503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 274167497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72949ad37bd01074bb55673471fff2d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OpeningCinematicController
+  shot3Animator: {fileID: 217315880}
+  shot3StartTime: 17
 --- !u!1 &1260270558
 GameObject:
   m_ObjectHideFlags: 0
