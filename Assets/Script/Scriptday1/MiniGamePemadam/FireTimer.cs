@@ -8,7 +8,7 @@ using System.Collections;
 public class FireTimer : MonoBehaviour
 {
     public TMP_Text timerText;
-    public float waktuAwal = 180f;
+    public float waktuAwal = 120f;
 
     public UnityEvent waktuHabis;
 
@@ -65,8 +65,7 @@ public class FireTimer : MonoBehaviour
         int menit = Mathf.FloorToInt(waktuTersisa / 60f);
         int detik = Mathf.FloorToInt(waktuTersisa % 60f);
 
-        timerText.text =
-            string.Format("Waktu: {0:00}:{1:00}", menit, detik);
+        timerText.text = string.Format("{0:00}:{1:00}", menit, detik);
     }
 
     public void HentikanTimer()
