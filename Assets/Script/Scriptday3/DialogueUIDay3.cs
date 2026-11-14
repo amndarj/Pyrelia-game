@@ -12,31 +12,57 @@ public class DialogueUIDay3 : MonoBehaviour
     public TMP_Text dialogueText;
     public Image characterPortrait;
 
-    [Header("Portrait Settings")]
-    [Min(0)]
-    public float portraitPadding = 40f;
+    [Header("NPC Portrait Settings")]
+    public Vector2 npcPortraitPosition = new Vector2(-801f, 420f);
+    public Vector2 npcPortraitSize = new Vector2(850f, 1027f);
 
-    public Vector2 portraitSize = new Vector2(650f, 907f);
+    [Header("MC Portrait Settings")]
+    public Vector2 mcPortraitPosition = new Vector2(801f, 420f);
+    public Vector2 mcPortraitSize = new Vector2(850f, 1027f);
+
+    [Header("MC Dialogue Text Settings")]
+    public float mcRight = 0f;
+    public float mcBottom = 0f;
+    public float mcLeft = 0f;
+    public float mcTop = 0f;
+
+    public TextAlignmentOptions mcDialogueAlignment =
+        TextAlignmentOptions.BottomRight;
 
     private DialogueLineDay3[] dialogueLines;
     private int currentLine;
 
     private Action onDialogueFinished;
 
-    private RectTransform panelRect;
     private RectTransform portraitRect;
+    private RectTransform dialogueTextRect;
 
-    private float originalPortraitY;
+    // Menyimpan pengaturan awal NPC
+    private Vector2 originalAnchorMin;
+    private Vector2 originalAnchorMax;
+    private Vector2 originalPivot;
+    private Vector2 originalOffsetMin;
+    private Vector2 originalOffsetMax;
+    private TextAlignmentOptions originalAlignment;
 
     void Awake()
     {
-        if (dialoguePanel != null)
-            panelRect = dialoguePanel.GetComponent<RectTransform>();
-
         if (characterPortrait != null)
         {
             portraitRect = characterPortrait.GetComponent<RectTransform>();
-            originalPortraitY = portraitRect.anchoredPosition.y;
+        }
+
+        if (dialogueText != null)
+        {
+            dialogueTextRect = dialogueText.GetComponent<RectTransform>();
+
+            originalAnchorMin = dialogueTextRect.anchorMin;
+            originalAnchorMax = dialogueTextRect.anchorMax;
+            originalPivot = dialogueTextRect.pivot;
+            originalOffsetMin = dialogueTextRect.offsetMin;
+            originalOffsetMax = dialogueTextRect.offsetMax;
+
+            originalAlignment = dialogueText.alignment;
         }
     }
 
@@ -70,42 +96,70 @@ public class DialogueUIDay3 : MonoBehaviour
     {
         DialogueLineDay3 line = dialogueLines[currentLine];
 
-        nameText.text = line.characterName;
-        dialogueText.text = line.dialogueText;
+        if (nameText != null)
+            nameText.text = line.characterName;
 
+        if (dialogueText != null)
+            dialogueText.text = line.dialogueText;
+
+        // Pengaturan posisi dan ukuran kotak teks
+        if (dialogueTextRect != null && dialogueText != null)
+        {
+            if (line.side == DialogueSide.Right)
+            {
+                // Anchor Stretch - Stretch
+                dialogueTextRect.anchorMin = new Vector2(0f, 0f);
+                dialogueTextRect.anchorMax = new Vector2(1f, 1f);
+
+                // Pivot pojok kanan bawah
+                dialogueTextRect.pivot = new Vector2(1f, 0f);
+
+                // Pengaturan jarak setiap sisi
+                dialogueTextRect.offsetMin =
+                    new Vector2(mcLeft, mcBottom);
+
+                dialogueTextRect.offsetMax =
+                    new Vector2(-mcRight, -mcTop);
+
+                // Alignment teks MC
+                dialogueText.alignment = mcDialogueAlignment;
+            }
+            else
+            {
+                // Kembalikan pengaturan awal NPC
+                dialogueTextRect.anchorMin = originalAnchorMin;
+                dialogueTextRect.anchorMax = originalAnchorMax;
+                dialogueTextRect.pivot = originalPivot;
+
+                dialogueTextRect.offsetMin = originalOffsetMin;
+                dialogueTextRect.offsetMax = originalOffsetMax;
+
+                dialogueText.alignment = originalAlignment;
+            }
+        }
+
+        // Pengaturan portrait
         if (characterPortrait == null || portraitRect == null)
             return;
 
         characterPortrait.sprite = line.portrait;
         characterPortrait.gameObject.SetActive(line.portrait != null);
 
-        if (line.portrait == null || panelRect == null)
+        if (line.portrait == null)
             return;
 
-        // Atur ukuran portrait
-        portraitRect.SetSizeWithCurrentAnchors(
-            RectTransform.Axis.Horizontal,
-            portraitSize.x
-        );
-
-        portraitRect.SetSizeWithCurrentAnchors(
-            RectTransform.Axis.Vertical,
-            portraitSize.y
-        );
-
-        // Hitung posisi horizontal berdasarkan ukuran aktual
-        float halfPanelWidth = panelRect.rect.width / 2f;
-        float halfPortraitWidth = portraitRect.rect.width / 2f;
-
-        float xPosition = line.side == DialogueSide.Left
-            ? -halfPanelWidth + halfPortraitWidth + portraitPadding + 150f
-            : halfPanelWidth - halfPortraitWidth - portraitPadding - 150f;
-
-        // Y tetap mengikuti Inspector
-        portraitRect.anchoredPosition = new Vector2(
-            xPosition,
-            originalPortraitY
-        );
+        // Portrait NPC
+        if (line.side == DialogueSide.Left)
+        {
+            portraitRect.sizeDelta = npcPortraitSize;
+            portraitRect.anchoredPosition = npcPortraitPosition;
+        }
+        // Portrait MC
+        else
+        {
+            portraitRect.sizeDelta = mcPortraitSize;
+            portraitRect.anchoredPosition = mcPortraitPosition;
+        }
     }
 
     public void NextLine()
