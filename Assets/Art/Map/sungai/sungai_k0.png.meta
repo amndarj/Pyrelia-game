@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: fba09a23d90beea4da71442b46f8d911
+guid: ed03abbcc7e666045aed6c33e00fe060
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -254455751072573816
-    second: download (13)_0
+      213: 5371810811703306315
+    second: sungai_k0_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: download (13)_0
+      name: sungai_k0_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 700
-        height: 400
+        y: 5140
+        width: 8192
+        height: 1048
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8869342b7ddf77cf0800000000000000
-      internalID: -254455751072573816
+      spriteID: b48ad20e8718c8a40800000000000000
+      internalID: 5371810811703306315
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      download (13)_0: -254455751072573816
+      sungai_k0_0: 5371810811703306315
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

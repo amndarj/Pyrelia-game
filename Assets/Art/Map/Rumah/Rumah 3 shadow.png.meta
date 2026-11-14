@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2c84a6df47d330946b0081f716c5909a
+guid: cd0296aa3ca66ed43bbc3361d3f6d1e9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4638178355200210348
-    second: download (10)_0
+      213: 2432619197319956838
+    second: Rumah 3 shadow_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: download (10)_0
+      name: Rumah 3 shadow_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 633
-        height: 580
+        x: 151
+        y: 189
+        width: 2742
+        height: 2293
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 45ac26d2c51e1afb0800000000000000
-      internalID: -4638178355200210348
+      spriteID: 6694d0a754662c120800000000000000
+      internalID: 2432619197319956838
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      download (10)_0: -4638178355200210348
+      Rumah 3 shadow_0: 2432619197319956838
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

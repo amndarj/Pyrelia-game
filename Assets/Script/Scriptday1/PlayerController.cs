@@ -14,10 +14,12 @@ public class PlayerController : MonoBehaviour
     private Vector2 input;
     private Vector2 lastInput;
     private Animator animator;
+    private Rigidbody2D rb;
 
     private void Awake()
     {
         animator = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     private void Update()
@@ -73,7 +75,7 @@ public class PlayerController : MonoBehaviour
                 animator.SetFloat("moveY", input.y);
             }
 
-            Vector3 targetPos = transform.position;
+            Vector2 targetPos = rb.position;
             targetPos.x += input.x;
             targetPos.y += input.y;
 
@@ -93,22 +95,37 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    IEnumerator Move(Vector3 targetPos)
+
+    IEnumerator Move(Vector2 targetPos)
     {
         isMoving = true;
+        int blockedFrames = 0;
 
-        while ((targetPos - transform.position).sqrMagnitude > 0.0001f)
+        while ((targetPos - rb.position).sqrMagnitude > 0.0001f)
         {
-            transform.position = Vector3.MoveTowards(
-                transform.position,
-                targetPos,
-                moveSpeed * Time.deltaTime
+            Vector2 previousPosition = rb.position;
+
+            rb.MovePosition(
+                Vector2.MoveTowards(
+                    rb.position,
+                    targetPos,
+                    moveSpeed * Time.fixedDeltaTime
+                )
             );
 
-            yield return null;
+            yield return new WaitForFixedUpdate();
+
+            // Berhenti jika tertahan collider
+            if ((rb.position - previousPosition).sqrMagnitude < 0.000001f)
+                blockedFrames++;
+            else
+                blockedFrames = 0;
+
+            if (blockedFrames >= 3)
+                break;
         }
 
-        transform.position = targetPos;
         isMoving = false;
     }
+
 }

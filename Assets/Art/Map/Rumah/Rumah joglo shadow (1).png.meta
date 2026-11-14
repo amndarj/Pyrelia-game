@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d649b1314336b7342b9aeb6d94bb7662
+guid: 720f68319157055419222a538b081182
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6147018569329704380
-    second: Tak berjudul14_20261027204255_0
+      213: -8716380403946213937
+    second: Rumah joglo shadow (1)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tak berjudul14_20261027204255_0
+      name: Rumah joglo shadow (1)_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 4799
-        width: 8192
-        height: 1011
+        x: 122
+        y: 505
+        width: 2784
+        height: 1935
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cbd70ac02d89e4550800000000000000
-      internalID: 6147018569329704380
+      spriteID: fcd2c973432390780800000000000000
+      internalID: -8716380403946213937
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Tak berjudul14_20261027204255_0: 6147018569329704380
+      Rumah joglo shadow (1)_0: -8716380403946213937
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

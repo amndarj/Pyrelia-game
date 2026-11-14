@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3daaf0ef188376345a4818b5ffe64808
+guid: 06abd1c73cf4ccf41aabd9eabebf8852
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3340348761149003750
-    second: draft map 2_0
+      213: -881007019069168814
+    second: Rumah 2 shadow _0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: draft map 2_0
+      name: Rumah 2 shadow _0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 8192
-        height: 8192
+        x: 303
+        y: 297
+        width: 2466
+        height: 2337
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6e7d336108d4b5e20800000000000000
-      internalID: 3340348761149003750
+      spriteID: 253a1cfa8c806c3f0800000000000000
+      internalID: -881007019069168814
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      draft map 2_0: 3340348761149003750
+      Rumah 2 shadow _0: -881007019069168814
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
