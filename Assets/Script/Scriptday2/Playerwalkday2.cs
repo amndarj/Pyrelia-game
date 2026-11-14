@@ -1,3 +1,4 @@
+
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -11,15 +12,22 @@ public class Playerwalkday2 : MonoBehaviour
     private Vector2 lastInput;
 
     private Animator animator;
+    private Rigidbody2D rb;
 
     private void Awake()
     {
         animator = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
+
+        if (rb == null)
+        {
+            Debug.LogError("Rigidbody2D belum dipasang pada Player!");
+            enabled = false;
+        }
     }
 
     private void Update()
     {
-        // Membaca input setiap frame
         input = Vector2.zero;
 
         if (Keyboard.current != null)
@@ -45,24 +53,24 @@ public class Playerwalkday2 : MonoBehaviour
         if (input.x != 0)
             input.y = 0;
 
-        // Simpan arah terakhir
         if (input != Vector2.zero)
             lastInput = input;
 
-        // Mulai gerakan jika tidak sedang bergerak
         if (!isMoving && input != Vector2.zero)
         {
-            animator.SetFloat("moveX", input.x);
-            animator.SetFloat("moveY", input.y);
+            if (animator != null)
+            {
+                animator.SetFloat("moveX", input.x);
+                animator.SetFloat("moveY", input.y);
+            }
 
-            Vector3 targetPos = transform.position;
+            Vector2 targetPos = rb.position;
             targetPos.x += input.x;
             targetPos.y += input.y;
 
             StartCoroutine(Move(targetPos));
         }
 
-        // Perbarui animasi
         if (animator != null)
         {
             animator.SetBool("IsMoving", isMoving);
@@ -75,23 +83,34 @@ public class Playerwalkday2 : MonoBehaviour
         }
     }
 
-    IEnumerator Move(Vector3 targetPos)
+    IEnumerator Move(Vector2 targetPos)
     {
         isMoving = true;
+        int blockedFrames = 0;
 
-        while ((targetPos - transform.position).sqrMagnitude > 0.0001f)
+        while ((targetPos - rb.position).sqrMagnitude > 0.0001f)
         {
-            transform.position = Vector3.MoveTowards(
-                transform.position,
-                targetPos,
-                moveSpeed * Time.deltaTime
+            Vector2 previousPosition = rb.position;
+
+            rb.MovePosition(
+                Vector2.MoveTowards(
+                    rb.position,
+                    targetPos,
+                    moveSpeed * Time.fixedDeltaTime
+                )
             );
 
-            yield return null;
+            yield return new WaitForFixedUpdate();
+
+            if ((rb.position - previousPosition).sqrMagnitude < 0.000001f)
+                blockedFrames++;
+            else
+                blockedFrames = 0;
+
+            if (blockedFrames >= 3)
+                break;
         }
 
-        transform.position = targetPos;
         isMoving = false;
     }
 }
-
