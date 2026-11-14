@@ -1,2 +1,15 @@
 fileFormatVersion: 2
 guid: 94a1d52f12f2f7c4ba740bc0b6aa2333
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - gokilFollow: {instanceID: 0}
+  - dialogueUI: {instanceID: 0}
+  - playerImage: {instanceID: 0}
+  - gokilImage: {fileID: -2630228987044370731, guid: cd9079b5358e84c5fa57f8e974e37ac4, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

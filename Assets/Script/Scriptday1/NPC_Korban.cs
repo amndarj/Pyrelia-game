@@ -78,21 +78,29 @@ public class NPC_Korban : MonoBehaviour, IInteractable
             dialogueUI.OnDialogueFinished -= OnDialogueFinished;
     }
 
+
     public void Interact()
     {
+    
         if (dialogueFinished)
+        {
+            BukaFirstAidPanel();
             return;
+        }
 
         if (!dialogueStarted)
         {
             dialogueStarted = true;
             dialogueUI.StartDialogue(dialogueLines);
+            return;
         }
-        else if (dialogueUI.IsDialogueActive())
+        
+        if (dialogueUI.IsDialogueActive())
         {
             dialogueUI.NextLine();
         }
     }
+
 
     private void OnDialogueFinished()
     {

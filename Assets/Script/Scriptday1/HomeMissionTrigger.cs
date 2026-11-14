@@ -12,12 +12,26 @@ public class HomeMissionTrigger : MonoBehaviour
     private bool phoneCallStarted = false;
     private bool phoneCallFinished = false;
 
+
+    private void OnEnable()
+    {
+        if (dialogueUI != null)
+            dialogueUI.OnDialogueFinished += OnPhoneCallFinished;
+    }
+
+    private void OnDisable()
+    {
+        if (dialogueUI != null)
+            dialogueUI.OnDialogueFinished -= OnPhoneCallFinished;
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (!other.CompareTag("Player"))
             return;
 
-        if (phoneCallStarted)
+
+        if (phoneCallStarted || phoneCallFinished)
             return;
 
         phoneCallStarted = true;
@@ -29,27 +43,33 @@ public class HomeMissionTrigger : MonoBehaviour
         if (!other.CompareTag("Player"))
             return;
 
-        if (!phoneCallFinished && dialogueUI != null)
+
+        if (!phoneCallFinished)
         {
-            dialogueUI.CloseDialogue();
+            if (dialogueUI != null)
+                dialogueUI.CloseDialogue();
+
+            phoneCallStarted = false;
         }
     }
 
-    private void Update()
+    private void OnPhoneCallFinished()
     {
-        if (!phoneCallStarted || phoneCallFinished)
+        if (phoneCallFinished)
             return;
 
-        if (!dialogueUI.IsDialogueActive())
+        phoneCallFinished = true;
+
+        if (firefighterNPC != null)
+            firefighterNPC.SetActive(true);
+
+        if (missionObjective != null)
         {
-            phoneCallFinished = true;
-
-            if (firefighterNPC != null)
-                firefighterNPC.SetActive(true);
-
             missionObjective.UpdateObjective(
                 "Kembali ke hutan dan temui petugas damkar."
             );
         }
+
+        Debug.Log("Telepon Damkar selesai!");
     }
 }

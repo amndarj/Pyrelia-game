@@ -1,4 +1,3 @@
-
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -6,6 +5,9 @@ public class NPC_DamkarInteractable : MonoBehaviour, IInteractable
 {
     public DialogueUI dialogueUI;
     public GameObject choicePanel;
+
+    [Header("Portrait")]
+    public Sprite firefighterImage;
 
     [Header("Mini Game")]
     public string miniGameSceneName = "MiniGame_PemadamanApi";
@@ -15,22 +17,45 @@ public class NPC_DamkarInteractable : MonoBehaviour, IInteractable
     private bool decisionMade = false;
     private bool missionCompleted = false;
 
-    private string[] dialogueLines =
-    {
-        "Halo, saya petugas pemadam kebakaran.",
-        "Kami sudah menerima laporan mengenai kebakaran hutan.",
-        "Kondisi api masih perlu segera ditangani.",
-        "Bisakah kamu membantu kami dalam proses pemadaman?"
-    };
+    private DialogueLine[] dialogueLines;
 
     private void Start()
     {
+        dialogueLines = new DialogueLine[]
+        {
+            new DialogueLine
+            {
+                speakerName = "Petugas Damkar",
+                dialogueText = "Halo, saya petugas pemadam kebakaran.",
+                speakerImage = firefighterImage
+            },
+            new DialogueLine
+            {
+                speakerName = "Petugas Damkar",
+                dialogueText = "Kami sudah menerima laporan mengenai kebakaran hutan.",
+                speakerImage = firefighterImage
+            },
+            new DialogueLine
+            {
+                speakerName = "Petugas Damkar",
+                dialogueText = "Kondisi api masih perlu segera ditangani.",
+                speakerImage = firefighterImage
+            },
+            new DialogueLine
+            {
+                speakerName = "Petugas Damkar",
+                dialogueText = "Bisakah kamu membantu kami dalam proses pemadaman?",
+                speakerImage = firefighterImage
+            }
+        };
+
         missionCompleted =
             PlayerPrefs.GetInt("MisiPemadamanSelesai", 0) == 1;
 
         if (missionCompleted)
         {
             dialogueStarted = true;
+            dialogueFinished = true;
             decisionMade = true;
 
             if (choicePanel != null)
@@ -52,11 +77,22 @@ public class NPC_DamkarInteractable : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        if (missionCompleted || dialogueStarted || decisionMade)
+        if (missionCompleted || decisionMade)
+            return;
+
+        if (dialogueFinished)
+        {
+            if (choicePanel != null)
+                choicePanel.SetActive(true);
+
+            return;
+        }
+
+        if (dialogueStarted)
             return;
 
         dialogueStarted = true;
-        dialogueUI.StartDialogue("Petugas Damkar", dialogueLines);
+        dialogueUI.StartDialogue(dialogueLines);
     }
 
     private void OnDialogueFinished()
@@ -77,6 +113,19 @@ public class NPC_DamkarInteractable : MonoBehaviour, IInteractable
 
         if (choicePanel != null)
             choicePanel.SetActive(false);
+
+        if (!dialogueFinished && !decisionMade)
+        {
+            dialogueStarted = false;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (!other.CompareTag("Player"))
+            return;
+
+        CloseInteractionUI();
     }
 
     public void StartFirefighting()

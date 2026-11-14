@@ -134,6 +134,11 @@ public class NPCGokilInteractable : MonoBehaviour, IInteractable
 
         if (choicePanel != null)
             choicePanel.SetActive(false);
+
+        if (!dialogueFinished)
+        {
+            dialogueStarted = false;
+        }
     }
 
 

@@ -1,4 +1,3 @@
-
 using UnityEngine;
 
 public class GokilEvacuationDialogue : MonoBehaviour
@@ -7,29 +6,78 @@ public class GokilEvacuationDialogue : MonoBehaviour
     public NPCFollowPlayer gokilFollow;
     public DialogueUI dialogueUI;
 
+    [Header("Portrait")]
+    public Sprite playerImage;
+    public Sprite gokilImage;
+
     private int currentPoint = 0;
     private bool isDialogueActive = false;
 
-    private string[][] dialogueLines =
+    private DialogueLine[][] dialogueLines =
     {
-        new string[]
+        new DialogueLine[]
         {
-            "Eh, sebentar! Aku belum sempat merekam dari sudut yang bagus!",
-            "Gokil, sekarang bukan waktunya merekam. Ayo lanjut!"
+            new DialogueLine
+            {
+                speakerName = "Gokil",
+                dialogueText = "Eh, sebentar! Aku belum sempat merekam dari sudut yang bagus!",
+                speakerImage = null
+            },
+            new DialogueLine
+            {
+                speakerName = "Player",
+                dialogueText = "Gokil, sekarang bukan waktunya merekam. Ayo lanjut!",
+                speakerImage = null
+            }
         },
 
-        new string[]
+        new DialogueLine[]
         {
-            "Duh, jauh banget! Kita nggak bisa istirahat sebentar?",
-            "Kita sudah hampir sampai. Sedikit lagi, Gokil!"
+            new DialogueLine
+            {
+                speakerName = "Gokil",
+                dialogueText = "Duh, jauh banget! Kita nggak bisa istirahat sebentar?",
+                speakerImage = null
+            },
+            new DialogueLine
+            {
+                speakerName = "Player",
+                dialogueText = "Kita sudah hampir sampai. Sedikit lagi, Gokil!",
+                speakerImage = null
+            }
         },
 
-        new string[]
+        new DialogueLine[]
         {
-            "Ternyata situasinya memang seserius itu, ya...",
-            "Iya. Makanya kita harus memastikan semua orang sampai di tempat aman."
+            new DialogueLine
+            {
+                speakerName = "Gokil",
+                dialogueText = "Ternyata situasinya memang seserius itu, ya...",
+                speakerImage = null
+            },
+            new DialogueLine
+            {
+                speakerName = "Player",
+                dialogueText = "Iya. Makanya kita harus memastikan semua orang sampai di tempat aman.",
+                speakerImage = null
+            }
         }
     };
+
+    private void Start()
+    {
+        // Isi portrait sesuai pembicara.
+        foreach (DialogueLine[] point in dialogueLines)
+        {
+            foreach (DialogueLine line in point)
+            {
+                if (line.speakerName == "Gokil")
+                    line.speakerImage = gokilImage;
+                else
+                    line.speakerImage = playerImage;
+            }
+        }
+    }
 
     private void OnEnable()
     {
@@ -65,7 +113,6 @@ public class GokilEvacuationDialogue : MonoBehaviour
         gokilFollow.PauseFollowing();
 
         dialogueUI.StartDialogue(
-            "Gokil",
             dialogueLines[currentPoint]
         );
 

@@ -1,3 +1,4 @@
+
 using UnityEngine;
 
 public class FirstAidMiniGame : MonoBehaviour
@@ -10,7 +11,6 @@ public class FirstAidMiniGame : MonoBehaviour
 
     public NPC_Korban npcKorban;
     public GameObject successPanel;
-    public GameObject questObjective;
 
     public MissionObjective missionObjective;
     public GameObject firstAidPanelRoot;
@@ -41,8 +41,6 @@ public class FirstAidMiniGame : MonoBehaviour
         PlayerPrefs.SetInt("MisiPertolonganSelesai", 1);
         PlayerPrefs.Save();
 
-        questObjective.SetActive(false);
-
         if (missionObjective != null)
         {
             missionObjective.UpdateObjective(
@@ -50,7 +48,6 @@ public class FirstAidMiniGame : MonoBehaviour
             );
         }
 
-        // Hanya tampilkan panel keberhasilan.
         successPanel.SetActive(true);
 
         Debug.Log("Pertolongan pertama berhasil!");
@@ -58,10 +55,7 @@ public class FirstAidMiniGame : MonoBehaviour
 
     public void CloseMiniGame()
     {
-        // Tutup FirstAidPanel.
         firstAidPanelRoot.SetActive(false);
-
-        // Baru tampilkan ending.
         day1CompletePanel.SetActive(true);
 
         Debug.Log("DAY 1 COMPLETED!");

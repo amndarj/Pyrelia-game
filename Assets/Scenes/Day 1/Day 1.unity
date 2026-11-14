@@ -2542,7 +2542,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 40, y: 337}
+  m_AnchoredPosition: {x: 40, y: 328}
   m_SizeDelta: {x: 1100, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &401677897
@@ -2600,7 +2600,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 1
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_characterHorizontalScale: 1
@@ -6362,7 +6362,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e81c66aa903eb8347b2b656b2f464e43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
-  moveSpeed: 3.5
+  moveSpeed: 6
   joystick: {fileID: 711679935}
 --- !u!212 &1194287729
 SpriteRenderer:
@@ -6913,6 +6913,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GokilEvacuationDialogue
   gokilFollow: {fileID: 785374663}
   dialogueUI: {fileID: 1265615256}
+  playerImage: {fileID: -2311659948842064771, guid: ea3efa1ed1c3c8e4eb0b52bf879734e5, type: 3}
+  gokilImage: {fileID: -2630228987044370731, guid: cd9079b5358e84c5fa57f8e974e37ac4, type: 3}
 --- !u!4 &1229620894
 Transform:
   m_ObjectHideFlags: 0
@@ -10645,7 +10647,6 @@ MonoBehaviour:
   perbanDrag: {fileID: 1314451654}
   npcKorban: {fileID: 1580496563}
   successPanel: {fileID: 1426875173}
-  questObjective: {fileID: 0}
   missionObjective: {fileID: 610913746}
   firstAidPanelRoot: {fileID: 1780046982}
   day1CompletePanel: {fileID: 1031351314}
