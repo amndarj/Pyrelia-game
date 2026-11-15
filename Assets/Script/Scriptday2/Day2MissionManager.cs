@@ -48,6 +48,12 @@ public class Day2MissionManager : MonoBehaviour
     public TMP_Text trashProgressText;
     public Image trashProgressFill;
 
+    [Header("Objective Marker Sampah")]
+    public GameObject trashObjectiveMarker;
+    public TrashPickupInteractable[] daftarSampah;
+    public TrashSortingStationInteractable trashSortingStation;
+    public Vector3 trashMarkerOffset = new Vector3(0, 1f, 0);
+
     [Header("Data Penyelamatan Hewan")]
     public int totalHewan = 3;
     public int hewanDirawat = 0;
@@ -89,6 +95,16 @@ public class Day2MissionManager : MonoBehaviour
             missionGuide.SetIndexLangkah(langkahTersimpan);
 
         StartCoroutine(PerbaruiMarkerSetelahInisialisasi());
+    }
+
+    private IEnumerator PerbaruiMarkerSetelahInisialisasi()
+    {
+        yield return null;
+
+        PerbaruiSemuaMarkerNPC();
+        PerbaruiSemuaMarkerHewan();
+        PerbaruiMarkerSampah();
+        PerbaruiSemuaMarkerPohon();
     }
 
     // ===== PENYIMPANAN =====
@@ -284,6 +300,8 @@ public class Day2MissionManager : MonoBehaviour
         UpdateAnimalProgress();
         LangkahBerikutnya();
         SimpanProgres();
+        PerbaruiSemuaMarkerNPC();
+        PerbaruiSemuaMarkerHewan();
     }
 
     private void UpdateAnimalProgress()
@@ -293,6 +311,20 @@ public class Day2MissionManager : MonoBehaviour
                 hewanDirawat,
                 totalHewan
             );
+    }
+
+    public void PerbaruiSemuaMarkerHewan()
+    {
+        AnimalTreatmentInteractable[] semuaHewan =
+            FindObjectsByType<AnimalTreatmentInteractable>(
+                FindObjectsInactive.Include,
+                FindObjectsSortMode.None
+            );
+
+        foreach (AnimalTreatmentInteractable hewan in semuaHewan)
+        {
+            hewan.PerbaruiMarker();
+        }
     }
 
     // ===== MISI SAMPAH =====
@@ -323,6 +355,55 @@ public class Day2MissionManager : MonoBehaviour
                 sampahDiambil + "/" + totalSampah;
     }
 
+    public void PerbaruiMarkerSampah()
+    {
+        if (trashObjectiveMarker == null)
+            return;
+
+        if (!BolehAmbilSampah || pemilahanSelesai)
+        {
+            trashObjectiveMarker.SetActive(false);
+            return;
+        }
+
+        // Jika semua sampah sudah terkumpul,
+        // arahkan marker ke tempat pemilahan.
+        if (sampahDiambil >= totalSampah)
+        {
+            if (trashSortingStation != null)
+            {
+                trashObjectiveMarker.transform.position =
+                    trashSortingStation.transform.position + trashMarkerOffset;
+
+                trashObjectiveMarker.SetActive(true);
+            }
+            else
+            {
+                trashObjectiveMarker.SetActive(false);
+                Debug.LogWarning("Trash Sorting Station belum dihubungkan!");
+            }
+
+            return;
+        }
+
+        // Jika sampah belum lengkap, cari sampah berikutnya.
+        foreach (TrashPickupInteractable sampah in daftarSampah)
+        {
+            if (sampah != null && sampah.gameObject.activeInHierarchy)
+            {
+                trashObjectiveMarker.transform.position =
+                    sampah.transform.position + trashMarkerOffset;
+
+                trashObjectiveMarker.SetActive(true);
+
+                Debug.Log("Marker menunjuk sampah: " + sampah.gameObject.name);
+                return;
+            }
+        }
+
+        trashObjectiveMarker.SetActive(false);
+    }
+
     public void CatatPemilahanSelesai()
     {
         if (!BolehAmbilSampah || pemilahanSelesai)
@@ -340,6 +421,7 @@ public class Day2MissionManager : MonoBehaviour
 
         LangkahBerikutnya();
         SimpanProgres();
+        PerbaruiMarkerSampah();
     }
 
     // ===== MISI POHON =====
@@ -357,6 +439,7 @@ public class Day2MissionManager : MonoBehaviour
 
         LangkahBerikutnya();
         SimpanProgres();
+        PerbaruiSemuaMarkerPohon();
     }
 
         public void TampilkanPanelSelesai()
@@ -367,10 +450,18 @@ public class Day2MissionManager : MonoBehaviour
         }
     }
 
-    private IEnumerator PerbaruiMarkerSetelahInisialisasi()
+    public void PerbaruiSemuaMarkerPohon()
     {
-        yield return null;
-        PerbaruiSemuaMarkerNPC();
+        PlantingPointInteractable[] semuaTitik =
+            FindObjectsByType<PlantingPointInteractable>(
+                FindObjectsInactive.Include,
+                FindObjectsSortMode.None
+            );
+
+        foreach (PlantingPointInteractable titik in semuaTitik)
+        {
+            titik.PerbaruiMarker();
+        }
     }
 
     // ===== RESET PROGRES =====

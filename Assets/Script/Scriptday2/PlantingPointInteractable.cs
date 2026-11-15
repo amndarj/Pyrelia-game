@@ -6,6 +6,9 @@ public class PlantingPointInteractable : MonoBehaviour, IInteractable
     public PlantingMiniGame plantingMiniGame;
     public GameObject pohonHasilTanam;
 
+    [Header("Objective Marker")]
+    public GameObject objectiveMarker;
+
     private bool sudahDitanam = false;
 
     private string SaveKey =>
@@ -14,6 +17,7 @@ public class PlantingPointInteractable : MonoBehaviour, IInteractable
     private void Start()
     {
         MuatStatusPenanaman();
+        PerbaruiMarker();
     }
 
     public void Interact()
@@ -45,7 +49,21 @@ public class PlantingPointInteractable : MonoBehaviour, IInteractable
         PlayerPrefs.SetInt(SaveKey, 1);
         PlayerPrefs.Save();
 
+        PerbaruiMarker();
+
         Debug.Log("Penanaman di " + gameObject.name + " selesai!");
+    }
+
+    public void PerbaruiMarker()
+    {
+        if (objectiveMarker == null)
+            return;
+
+        objectiveMarker.SetActive(
+            Day2MissionManager.instance != null &&
+            Day2MissionManager.instance.BolehTanamPohon &&
+            !sudahDitanam
+        );
     }
 
     private void MuatStatusPenanaman()
@@ -64,5 +82,7 @@ public class PlantingPointInteractable : MonoBehaviour, IInteractable
 
         if (pohonHasilTanam != null)
             pohonHasilTanam.SetActive(false);
+
+        PerbaruiMarker();
     }
 }

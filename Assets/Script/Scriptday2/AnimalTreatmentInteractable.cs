@@ -4,7 +4,6 @@ public class AnimalTreatmentInteractable : MonoBehaviour, IInteractable
 {
     [Header("Informasi Hewan")]
     public string namaHewan;
-
     [TextArea]
     public string deskripsiLuka;
 
@@ -15,6 +14,9 @@ public class AnimalTreatmentInteractable : MonoBehaviour, IInteractable
 
     [Header("Sistem Perawatan")]
     public AnimalTreatmentManager treatmentManager;
+
+    [Header("Objective Marker")]
+    public GameObject objectiveMarker;
 
     private bool sudahDirawat = false;
 
@@ -27,11 +29,16 @@ public class AnimalTreatmentInteractable : MonoBehaviour, IInteractable
             animalRenderer = GetComponent<SpriteRenderer>();
 
         MuatStatusHewan();
+        PerbaruiMarker();
     }
 
     public void Interact()
     {
         if (sudahDirawat) return;
+
+        if (Day2MissionManager.instance == null ||
+            !Day2MissionManager.instance.BolehRawatHewan)
+            return;
 
         if (treatmentManager == null)
         {
@@ -55,6 +62,23 @@ public class AnimalTreatmentInteractable : MonoBehaviour, IInteractable
         PlayerPrefs.Save();
     }
 
+    public void PerbaruiMarker()
+    {
+        if (objectiveMarker == null)
+            return;
+
+        Day2MissionManager manager =
+            Day2MissionManager.instance;
+
+        bool tampilkan =
+            manager != null &&
+            manager.BolehRawatHewan &&
+            !sudahDirawat;
+
+        if (objectiveMarker.activeSelf != tampilkan)
+            objectiveMarker.SetActive(tampilkan);
+    }
+
     private void MuatStatusHewan()
     {
         sudahDirawat =
@@ -75,5 +99,7 @@ public class AnimalTreatmentInteractable : MonoBehaviour, IInteractable
 
         if (animalRenderer != null && spriteAwal != null)
             animalRenderer.sprite = spriteAwal;
+
+        PerbaruiMarker();
     }
 }

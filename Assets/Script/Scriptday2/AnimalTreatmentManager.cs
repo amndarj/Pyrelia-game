@@ -149,6 +149,8 @@ public class AnimalTreatmentManager : MonoBehaviour
             Day2MissionManager.instance.CatatHewanDirawat(
                 hewanAktif.namaHewan
             );
+
+            Day2MissionManager.instance.PerbaruiSemuaMarkerHewan();
         }
 
         if (treatmentStatusText != null)

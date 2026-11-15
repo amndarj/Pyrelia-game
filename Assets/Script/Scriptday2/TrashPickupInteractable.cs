@@ -21,12 +21,13 @@ public class TrashPickupInteractable : MonoBehaviour, IInteractable
         if (!Day2MissionManager.instance.BolehAmbilSampah)
             return;
 
-        Day2MissionManager.instance.CatatSampahDiambil();
-
         PlayerPrefs.SetInt(SaveKey, 1);
         PlayerPrefs.Save();
 
         gameObject.SetActive(false);
+
+        Day2MissionManager.instance.CatatSampahDiambil();
+        Day2MissionManager.instance.PerbaruiMarkerSampah();
     }
 
     public void ResetStatusSampah()

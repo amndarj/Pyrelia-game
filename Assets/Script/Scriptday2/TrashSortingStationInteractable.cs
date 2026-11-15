@@ -12,6 +12,15 @@ public class TrashSortingStationInteractable : MonoBehaviour, IInteractable
             return;
         }
 
+        if (!Day2MissionManager.instance.BolehAmbilSampah)
+            return;
+
+        if (Day2MissionManager.instance.pemilahanSelesai)
+        {
+            Debug.Log("Misi pemilahan sampah sudah selesai!");
+            return;
+        }
+
         if (Day2MissionManager.instance.sampahDiambil <
             Day2MissionManager.instance.totalSampah)
         {
@@ -27,12 +36,8 @@ public class TrashSortingStationInteractable : MonoBehaviour, IInteractable
         {
             Debug.LogWarning("TrashSortingMinigame belum dihubungkan!");
         }
-
-        if (Day2MissionManager.instance != null &&
-            Day2MissionManager.instance.pemilahanSelesai)
-        {
-            Debug.Log("Misi pemilahan sampah sudah selesai!");
-            return;
-        }
     }
+        
+
+
 }
