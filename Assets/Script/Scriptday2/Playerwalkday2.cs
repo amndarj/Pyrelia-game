@@ -1,13 +1,12 @@
-
-using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class Playerwalkday2 : MonoBehaviour
 {
-    public float moveSpeed = 7f;
+    public float moveSpeed = 5f;
+    public VirtualJoystickDay2 joystick;
+    
 
-    private bool isMoving;
     private Vector2 input;
     private Vector2 lastInput;
 
@@ -30,6 +29,7 @@ public class Playerwalkday2 : MonoBehaviour
     {
         input = Vector2.zero;
 
+        // Input keyboard untuk PC
         if (Keyboard.current != null)
         {
             if (Keyboard.current.aKey.isPressed ||
@@ -49,68 +49,40 @@ public class Playerwalkday2 : MonoBehaviour
                 input.y = -1;
         }
 
-        // Prioritaskan gerakan horizontal
-        if (input.x != 0)
-            input.y = 0;
-
-        if (input != Vector2.zero)
-            lastInput = input;
-
-        if (!isMoving && input != Vector2.zero)
+        // Joystick untuk mobile
+        if (joystick != null &&
+            joystick.InputDirection.sqrMagnitude > 0.01f)
         {
-            if (animator != null)
-            {
-                animator.SetFloat("moveX", input.x);
-                animator.SetFloat("moveY", input.y);
-            }
-
-            Vector2 targetPos = rb.position;
-            targetPos.x += input.x;
-            targetPos.y += input.y;
-
-            StartCoroutine(Move(targetPos));
+            input = joystick.InputDirection;
         }
+
+        input = Vector2.ClampMagnitude(input, 1f);
+
+        if (input.sqrMagnitude > 0.01f)
+            lastInput = input;
 
         if (animator != null)
         {
-            animator.SetBool("IsMoving", isMoving);
+            animator.SetBool("IsMoving",
+                input.sqrMagnitude > 0.01f);
 
-            if (!isMoving)
-            {
-                animator.SetFloat("moveX", lastInput.x);
-                animator.SetFloat("moveY", lastInput.y);
-            }
+            Vector2 arah = input.sqrMagnitude > 0.01f
+                ? input
+                : lastInput;
+
+            animator.SetFloat("moveX", arah.x);
+            animator.SetFloat("moveY", arah.y);
         }
     }
 
-    IEnumerator Move(Vector2 targetPos)
+    private void FixedUpdate()
     {
-        isMoving = true;
-        int blockedFrames = 0;
+        rb.linearVelocity = input * moveSpeed;
+    }
 
-        while ((targetPos - rb.position).sqrMagnitude > 0.0001f)
-        {
-            Vector2 previousPosition = rb.position;
-
-            rb.MovePosition(
-                Vector2.MoveTowards(
-                    rb.position,
-                    targetPos,
-                    moveSpeed * Time.fixedDeltaTime
-                )
-            );
-
-            yield return new WaitForFixedUpdate();
-
-            if ((rb.position - previousPosition).sqrMagnitude < 0.000001f)
-                blockedFrames++;
-            else
-                blockedFrames = 0;
-
-            if (blockedFrames >= 3)
-                break;
-        }
-
-        isMoving = false;
+    private void OnDisable()
+    {
+        if (rb != null)
+            rb.linearVelocity = Vector2.zero;
     }
 }

@@ -191,6 +191,15 @@ public class TrashSortingMinigame : MonoBehaviour
         }
     }
 
+
+    public void TombolPilah()
+    {
+        if (!sedangBerjalan || minigameSelesai)
+            return;
+
+        HentikanIndikator();
+    }
+    
     private void BerhasilMemilah()
     {
         sedangBerjalan = false;
