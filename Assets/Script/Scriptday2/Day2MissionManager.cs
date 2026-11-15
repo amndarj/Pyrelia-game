@@ -275,6 +275,7 @@ public class Day2MissionManager : MonoBehaviour
         LangkahBerikutnya();
         SimpanProgres();
         PerbaruiSemuaMarkerNPC();
+        PerbaruiSemuaMarkerHewan();
     }
 
     private void UpdateMaskProgress()
@@ -300,8 +301,10 @@ public class Day2MissionManager : MonoBehaviour
         UpdateAnimalProgress();
         LangkahBerikutnya();
         SimpanProgres();
+
         PerbaruiSemuaMarkerNPC();
         PerbaruiSemuaMarkerHewan();
+        PerbaruiMarkerSampah();
     }
 
     private void UpdateAnimalProgress()
@@ -422,6 +425,7 @@ public class Day2MissionManager : MonoBehaviour
         LangkahBerikutnya();
         SimpanProgres();
         PerbaruiMarkerSampah();
+        PerbaruiSemuaMarkerPohon();
     }
 
     // ===== MISI POHON =====

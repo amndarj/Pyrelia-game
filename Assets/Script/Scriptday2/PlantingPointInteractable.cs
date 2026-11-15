@@ -46,6 +46,9 @@ public class PlantingPointInteractable : MonoBehaviour, IInteractable
     {
         sudahDitanam = true;
 
+        if (pohonHasilTanam != null)
+            pohonHasilTanam.SetActive(true);
+
         PlayerPrefs.SetInt(SaveKey, 1);
         PlayerPrefs.Save();
 
@@ -53,6 +56,7 @@ public class PlantingPointInteractable : MonoBehaviour, IInteractable
 
         Debug.Log("Penanaman di " + gameObject.name + " selesai!");
     }
+
 
     public void PerbaruiMarker()
     {
