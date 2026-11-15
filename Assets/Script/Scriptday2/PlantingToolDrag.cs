@@ -21,12 +21,17 @@ public class PlantingToolDrag : MonoBehaviour,
     private CanvasGroup canvasGroup;
     private Image image;
     private Sprite spriteAwal;
+    private RectTransform rectTransform;
+    private Canvas canvas;
 
     [HideInInspector]
     public bool berhasilDigunakan;
 
     private void Awake()
     {
+        rectTransform = GetComponent<RectTransform>();
+        canvas = GetComponentInParent<Canvas>();
+
         canvasGroup = GetComponent<CanvasGroup>();
 
         if (canvasGroup == null)
@@ -40,7 +45,7 @@ public class PlantingToolDrag : MonoBehaviour,
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        posisiAwal = transform.position;
+        posisiAwal = rectTransform.position;
         berhasilDigunakan = false;
 
         canvasGroup.blocksRaycasts = false;
@@ -51,17 +56,19 @@ public class PlantingToolDrag : MonoBehaviour,
 
     public void OnDrag(PointerEventData eventData)
     {
-        transform.position = eventData.position;
+        if (canvas != null)
+        {
+            rectTransform.position +=
+                (Vector3)(eventData.delta / canvas.scaleFactor);
+        }
     }
-    
+
     public void OnEndDrag(PointerEventData eventData)
     {
         canvasGroup.blocksRaycasts = true;
 
-        // Semua alat kembali ke posisi awal
-        transform.position = posisiAwal;
+        rectTransform.position = posisiAwal;
 
-        // Sprite kembali ke kondisi awal
         if (image != null)
             image.sprite = spriteAwal;
     }
