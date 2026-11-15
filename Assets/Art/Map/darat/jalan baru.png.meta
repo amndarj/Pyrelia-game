@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: ccdb5540932b0854a9be9f9b4b82dc80
+guid: 6f016f33f3781864fbf79feba715bdc8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5313296630311099719
-    second: jalan_n_0
+      213: -8665136156978511091
+    second: jalan baru_0
   - first:
-      213: 2778587607392593697
-    second: jalan_n_1
+      213: 2879423643259577414
+    second: jalan baru_1
   - first:
-      213: -7013197731586196236
-    second: jalan_n_2
+      213: -9064827864108263911
+    second: jalan baru_2
   - first:
-      213: 8528394286930013607
-    second: jalan_n_3
+      213: -2668849543787889953
+    second: jalan baru_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -122,7 +122,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: jalan_n_0
+      name: jalan baru_0
       rect:
         serializedVersion: 2
         x: 418
@@ -137,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9b2e604add06346b0800000000000000
-      internalID: -5313296630311099719
+      spriteID: d0307e833904fb780800000000000000
+      internalID: -8665136156978511091
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jalan_n_1
+      name: jalan baru_1
       rect:
         serializedVersion: 2
         x: 4624
@@ -159,14 +159,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 12720f315b68f8620800000000000000
-      internalID: 2778587607392593697
+      spriteID: 64429563c84c5f720800000000000000
+      internalID: 2879423643259577414
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jalan_n_2
+      name: jalan baru_2
       rect:
         serializedVersion: 2
         x: 4650
@@ -181,14 +181,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4fcba3512dd1cae90800000000000000
-      internalID: -7013197731586196236
+      spriteID: 91693c9c513433280800000000000000
+      internalID: -9064827864108263911
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jalan_n_3
+      name: jalan baru_3
       rect:
         serializedVersion: 2
         x: 4659
@@ -203,8 +203,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7ad2fe82b61fa5670800000000000000
-      internalID: 8528394286930013607
+      spriteID: fda3f87ea7756fad0800000000000000
+      internalID: -2668849543787889953
       vertices: []
       indices: 
       edges: []
@@ -223,10 +223,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      jalan_n_0: -5313296630311099719
-      jalan_n_1: 2778587607392593697
-      jalan_n_2: -7013197731586196236
-      jalan_n_3: 8528394286930013607
+      jalan baru_0: -8665136156978511091
+      jalan baru_1: 2879423643259577414
+      jalan baru_2: -9064827864108263911
+      jalan baru_3: -2668849543787889953
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
