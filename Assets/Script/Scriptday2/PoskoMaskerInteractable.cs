@@ -4,6 +4,7 @@ public class PoskoMaskerInteractable : MonoBehaviour, IInteractable
 {
     public int jumlahMasker = 3;
     public GameObject objectiveMarker;
+    public GameObject kotakMasker;
 
     private bool sudahDiambil = false;
 
@@ -13,6 +14,10 @@ public class PoskoMaskerInteractable : MonoBehaviour, IInteractable
     private void Start()
     {
         sudahDiambil = PlayerPrefs.GetInt(SaveKey, 0) == 1;
+
+        if (kotakMasker != null)
+            kotakMasker.SetActive(!sudahDiambil);
+
         PerbaruiMarker();
     }
 
@@ -47,6 +52,9 @@ public class PoskoMaskerInteractable : MonoBehaviour, IInteractable
         Day2MissionManager.instance.AmbilMasker(jumlahMasker);
 
         sudahDiambil = true;
+
+        if (kotakMasker != null)
+            kotakMasker.SetActive(false);
 
         PlayerPrefs.SetInt(SaveKey, 1);
         PlayerPrefs.Save();
