@@ -1,0 +1,956 @@
+fileFormatVersion: 2
+guid: f4583e5c64d212743af4c75b1f81a20a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8846800518808357895
+    second: Lembar Aset Hutan Sehat dan Terbakar_0
+  - first:
+      213: -2068807216819519957
+    second: Lembar Aset Hutan Sehat dan Terbakar_1
+  - first:
+      213: 3670109067651112171
+    second: Lembar Aset Hutan Sehat dan Terbakar_2
+  - first:
+      213: -4152196438976827783
+    second: Lembar Aset Hutan Sehat dan Terbakar_3
+  - first:
+      213: -5288186722889113458
+    second: Lembar Aset Hutan Sehat dan Terbakar_4
+  - first:
+      213: 92886561918506136
+    second: Lembar Aset Hutan Sehat dan Terbakar_5
+  - first:
+      213: 1632551439924763371
+    second: Lembar Aset Hutan Sehat dan Terbakar_6
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Lembar Aset Hutan Sehat dan Terbakar_0
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 844
+        width: 173
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f3bfadecc9d93580800000000000000
+      internalID: -8846800518808357895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lembar Aset Hutan Sehat dan Terbakar_1
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 844
+        width: 153
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2e35bc1cce1a43e0800000000000000
+      internalID: -2068807216819519957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rumput1
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 833
+        width: 218
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: becd84080c8dee230800000000000000
+      internalID: 3670109067651112171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: semak2
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 849
+        width: 210
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97ee429865f6066c0800000000000000
+      internalID: -4152196438976827783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: semak kecil
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 849
+        width: 184
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e80e14c81369c96b0800000000000000
+      internalID: -5288186722889113458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: semak bunga
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 785
+        width: 202
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8945f8ff5dff94100800000000000000
+      internalID: 92886561918506136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: semak1
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 805
+        width: 332
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bea944e82ecf7a610800000000000000
+      internalID: 1632551439924763371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lembar Aset Hutan Sehat dan Terbakar_7
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 703
+        width: 171
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86734bb694aadb9488807bfb503afa97
+      internalID: -1819033148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lembar Aset Hutan Sehat dan Terbakar_8
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 721
+        width: 171
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d3ef9b3069dbff4e95118d1af176790
+      internalID: -960755934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lembar Aset Hutan Sehat dan Terbakar_9
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 718
+        width: 219
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34d477552175c414eba24f0016c4e1f8
+      internalID: -1987245342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lembar Aset Hutan Sehat dan Terbakar_10
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 721
+        width: 186
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 393d1c4c7fef04d44bfac9b1c6e063f3
+      internalID: -175859640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: batu3
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 644
+        width: 192
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cac2168baf6716543a7964450b848233
+      internalID: -601367431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: semak4
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 688
+        width: 156
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d64693a3cc246249b15b0c97b080060
+      internalID: -339829813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: semak
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 672
+        width: 214
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2055d8d8589fe34f8c2605163e43415
+      internalID: -1492455908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: batu1
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 550
+        width: 233
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7a1755eb7bbf8d43bb185f93576c437
+      internalID: -2011934575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: batu2
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 560
+        width: 135
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbb0312d6105af241819f57bb4334185
+      internalID: -575138052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: batu4
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 560
+        width: 143
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86b4c7d6c8153d745919fad57e9f4124
+      internalID: 262735498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: semak1 hangus
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 307
+        width: 334
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d86bc5d0461f9f4fa60d21de8cd805f
+      internalID: 1427813693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lembar Aset Hutan Sehat dan Terbakar_18
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 184
+        width: 235
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1894cc7d99e870f47802a101f24ca5b0
+      internalID: -996887416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lembar Aset Hutan Sehat dan Terbakar_19
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 189
+        width: 154
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca93b7d9368e8bc49a7f8d22dcac8d15
+      internalID: 1985113855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: semak bunga hangus
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 292
+        width: 207
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c344a9be4003df49b527137364922b5
+      internalID: -1907904083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: batu1_g
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 41
+        width: 242
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d49dc3ddd2f3b5d48831f4d0088c1504
+      internalID: 619455820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: batu2_g
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 67
+        width: 133
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d50e33267bb1e96489ab94f2b1a3e3f8
+      internalID: -2010582835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lembar Aset Hutan Sehat dan Terbakar_23
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 348
+        width: 186
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b23a298c9c24a004dbcbf75c43fe5e3a
+      internalID: 1065185219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lembar Aset Hutan Sehat dan Terbakar_24
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 345
+        width: 176
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cc9149b013ef1d4da26a750d1962b14
+      internalID: 214085054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lembar Aset Hutan Sehat dan Terbakar_25
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 348
+        width: 205
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cacb86c7e0309a44f83228b591e9f098
+      internalID: -1502182824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lembar Aset Hutan Sehat dan Terbakar_26
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 356
+        width: 215
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46deca664955b384190415b473d4a253
+      internalID: -977253270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lembar Aset Hutan Sehat dan Terbakar_27
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 371
+        width: 187
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0a04ab0d9e925b48a6e2227901065c0
+      internalID: -895475947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: batu3_g
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 64
+        width: 148
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd806c51445bdbd48bdd8a1bcd46f65d
+      internalID: 921591020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: batu4_g
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 146
+        width: 186
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39e0c2e7ad1336744b614c588e947313
+      internalID: -656266959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: benih hangus
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 31
+        width: 55
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ed666a546eb69e4bb808598a80b1508
+      internalID: 3752529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rumput g
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 202
+        width: 164
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d02de626bb1f3b84ebc671bb0878ffaa
+      internalID: -1892894140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rumput5 g
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 225
+        width: 177
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41ff1a87db883464c807a29069d734d4
+      internalID: -1214652605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rumput6 g
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 228
+        width: 200
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0557fd38260f2d74bae7fdf666d8b943
+      internalID: 548768779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rumput 7 g
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 230
+        width: 192
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88911d5f1eccd594683ea64028d0cd21
+      internalID: -238700331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 04680785bd0e47847afd21a94cfe371c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Lembar Aset Hutan Sehat dan Terbakar_0: -8846800518808357895
+      Lembar Aset Hutan Sehat dan Terbakar_1: -2068807216819519957
+      Lembar Aset Hutan Sehat dan Terbakar_10: -175859640
+      Lembar Aset Hutan Sehat dan Terbakar_18: -996887416
+      Lembar Aset Hutan Sehat dan Terbakar_19: 1985113855
+      Lembar Aset Hutan Sehat dan Terbakar_23: 1065185219
+      Lembar Aset Hutan Sehat dan Terbakar_24: 214085054
+      Lembar Aset Hutan Sehat dan Terbakar_25: -1502182824
+      Lembar Aset Hutan Sehat dan Terbakar_26: -977253270
+      Lembar Aset Hutan Sehat dan Terbakar_27: -895475947
+      Lembar Aset Hutan Sehat dan Terbakar_7: -1819033148
+      Lembar Aset Hutan Sehat dan Terbakar_8: -960755934
+      Lembar Aset Hutan Sehat dan Terbakar_9: -1987245342
+      batu1: -2011934575
+      batu1_g: 619455820
+      batu2: -575138052
+      batu2_g: -2010582835
+      batu3: -601367431
+      batu3_g: 921591020
+      batu4: 262735498
+      batu4_g: -656266959
+      benih hangus: 3752529
+      rumput 7 g: -238700331
+      rumput g: -1892894140
+      rumput1: 3670109067651112171
+      rumput5 g: -1214652605
+      rumput6 g: 548768779
+      semak: -1492455908
+      semak bunga: 92886561918506136
+      semak bunga hangus: -1907904083
+      semak kecil: -5288186722889113458
+      semak1: 1632551439924763371
+      semak1 hangus: 1427813693
+      semak2: -4152196438976827783
+      semak4: -339829813
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

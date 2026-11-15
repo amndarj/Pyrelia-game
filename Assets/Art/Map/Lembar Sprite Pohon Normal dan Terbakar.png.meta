@@ -1,0 +1,406 @@
+fileFormatVersion: 2
+guid: c5b41c996acaa9843bc03c5f52f94eba
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2270619869119161330
+    second: Lembar Sprite Pohon Normal dan Terbakar_0
+  - first:
+      213: -1514741326234866983
+    second: Lembar Sprite Pohon Normal dan Terbakar_1
+  - first:
+      213: 5621006929585271888
+    second: Lembar Sprite Pohon Normal dan Terbakar_2
+  - first:
+      213: 4111153862372455239
+    second: Lembar Sprite Pohon Normal dan Terbakar_3
+  - first:
+      213: -8827349613314463234
+    second: Lembar Sprite Pohon Normal dan Terbakar_4
+  - first:
+      213: 537536923703727061
+    second: Lembar Sprite Pohon Normal dan Terbakar_5
+  - first:
+      213: 3539981964139178888
+    second: Lembar Sprite Pohon Normal dan Terbakar_6
+  - first:
+      213: -7885583889274212143
+    second: Lembar Sprite Pohon Normal dan Terbakar_7
+  - first:
+      213: -4898050813447901372
+    second: Lembar Sprite Pohon Normal dan Terbakar_8
+  - first:
+      213: 5907696438778477648
+    second: Lembar Sprite Pohon Normal dan Terbakar_9
+  - first:
+      213: -5914565587853638560
+    second: Lembar Sprite Pohon Normal dan Terbakar_10
+  - first:
+      213: 7801076433537138316
+    second: Lembar Sprite Pohon Normal dan Terbakar_11
+  - first:
+      213: -335404080490779025
+    second: Lembar Sprite Pohon Normal dan Terbakar_12
+  - first:
+      213: -5348259704257257323
+    second: Lembar Sprite Pohon Normal dan Terbakar_13
+  - first:
+      213: -983692527527119436
+    second: Lembar Sprite Pohon Normal dan Terbakar_14
+  - first:
+      213: -7512144251663217272
+    second: Lembar Sprite Pohon Normal dan Terbakar_15
+  - first:
+      213: 545089443314704848
+    second: Lembar Sprite Pohon Normal dan Terbakar_16
+  - first:
+      213: 3528392228289595402
+    second: Lembar Sprite Pohon Normal dan Terbakar_17
+  - first:
+      213: 3818680061718267186
+    second: Lembar Sprite Pohon Normal dan Terbakar_18
+  - first:
+      213: -299427055938370757
+    second: Lembar Sprite Pohon Normal dan Terbakar_19
+  - first:
+      213: -3526080281394520735
+    second: Lembar Sprite Pohon Normal dan Terbakar_20
+  - first:
+      213: 977343139886636890
+    second: Lembar Sprite Pohon Normal dan Terbakar_21
+  - first:
+      213: -4874380605393584868
+    second: Lembar Sprite Pohon Normal dan Terbakar_22
+  - first:
+      213: -5264804368471186985
+    second: Lembar Sprite Pohon Normal dan Terbakar_23
+  - first:
+      213: -8877236234559530188
+    second: Lembar Sprite Pohon Normal dan Terbakar_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Lembar Sprite Pohon Normal dan Terbakar_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 506
+        width: 391
+        height: 508
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f3aace9dbcd28f10800000000000000
+      internalID: 2270619869119161330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lembar Sprite Pohon Normal dan Terbakar_1
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 513
+        width: 359
+        height: 489
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9daaa2b0ace8afae0800000000000000
+      internalID: -1514741326234866983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lembar Sprite Pohon Normal dan Terbakar_3
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 519
+        width: 393
+        height: 485
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7437fafe7a0cd0930800000000000000
+      internalID: 4111153862372455239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lembar Sprite Pohon Normal dan Terbakar_5
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 495
+        width: 357
+        height: 501
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d3540febf6b57700800000000000000
+      internalID: 537536923703727061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lembar Sprite Pohon Normal dan Terbakar_14
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 15
+        width: 329
+        height: 491
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b53a88abd83952f0800000000000000
+      internalID: -983692527527119436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lembar Sprite Pohon Normal dan Terbakar_17
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 22
+        width: 383
+        height: 475
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a084373990e57f030800000000000000
+      internalID: 3528392228289595402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lembar Sprite Pohon Normal dan Terbakar_18
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 15
+        width: 361
+        height: 476
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 235859da84daef430800000000000000
+      internalID: 3818680061718267186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lembar Sprite Pohon Normal dan Terbakar_19
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 29
+        width: 345
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3307a6dda838dbf0800000000000000
+      internalID: -299427055938370757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e765a56afe8bca74fa378bc6f97af456
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Lembar Sprite Pohon Normal dan Terbakar_0: 2270619869119161330
+      Lembar Sprite Pohon Normal dan Terbakar_1: -1514741326234866983
+      Lembar Sprite Pohon Normal dan Terbakar_10: -5914565587853638560
+      Lembar Sprite Pohon Normal dan Terbakar_11: 7801076433537138316
+      Lembar Sprite Pohon Normal dan Terbakar_12: -335404080490779025
+      Lembar Sprite Pohon Normal dan Terbakar_13: -5348259704257257323
+      Lembar Sprite Pohon Normal dan Terbakar_14: -983692527527119436
+      Lembar Sprite Pohon Normal dan Terbakar_15: -7512144251663217272
+      Lembar Sprite Pohon Normal dan Terbakar_16: 545089443314704848
+      Lembar Sprite Pohon Normal dan Terbakar_17: 3528392228289595402
+      Lembar Sprite Pohon Normal dan Terbakar_18: 3818680061718267186
+      Lembar Sprite Pohon Normal dan Terbakar_19: -299427055938370757
+      Lembar Sprite Pohon Normal dan Terbakar_2: 5621006929585271888
+      Lembar Sprite Pohon Normal dan Terbakar_20: -3526080281394520735
+      Lembar Sprite Pohon Normal dan Terbakar_21: 977343139886636890
+      Lembar Sprite Pohon Normal dan Terbakar_22: -4874380605393584868
+      Lembar Sprite Pohon Normal dan Terbakar_23: -5264804368471186985
+      Lembar Sprite Pohon Normal dan Terbakar_24: -8877236234559530188
+      Lembar Sprite Pohon Normal dan Terbakar_3: 4111153862372455239
+      Lembar Sprite Pohon Normal dan Terbakar_4: -8827349613314463234
+      Lembar Sprite Pohon Normal dan Terbakar_5: 537536923703727061
+      Lembar Sprite Pohon Normal dan Terbakar_6: 3539981964139178888
+      Lembar Sprite Pohon Normal dan Terbakar_7: -7885583889274212143
+      Lembar Sprite Pohon Normal dan Terbakar_8: -4898050813447901372
+      Lembar Sprite Pohon Normal dan Terbakar_9: 5907696438778477648
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

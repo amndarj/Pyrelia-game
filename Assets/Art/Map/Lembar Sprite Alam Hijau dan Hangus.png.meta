@@ -1,0 +1,1026 @@
+fileFormatVersion: 2
+guid: 5ebb80f2a0c26c54ebd3edc6909cd513
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5263659491334121482
+    second: Lembar Sprite Alam Hijau dan Hangus_0
+  - first:
+      213: 8615773666704511105
+    second: Lembar Sprite Alam Hijau dan Hangus_1
+  - first:
+      213: 4502943189916009896
+    second: Lembar Sprite Alam Hijau dan Hangus_2
+  - first:
+      213: -4601546661521319778
+    second: Lembar Sprite Alam Hijau dan Hangus_3
+  - first:
+      213: -7427593844482133233
+    second: Lembar Sprite Alam Hijau dan Hangus_4
+  - first:
+      213: 436401994154284835
+    second: Lembar Sprite Alam Hijau dan Hangus_5
+  - first:
+      213: 1985261419937804939
+    second: Lembar Sprite Alam Hijau dan Hangus_6
+  - first:
+      213: -6706798046297206765
+    second: Lembar Sprite Alam Hijau dan Hangus_7
+  - first:
+      213: -423332649442242962
+    second: Lembar Sprite Alam Hijau dan Hangus_8
+  - first:
+      213: -2255775286760550167
+    second: Lembar Sprite Alam Hijau dan Hangus_9
+  - first:
+      213: -3532840351759675718
+    second: Lembar Sprite Alam Hijau dan Hangus_10
+  - first:
+      213: 4568061082158156505
+    second: Lembar Sprite Alam Hijau dan Hangus_11
+  - first:
+      213: 7189128613556592218
+    second: Lembar Sprite Alam Hijau dan Hangus_12
+  - first:
+      213: 2529621250891689554
+    second: Lembar Sprite Alam Hijau dan Hangus_13
+  - first:
+      213: 149013149124367395
+    second: Lembar Sprite Alam Hijau dan Hangus_14
+  - first:
+      213: 5218241908296758609
+    second: Lembar Sprite Alam Hijau dan Hangus_15
+  - first:
+      213: 8085027046532381270
+    second: Lembar Sprite Alam Hijau dan Hangus_16
+  - first:
+      213: 2724205771892649130
+    second: Lembar Sprite Alam Hijau dan Hangus_17
+  - first:
+      213: 155269087794828013
+    second: Lembar Sprite Alam Hijau dan Hangus_18
+  - first:
+      213: -8452564190706907018
+    second: Lembar Sprite Alam Hijau dan Hangus_19
+  - first:
+      213: 7916447823942813932
+    second: Lembar Sprite Alam Hijau dan Hangus_20
+  - first:
+      213: -3610255018869032027
+    second: Lembar Sprite Alam Hijau dan Hangus_21
+  - first:
+      213: -9044008337513540352
+    second: Lembar Sprite Alam Hijau dan Hangus_22
+  - first:
+      213: 6330633549490167958
+    second: Lembar Sprite Alam Hijau dan Hangus_23
+  - first:
+      213: -1358528314860992821
+    second: Lembar Sprite Alam Hijau dan Hangus_24
+  - first:
+      213: 7484269390215282090
+    second: Lembar Sprite Alam Hijau dan Hangus_25
+  - first:
+      213: -4165150163122001437
+    second: Lembar Sprite Alam Hijau dan Hangus_26
+  - first:
+      213: 5790993468734818667
+    second: Lembar Sprite Alam Hijau dan Hangus_27
+  - first:
+      213: -7594090500192258674
+    second: Lembar Sprite Alam Hijau dan Hangus_28
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Lembar Sprite Alam Hijau dan Hangus_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 791
+        width: 297
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0865975b664c0940800000000000000
+      internalID: 5263659491334121482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lembar Sprite Alam Hijau dan Hangus_1
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 789
+        width: 277
+        height: 219
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18056156080619770800000000000000
+      internalID: 8615773666704511105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lembar Sprite Alam Hijau dan Hangus_2
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 749
+        width: 247
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a545be39faad7e30800000000000000
+      internalID: 4502943189916009896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lembar Sprite Alam Hijau dan Hangus_3
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 798
+        width: 263
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9813aef0b50420c0800000000000000
+      internalID: -4601546661521319778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lembar Sprite Alam Hijau dan Hangus_4
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 797
+        width: 219
+        height: 207
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f03b3c360c2ebe890800000000000000
+      internalID: -7427593844482133233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lembar Sprite Alam Hijau dan Hangus_5
+      rect:
+        serializedVersion: 2
+        x: 1326
+        y: 799
+        width: 195
+        height: 206
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32796d03d496e0600800000000000000
+      internalID: 436401994154284835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lembar Sprite Alam Hijau dan Hangus_6
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 643
+        width: 293
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b823ea93eb01d8b10800000000000000
+      internalID: 1985261419937804939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lembar Sprite Alam Hijau dan Hangus_7
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 442
+        width: 195
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 310db2606baace2a0800000000000000
+      internalID: -6706798046297206765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lembar Sprite Alam Hijau dan Hangus_8
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 636
+        width: 139
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6e8b20c235002af0800000000000000
+      internalID: -423332649442242962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lembar Sprite Alam Hijau dan Hangus_9
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 645
+        width: 142
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e0588b0450e1b0e0800000000000000
+      internalID: -2255775286760550167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lembar Sprite Alam Hijau dan Hangus_10
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 643
+        width: 153
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abec239fa64d8fec0800000000000000
+      internalID: -3532840351759675718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lembar Sprite Alam Hijau dan Hangus_11
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 641
+        width: 133
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dac2520a53056f30800000000000000
+      internalID: 4568061082158156505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lembar Sprite Alam Hijau dan Hangus_12
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 634
+        width: 297
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5e13a7626ae4c360800000000000000
+      internalID: 7189128613556592218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lembar Sprite Alam Hijau dan Hangus_13
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 643
+        width: 121
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25eadab00250b1320800000000000000
+      internalID: 2529621250891689554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lembar Sprite Alam Hijau dan Hangus_14
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 637
+        width: 169
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3249b6c6ba6611200800000000000000
+      internalID: 149013149124367395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lembar Sprite Alam Hijau dan Hangus_15
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 419
+        width: 225
+        height: 207
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 155b5104e5bea6840800000000000000
+      internalID: 5218241908296758609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lembar Sprite Alam Hijau dan Hangus_16
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 428
+        width: 196
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65afcf33349c33070800000000000000
+      internalID: 8085027046532381270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lembar Sprite Alam Hijau dan Hangus_17
+      rect:
+        serializedVersion: 2
+        x: 1126
+        y: 447
+        width: 251
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaceab057b25ec520800000000000000
+      internalID: 2724205771892649130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lembar Sprite Alam Hijau dan Hangus_18
+      rect:
+        serializedVersion: 2
+        x: 1391
+        y: 451
+        width: 129
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de21c96a960a72200800000000000000
+      internalID: 155269087794828013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lembar Sprite Alam Hijau dan Hangus_19
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 427
+        width: 248
+        height: 209
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6784ab3f6a572ba80800000000000000
+      internalID: -8452564190706907018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lembar Sprite Alam Hijau dan Hangus_20
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 247
+        width: 195
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce8860d4a5fdcdd60800000000000000
+      internalID: 7916447823942813932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lembar Sprite Alam Hijau dan Hangus_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 255
+        width: 237
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ab7db3303cc5edc0800000000000000
+      internalID: -3610255018869032027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lembar Sprite Alam Hijau dan Hangus_22
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 266
+        width: 200
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00595d0955a3d7280800000000000000
+      internalID: -9044008337513540352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lembar Sprite Alam Hijau dan Hangus_23
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 269
+        width: 149
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69028801cadead750800000000000000
+      internalID: 6330633549490167958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lembar Sprite Alam Hijau dan Hangus_24
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 269
+        width: 81
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc6866702b9852de0800000000000000
+      internalID: -1358528314860992821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lembar Sprite Alam Hijau dan Hangus_25
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 267
+        width: 225
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aad7c176b577dd760800000000000000
+      internalID: 7484269390215282090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lembar Sprite Alam Hijau dan Hangus_26
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 269
+        width: 133
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e9e3fa9ef96236c0800000000000000
+      internalID: -4165150163122001437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lembar Sprite Alam Hijau dan Hangus_27
+      rect:
+        serializedVersion: 2
+        x: 1356
+        y: 255
+        width: 167
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b69cb88b0edbd5050800000000000000
+      internalID: 5790993468734818667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lembar Sprite Alam Hijau dan Hangus_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 25
+        width: 282
+        height: 221
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e853fdfdcee5c9690800000000000000
+      internalID: -7594090500192258674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lembar Sprite Alam Hijau dan Hangus_29
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 25
+        width: 234
+        height: 223
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34fb8cf3fa689e143963e3aa73e0760a
+      internalID: 2091051592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lembar Sprite Alam Hijau dan Hangus_30
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 44
+        width: 229
+        height: 198
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6bf7ba48d590734eb396a29550a0638
+      internalID: 440785079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lembar Sprite Alam Hijau dan Hangus_31
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 52
+        width: 237
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1985e91f13bdb8447ba1bd65670afc18
+      internalID: 179571257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lembar Sprite Alam Hijau dan Hangus_32
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 42
+        width: 263
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c4dcf901b676a342a554efc2a48c09d
+      internalID: -1509519055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lembar Sprite Alam Hijau dan Hangus_33
+      rect:
+        serializedVersion: 2
+        x: 1255
+        y: 25
+        width: 272
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc4f6c3a435344a43bd81ad808c65e0c
+      internalID: -1443260926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lembar Sprite Alam Hijau dan Hangus_34
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 438
+        width: 297
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae88cf7671995cc41b3d13d5a42c1415
+      internalID: 1973971466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 1fd22ac53c202624b99a062d518d072a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceOnImport
+        value: False
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Lembar Sprite Alam Hijau dan Hangus_0: 5263659491334121482
+      Lembar Sprite Alam Hijau dan Hangus_1: 8615773666704511105
+      Lembar Sprite Alam Hijau dan Hangus_10: -3532840351759675718
+      Lembar Sprite Alam Hijau dan Hangus_11: 4568061082158156505
+      Lembar Sprite Alam Hijau dan Hangus_12: 7189128613556592218
+      Lembar Sprite Alam Hijau dan Hangus_13: 2529621250891689554
+      Lembar Sprite Alam Hijau dan Hangus_14: 149013149124367395
+      Lembar Sprite Alam Hijau dan Hangus_15: 5218241908296758609
+      Lembar Sprite Alam Hijau dan Hangus_16: 8085027046532381270
+      Lembar Sprite Alam Hijau dan Hangus_17: 2724205771892649130
+      Lembar Sprite Alam Hijau dan Hangus_18: 155269087794828013
+      Lembar Sprite Alam Hijau dan Hangus_19: -8452564190706907018
+      Lembar Sprite Alam Hijau dan Hangus_2: 4502943189916009896
+      Lembar Sprite Alam Hijau dan Hangus_20: 7916447823942813932
+      Lembar Sprite Alam Hijau dan Hangus_21: -3610255018869032027
+      Lembar Sprite Alam Hijau dan Hangus_22: -9044008337513540352
+      Lembar Sprite Alam Hijau dan Hangus_23: 6330633549490167958
+      Lembar Sprite Alam Hijau dan Hangus_24: -1358528314860992821
+      Lembar Sprite Alam Hijau dan Hangus_25: 7484269390215282090
+      Lembar Sprite Alam Hijau dan Hangus_26: -4165150163122001437
+      Lembar Sprite Alam Hijau dan Hangus_27: 5790993468734818667
+      Lembar Sprite Alam Hijau dan Hangus_28: -7594090500192258674
+      Lembar Sprite Alam Hijau dan Hangus_29: 2091051592
+      Lembar Sprite Alam Hijau dan Hangus_3: -4601546661521319778
+      Lembar Sprite Alam Hijau dan Hangus_30: 440785079
+      Lembar Sprite Alam Hijau dan Hangus_31: 179571257
+      Lembar Sprite Alam Hijau dan Hangus_32: -1509519055
+      Lembar Sprite Alam Hijau dan Hangus_33: -1443260926
+      Lembar Sprite Alam Hijau dan Hangus_34: 1973971466
+      Lembar Sprite Alam Hijau dan Hangus_4: -7427593844482133233
+      Lembar Sprite Alam Hijau dan Hangus_5: 436401994154284835
+      Lembar Sprite Alam Hijau dan Hangus_6: 1985261419937804939
+      Lembar Sprite Alam Hijau dan Hangus_7: -6706798046297206765
+      Lembar Sprite Alam Hijau dan Hangus_8: -423332649442242962
+      Lembar Sprite Alam Hijau dan Hangus_9: -2255775286760550167
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
