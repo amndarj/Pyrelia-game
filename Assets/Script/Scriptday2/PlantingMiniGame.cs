@@ -170,5 +170,10 @@ public class PlantingMiniGame : MonoBehaviour
     {
         gameObject.SetActive(false);
         plantingMissionPanel.SetActive(true);
+
+        if (Day2MissionManager.instance != null)
+        {
+            Day2MissionManager.instance.TampilkanPanelSelesai();
+        }
     }
 }

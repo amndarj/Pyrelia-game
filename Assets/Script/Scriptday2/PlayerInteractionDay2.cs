@@ -5,6 +5,16 @@ public class PlayerInteractionDay2 : MonoBehaviour
 {
     private IInteractable currentInteractable;
 
+    private IInteractable CariInteractable(Collider2D other)
+    {
+        Component hasil = other.GetComponent(typeof(IInteractable));
+
+        if (hasil == null)
+            hasil = other.GetComponentInParent(typeof(IInteractable));
+
+        return hasil as IInteractable;
+    }
+
     private void Update()
     {
         if (currentInteractable != null &&
@@ -17,7 +27,7 @@ public class PlayerInteractionDay2 : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        IInteractable interactable = other.GetComponent<IInteractable>();
+        IInteractable interactable = CariInteractable(other);
 
         if (interactable != null)
         {
@@ -28,7 +38,7 @@ public class PlayerInteractionDay2 : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        IInteractable interactable = other.GetComponent<IInteractable>();
+        IInteractable interactable = CariInteractable(other);
 
         if (interactable != null && currentInteractable == interactable)
         {

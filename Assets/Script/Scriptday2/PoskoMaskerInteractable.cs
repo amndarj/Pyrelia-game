@@ -3,6 +3,7 @@ using UnityEngine;
 public class PoskoMaskerInteractable : MonoBehaviour, IInteractable
 {
     public int jumlahMasker = 3;
+    public GameObject objectiveMarker;
 
     private bool sudahDiambil = false;
 
@@ -12,17 +13,33 @@ public class PoskoMaskerInteractable : MonoBehaviour, IInteractable
     private void Start()
     {
         sudahDiambil = PlayerPrefs.GetInt(SaveKey, 0) == 1;
+        PerbaruiMarker();
+    }
 
-        gameObject.SetActive(!sudahDiambil);
+    private void Update()
+    {
+        PerbaruiMarker();
+    }
+
+    private void PerbaruiMarker()
+    {
+        if (objectiveMarker == null ||
+            Day2MissionManager.instance == null)
+            return;
+
+        bool tampilkan =
+            !sudahDiambil &&
+            Day2MissionManager.instance.BolehInteraksiMasker;
+
+        if (objectiveMarker.activeSelf != tampilkan)
+            objectiveMarker.SetActive(tampilkan);
     }
 
     public void Interact()
     {
-        if (sudahDiambil)
-            return;
+        if (sudahDiambil) return;
 
-        if (Day2MissionManager.instance == null)
-            return;
+        if (Day2MissionManager.instance == null) return;
 
         if (!Day2MissionManager.instance.BolehInteraksiMasker)
             return;
@@ -34,13 +51,16 @@ public class PoskoMaskerInteractable : MonoBehaviour, IInteractable
         PlayerPrefs.SetInt(SaveKey, 1);
         PlayerPrefs.Save();
 
-        gameObject.SetActive(false);
+        PerbaruiMarker();
     }
 
     public void ResetStatusMasker()
     {
         sudahDiambil = false;
+
         PlayerPrefs.DeleteKey(SaveKey);
-        gameObject.SetActive(true);
+        PlayerPrefs.Save();
+
+        PerbaruiMarker();
     }
 }

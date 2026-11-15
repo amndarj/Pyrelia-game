@@ -84,8 +84,7 @@ public class Day2MissionManager : MonoBehaviour
         if (missionGuide != null)
             missionGuide.SetIndexLangkah(langkahTersimpan);
 
-        if (misiAktif == 4 && day2CompletePanel != null)
-            day2CompletePanel.SetActive(true);
+
     }
 
     // ===== PENYIMPANAN =====
@@ -187,9 +186,6 @@ public class Day2MissionManager : MonoBehaviour
                     {
                         "Terima kasih telah membantu lingkungan!"
                     });
-
-                if (day2CompletePanel != null)
-                    day2CompletePanel.SetActive(true);
 
                 Debug.Log("DAY 2 COMPLETED!");
                 break;
@@ -343,10 +339,32 @@ public class Day2MissionManager : MonoBehaviour
         SimpanProgres();
     }
 
+        public void TampilkanPanelSelesai()
+    {
+        if (misiAktif == 4 && day2CompletePanel != null)
+        {
+            day2CompletePanel.SetActive(true);
+        }
+    }
+
     // ===== RESET PROGRES =====
 
+    
     public void ResetProgres()
     {
+        // Reset data misi
+        misiAktif = 0;
+        langkahTersimpan = 0;
+
+        // Reset jumlah item dan progres
+        maskerDimiliki = 0;
+        maskerDibagikan = 0;
+        hewanDirawat = 0;
+        sampahDiambil = 0;
+        pemilahanSelesai = false;
+        pohonDitanam = 0;
+
+        // Hapus seluruh data tersimpan
         PlayerPrefs.DeleteKey(KEY_MISI);
         PlayerPrefs.DeleteKey(KEY_LANGKAH);
         PlayerPrefs.DeleteKey(KEY_MASKER_DIMILIKI);
@@ -357,6 +375,25 @@ public class Day2MissionManager : MonoBehaviour
         PlayerPrefs.DeleteKey(KEY_POHON);
         PlayerPrefs.DeleteKey(KEY_SELESAI);
 
+        // Reset tampilan mission guide
+        if (missionGuide != null)
+        {
+            missionGuide.SetIndexLangkah(0);
+            TampilkanMisiAktif();
+        }
+
+        // Reset UI progres
+        UpdateTrashProgress();
+        UpdateAnimalProgress();
+        UpdateMaskProgress();
+
+        // Sembunyikan panel selesai
+        if (day2CompletePanel != null)
+            day2CompletePanel.SetActive(false);
+
         PlayerPrefs.Save();
+
+        Debug.Log("SELURUH PROGRES DAY 2 BERHASIL DIRESET!");
     }
+
 }
