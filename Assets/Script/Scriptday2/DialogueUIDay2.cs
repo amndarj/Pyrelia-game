@@ -44,6 +44,8 @@ public class DialogueUIDay2 : MonoBehaviour
         dialogueText.text = lines[0];
 
         SetPortrait(portrait);
+
+        Debug.Log("Dialog dimulai: " + npcName);
     }
 
     public void SetPortrait(Sprite portrait)

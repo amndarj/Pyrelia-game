@@ -1,3 +1,4 @@
+
 using UnityEngine;
 
 public class NPCMaskerInteractable : MonoBehaviour, IInteractable
@@ -20,8 +21,16 @@ public class NPCMaskerInteractable : MonoBehaviour, IInteractable
     private bool dialogueStarted = false;
     private bool sudahMenerimaMasker = false;
 
+    private Sprite spriteAwal;
+
     private string SaveKey =>
         "Day2_NPC_Masker_" + gameObject.name;
+
+    private void Awake()
+    {
+        if (npcRenderer != null)
+            spriteAwal = npcRenderer.sprite;
+    }
 
     private void Start()
     {
@@ -40,14 +49,22 @@ public class NPCMaskerInteractable : MonoBehaviour, IInteractable
         if (dialogueUI == null ||
             dialogueLines == null ||
             dialogueLines.Length == 0)
+        {
+            Debug.LogWarning("Dialog NPC belum lengkap!");
             return;
+        }
 
         dialogueStarted = true;
         currentLine = 0;
 
         dialogueUI.StartDialogue(
-            this, npcName, dialogueLines, npcPortrait
+            this,
+            npcName,
+            dialogueLines,
+            npcPortrait
         );
+
+        Debug.Log("Dialog dimulai oleh NPC: " + npcName);
     }
 
     public void NextDialogueLine()
@@ -66,6 +83,7 @@ public class NPCMaskerInteractable : MonoBehaviour, IInteractable
         {
             dialogueStarted = false;
             dialogueUI.HideDialogue();
+
             BerikanMasker();
         }
     }
@@ -86,9 +104,11 @@ public class NPCMaskerInteractable : MonoBehaviour, IInteractable
         }
 
         Day2MissionManager.instance.maskerDimiliki--;
+
         Day2MissionManager.instance.CatatPembagianMasker();
 
         npcRenderer.sprite = npcMaskerSprite;
+
         sudahMenerimaMasker = true;
 
         SimpanStatusNPC();
@@ -118,6 +138,12 @@ public class NPCMaskerInteractable : MonoBehaviour, IInteractable
     public void ResetStatusNPC()
     {
         sudahMenerimaMasker = false;
+        dialogueStarted = false;
+        currentLine = 0;
+
         PlayerPrefs.DeleteKey(SaveKey);
+
+        if (npcRenderer != null && spriteAwal != null)
+            npcRenderer.sprite = spriteAwal;
     }
 }
