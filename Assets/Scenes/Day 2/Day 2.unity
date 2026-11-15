@@ -2763,6 +2763,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pyrelia_Map
       objectReference: {fileID: 0}
+    - target: {fileID: 9026190996875483421, guid: c1896ad5967edd042966bb441df832fd, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -7443756053782179069, guid: c1b5838f226c04a2b872ae93bb9ed8ae, type: 3}
+    - target: {fileID: 9026190996875483421, guid: c1896ad5967edd042966bb441df832fd, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9083381027266440347, guid: c1896ad5967edd042966bb441df832fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -11.04
