@@ -28,7 +28,6 @@ public class PlantingMiniGame : MonoBehaviour
 
     public GameObject plantingMissionPanel;
 
-    private int jumlahPohonDitanam = 0;
     private int tahap = 0;
     private GameObject pohonTarget;
     private PlantingPointInteractable titikTanamAktif;
@@ -49,7 +48,6 @@ public class PlantingMiniGame : MonoBehaviour
 
         tahap = 0;
         UpdateProgress();
-        jumlahPohonDitanam = 0;
         UpdateMissionProgress();
 
         instructionText.text = "Seret sekop ke area tanah!";
@@ -123,7 +121,7 @@ public class PlantingMiniGame : MonoBehaviour
                 {
                     titikTanamAktif.SelesaikanPenanaman();
                 }
-            jumlahPohonDitanam++;
+                
             UpdateMissionProgress();
 
             if (Day2MissionManager.instance != null)
@@ -157,14 +155,15 @@ public class PlantingMiniGame : MonoBehaviour
 
     private void UpdateMissionProgress()
     {
-        missionProgressText.text = jumlahPohonDitanam + "/3";
+        int jumlah = 0;
 
-        missionProgressFill.fillAmount = jumlahPohonDitanam / 3f;
+        if (Day2MissionManager.instance != null)
+            jumlah = Day2MissionManager.instance.pohonDitanam;
 
-        if (jumlahPohonDitanam >= 3)
-        {
+        missionProgressText.text = jumlah + "/3";
+
+        if (jumlah >= 3)
             missionProgressText.text = "3/3 - Selesai!";
-        }
     }
 
     public void CloseMiniGame()

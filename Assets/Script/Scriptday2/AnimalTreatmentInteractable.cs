@@ -18,19 +18,19 @@ public class AnimalTreatmentInteractable : MonoBehaviour, IInteractable
 
     private bool sudahDirawat = false;
 
+    private string SaveKey =>
+        "Day2_Animal_" + gameObject.name;
+
     private void Start()
     {
         if (animalRenderer == null)
             animalRenderer = GetComponent<SpriteRenderer>();
 
-        if (animalRenderer != null && spriteAwal != null)
-            animalRenderer.sprite = spriteAwal;
+        MuatStatusHewan();
     }
 
     public void Interact()
     {
-        Debug.Log("INTERACT HEWAN TERPANGGIL!");
-
         if (sudahDirawat) return;
 
         if (treatmentManager == null)
@@ -50,5 +50,30 @@ public class AnimalTreatmentInteractable : MonoBehaviour, IInteractable
 
         if (animalRenderer != null && spriteSetelahDirawat != null)
             animalRenderer.sprite = spriteSetelahDirawat;
+
+        PlayerPrefs.SetInt(SaveKey, 1);
+        PlayerPrefs.Save();
+    }
+
+    private void MuatStatusHewan()
+    {
+        sudahDirawat =
+            PlayerPrefs.GetInt(SaveKey, 0) == 1;
+
+        if (animalRenderer != null)
+        {
+            animalRenderer.sprite = sudahDirawat
+                ? spriteSetelahDirawat
+                : spriteAwal;
+        }
+    }
+
+    public void ResetStatusHewan()
+    {
+        sudahDirawat = false;
+        PlayerPrefs.DeleteKey(SaveKey);
+
+        if (animalRenderer != null && spriteAwal != null)
+            animalRenderer.sprite = spriteAwal;
     }
 }

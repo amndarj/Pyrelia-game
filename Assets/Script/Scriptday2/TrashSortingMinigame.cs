@@ -34,6 +34,8 @@ public class TrashSortingMinigame : MonoBehaviour
     public float kecepatanMaksimal = 450f;
 
     private int indexSampah = 0;
+    private string SaveKey =>
+        "Day2_TrashSorting_Index_" + gameObject.name;
     private float posisiX;
     private float arah = 1f;
     private float kecepatanSekarang;
@@ -111,7 +113,13 @@ public class TrashSortingMinigame : MonoBehaviour
         if (closeButton != null)
             closeButton.SetActive(false);
 
-        indexSampah = 0;
+        indexSampah = PlayerPrefs.GetInt(SaveKey, 0);
+
+        if (indexSampah >= 6)
+        {
+            Debug.Log("Semua sampah sudah dipilah!");
+            return;
+        }
         kecepatanSekarang = kecepatanAwal;
         arah = 1f;
         minigameSelesai = false;
@@ -190,6 +198,8 @@ public class TrashSortingMinigame : MonoBehaviour
         resultText.text = "BENAR! Sampah berhasil dipilah!";
 
         indexSampah++;
+        PlayerPrefs.SetInt(SaveKey, indexSampah);
+        PlayerPrefs.Save();
 
         Debug.Log("Index berikutnya: " + indexSampah);
 
@@ -275,5 +285,11 @@ public class TrashSortingMinigame : MonoBehaviour
 
         if (sortingPanel != null)
             sortingPanel.SetActive(false);
+    }
+
+    public void ResetSortingProgress()
+    {
+        indexSampah = 0;
+        PlayerPrefs.DeleteKey(SaveKey);
     }
 }

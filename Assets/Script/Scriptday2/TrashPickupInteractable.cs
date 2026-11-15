@@ -2,6 +2,17 @@ using UnityEngine;
 
 public class TrashPickupInteractable : MonoBehaviour, IInteractable
 {
+    private string SaveKey =>
+        "Day2_Trash_" + gameObject.name;
+
+    private void Start()
+    {
+        if (PlayerPrefs.GetInt(SaveKey, 0) == 1)
+        {
+            gameObject.SetActive(false);
+        }
+    }
+
     public void Interact()
     {
         if (Day2MissionManager.instance == null)
@@ -12,6 +23,15 @@ public class TrashPickupInteractable : MonoBehaviour, IInteractable
 
         Day2MissionManager.instance.CatatSampahDiambil();
 
-        Destroy(gameObject);
+        PlayerPrefs.SetInt(SaveKey, 1);
+        PlayerPrefs.Save();
+
+        gameObject.SetActive(false);
+    }
+
+    public void ResetStatusSampah()
+    {
+        PlayerPrefs.DeleteKey(SaveKey);
+        gameObject.SetActive(true);
     }
 }

@@ -20,39 +20,41 @@ public class NPCMaskerInteractable : MonoBehaviour, IInteractable
     private bool dialogueStarted = false;
     private bool sudahMenerimaMasker = false;
 
+    private string SaveKey =>
+        "Day2_NPC_Masker_" + gameObject.name;
+
+    private void Start()
+    {
+        MuatStatusNPC();
+    }
+
     public void Interact()
     {
-        if (sudahMenerimaMasker)
+        if (sudahMenerimaMasker || dialogueStarted)
             return;
 
         if (Day2MissionManager.instance == null ||
             !Day2MissionManager.instance.BolehInteraksiMasker)
             return;
 
-        if (dialogueUI == null)
-        {
-            Debug.LogError("Dialogue UI belum dihubungkan!");
+        if (dialogueUI == null ||
+            dialogueLines == null ||
+            dialogueLines.Length == 0)
             return;
-        }
 
-        // Mulai percakapan
+        dialogueStarted = true;
+        currentLine = 0;
+
+        dialogueUI.StartDialogue(
+            this, npcName, dialogueLines, npcPortrait
+        );
+    }
+
+    public void NextDialogueLine()
+    {
         if (!dialogueStarted)
-        {
-            if (dialogueLines == null || dialogueLines.Length == 0)
-            {
-                Debug.LogWarning("Dialog NPC belum diisi!");
-                return;
-            }
-
-            dialogueStarted = true;
-            currentLine = 0;
-
-            dialogueUI.SetPortrait(npcPortrait);
-            dialogueUI.StartDialogue(npcName, dialogueLines);
             return;
-        }
 
-        // Lanjutkan percakapan
         currentLine++;
 
         if (currentLine < dialogueLines.Length)
@@ -62,46 +64,60 @@ public class NPCMaskerInteractable : MonoBehaviour, IInteractable
         }
         else
         {
-            dialogueUI.HideDialogue();
             dialogueStarted = false;
-
+            dialogueUI.HideDialogue();
             BerikanMasker();
         }
     }
 
     private void BerikanMasker()
     {
-        if (Day2MissionManager.instance == null)
+        if (Day2MissionManager.instance == null ||
+            Day2MissionManager.instance.maskerDimiliki <= 0)
         {
-            Debug.LogError("Day2MissionManager tidak ditemukan!");
+            Debug.LogWarning("Masker belum dimiliki!");
             return;
         }
 
-        if (Day2MissionManager.instance.maskerDimiliki <= 0)
+        if (npcRenderer == null || npcMaskerSprite == null)
         {
-            Debug.Log("Masker belum dimiliki. Ambil di posko dahulu.");
+            Debug.LogError("Sprite NPC belum dihubungkan!");
             return;
         }
 
         Day2MissionManager.instance.maskerDimiliki--;
         Day2MissionManager.instance.CatatPembagianMasker();
 
-        if (npcRenderer != null && npcMaskerSprite != null)
-        {
-            npcRenderer.sprite = npcMaskerSprite;
-            Debug.Log("Sprite " + npcName + " berhasil berubah!");
-        }
-        else
-        {
-            Debug.LogError(
-            "Sprite gagal berubah! Periksa Npc Renderer dan Npc Masker Sprite."
-            );
-        }
-
+        npcRenderer.sprite = npcMaskerSprite;
         sudahMenerimaMasker = true;
 
-        Debug.Log("Masker diberikan kepada " + npcName);
-        Debug.Log("Masker tersisa: " +
-            Day2MissionManager.instance.maskerDimiliki);
+        SimpanStatusNPC();
+
+        Debug.Log(npcName + " sudah menerima masker!");
+    }
+
+    private void SimpanStatusNPC()
+    {
+        PlayerPrefs.SetInt(SaveKey, 1);
+        PlayerPrefs.Save();
+    }
+
+    private void MuatStatusNPC()
+    {
+        sudahMenerimaMasker =
+            PlayerPrefs.GetInt(SaveKey, 0) == 1;
+
+        if (sudahMenerimaMasker &&
+            npcRenderer != null &&
+            npcMaskerSprite != null)
+        {
+            npcRenderer.sprite = npcMaskerSprite;
+        }
+    }
+
+    public void ResetStatusNPC()
+    {
+        sudahMenerimaMasker = false;
+        PlayerPrefs.DeleteKey(SaveKey);
     }
 }

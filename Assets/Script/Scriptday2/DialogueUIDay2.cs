@@ -1,4 +1,3 @@
-
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -13,60 +12,77 @@ public class DialogueUIDay2 : MonoBehaviour
     [Header("Portrait Karakter")]
     public Image characterPortrait;
 
-    private string[] dialogueLines;
-    private int currentLine = 0;
+    private NPCMaskerInteractable activeNPC;
 
     public bool IsDialogueActive()
     {
-        return dialoguePanel.activeSelf;
+        return dialoguePanel != null && dialoguePanel.activeSelf;
     }
 
-    public void StartDialogue(string npcName, string[] lines)
+    public void StartDialogue(
+        NPCMaskerInteractable npc,
+        string npcName,
+        string[] lines,
+        Sprite portrait)
     {
+        if (npc == null)
+        {
+            Debug.LogError("NPC yang memulai dialog bernilai NULL!");
+            return;
+        }
+
         if (lines == null || lines.Length == 0)
         {
             Debug.LogWarning("Dialog belum diisi!");
             return;
         }
 
-        dialogueLines = lines;
-        currentLine = 0;
+        activeNPC = npc;
 
         dialoguePanel.SetActive(true);
         nameText.text = npcName;
-        dialogueText.text = dialogueLines[currentLine];
+        dialogueText.text = lines[0];
+
+        SetPortrait(portrait);
     }
 
     public void SetPortrait(Sprite portrait)
     {
-        if (characterPortrait != null && portrait != null)
+        if (characterPortrait == null)
         {
-            characterPortrait.sprite = portrait;
-            characterPortrait.gameObject.SetActive(true);
+            Debug.LogError("Character Portrait belum dihubungkan!");
+            return;
         }
+
+        if (portrait == null)
+        {
+            Debug.LogWarning("Portrait NPC kosong!");
+            return;
+        }
+
+        characterPortrait.sprite = portrait;
+        characterPortrait.gameObject.SetActive(true);
     }
 
     public void NextLine()
     {
-        currentLine++;
+        if (activeNPC == null)
+        {
+            Debug.LogWarning("Tidak ada NPC yang sedang berdialog!");
+            return;
+        }
 
-        if (currentLine < dialogueLines.Length)
-        {
-            dialogueText.text = dialogueLines[currentLine];
-        }
-        else
-        {
-            HideDialogue();
-        }
+        activeNPC.NextDialogueLine();
     }
 
     public void HideDialogue()
     {
         dialoguePanel.SetActive(false);
+        activeNPC = null;
     }
 
     public void CloseDialogue()
     {
-        dialoguePanel.SetActive(false);
+        HideDialogue();
     }
 }

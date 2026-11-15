@@ -9,14 +9,26 @@ public class Day2MissionManager : MonoBehaviour
     [Header("Mission Guide")]
     public MissionGuideManager missionGuide;
 
-    // 0 = Masker, 1 = Hewan, 2 = Sampah,
-    // 3 = Pohon, 4 = Selesai
     private int misiAktif = 0;
+    private int langkahTersimpan = 0;
+
+    private const string KEY_MISI = "Day2_MisiAktif";
+    private const string KEY_LANGKAH = "Day2_Langkah";
+    private const string KEY_MASKER_DIMILIKI = "Day2_MaskerDimiliki";
+    private const string KEY_MASKER_DIBAGIKAN = "Day2_MaskerDibagikan";
+    private const string KEY_HEWAN = "Day2_HewanDirawat";
+    private const string KEY_SAMPAH = "Day2_SampahDiambil";
+    private const string KEY_PEMILAHAN = "Day2_PemilahanSelesai";
+    private const string KEY_POHON = "Day2_PohonDitanam";
+    private const string KEY_SELESAI = "Day2_Selesai";
 
     public bool BolehInteraksiMasker => misiAktif == 0;
     public bool BolehRawatHewan => misiAktif == 1;
     public bool BolehAmbilSampah => misiAktif == 2;
     public bool BolehTanamPohon => misiAktif == 3;
+
+    [Header("Day 2 Ending")]
+    public GameObject day2CompletePanel;
 
     [Header("Data Masker")]
     public int totalMasker = 3;
@@ -61,11 +73,55 @@ public class Day2MissionManager : MonoBehaviour
 
     private void Start()
     {
+        MuatProgres();
+
         UpdateTrashProgress();
         UpdateAnimalProgress();
         UpdateMaskProgress();
 
         TampilkanMisiAktif();
+
+        if (missionGuide != null)
+            missionGuide.SetIndexLangkah(langkahTersimpan);
+
+        if (misiAktif == 4 && day2CompletePanel != null)
+            day2CompletePanel.SetActive(true);
+    }
+
+    // ===== PENYIMPANAN =====
+
+    public void SimpanProgres()
+    {
+        PlayerPrefs.SetInt(KEY_MISI, misiAktif);
+        PlayerPrefs.SetInt(KEY_LANGKAH,
+            missionGuide != null
+                ? missionGuide.GetIndexLangkah()
+                : langkahTersimpan);
+
+        PlayerPrefs.SetInt(KEY_MASKER_DIMILIKI, maskerDimiliki);
+        PlayerPrefs.SetInt(KEY_MASKER_DIBAGIKAN, maskerDibagikan);
+        PlayerPrefs.SetInt(KEY_HEWAN, hewanDirawat);
+        PlayerPrefs.SetInt(KEY_SAMPAH, sampahDiambil);
+        PlayerPrefs.SetInt(KEY_PEMILAHAN, pemilahanSelesai ? 1 : 0);
+        PlayerPrefs.SetInt(KEY_POHON, pohonDitanam);
+        PlayerPrefs.SetInt(KEY_SELESAI, misiAktif == 4 ? 1 : 0);
+
+        PlayerPrefs.Save();
+    }
+
+    private void MuatProgres()
+    {
+        misiAktif = PlayerPrefs.GetInt(KEY_MISI, 0);
+        langkahTersimpan = PlayerPrefs.GetInt(KEY_LANGKAH, 0);
+
+        maskerDimiliki = PlayerPrefs.GetInt(KEY_MASKER_DIMILIKI, 0);
+        maskerDibagikan = PlayerPrefs.GetInt(KEY_MASKER_DIBAGIKAN, 0);
+        hewanDirawat = PlayerPrefs.GetInt(KEY_HEWAN, 0);
+        sampahDiambil = PlayerPrefs.GetInt(KEY_SAMPAH, 0);
+        pemilahanSelesai = PlayerPrefs.GetInt(KEY_PEMILAHAN, 0) == 1;
+        pohonDitanam = PlayerPrefs.GetInt(KEY_POHON, 0);
+
+        misiAktif = Mathf.Clamp(misiAktif, 0, 4);
     }
 
     // ===== PENGATUR MISI =====
@@ -131,6 +187,11 @@ public class Day2MissionManager : MonoBehaviour
                     {
                         "Terima kasih telah membantu lingkungan!"
                     });
+
+                if (day2CompletePanel != null)
+                    day2CompletePanel.SetActive(true);
+
+                Debug.Log("DAY 2 COMPLETED!");
                 break;
         }
     }
@@ -144,10 +205,13 @@ public class Day2MissionManager : MonoBehaviour
         if (selesai)
         {
             misiAktif++;
+            langkahTersimpan = 0;
             TampilkanMisiAktif();
-
-            Debug.Log("Misi berikutnya terbuka: " + misiAktif);
         }
+
+        SimpanProgres();
+
+        Debug.Log("Misi aktif: " + misiAktif);
     }
 
     // ===== MISI MASKER =====
@@ -162,6 +226,7 @@ public class Day2MissionManager : MonoBehaviour
         Debug.Log("Berhasil mengambil masker!");
 
         LangkahBerikutnya();
+        SimpanProgres();
     }
 
     public void CatatPembagianMasker()
@@ -177,6 +242,7 @@ public class Day2MissionManager : MonoBehaviour
             maskerDibagikan + "/" + totalMasker);
 
         LangkahBerikutnya();
+        SimpanProgres();
     }
 
     private void UpdateMaskProgress()
@@ -185,10 +251,6 @@ public class Day2MissionManager : MonoBehaviour
             maskProgressText.text =
                 "Warga Menerima Masker: " +
                 maskerDibagikan + "/" + totalMasker;
-
-        if (maskProgressFill != null && totalMasker > 0)
-            maskProgressFill.fillAmount =
-                Mathf.Clamp01((float)maskerDibagikan / totalMasker);
     }
 
     // ===== MISI HEWAN =====
@@ -205,17 +267,16 @@ public class Day2MissionManager : MonoBehaviour
 
         UpdateAnimalProgress();
         LangkahBerikutnya();
+        SimpanProgres();
     }
 
     private void UpdateAnimalProgress()
     {
         if (animalMissionUI != null)
-        {
             animalMissionUI.UpdateProgress(
                 hewanDirawat,
                 totalHewan
             );
-        }
     }
 
     // ===== MISI SAMPAH =====
@@ -233,10 +294,9 @@ public class Day2MissionManager : MonoBehaviour
             sampahDiambil + "/" + totalSampah);
 
         if (sampahDiambil >= totalSampah)
-        {
             LangkahBerikutnya();
-            Debug.Log("Semua sampah berhasil dikumpulkan!");
-        }
+
+        SimpanProgres();
     }
 
     private void UpdateTrashProgress()
@@ -245,10 +305,6 @@ public class Day2MissionManager : MonoBehaviour
             trashProgressText.text =
                 "Sampah Terkumpul: " +
                 sampahDiambil + "/" + totalSampah;
-
-        if (trashProgressFill != null && totalSampah > 0)
-            trashProgressFill.fillAmount =
-                Mathf.Clamp01((float)sampahDiambil / totalSampah);
     }
 
     public void CatatPemilahanSelesai()
@@ -267,6 +323,7 @@ public class Day2MissionManager : MonoBehaviour
         Debug.Log("MISI PEMILAHAN SAMPAH SELESAI!");
 
         LangkahBerikutnya();
+        SimpanProgres();
     }
 
     // ===== MISI POHON =====
@@ -283,5 +340,23 @@ public class Day2MissionManager : MonoBehaviour
             pohonDitanam + "/" + totalPohon);
 
         LangkahBerikutnya();
+        SimpanProgres();
+    }
+
+    // ===== RESET PROGRES =====
+
+    public void ResetProgres()
+    {
+        PlayerPrefs.DeleteKey(KEY_MISI);
+        PlayerPrefs.DeleteKey(KEY_LANGKAH);
+        PlayerPrefs.DeleteKey(KEY_MASKER_DIMILIKI);
+        PlayerPrefs.DeleteKey(KEY_MASKER_DIBAGIKAN);
+        PlayerPrefs.DeleteKey(KEY_HEWAN);
+        PlayerPrefs.DeleteKey(KEY_SAMPAH);
+        PlayerPrefs.DeleteKey(KEY_PEMILAHAN);
+        PlayerPrefs.DeleteKey(KEY_POHON);
+        PlayerPrefs.DeleteKey(KEY_SELESAI);
+
+        PlayerPrefs.Save();
     }
 }

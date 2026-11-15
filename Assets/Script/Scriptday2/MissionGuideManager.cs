@@ -1,3 +1,4 @@
+
 using UnityEngine;
 using TMPro;
 
@@ -56,5 +57,21 @@ public class MissionGuideManager : MonoBehaviour
         TampilkanLangkahAktif();
 
         return indexLangkah >= langkahAktif.Length;
+    }
+
+    public int GetIndexLangkah()
+    {
+        return indexLangkah;
+    }
+
+    public void SetIndexLangkah(int index)
+    {
+        if (langkahAktif == null) return;
+
+        indexLangkah = Mathf.Clamp(
+            index, 0, langkahAktif.Length
+        );
+
+        TampilkanLangkahAktif();
     }
 }
