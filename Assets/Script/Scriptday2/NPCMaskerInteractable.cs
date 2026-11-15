@@ -1,4 +1,3 @@
-
 using UnityEngine;
 
 public class NPCMaskerInteractable : MonoBehaviour, IInteractable
@@ -16,6 +15,9 @@ public class NPCMaskerInteractable : MonoBehaviour, IInteractable
 
     [Header("Portrait NPC")]
     public Sprite npcPortrait;
+
+    [Header("Objective Marker")]
+    public GameObject objectiveMarker;
 
     private int currentLine = 0;
     private bool dialogueStarted = false;
@@ -42,8 +44,14 @@ public class NPCMaskerInteractable : MonoBehaviour, IInteractable
         if (sudahMenerimaMasker || dialogueStarted)
             return;
 
-        if (Day2MissionManager.instance == null ||
-            !Day2MissionManager.instance.BolehInteraksiMasker)
+        if (Day2MissionManager.instance == null)
+            return;
+
+        if (!Day2MissionManager.instance.BolehInteraksiMasker)
+            return;
+
+        // Pemain harus memiliki masker sebelum berbicara.
+        if (Day2MissionManager.instance.maskerDimiliki <= 0)
             return;
 
         if (dialogueUI == null ||
@@ -90,10 +98,15 @@ public class NPCMaskerInteractable : MonoBehaviour, IInteractable
 
     private void BerikanMasker()
     {
-        if (Day2MissionManager.instance == null ||
-            Day2MissionManager.instance.maskerDimiliki <= 0)
+        Day2MissionManager manager =
+            Day2MissionManager.instance;
+
+        if (manager == null ||
+            !manager.BolehInteraksiMasker ||
+            manager.maskerDimiliki <= 0 ||
+            manager.maskerDibagikan >= manager.totalMasker)
         {
-            Debug.LogWarning("Masker belum dimiliki!");
+            Debug.LogWarning("Masker tidak tersedia!");
             return;
         }
 
@@ -103,17 +116,42 @@ public class NPCMaskerInteractable : MonoBehaviour, IInteractable
             return;
         }
 
-        Day2MissionManager.instance.maskerDimiliki--;
+        // Kurangi masker yang dimiliki pemain.
+        manager.maskerDimiliki--;
 
-        Day2MissionManager.instance.CatatPembagianMasker();
-
-        npcRenderer.sprite = npcMaskerSprite;
-
+        // Tandai NPC sudah menerima masker.
         sudahMenerimaMasker = true;
 
+        // Ganti sprite NPC.
+        npcRenderer.sprite = npcMaskerSprite;
+
+        // Simpan status NPC.
         SimpanStatusNPC();
 
+        // Catat pembagian masker pada Mission Manager.
+        manager.CatatPembagianMasker();
+
+        // Perbarui marker seluruh NPC.
+        manager.PerbaruiSemuaMarkerNPC();
+
         Debug.Log(npcName + " sudah menerima masker!");
+    }
+
+    public void PerbaruiMarker()
+    {
+        if (objectiveMarker == null)
+            return;
+
+        Day2MissionManager manager =
+            Day2MissionManager.instance;
+
+        bool tampilkan =
+            manager != null &&
+            manager.BolehTampilkanMarkerNPC &&
+            !sudahMenerimaMasker;
+
+        if (objectiveMarker.activeSelf != tampilkan)
+            objectiveMarker.SetActive(tampilkan);
     }
 
     private void SimpanStatusNPC()
@@ -145,5 +183,7 @@ public class NPCMaskerInteractable : MonoBehaviour, IInteractable
 
         if (npcRenderer != null && spriteAwal != null)
             npcRenderer.sprite = spriteAwal;
+
+        PerbaruiMarker();
     }
 }

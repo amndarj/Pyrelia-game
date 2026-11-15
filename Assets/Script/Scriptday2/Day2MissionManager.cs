@@ -1,13 +1,14 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using System.Collections;
 
 public class Day2MissionManager : MonoBehaviour
 {
     public static Day2MissionManager instance;
 
     [Header("Mission Guide")]
-    public MissionGuideManager missionGuide;
+    public MissionGuideManager  missionGuide;
 
     private int misiAktif = 0;
     private int langkahTersimpan = 0;
@@ -26,6 +27,9 @@ public class Day2MissionManager : MonoBehaviour
     public bool BolehRawatHewan => misiAktif == 1;
     public bool BolehAmbilSampah => misiAktif == 2;
     public bool BolehTanamPohon => misiAktif == 3;
+
+    public bool BolehTampilkanMarkerNPC =>
+    BolehInteraksiMasker && maskerDimiliki > 0;
 
     [Header("Day 2 Ending")]
     public GameObject day2CompletePanel;
@@ -84,7 +88,7 @@ public class Day2MissionManager : MonoBehaviour
         if (missionGuide != null)
             missionGuide.SetIndexLangkah(langkahTersimpan);
 
-
+        StartCoroutine(PerbaruiMarkerSetelahInisialisasi());
     }
 
     // ===== PENYIMPANAN =====
@@ -223,6 +227,21 @@ public class Day2MissionManager : MonoBehaviour
 
         LangkahBerikutnya();
         SimpanProgres();
+        PerbaruiSemuaMarkerNPC();
+    }
+
+    public void PerbaruiSemuaMarkerNPC()
+    {
+        NPCMaskerInteractable[] semuaNPC =
+            FindObjectsByType<NPCMaskerInteractable>(
+                FindObjectsInactive.Include,
+                FindObjectsSortMode.None
+            );
+
+        foreach (NPCMaskerInteractable npc in semuaNPC)
+        {
+            npc.PerbaruiMarker();
+        }
     }
 
     public void CatatPembagianMasker()
@@ -239,6 +258,7 @@ public class Day2MissionManager : MonoBehaviour
 
         LangkahBerikutnya();
         SimpanProgres();
+        PerbaruiSemuaMarkerNPC();
     }
 
     private void UpdateMaskProgress()
@@ -345,6 +365,12 @@ public class Day2MissionManager : MonoBehaviour
         {
             day2CompletePanel.SetActive(true);
         }
+    }
+
+    private IEnumerator PerbaruiMarkerSetelahInisialisasi()
+    {
+        yield return null;
+        PerbaruiSemuaMarkerNPC();
     }
 
     // ===== RESET PROGRES =====
