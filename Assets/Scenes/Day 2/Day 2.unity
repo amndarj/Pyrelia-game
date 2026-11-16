@@ -15976,9 +15976,6 @@ MonoBehaviour:
   progressText: {fileID: 100962502}
   feedbackText: {fileID: 1230136765}
   successPanel: {fileID: 806104061}
-  missionProgressText: {fileID: 0}
-  missionProgressFill: {fileID: 0}
-  plantingMissionPanel: {fileID: 0}
 --- !u!1 &1838416000
 GameObject:
   m_ObjectHideFlags: 0
