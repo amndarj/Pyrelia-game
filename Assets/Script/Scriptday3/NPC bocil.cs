@@ -3,11 +3,17 @@ using UnityEngine;
 
 public class NPCbocil : MonoBehaviour, IInteractableDay3
 {
+    [Header("Identitas NPC")]
+    public string namaNPC = "Bocil";
+
     [Header("Player MC")]
     public PlayerMC playerMC;
 
     [Header("Education")]
     public GameObject educationPanel;
+    
+    [Header("Ending Panel")]
+    public GameObject endingPanel;
 
     private bool dialogueStarted;
     private bool introFinished;
@@ -27,24 +33,34 @@ public class NPCbocil : MonoBehaviour, IInteractableDay3
 
         dialogueStarted = true;
 
-        // Mulai dialog pembuka NPC dan MC
+        // Atur nama NPC pada dialog pembuka dan penutup
+        AturNamaNPC(playerMC.openingDialogueLines);
+        AturNamaNPC(playerMC.closingDialogueLines);
+
         playerMC.StartOpeningDialogue(OnOpeningFinished);
 
         Debug.Log("Dialog pembuka dimulai!");
     }
 
-    // Dipanggil setelah seluruh dialog pembuka selesai
+    void AturNamaNPC(DialogueLineDay3[] lines)
+    {
+        if (lines == null) return;
+
+        foreach (DialogueLineDay3 line in lines)
+        {
+            if (line.side == DialogueSide.Left)
+                line.characterName = namaNPC;
+            else
+                line.characterName = playerMC.mcName;
+        }
+    }
+
     void OnOpeningFinished()
     {
         introFinished = true;
-
-        // Mulai dialog edukasi MC
         playerMC.StartEducationDialogue(OnEducationDialogueFinished);
-
-        Debug.Log("Dialog edukasi dimulai!");
     }
 
-    // Dipanggil setelah dialog edukasi selesai
     void OnEducationDialogueFinished()
     {
         QuizDay3 quiz = educationPanel != null
@@ -62,7 +78,6 @@ public class NPCbocil : MonoBehaviour, IInteractableDay3
         }
     }
 
-    // Dipanggil QuizDay3 setelah semua pertanyaan selesai
     public void FinishEducation()
     {
         if (!introFinished || educationFinished || completed)
@@ -73,17 +88,22 @@ public class NPCbocil : MonoBehaviour, IInteractableDay3
         if (educationPanel != null)
             educationPanel.SetActive(false);
 
-
-        // Mulai dialog penutup NPC dan MC
         playerMC.StartClosingDialogue(OnClosingFinished);
-
-        Debug.Log("Dialog penutup dimulai!");
     }
 
-    // Dipanggil setelah dialog penutup selesai
     void OnClosingFinished()
     {
         completed = true;
+
         Debug.Log("Misi Day 3 selesai!");
+
+        if (endingPanel != null)
+        {
+            endingPanel.SetActive(true);
+        }
+        else
+        {
+            Debug.LogError("Ending Panel belum dihubungkan!");
+        }
     }
 }

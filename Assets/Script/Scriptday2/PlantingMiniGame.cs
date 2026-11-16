@@ -1,6 +1,6 @@
+
 using UnityEngine;
 using TMPro;
-using UnityEngine.UI;
 
 public class PlantingMiniGame : MonoBehaviour
 {
@@ -22,12 +22,6 @@ public class PlantingMiniGame : MonoBehaviour
     public TMP_Text feedbackText;
     public GameObject successPanel;
 
-    [Header("Progress Misi")]
-    public TMP_Text missionProgressText;
-    public Image missionProgressFill;
-
-    public GameObject plantingMissionPanel;
-
     private int tahap = 0;
     private GameObject pohonTarget;
     private PlantingPointInteractable titikTanamAktif;
@@ -48,7 +42,6 @@ public class PlantingMiniGame : MonoBehaviour
 
         tahap = 0;
         UpdateProgress();
-        UpdateMissionProgress();
 
         instructionText.text = "Seret sekop ke area tanah!";
         feedbackText.text = "";
@@ -61,7 +54,6 @@ public class PlantingMiniGame : MonoBehaviour
         pohonTarget = pohon;
         titikTanamAktif = titik;
 
-        // Reset tahapan tanah
         tahap = 0;
 
         tanahImage.SetActive(true);
@@ -69,22 +61,18 @@ public class PlantingMiniGame : MonoBehaviour
         tanahBibitTanamanImage.SetActive(false);
         tanahBibitTanamanTumbuhImage.SetActive(false);
 
-        // Reset alat
         sekopImage.SetActive(true);
         bibitTanamanImage.SetActive(true);
         wateringCanImage.SetActive(true);
         wateringCanBasahImage.SetActive(false);
 
-        // Reset teks dan panel
         successPanel.SetActive(false);
         instructionText.text = "Seret sekop ke area tanah!";
         feedbackText.text = "";
 
         UpdateProgress();
 
-        // Buka minigame
         gameObject.SetActive(true);
-        plantingMissionPanel.SetActive(false);
     }
 
     public bool TryUseTool(PlantingToolDrag.ToolType tool)
@@ -111,24 +99,22 @@ public class PlantingMiniGame : MonoBehaviour
         {
             tanahBibitTanamanImage.SetActive(false);
             tanahBibitTanamanTumbuhImage.SetActive(true);
-            
-                if (pohonTarget != null)
-                {
-                    pohonTarget.SetActive(true);
-                }
 
-                if (titikTanamAktif != null)
-                {
-                    titikTanamAktif.SelesaikanPenanaman();
-                }
-                
-            UpdateMissionProgress();
+            if (pohonTarget != null)
+            {
+                pohonTarget.SetActive(true);
+            }
+
+            if (titikTanamAktif != null)
+            {
+                titikTanamAktif.SelesaikanPenanaman();
+            }
 
             if (Day2MissionManager.instance != null)
             {
                 Day2MissionManager.instance.CatatPohonDitanam();
             }
-                        
+
             tahap = 3;
             instructionText.text = "Yeay! Pohon berhasil ditanam!";
             feedbackText.text = "Penanaman selesai!";
@@ -148,28 +134,14 @@ public class PlantingMiniGame : MonoBehaviour
     private void UpdateProgress()
     {
         progressText.text = "Tahap " + Mathf.Min(tahap + 1, 3) + "/3";
-        
+
         if (tahap == 3)
             progressText.text = "Selesai 3/3";
-    }
-
-    private void UpdateMissionProgress()
-    {
-        int jumlah = 0;
-
-        if (Day2MissionManager.instance != null)
-            jumlah = Day2MissionManager.instance.pohonDitanam;
-
-        missionProgressText.text = jumlah + "/3";
-
-        if (jumlah >= 3)
-            missionProgressText.text = "3/3 - Selesai!";
     }
 
     public void CloseMiniGame()
     {
         gameObject.SetActive(false);
-        plantingMissionPanel.SetActive(true);
 
         if (Day2MissionManager.instance != null)
         {
