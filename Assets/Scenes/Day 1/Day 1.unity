@@ -1270,7 +1270,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPC_DamkarInteractable
   dialogueUI: {fileID: 1265615256}
   choicePanel: {fileID: 564043027}
-  firefighterImage: {fileID: 0}
+  firefighterImage: {fileID: 7505214435633258129, guid: 02158945923cd7c4faf6e8f23cb91826, type: 3}
   miniGameSceneName: MiniGame_PemadamanApi
 --- !u!70 &231011706
 CapsuleCollider2D:
