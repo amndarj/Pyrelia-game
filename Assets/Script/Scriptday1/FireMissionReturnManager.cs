@@ -52,13 +52,13 @@ public class FireMissionReturnManager : MonoBehaviour
                 gokilNPC.SetActive(true);
 
             missionObjective.UpdateObjective(
-                "Temui Gokil di hutan dan antarkan ke posko pengungsian."
+                "Himbau warga yang merekam di hutan untuk pergi ke posko pengungsian."
             );
         }
         else if (!pertolonganSelesai)
         {
             missionObjective.UpdateObjective(
-                "Temui anak SMA yang terluka dan berikan pertolongan pertama."
+                "Perika warga yang terluka dan berikan pertolongan pertama."
             );
         }
         else

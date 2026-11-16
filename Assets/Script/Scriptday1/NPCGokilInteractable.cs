@@ -22,68 +22,68 @@ public class NPCGokilInteractable : MonoBehaviour, IInteractable
         {
             new DialogueLine
             {
-                speakerName = "Gokil",
-                dialogueText = "Eh, tunggu! Aku lagi merekam kejadian kebakaran ini.",
+                speakerName = "Ratna",
+                dialogueText = "Apasih, ini bagus nih buat konten pasti rame pecah.",
                 speakerImage = gokilImage
             },
             new DialogueLine
             {
-                speakerName = "Player",
-                dialogueText = "Hei! Jangan merekam di sini. Kamu mengganggu petugas Damkar!",
+                speakerName = "Aku",
+                dialogueText = "Jangan merekam di sini. Kamu itu mengganggu petugas Damkar tau!",
                 speakerImage = playerImage
             },
             new DialogueLine
             {
-                speakerName = "Gokil",
-                dialogueText = "Lah, aku cuma merekam kejadian. Ini bisa jadi dokumentasi penting, tahu!",
+                speakerName = "Ratna",
+                dialogueText = "Lah, aku cuma merekam doang kok. Lagian petugasnya ga protes, kenapa kamu sewot!",
                 speakerImage = gokilImage
             },
             new DialogueLine
             {
-                speakerName = "Player",
-                dialogueText = "Dokumentasi bisa dilakukan nanti. Sekarang kamu harus menjauh dari area kebakaran.",
+                speakerName = "Aku",
+                dialogueText = "Udahlah, kamu ayo ikut aku ke pos pengungsian sekarang.",
                 speakerImage = playerImage
             },
             new DialogueLine
             {
-                speakerName = "Gokil",
+                speakerName = "Ratna",
                 dialogueText = "Tapi momen seperti ini jarang terjadi. Sayang kalau dilewatkan!",
                 speakerImage = gokilImage
             },
             new DialogueLine
             {
-                speakerName = "Player",
-                dialogueText = "Keselamatan lebih penting daripada rekamanmu. Ayo, ikut aku ke tempat aman!",
+                speakerName = "Aku",
+                dialogueText = "Keselamatan lebih penting daripada kontenmu. Ayo, cepat ikut aku ke tempat aman!",
                 speakerImage = playerImage
             },
             new DialogueLine
             {
-                speakerName = "Gokil",
-                dialogueText = "Kenapa harus sekarang? Aku masih mau mengambil beberapa video lagi.",
+                speakerName = "Ratna",
+                dialogueText = "Alah kamu gausah sok peduli gitu deh.",
                 speakerImage = gokilImage
             },
             new DialogueLine
             {
-                speakerName = "Player",
-                dialogueText = "Situasinya berbahaya. Api bisa menyebar dan kamu justru menghambat proses evakuasi.",
+                speakerName = "Aku",
+                dialogueText = "Aku beneran peduli ya. Situasinya berbahaya. Api bisa menyebar dan kamu justru menghambat proses evakuasi.",
                 speakerImage = playerImage
             },
             new DialogueLine
             {
-                speakerName = "Gokil",
-                dialogueText = "Duh, kamu ini terlalu serius. Aku bisa menjaga diriku sendiri!",
+                speakerName = "Ratna",
+                dialogueText = "Yaudah kamu kenapa masih disini, sana pergi ke pos pengungsian sendiri. Diriku urusanku",
                 speakerImage = gokilImage
             },
             new DialogueLine
             {
-                speakerName = "Player",
-                dialogueText = "Aku sudah memperingatkanmu. Sekarang pilih: ikut mengungsi atau tetap di sini?",
+                speakerName = "Aku",
+                dialogueText = "Aku sudah memperingatkanmu ya! kamu kalo udah gosong ga bakal bisa merekam konten.",
                 speakerImage = playerImage
             },
             new DialogueLine
             {
-                speakerName = "Gokil",
-                dialogueText = "Hadeh... kalian memang tidak bisa diajak kompromi.",
+                speakerName = "Ratna",
+                dialogueText = "Hadeh... cerewet banget. Iya-iya aku ikut.",
                 speakerImage = gokilImage
             }
         };
