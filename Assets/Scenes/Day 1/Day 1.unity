@@ -1180,7 +1180,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &231011703
 SpriteRenderer:
   serializedVersion: 3
@@ -3736,7 +3736,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 8
   m_MaskInteraction: 0
   m_Sprite: {fileID: 1384129713505601373, guid: 7ca1754df8394864ea0cc55f8568148f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3805,7 +3805,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 3.469512, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3815,7 +3815,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 10, y: 30}
+  m_Size: {x: 16.939024, y: 30}
   m_EdgeRadius: 0
 --- !u!114 &785374663
 MonoBehaviour:
@@ -5497,7 +5497,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 8
   m_MaskInteraction: 0
   m_Sprite: {fileID: -1711699535488841882, guid: d9f58c365b5a7a248a117bc94c5ea9c3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5519,7 +5519,7 @@ Transform:
   m_GameObject: {fileID: 1194287727}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -41.13, y: -29.76, z: 0}
+  m_LocalPosition: {x: -44.81, y: -30.47, z: 0}
   m_LocalScale: {x: 0.108241014, y: 0.108241014, z: 0.108241014}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5595,7 +5595,7 @@ CapsuleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1194287727}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -5622,8 +5622,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 15, y: 33}
+  m_Offset: {x: -0.08666161, y: -12.597404}
+  m_Size: {x: 8.0650625, y: 8.0650625}
   m_Direction: 0
 --- !u!1 &1203433777
 GameObject:
@@ -8808,7 +8808,7 @@ RectTransform:
   m_GameObject: {fileID: 1695471488}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5191, y: 0.5191, z: 0.5191}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1780046983}
