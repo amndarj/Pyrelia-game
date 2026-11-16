@@ -1,3 +1,4 @@
+
 using UnityEngine;
 
 public class FireMissionReturnManager : MonoBehaviour
@@ -5,8 +6,9 @@ public class FireMissionReturnManager : MonoBehaviour
     [Header("NPC")]
     public GameObject gokilNPC;
 
-    [Header("Pohon Hutan")]
-    public Sprite normalTreeSprite;
+    [Header("Forest Map")]
+    public GameObject forestBurning;
+    public GameObject forestBurned;
 
     [Header("Objective")]
     public MissionObjective missionObjective;
@@ -25,21 +27,12 @@ public class FireMissionReturnManager : MonoBehaviour
         bool pertolonganSelesai =
             PlayerPrefs.GetInt("MisiPertolonganSelesai", 0) == 1;
 
-        // Jika pemadaman selesai, ubah pohon menjadi normal.
-        if (pemadamanSelesai)
-        {
-            GameObject[] allTrees =
-                GameObject.FindGameObjectsWithTag("PohonTerbakar");
+        // Pergantian kondisi map hutan.
+        if (forestBurning != null)
+            forestBurning.SetActive(!pemadamanSelesai);
 
-            foreach (GameObject tree in allTrees)
-            {
-                SpriteRenderer renderer =
-                    tree.GetComponent<SpriteRenderer>();
-
-                if (renderer != null)
-                    renderer.sprite = normalTreeSprite;
-            }
-        }
+        if (forestBurned != null)
+            forestBurned.SetActive(pemadamanSelesai);
 
         // Tentukan objective berdasarkan progres terakhir.
         if (!pemadamanSelesai)
@@ -72,5 +65,8 @@ public class FireMissionReturnManager : MonoBehaviour
 
             Debug.Log("DAY 1 COMPLETED!");
         }
+        Debug.Log("STATUS PEMADAMAN: " + pemadamanSelesai);
+        Debug.Log("FOREST BURNING: " + forestBurning.activeSelf);
+        Debug.Log("FOREST BURNED: " + forestBurned.activeSelf);
     }
 }

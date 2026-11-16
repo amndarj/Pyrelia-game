@@ -828,9 +828,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 741819834693393365, guid: c1896ad5967edd042966bb441df832fd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1412801780746234402, guid: c1896ad5967edd042966bb441df832fd, type: 3}
       propertyPath: m_Name
       value: Pyrelia_Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 4359012570617667736, guid: c1896ad5967edd042966bb441df832fd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9026190996875483421, guid: c1896ad5967edd042966bb441df832fd, type: 3}
       propertyPath: m_Sprite
@@ -885,6 +893,16 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1896ad5967edd042966bb441df832fd, type: 3}
+--- !u!1 &180876328 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 741819834693393365, guid: c1896ad5967edd042966bb441df832fd, type: 3}
+  m_PrefabInstance: {fileID: 180876327}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &180876329 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4359012570617667736, guid: c1896ad5967edd042966bb441df832fd, type: 3}
+  m_PrefabInstance: {fileID: 180876327}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &181887824
 GameObject:
   m_ObjectHideFlags: 0
@@ -4591,7 +4609,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireMissionReturnManager
   gokilNPC: {fileID: 785374658}
-  normalTreeSprite: {fileID: 1859496188688049370, guid: 1e68c95ca6f55a54fb43b5bc5c7f2d18, type: 3}
+  forestBurning: {fileID: 180876329}
+  forestBurned: {fileID: 180876328}
   missionObjective: {fileID: 610913746}
   day1CompletePanel: {fileID: 0}
 --- !u!4 &964981836

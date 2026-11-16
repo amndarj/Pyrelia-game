@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class OpeningAnimationEvent : MonoBehaviour
+public class OpeningAnimationEventDay3 : MonoBehaviour
 {
     public OpeningDay3Controller openingManager;
 
