@@ -1831,7 +1831,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fe2020151d604b05af8da0e4d85cf07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCMaskerInteractable
-  npcName: Warga
+  npcName: Ratna
   dialogueUI: {fileID: 148692859}
   dialogueLines:
   - Permisi, apakah masih ada bantuan masker?
@@ -2552,8 +2552,8 @@ Transform:
   m_GameObject: {fileID: 238068880}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.3, y: 32.6, z: 0}
-  m_LocalScale: {x: 0.59765774, y: 0.59765774, z: 0.59765774}
+  m_LocalPosition: {x: -22.71, y: 46.12, z: 0}
+  m_LocalScale: {x: 0.34262633, y: 0.34262633, z: 0.34262633}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2811,8 +2811,8 @@ Transform:
   m_GameObject: {fileID: 252643972}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -19.67, y: 27.11, z: 0}
-  m_LocalScale: {x: 0.59765774, y: 0.59765774, z: 0.59765774}
+  m_LocalPosition: {x: -19.67, y: 27.76, z: 0}
+  m_LocalScale: {x: 0.37578925, y: 0.37578925, z: 0.37578925}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -3141,7 +3141,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 375, y: 263}
+  m_AnchoredPosition: {x: 629, y: 332}
   m_SizeDelta: {x: 300, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &291718181
@@ -8655,8 +8655,8 @@ Transform:
   m_GameObject: {fileID: 829210457}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.71, y: 24.54, z: 0}
-  m_LocalScale: {x: 0.61993, y: 0.61993, z: 0.61993}
+  m_LocalPosition: {x: -14.15, y: 24.54, z: 0}
+  m_LocalScale: {x: 0.3299085, y: 0.3299085, z: 0.3299085}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -8917,13 +8917,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 858573314}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -22.41, y: 24.48, z: 0}
-  m_LocalScale: {x: 0.46083, y: 0.46083, z: 0.46083}
+  m_LocalRotation: {x: -0, y: -0, z: -0.7542354, w: 0.6566041}
+  m_LocalPosition: {x: -22.521, y: 24.678, z: 0}
+  m_LocalScale: {x: 0.2816086, y: 0.2816086, z: 0.2816086}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -97.917}
 --- !u!114 &858573318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9578,7 +9578,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Selesai
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 89807aaa35da10349982b4a7733e56f5, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -9645,7 +9645,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &927736754
@@ -11141,7 +11141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9568628, g: 0.6431373, b: 0.3764706, a: 1}
+  m_Color: {r: 1, g: 0.8941177, b: 0.7098039, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -12419,13 +12419,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1215467639}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16.14, y: 23.55, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.30355227, w: 0.9528149}
+  m_LocalPosition: {x: -16.16, y: 27.05, z: 0}
+  m_LocalScale: {x: 0.24324888, y: 0.24324888, z: 0.24324888}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -35.342}
 --- !u!114 &1215467643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13692,13 +13692,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1327170304}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -19.5, y: 24.487, z: 0}
-  m_LocalScale: {x: 0.40468794, y: 0.40468794, z: 0.40468794}
+  m_LocalRotation: {x: -0, y: -0, z: 0.45098495, w: 0.8925316}
+  m_LocalPosition: {x: -19.937, y: 27.125, z: 0}
+  m_LocalScale: {x: 0.150857, y: 0.150857, z: 0.150857}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 53.614}
 --- !u!114 &1327170308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15166,7 +15166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fe2020151d604b05af8da0e4d85cf07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCMaskerInteractable
-  npcName: Warga
+  npcName: Siti
   dialogueUI: {fileID: 148692859}
   dialogueLines:
   - Apakah kamu membawa masker?
@@ -17132,13 +17132,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1690636204}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.04, y: 24.85, z: 0}
-  m_LocalScale: {x: 0.726, y: 0.726, z: 0.726}
+  m_LocalRotation: {x: -0, y: -0, z: -0.30172735, w: 0.9533943}
+  m_LocalPosition: {x: -11.3, y: 24.75, z: 0}
+  m_LocalScale: {x: 0.3394757, y: 0.3394757, z: 0.3394757}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -35.123}
 --- !u!114 &1690636208
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17952,10 +17952,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1820163134}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 445}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -93}
+  m_SizeDelta: {x: 800, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1838416002
 MonoBehaviour:
@@ -18011,7 +18011,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -19218,8 +19218,8 @@ Transform:
   m_GameObject: {fileID: 1934689079}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.66, y: 25.82, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -8.62, y: 25.56, z: 0}
+  m_LocalScale: {x: 0.48735, y: 0.48735, z: 0.48735}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -20107,7 +20107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8039216, g: 0.5215687, b: 0.2470588, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -20632,8 +20632,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 166}
-  m_SizeDelta: {x: 540, y: 40}
+  m_AnchoredPosition: {x: 0, y: 309}
+  m_SizeDelta: {x: 1000, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2034027897
 MonoBehaviour:
@@ -20682,8 +20682,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 16
-  m_fontSizeBase: 16
+  m_fontSize: 36
+  m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -20951,10 +20951,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1122928068}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 252}
-  m_SizeDelta: {x: 500, y: 50}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -96}
+  m_SizeDelta: {x: 800, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2056031701
 MonoBehaviour:
@@ -20978,8 +20978,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: PEMILAHAN SAMPAH
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 89807aaa35da10349982b4a7733e56f5, type: 2}
-  m_sharedMaterial: {fileID: 8065808934022934395, guid: 89807aaa35da10349982b4a7733e56f5, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: dbd5816dee2dad44fb28bd1643a8c667, type: 2}
+  m_sharedMaterial: {fileID: -8600052464786862257, guid: dbd5816dee2dad44fb28bd1643a8c667, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -21003,8 +21003,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28
-  m_fontSizeBase: 28
+  m_fontSize: 36
+  m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -21045,7 +21045,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &2056031702
@@ -21499,7 +21499,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fe2020151d604b05af8da0e4d85cf07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCMaskerInteractable
-  npcName: Warga
+  npcName: Budi
   dialogueUI: {fileID: 148692859}
   dialogueLines:
   - Syukurlah, akhirnya ada bantuan yang datang.
@@ -21642,8 +21642,8 @@ Transform:
   m_GameObject: {fileID: 2084672297}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16.7, y: 36.7, z: 0}
-  m_LocalScale: {x: 0.59765774, y: 0.59765774, z: 0.59765774}
+  m_LocalPosition: {x: -15.91, y: 36.7, z: 0}
+  m_LocalScale: {x: 0.2859852, y: 0.2859852, z: 0.2859852}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
