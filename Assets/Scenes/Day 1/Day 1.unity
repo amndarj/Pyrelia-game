@@ -563,7 +563,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 5
   m_MaskInteraction: 0
   m_Sprite: {fileID: 5153057531661415121, guid: 303c4a33ea38246479220975bf1d3244, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1004,7 +1004,7 @@ Transform:
   m_GameObject: {fileID: 200594346}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.97, y: -22.42, z: 0}
+  m_LocalPosition: {x: -14.69, y: -27.05, z: 0}
   m_LocalScale: {x: 1.1273, y: 1.1273, z: 1.1273}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1579,7 +1579,7 @@ Transform:
   m_GameObject: {fileID: 247340659}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -23.5, y: 25.1, z: 0}
+  m_LocalPosition: {x: -23.54, y: 25.9, z: 0}
   m_LocalScale: {x: 75.716576, y: 22.122, z: 0.621835}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2502,8 +2502,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Anak SMA
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 019ff1a49231e4040879b575f7b445a7, type: 2}
+  m_sharedMaterial: {fileID: -357997561395396781, guid: 019ff1a49231e4040879b575f7b445a7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2534,8 +2534,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_characterHorizontalScale: 1
@@ -2566,7 +2566,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -65.480225, y: 0, z: 1354.2501, w: -68.45658}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -5519,7 +5519,7 @@ Transform:
   m_GameObject: {fileID: 1194287727}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -26.59, y: 9.67, z: 0}
+  m_LocalPosition: {x: -41.13, y: -29.76, z: 0}
   m_LocalScale: {x: 0.108241014, y: 0.108241014, z: 0.108241014}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5665,8 +5665,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Tolong....sakit!!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b28e42975d7280241b7ac072690e4855, type: 2}
+  m_sharedMaterial: {fileID: 7913711267189072707, guid: b28e42975d7280241b7ac072690e4855, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5690,13 +5690,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 80
-  m_fontSizeBase: 80
+  m_fontSize: 90
+  m_fontSizeBase: 90
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -5729,7 +5729,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -81.23358, w: -113.72708}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -6461,7 +6461,7 @@ Transform:
   m_GameObject: {fileID: 1330257205}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.54, y: -11.72, z: 0}
+  m_LocalPosition: {x: -38.45, y: -28.8, z: 0}
   m_LocalScale: {x: 0.08289408, y: 0.08289408, z: 0.08289408}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9384,7 +9384,7 @@ Transform:
   m_GameObject: {fileID: 1855245561}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.26, y: -9.55, z: 0}
+  m_LocalPosition: {x: -24.93, y: -14.15, z: 0}
   m_LocalScale: {x: 1.1273, y: 1.1273, z: 1.1273}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10429,7 +10429,7 @@ Transform:
   m_GameObject: {fileID: 2049700032}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.95, y: -35.47, z: 0}
+  m_LocalPosition: {x: -4.61, y: -35.98, z: 0}
   m_LocalScale: {x: 1.9122, y: 1.9122, z: 1.9122}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10479,7 +10479,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 1
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 5, y: 2}
   m_EdgeRadius: 0
 --- !u!114 &2049700035
 MonoBehaviour:
