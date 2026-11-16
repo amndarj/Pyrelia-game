@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: fb3148774c2704d5ebd64af16bb0c4ed
+guid: 08622a39c1d7326439b56feb4c1dbc4c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8086110473447952875
-    second: Tak berjudul32_20261116013223_0
+      213: -1711699535488841882
+    second: Idle Front 1_0
   - first:
-      213: 305632513488484144
-    second: Tak berjudul32_20261116013223_1
+      213: -4127599057069287222
+    second: Idle Front 1_1
   - first:
-      213: -8715959347341823807
-    second: Tak berjudul32_20261116013223_2
+      213: 774288986146303699
+    second: Idle Front 1_2
   - first:
-      213: 961690238212878833
-    second: Tak berjudul32_20261116013223_3
+      213: 8416562960983232530
+    second: Idle Front 1_3
   - first:
-      213: -2738474236208301699
-    second: Tak berjudul32_20261116013223_4
+      213: -5088767853354837597
+    second: Idle Front 1_4
   - first:
-      213: 4280820154028532485
-    second: Tak berjudul32_20261116013223_5
+      213: -3857193642193515722
+    second: Idle Front 1_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -111,11 +111,24 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tak berjudul32_20261116013223_0
+      name: Idle Front 1_0
       rect:
         serializedVersion: 2
         x: 59
@@ -130,14 +143,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 51ea19fcd5d58cf80800000000000000
-      internalID: -8086110473447952875
+      spriteID: 6678cf86752de38e0800000000000000
+      internalID: -1711699535488841882
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tak berjudul32_20261116013223_1
+      name: Idle Front 1_1
       rect:
         serializedVersion: 2
         x: 206
@@ -152,14 +165,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0377a46d623dd3400800000000000000
-      internalID: 305632513488484144
+      spriteID: ac8d52cc682d7b6c0800000000000000
+      internalID: -4127599057069287222
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tak berjudul32_20261116013223_2
+      name: Idle Front 1_2
       rect:
         serializedVersion: 2
         x: 525
@@ -174,14 +187,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1c0f1f81721ba0780800000000000000
-      internalID: -8715959347341823807
+      spriteID: 3de6fb40bb3deba00800000000000000
+      internalID: 774288986146303699
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tak berjudul32_20261116013223_3
+      name: Idle Front 1_3
       rect:
         serializedVersion: 2
         x: 529
@@ -196,14 +209,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1f1b3a82d2c985d00800000000000000
-      internalID: 961690238212878833
+      spriteID: 2109d1f8b63adc470800000000000000
+      internalID: 8416562960983232530
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tak berjudul32_20261116013223_4
+      name: Idle Front 1_4
       rect:
         serializedVersion: 2
         x: 2203
@@ -218,14 +231,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d79be34f03cfef9d0800000000000000
-      internalID: -2738474236208301699
+      spriteID: 3a99b5c49901169b0800000000000000
+      internalID: -5088767853354837597
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tak berjudul32_20261116013223_5
+      name: Idle Front 1_5
       rect:
         serializedVersion: 2
         x: 130
@@ -240,8 +253,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5032434df37886b30800000000000000
-      internalID: 4280820154028532485
+      spriteID: 63b092791de787ac0800000000000000
+      internalID: -3857193642193515722
       vertices: []
       indices: 
       edges: []
@@ -260,12 +273,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Tak berjudul32_20261116013223_0: -8086110473447952875
-      Tak berjudul32_20261116013223_1: 305632513488484144
-      Tak berjudul32_20261116013223_2: -8715959347341823807
-      Tak berjudul32_20261116013223_3: 961690238212878833
-      Tak berjudul32_20261116013223_4: -2738474236208301699
-      Tak berjudul32_20261116013223_5: 4280820154028532485
+      Idle Front 1_0: -1711699535488841882
+      Idle Front 1_1: -4127599057069287222
+      Idle Front 1_2: 774288986146303699
+      Idle Front 1_3: 8416562960983232530
+      Idle Front 1_4: -5088767853354837597
+      Idle Front 1_5: -3857193642193515722
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

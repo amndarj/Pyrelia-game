@@ -1,49 +1,49 @@
 fileFormatVersion: 2
-guid: 167a5748d413d47928fe3b758004132c
+guid: bce701f9e26ff1241ae43c708802f3e4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2420318059537592922
-    second: Tak berjudul32_20261116013235_0
+      213: 8385047966702386850
+    second: Idle Right 1_0
   - first:
-      213: -3869700024197065712
-    second: Tak berjudul32_20261116013235_1
+      213: -9179359753799518121
+    second: Idle Right 1_1
   - first:
-      213: 2805737376126209864
-    second: Tak berjudul32_20261116013235_2
+      213: -462725499558866767
+    second: Idle Right 1_2
   - first:
-      213: -5259495197518220698
-    second: Tak berjudul32_20261116013235_3
+      213: 538888162123498230
+    second: Idle Right 1_3
   - first:
-      213: 7364099667040982287
-    second: Tak berjudul32_20261116013235_4
+      213: 644116002230081327
+    second: Idle Right 1_4
   - first:
-      213: 1755709920809041976
-    second: Tak berjudul32_20261116013235_5
+      213: 7726113918870303841
+    second: Idle Right 1_5
   - first:
-      213: 460351756632676923
-    second: Tak berjudul32_20261116013235_6
+      213: -7723918593553213299
+    second: Idle Right 1_6
   - first:
-      213: 8824801252545928551
-    second: Tak berjudul32_20261116013235_7
+      213: -512617958967129894
+    second: Idle Right 1_7
   - first:
-      213: 4586719702246957466
-    second: Tak berjudul32_20261116013235_8
+      213: 1162318445760873923
+    second: Idle Right 1_8
   - first:
-      213: 6122691965714316967
-    second: Tak berjudul32_20261116013235_9
+      213: 5288001916020748377
+    second: Idle Right 1_9
   - first:
-      213: 7883518835657484128
-    second: Tak berjudul32_20261116013235_10
+      213: -8936462440309595351
+    second: Idle Right 1_10
   - first:
-      213: -9147585729999806926
-    second: Tak berjudul32_20261116013235_11
+      213: 3663825067407020570
+    second: Idle Right 1_11
   - first:
-      213: -6418118917649635281
-    second: Tak berjudul32_20261116013235_12
+      213: -3920113412916832209
+    second: Idle Right 1_12
   - first:
-      213: 6567982109294985313
-    second: Tak berjudul32_20261116013235_13
+      213: -6098957107907116136
+    second: Idle Right 1_13
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -135,11 +135,24 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tak berjudul32_20261116013235_0
+      name: Idle Right 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -154,14 +167,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a527336a372b69120800000000000000
-      internalID: 2420318059537592922
+      spriteID: 2ae38e723bcad5470800000000000000
+      internalID: 8385047966702386850
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tak berjudul32_20261116013235_1
+      name: Idle Right 1_1
       rect:
         serializedVersion: 2
         x: 1555
@@ -176,14 +189,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 014d96e94501c4ac0800000000000000
-      internalID: -3869700024197065712
+      spriteID: 758334130fc5c9080800000000000000
+      internalID: -9179359753799518121
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tak berjudul32_20261116013235_2
+      name: Idle Right 1_2
       rect:
         serializedVersion: 2
         x: 1574
@@ -198,14 +211,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 84f0a05374bffe620800000000000000
-      internalID: 2805737376126209864
+      spriteID: 1b0574a1c911499f0800000000000000
+      internalID: -462725499558866767
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tak berjudul32_20261116013235_3
+      name: Idle Right 1_3
       rect:
         serializedVersion: 2
         x: 1584
@@ -220,14 +233,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 662bd0edbf48207b0800000000000000
-      internalID: -5259495197518220698
+      spriteID: 6f2c805ade38a7700800000000000000
+      internalID: 538888162123498230
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tak berjudul32_20261116013235_4
+      name: Idle Right 1_4
       rect:
         serializedVersion: 2
         x: 101
@@ -242,14 +255,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f05dc8861a9823660800000000000000
-      internalID: 7364099667040982287
+      spriteID: f279113671c50f800800000000000000
+      internalID: 644116002230081327
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tak berjudul32_20261116013235_5
+      name: Idle Right 1_5
       rect:
         serializedVersion: 2
         x: 1999
@@ -264,14 +277,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 830c37eeed88d5810800000000000000
-      internalID: 1755709920809041976
+      spriteID: 164377cacaba83b60800000000000000
+      internalID: 7726113918870303841
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tak berjudul32_20261116013235_6
+      name: Idle Right 1_6
       rect:
         serializedVersion: 2
         x: 731
@@ -286,14 +299,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b3a51ddcb7f736600800000000000000
-      internalID: 460351756632676923
+      spriteID: d88d93556f02fc490800000000000000
+      internalID: -7723918593553213299
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tak berjudul32_20261116013235_7
+      name: Idle Right 1_7
       rect:
         serializedVersion: 2
         x: 2124
@@ -308,14 +321,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 76d1c6fbbfdf77a70800000000000000
-      internalID: 8824801252545928551
+      spriteID: ad8474aaea0d2e8f0800000000000000
+      internalID: -512617958967129894
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tak berjudul32_20261116013235_8
+      name: Idle Right 1_8
       rect:
         serializedVersion: 2
         x: 190
@@ -330,14 +343,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a9127b8844d47af30800000000000000
-      internalID: 4586719702246957466
+      spriteID: 3c5067bd772612010800000000000000
+      internalID: 1162318445760873923
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tak berjudul32_20261116013235_9
+      name: Idle Right 1_9
       rect:
         serializedVersion: 2
         x: 1557
@@ -352,14 +365,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7ae3a8547eb28f450800000000000000
-      internalID: 6122691965714316967
+      spriteID: 9507000c9b1c26940800000000000000
+      internalID: 5288001916020748377
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tak berjudul32_20261116013235_10
+      name: Idle Right 1_10
       rect:
         serializedVersion: 2
         x: 1555
@@ -374,14 +387,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0672773cc92e76d60800000000000000
-      internalID: 7883518835657484128
+      spriteID: 923e9b802ce4bf380800000000000000
+      internalID: -8936462440309595351
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tak berjudul32_20261116013235_11
+      name: Idle Right 1_11
       rect:
         serializedVersion: 2
         x: 2031
@@ -396,14 +409,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 23eddea9e3f3d0180800000000000000
-      internalID: -9147585729999806926
+      spriteID: a1297fdac7588d230800000000000000
+      internalID: 3663825067407020570
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tak berjudul32_20261116013235_12
+      name: Idle Right 1_12
       rect:
         serializedVersion: 2
         x: 2191
@@ -418,14 +431,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f28674b59d24ee6a0800000000000000
-      internalID: -6418118917649635281
+      spriteID: f2819dfde95f899c0800000000000000
+      internalID: -3920113412916832209
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tak berjudul32_20261116013235_13
+      name: Idle Right 1_13
       rect:
         serializedVersion: 2
         x: 1816
@@ -440,8 +453,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 16006a30ee8262b50800000000000000
-      internalID: 6567982109294985313
+      spriteID: 8934ad2f2d62c5ba0800000000000000
+      internalID: -6098957107907116136
       vertices: []
       indices: 
       edges: []
@@ -460,20 +473,20 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Tak berjudul32_20261116013235_0: 2420318059537592922
-      Tak berjudul32_20261116013235_1: -3869700024197065712
-      Tak berjudul32_20261116013235_10: 7883518835657484128
-      Tak berjudul32_20261116013235_11: -9147585729999806926
-      Tak berjudul32_20261116013235_12: -6418118917649635281
-      Tak berjudul32_20261116013235_13: 6567982109294985313
-      Tak berjudul32_20261116013235_2: 2805737376126209864
-      Tak berjudul32_20261116013235_3: -5259495197518220698
-      Tak berjudul32_20261116013235_4: 7364099667040982287
-      Tak berjudul32_20261116013235_5: 1755709920809041976
-      Tak berjudul32_20261116013235_6: 460351756632676923
-      Tak berjudul32_20261116013235_7: 8824801252545928551
-      Tak berjudul32_20261116013235_8: 4586719702246957466
-      Tak berjudul32_20261116013235_9: 6122691965714316967
+      Idle Right 1_0: 8385047966702386850
+      Idle Right 1_1: -9179359753799518121
+      Idle Right 1_10: -8936462440309595351
+      Idle Right 1_11: 3663825067407020570
+      Idle Right 1_12: -3920113412916832209
+      Idle Right 1_13: -6098957107907116136
+      Idle Right 1_2: -462725499558866767
+      Idle Right 1_3: 538888162123498230
+      Idle Right 1_4: 644116002230081327
+      Idle Right 1_5: 7726113918870303841
+      Idle Right 1_6: -7723918593553213299
+      Idle Right 1_7: -512617958967129894
+      Idle Right 1_8: 1162318445760873923
+      Idle Right 1_9: 5288001916020748377
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
