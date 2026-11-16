@@ -308,7 +308,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &75820262
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4083,26 +4083,211 @@ MonoBehaviour:
   mcPortrait: {fileID: -2311659948842064771, guid: d70274627a7564040b4e998e2a2fe515, type: 3}
   openingDialogueLines:
   - characterName: Edo
-    dialogueText: kak sini main petasan bareng aku!
+    dialogueText: Kak! Kak! Mau ikut bermain petasan denganku?
     portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
     side: 0
   - characterName: Aku
-    dialogueText: 'adik kecil kenapa main petasan disini?
+    dialogueText: 'Petasan? Kamu sedang bermain petasan di sini?
 
 '
     portrait: {fileID: -2311659948842064771, guid: d70274627a7564040b4e998e2a2fe515, type: 3}
     side: 1
+  - characterName: Edo
+    dialogueText: 'Hehe, iya! Seru, lho, Kak! Suaranya keras sekali!
+
+'
+    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
+    side: 0
+  - characterName: Aku
+    dialogueText: Memangnya kamu tidak takut bermain petasan di dekat hutan seperti
+      ini?
+    portrait: {fileID: -2311659948842064771, guid: ea3efa1ed1c3c8e4eb0b52bf879734e5, type: 3}
+    side: 1
+  - characterName: Edo
+    dialogueText: 'Enggak, kok! Kemarin juga aku bermain di sini
+
+'
+    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
+    side: 0
+  - characterName: Aku
+    dialogueText: Sebentar... Kemarin lusa, apa kamu juga bermain petasan di hutan
+      ini?
+    portrait: {fileID: -2311659948842064771, guid: ea3efa1ed1c3c8e4eb0b52bf879734e5, type: 3}
+    side: 1
+  - characterName: Edo
+    dialogueText: 'Eh...? I-iya, Kak. Memangnya kenapa?
+
+'
+    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
+    side: 0
+  - characterName: Aku
+    dialogueText: Waktu itu, apa kamu menyalakan petasan di sekitar pepohonan?
+    portrait: {fileID: -2311659948842064771, guid: ea3efa1ed1c3c8e4eb0b52bf879734e5, type: 3}
+    side: 1
+  - characterName: Edo
+    dialogueText: Iya... Aku cuma ingin bermain. Awalnya apinya kecil, tapi tiba-tiba
+      membesar dan menyambar rumput di sekitarnya.
+    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
+    side: 0
+  - characterName: Aku
+    dialogueText: Lalu, apa yang kamu lakukan?
+    portrait: {fileID: -2311659948842064771, guid: ea3efa1ed1c3c8e4eb0b52bf879734e5, type: 3}
+    side: 1
+  - characterName: Edo
+    dialogueText: Aku langsung lari karena takut, Kak. Aku benar-benar enggak menyangka
+      apinya akan membesar seperti itu...
+    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
+    side: 0
+  - characterName: Aku
+    dialogueText: Jadi, kamu tidak tahu kalau percikan api dari petasan bisa memicu
+      kebakaran hutan?
+    portrait: {fileID: -2311659948842064771, guid: ea3efa1ed1c3c8e4eb0b52bf879734e5, type: 3}
+    side: 1
+  - characterName: Edo
+    dialogueText: Enggak, Kak... Aku kira apinya akan langsung mati. Aku enggak bermaksud
+      membuat hutan terbakar.
+    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
+    side: 0
+  - characterName: Aku
+    dialogueText: Aku mengerti kamu tidak bermaksud melakukannya. Tapi, sesuatu yang
+      terlihat kecil bisa menimbulkan akibat yang sangat besar
+    portrait: {fileID: -2311659948842064771, guid: ea3efa1ed1c3c8e4eb0b52bf879734e5, type: 3}
+    side: 1
+  - characterName: Edo
+    dialogueText: Memangnya bisa separah itu, Kak?
+    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
+    side: 0
+  - characterName: Aku
+    dialogueText: Bisa. Karena itu, ada beberapa hal penting yang perlu kamu ketahui
+      agar kejadian seperti kemarin tidak terulang
+    portrait: {fileID: -2311659948842064771, guid: ea3efa1ed1c3c8e4eb0b52bf879734e5, type: 3}
+    side: 1
   educationDialogueLines:
   - characterName: Aku
-    dialogueText: dik jangan main petasan di sini lagi ya? karena bisa menyebabkan
-      kebakaran.
+    dialogueText: Kebakaran hutan bisa terjadi karena berbagai hal. Ada yang disebabkan
+      oleh faktor alam dan ada juga yang disebabkan oleh aktivitas manusia.
+    portrait: {fileID: -2311659948842064771, guid: d70274627a7564040b4e998e2a2fe515, type: 3}
+    side: 1
+  - characterName: Edo
+    dialogueText: Faktor alam itu seperti apa, Kak?
+    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
+    side: 0
+  - characterName: Aku
+    dialogueText: Misalnya sambaran petir yang mengenai pohon atau tumbuhan kering.
+      Cuaca panas dan kondisi hutan yang kering juga bisa membuat api lebih mudah
+      menyebar.
+    portrait: {fileID: -2311659948842064771, guid: d70274627a7564040b4e998e2a2fe515, type: 3}
+    side: 1
+  - characterName: Edo
+    dialogueText: Kalau karena manusia?
+    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
+    side: 0
+  - characterName: Aku
+    dialogueText: Bisa karena membuang puntung rokok sembarangan, membakar sampah
+      di dekat hutan, membuat api unggun tanpa pengawasan, atau bermain petasan di
+      kawasan hutan.
+    portrait: {fileID: -2311659948842064771, guid: d70274627a7564040b4e998e2a2fe515, type: 3}
+    side: 1
+  - characterName: Edo
+    dialogueText: Berarti petasan yang aku nyalakan kemarin juga bisa menjadi penyebab
+      kebakaran, ya?
+    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
+    side: 0
+  - characterName: Aku
+    dialogueText: Betul. Percikan api dari petasan bisa mengenai daun atau rumput
+      kering, lalu memicu kebakaran.
+    portrait: {fileID: -2311659948842064771, guid: d70274627a7564040b4e998e2a2fe515, type: 3}
+    side: 1
+  - characterName: Edo
+    dialogueText: Oh... sekarang aku mengerti.
+    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
+    side: 0
+  - characterName: Aku
+    dialogueText: Supaya kebakaran tidak terjadi lagi, kita harus menjaga lingkungan
+      dan menghindari hal-hal yang bisa memicu api.
+    portrait: {fileID: -2311659948842064771, guid: d70274627a7564040b4e998e2a2fe515, type: 3}
+    side: 1
+  - characterName: Edo
+    dialogueText: Memangnya apa saja yang harus dilakukan?
+    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
+    side: 0
+  - characterName: Aku
+    dialogueText: Pertama, jangan bermain petasan atau benda yang menghasilkan percikan
+      api di sekitar hutan.
     portrait: {fileID: -2311659948842064771, guid: d70274627a7564040b4e998e2a2fe515, type: 3}
     side: 1
   - characterName: Aku
-    dialogueText: di area hutan sini banyak rumput dan daun daun kering, mudah memicu
-      terjadinya kebakaran.
+    dialogueText: Kedua, jangan membuang puntung rokok atau benda yang masih menyala
+      sembarangan.
     portrait: {fileID: -2311659948842064771, guid: d70274627a7564040b4e998e2a2fe515, type: 3}
     side: 1
+  - characterName: Aku
+    dialogueText: Kalau aman, kamu boleh mengingatkannya. Kamu juga bisa meminta
+      bantuan orang dewasa.
+    portrait: {fileID: -2311659948842064771, guid: d70274627a7564040b4e998e2a2fe515, type: 3}
+    side: 1
+  - characterName: Aku
+    dialogueText: Ketiga, jangan membakar sampah atau membuat api unggun sembarangan.
+      Kalau ada aktivitas yang melibatkan api, harus ada pengawasan orang dewasa
+      dan dilakukan di tempat yang aman.
+    portrait: {fileID: -2311659948842064771, guid: d70274627a7564040b4e998e2a2fe515, type: 3}
+    side: 1
+  - characterName: Aku
+    dialogueText: Tepat sekali. Jangan pernah menganggap remeh api, sekecil apa pun.
+    portrait: {fileID: -2311659948842064771, guid: d70274627a7564040b4e998e2a2fe515, type: 3}
+    side: 1
+  - characterName: Aku
+    dialogueText: Pertama, jangan mendekati api atau mencoba memadamkannya sendiri.
+      Api bisa menyebar dengan cepat dan membahayakan keselamatanmu.
+    portrait: {fileID: -2311659948842064771, guid: d70274627a7564040b4e998e2a2fe515, type: 3}
+    side: 1
+  - characterName: Aku
+    dialogueText: Segera menjauh dari lokasi kebakaran menuju tempat yang aman. Kalau
+      ada asap, usahakan tetap berada serendah mungkin dan lindungi hidung serta
+      mulut dengan kain.
+    portrait: {fileID: -2311659948842064771, guid: d70274627a7564040b4e998e2a2fe515, type: 3}
+    side: 1
+  - characterName: Aku
+    dialogueText: Segera beri tahu orang dewasa dan hubungi petugas pemadam kebakaran
+      atau layanan darurat. Berikan informasi lokasi kebakaran dengan jelas.
+    portrait: {fileID: -2311659948842064771, guid: d70274627a7564040b4e998e2a2fe515, type: 3}
+    side: 1
+  - characterName: Aku
+    dialogueText: Benar. Keselamatan dirimu adalah yang paling utama. Biarkan petugas
+      yang menangani kebakaran dengan peralatan yang sesuai.
+    portrait: {fileID: -2311659948842064771, guid: d70274627a7564040b4e998e2a2fe515, type: 3}
+    side: 1
+  - characterName: Edo
+    dialogueText: Baik, Kak. Aku tidak akan bermain petasan di sini lagi.Baik, Kak.
+      Aku tidak akan bermain petasan di sini lagi.
+    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
+    side: 0
+  - characterName: Edo
+    dialogueText: Kalau melihat orang membuang puntung rokok sembarangan, aku harus
+      mengingatkannya?
+    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
+    side: 0
+  - characterName: Edo
+    dialogueText: Jadi, kita harus lebih berhati-hati dengan api, ya?
+    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
+    side: 0
+  - characterName: Edo
+    dialogueText: Kak, kalau suatu saat aku melihat hutan terbakar lagi, aku harus
+      bagaimana?
+    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
+    side: 0
+  - characterName: Edo
+    dialogueText: Lalu aku harus apa?
+    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
+    side: 0
+  - characterName: Edo
+    dialogueText: Setelah itu?
+    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
+    side: 0
+  - characterName: Edo
+    dialogueText: erarti aku tidak boleh mencoba memadamkannya sendiri?
+    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
+    side: 0
   closingDialogueLines:
   - characterName: Bocil
     dialogueText: jadi begitu ya kan. lain kali aku tidak akan mengulanginya lagi!!!!
