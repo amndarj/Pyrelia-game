@@ -9,7 +9,7 @@ public class PlayerMC : MonoBehaviour
     public DialogueUIDay3 dialogueUI;
 
     [Header("MC Identity")]
-    public string mcName = "MC";
+    public string mcName = "Aku";
     public Sprite mcPortrait;
 
     [Header("Opening Conversation")]
