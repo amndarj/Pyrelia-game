@@ -11,5 +11,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Day 1/MiniGame_PemadamanApi.unity
     guid: 702112eadd6682545baf0ce30886d826
+  - enabled: 1
+    path: Assets/Scenes/Day 3/Opening_Day3.unity
+    guid: ca524847700bc954f9567b56537ec041
+  - enabled: 1
+    path: Assets/Scenes/Day 3/Day 3.unity
+    guid: f6e1da4eab16513419c2f8b12b6bf947
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
