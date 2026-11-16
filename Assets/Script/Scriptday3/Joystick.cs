@@ -8,12 +8,11 @@ public class Joystick : MonoBehaviour,
     IPointerUpHandler
 {
     [Header("Joystick UI")]
-    public RectTransform joystickBG;
-    public RectTransform joystickMove;
+    public RectTransform background;
+    public RectTransform handle;
 
     [Header("Settings")]
-    [Range(0.1f, 1.5f)]
-    public float handleRange = 1.2f;
+    public float handleRange = 1f;
 
     public Vector2 Direction { get; private set; }
 
@@ -27,29 +26,26 @@ public class Joystick : MonoBehaviour,
 
     public void OnDrag(PointerEventData eventData)
     {
-        Vector2 localPosition;
+        Vector2 position;
 
         if (RectTransformUtility.ScreenPointToLocalPointInRectangle(
-            joystickBG,
+            background,
             eventData.position,
             eventData.pressEventCamera,
-            out localPosition))
+            out position))
         {
-            Vector2 radius = (joystickBG.rect.size -
-                              joystickMove.rect.size) / 1f;
+            Vector2 radius = background.sizeDelta / 2f;
 
-            radius *= handleRange;
-
-            Vector2 rawDirection = new Vector2(
-                localPosition.x / radius.x,
-                localPosition.y / radius.y
+            Direction = new Vector2(
+                position.x / radius.x,
+                position.y / radius.y
             );
 
-            Direction = Vector2.ClampMagnitude(rawDirection, 1f);
+            Direction = Vector2.ClampMagnitude(Direction, 1f);
 
-            joystickMove.anchoredPosition = new Vector2(
-                Direction.x * radius.x,
-                Direction.y * radius.y
+            handle.anchoredPosition = new Vector2(
+                Direction.x * radius.x * handleRange,
+                Direction.y * radius.y * handleRange
             );
         }
     }
@@ -57,6 +53,6 @@ public class Joystick : MonoBehaviour,
     public void OnPointerUp(PointerEventData eventData)
     {
         Direction = Vector2.zero;
-        joystickMove.anchoredPosition = Vector2.zero;
+        handle.anchoredPosition = Vector2.zero;
     }
 }
