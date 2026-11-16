@@ -19,14 +19,14 @@ public class GokilEvacuationDialogue : MonoBehaviour
         {
             new DialogueLine
             {
-                speakerName = "Gokil",
-                dialogueText = "Eh, sebentar! Aku belum sempat merekam dari sudut yang bagus!",
+                speakerName = "Ratna",
+                dialogueText = "Eh, sebentar! Ini bagus nih buat konten!",
                 speakerImage = null
             },
             new DialogueLine
             {
-                speakerName = "Player",
-                dialogueText = "Gokil, sekarang bukan waktunya merekam. Ayo lanjut!",
+                speakerName = "Aku",
+                dialogueText = "Mbak, sekarang bukan waktunya merekam. Ayo lanjut!",
                 speakerImage = null
             }
         },
@@ -35,14 +35,14 @@ public class GokilEvacuationDialogue : MonoBehaviour
         {
             new DialogueLine
             {
-                speakerName = "Gokil",
+                speakerName = "Ratna",
                 dialogueText = "Duh, jauh banget! Kita nggak bisa istirahat sebentar?",
                 speakerImage = null
             },
             new DialogueLine
             {
-                speakerName = "Player",
-                dialogueText = "Kita sudah hampir sampai. Sedikit lagi, Gokil!",
+                speakerName = "Ratna",
+                dialogueText = "Kita sudah hampir sampai. Sedikit lagi, Mbak ya ampun!",
                 speakerImage = null
             }
         },
@@ -51,13 +51,13 @@ public class GokilEvacuationDialogue : MonoBehaviour
         {
             new DialogueLine
             {
-                speakerName = "Gokil",
+                speakerName = "Ratna",
                 dialogueText = "Ternyata situasinya memang seserius itu, ya...",
                 speakerImage = null
             },
             new DialogueLine
             {
-                speakerName = "Player",
+                speakerName = "Aku",
                 dialogueText = "Iya. Makanya kita harus memastikan semua orang sampai di tempat aman.",
                 speakerImage = null
             }
@@ -71,7 +71,7 @@ public class GokilEvacuationDialogue : MonoBehaviour
         {
             foreach (DialogueLine line in point)
             {
-                if (line.speakerName == "Gokil")
+                if (line.speakerName == "Ratna")
                     line.speakerImage = gokilImage;
                 else
                     line.speakerImage = playerImage;

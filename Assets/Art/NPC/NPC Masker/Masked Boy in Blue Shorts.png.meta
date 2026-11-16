@@ -1,0 +1,481 @@
+fileFormatVersion: 2
+guid: 64868f19331c04ec48feeb99411e53fa
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4526362531701360778
+    second: Masked Boy in Blue Shorts_0
+  - first:
+      213: 6369981941053469874
+    second: Masked Boy in Blue Shorts_1
+  - first:
+      213: -7320813207737009098
+    second: Masked Boy in Blue Shorts_2
+  - first:
+      213: -7991497618447358477
+    second: Masked Boy in Blue Shorts_3
+  - first:
+      213: -5768572530395042462
+    second: Masked Boy in Blue Shorts_4
+  - first:
+      213: -9104573077682699975
+    second: Masked Boy in Blue Shorts_5
+  - first:
+      213: -8342367796728284484
+    second: Masked Boy in Blue Shorts_6
+  - first:
+      213: -4357065836365792078
+    second: Masked Boy in Blue Shorts_7
+  - first:
+      213: -1485394475617456495
+    second: Masked Boy in Blue Shorts_8
+  - first:
+      213: 2519552986890438138
+    second: Masked Boy in Blue Shorts_9
+  - first:
+      213: -8590739379010190675
+    second: Masked Boy in Blue Shorts_10
+  - first:
+      213: 7332929425904190727
+    second: Masked Boy in Blue Shorts_11
+  - first:
+      213: -1052248063971257790
+    second: Masked Boy in Blue Shorts_12
+  - first:
+      213: -387265964135116631
+    second: Masked Boy in Blue Shorts_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Masked Boy in Blue Shorts_0
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 1157
+        width: 175
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6777d4552412f21c0800000000000000
+      internalID: -4526362531701360778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Masked Boy in Blue Shorts_1
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 0
+        width: 942
+        height: 1416
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b4352663d8b66850800000000000000
+      internalID: 6369981941053469874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Masked Boy in Blue Shorts_2
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 1368
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63cf8d5cc2f376a90800000000000000
+      internalID: -7320813207737009098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Masked Boy in Blue Shorts_3
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 1368
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f5a01db14f781190800000000000000
+      internalID: -7991497618447358477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Masked Boy in Blue Shorts_4
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 1301
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26d2ab8c8d9e1ffa0800000000000000
+      internalID: -5768572530395042462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Masked Boy in Blue Shorts_5
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 1250
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9314321260f06a180800000000000000
+      internalID: -9104573077682699975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Masked Boy in Blue Shorts_6
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 457
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cba3a5a40b4f93c80800000000000000
+      internalID: -8342367796728284484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Masked Boy in Blue Shorts_7
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 443
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bc3d60e4b79883c0800000000000000
+      internalID: -4357065836365792078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Masked Boy in Blue Shorts_8
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 248
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19e6e792891d26be0800000000000000
+      internalID: -1485394475617456495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Masked Boy in Blue Shorts_9
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 152
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af50168a71047f220800000000000000
+      internalID: 2519552986890438138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Masked Boy in Blue Shorts_10
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 103
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da2432cec0097c880800000000000000
+      internalID: -8590739379010190675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Masked Boy in Blue Shorts_11
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 87
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 705470a167cc3c560800000000000000
+      internalID: 7332929425904190727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Masked Boy in Blue Shorts_12
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 46
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 242966bf5f9a561f0800000000000000
+      internalID: -1052248063971257790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Masked Boy in Blue Shorts_13
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 47
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a0902e48a720aaf0800000000000000
+      internalID: -387265964135116631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Masked Boy in Blue Shorts_0: -4526362531701360778
+      Masked Boy in Blue Shorts_1: 6369981941053469874
+      Masked Boy in Blue Shorts_10: -8590739379010190675
+      Masked Boy in Blue Shorts_11: 7332929425904190727
+      Masked Boy in Blue Shorts_12: -1052248063971257790
+      Masked Boy in Blue Shorts_13: -387265964135116631
+      Masked Boy in Blue Shorts_2: -7320813207737009098
+      Masked Boy in Blue Shorts_3: -7991497618447358477
+      Masked Boy in Blue Shorts_4: -5768572530395042462
+      Masked Boy in Blue Shorts_5: -9104573077682699975
+      Masked Boy in Blue Shorts_6: -8342367796728284484
+      Masked Boy in Blue Shorts_7: -4357065836365792078
+      Masked Boy in Blue Shorts_8: -1485394475617456495
+      Masked Boy in Blue Shorts_9: 2519552986890438138
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
