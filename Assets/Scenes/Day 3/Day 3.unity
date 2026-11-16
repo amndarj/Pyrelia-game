@@ -1343,8 +1343,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b69ca76973f69249ac86edec4bcf9ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Joystick
-  joystickBG: {fileID: 320792558}
-  joystickMove: {fileID: 542948582}
+  background: {fileID: 320792558}
+  handle: {fileID: 542948582}
   handleRange: 1
 --- !u!1 &326718585
 GameObject:

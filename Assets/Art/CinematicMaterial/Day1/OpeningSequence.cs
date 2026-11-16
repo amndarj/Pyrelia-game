@@ -23,6 +23,9 @@ public class OpeningSequence : MonoBehaviour
     public float slide3HoldDuration = 2.8f;
     public float narrationGapDuration = 0.2f;
 
+    [Header("Music Transition")]
+    public OpeningMusicTransition musicTransition;
+
     [Header("Durations")]
     public float cameraMoveDuration = 8.67f;
     public float leafInDuration = 12f;
@@ -107,6 +110,12 @@ public class OpeningSequence : MonoBehaviour
 
         // TRANSISI SLIDE 2 KE SLIDE 3
         slide3.SetActive(true);
+
+        // Transisi musik damai ke musik dramatis
+        if (musicTransition != null)
+        {
+            musicTransition.TransitionToFire();
+        }
 
         foreach (SpriteRenderer sr in slide3Renderers)
         {

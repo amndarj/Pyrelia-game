@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Day 1/Opening_Day1.unity
+    guid: 6868f14096782974199d96d08f49ffdd
+  - enabled: 1
     path: Assets/Scenes/Day 1/Day 1.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1

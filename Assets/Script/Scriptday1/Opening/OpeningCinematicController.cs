@@ -6,6 +6,9 @@ public class OpeningCinematicController : MonoBehaviour
     [Header("Shot 3")]
     [SerializeField] private Animator shot3Animator;
 
+    [Header("Music")]
+    [SerializeField] private OpeningMusicTransition musicTransition;
+
     [Header("Timing")]
     [SerializeField] private float shot3StartTime = 17f;
 
@@ -29,8 +32,16 @@ public class OpeningCinematicController : MonoBehaviour
 
         if (!shot3Started && cinematicTimer >= shot3StartTime)
         {
-            shot3Animator.enabled = true;
-            shot3Animator.Play(0, 0, 0f);
+            if (shot3Animator != null)
+            {
+                shot3Animator.enabled = true;
+                shot3Animator.Play(0, 0, 0f);
+            }
+
+            if (musicTransition != null)
+            {
+                musicTransition.TransitionToFire();
+            }
 
             shot3Started = true;
         }
