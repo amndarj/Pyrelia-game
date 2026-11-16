@@ -116,12 +116,12 @@ TextureImporter:
       name: Walk Front 2_0
       rect:
         serializedVersion: 2
-        x: 645
+        x: 562
         y: 55
-        width: 984
-        height: 2982
+        width: 1346
+        height: 3017
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 96f7c3b840b6d40ab915ab365d0169f2
     internalID: 0
     vertices: []
     indices: 
