@@ -5,66 +5,65 @@ public class PhoneCallDialogue : MonoBehaviour
 {
     public DialogueUI dialogueUI;
 
+    [Header("Speaker Images")]
     public Sprite playerPhoneSprite;
     public Sprite firefighterSprite;
 
-    private DialogueLine[] dialogueLines =
+    private DialogueLine[] dialogueLines;
+
+    private void Awake()
     {
-        new DialogueLine
+        dialogueLines = new DialogueLine[]
         {
-            speakerName = "Aku",
-            dialogueText = "Halo, Pak. Saya ingin melaporkan kebakaran hutan.",
-            speakerImage = null
-        },
-        new DialogueLine
-        {
-            speakerName = "Aku",
-            dialogueText = "Lokasinya berada tidak jauh dari desa xxx.",
-            speakerImage = null
-        },
-        new DialogueLine
-        {
-            speakerName = "Petugas",
-            dialogueText = "Baik, bisa jelaskan kondisi kebakarannya?",
-            speakerImage = null
-        },
-        new DialogueLine
-        {
-            speakerName = "Aku",
-            dialogueText = "Apinya mulai menyebar ke area pepohonan lainnya.",
-            speakerImage = null
-        },
-        new DialogueLine
-        {
-            speakerName = "Petugas",
-            dialogueText = "Baik, tim kami segera menuju lokasi.",
-            speakerImage = null
-        },
-        new DialogueLine
-        {
-            speakerName = "Petugas",
-            dialogueText = "Mohon tetap berada di tempat yang aman.",
-            speakerImage = null
-        },
-        new DialogueLine
-        {
-            speakerName = "Aku",
-            dialogueText = "Baik, Pak. Terima kasih.",
-            speakerImage = null
-        }
-    };
+            new DialogueLine
+            {
+                speakerName = "Aku",
+                dialogueText = "Halo, Pak. Saya ingin melaporkan kebakaran hutan.",
+                speakerImage = playerPhoneSprite
+            },
+            new DialogueLine
+            {
+                speakerName = "Aku",
+                dialogueText = "Lokasinya berada tidak jauh dari desa xxx.",
+                speakerImage = playerPhoneSprite
+            },
+            new DialogueLine
+            {
+                speakerName = "Petugas",
+                dialogueText = "Baik, bisa jelaskan kondisi kebakarannya?",
+                speakerImage = firefighterSprite
+            },
+            new DialogueLine
+            {
+                speakerName = "Aku",
+                dialogueText = "Apinya mulai menyebar ke area pepohonan lainnya.",
+                speakerImage = playerPhoneSprite
+            },
+            new DialogueLine
+            {
+                speakerName = "Petugas",
+                dialogueText = "Baik, tim kami segera menuju lokasi.",
+                speakerImage = firefighterSprite
+            },
+            new DialogueLine
+            {
+                speakerName = "Petugas",
+                dialogueText = "Mohon tetap berada di tempat yang aman.",
+                speakerImage = firefighterSprite
+            },
+            new DialogueLine
+            {
+                speakerName = "Aku",
+                dialogueText = "Baik, Pak. Terima kasih.",
+                speakerImage = playerPhoneSprite
+            }
+        };
+    }
 
     public void StartPhoneCall()
     {
-        foreach (DialogueLine line in dialogueLines)
-        {
-            if (line.speakerName == "Player")
-                line.speakerImage = playerPhoneSprite;
-            else
-                line.speakerImage = firefighterSprite;
-        }
-
-        dialogueUI.StartDialogue(dialogueLines);
+        if (dialogueUI != null)
+            dialogueUI.StartDialogue(dialogueLines);
     }
 
     private void OnTriggerExit2D(Collider2D other)
