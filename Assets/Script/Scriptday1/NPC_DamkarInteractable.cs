@@ -25,26 +25,26 @@ public class NPC_DamkarInteractable : MonoBehaviour, IInteractable
         {
             new DialogueLine
             {
-                speakerName = "Petugas Damkar",
-                dialogueText = "Halo, saya petugas pemadam kebakaran.",
+                speakerName = "Petugas",
+                dialogueText = "Hai, saya petugas pemadam kebakaran.",
                 speakerImage = firefighterImage
             },
             new DialogueLine
             {
-                speakerName = "Petugas Damkar",
+                speakerName = "Petugas",
                 dialogueText = "Kami sudah menerima laporan mengenai kebakaran hutan.",
                 speakerImage = firefighterImage
             },
             new DialogueLine
             {
-                speakerName = "Petugas Damkar",
+                speakerName = "Petugas",
                 dialogueText = "Kondisi api masih perlu segera ditangani.",
                 speakerImage = firefighterImage
             },
             new DialogueLine
             {
-                speakerName = "Petugas Damkar",
-                dialogueText = "Bisakah kamu membantu kami dalam proses pemadaman?",
+                speakerName = "Petugas",
+                dialogueText = "Kami akan mempersiapkan alat pemadam dan segera memadamkan api",
                 speakerImage = firefighterImage
             }
         };

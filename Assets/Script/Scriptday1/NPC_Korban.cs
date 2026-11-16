@@ -23,43 +23,43 @@ public class NPC_Korban : MonoBehaviour, IInteractable
         {
             new DialogueLine
             {
-                speakerName = "Anak SMA",
+                speakerName = "Fathan",
                 dialogueText = "Tolong... sakitt...",
                 speakerImage = npcImage
             },
             new DialogueLine
             {
-                speakerName = "Player",
+                speakerName = "Aku",
                 dialogueText = "Kamu kenapa? Apa yang terjadi?",
                 speakerImage = playerImage
             },
             new DialogueLine
             {
-                speakerName = "Anak SMA",
-                dialogueText = "Aku tadi terdorong oleh warga lain dan terjatuh.",
+                speakerName = "Fathan",
+                dialogueText = "Aku tadi terdorong oleh warga lain dan tersungkur.",
                 speakerImage = npcImage
             },
             new DialogueLine
             {
-                speakerName = "Player",
+                speakerName = "Aku",
                 dialogueText = "Kakimu terluka? Coba jangan banyak bergerak dulu.",
                 speakerImage = playerImage
             },
             new DialogueLine
             {
-                speakerName = "Anak SMA",
+                speakerName = "Fathan",
                 dialogueText = "Sakit sekali... aku tidak bisa berdiri, bahkan aku tidak bisa menggerakkan kakiku.",
                 speakerImage = npcImage
             },
             new DialogueLine
             {
-                speakerName = "Player",
+                speakerName = "Aku",
                 dialogueText = "Tenang, aku akan membantumu. Aku cari perlengkapan pertolongan pertama dulu.",
                 speakerImage = playerImage
             },
             new DialogueLine
             {
-                speakerName = "Anak SMA",
+                speakerName = "Fathan",
                 dialogueText = "Terima kasih ya kak...",
                 speakerImage = npcImage
             }
