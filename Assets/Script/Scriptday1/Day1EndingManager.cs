@@ -20,10 +20,9 @@ public class Day1EndingManager : MonoBehaviour
 
     public void LanjutDay2()
     {
-        // Progres Day 1 tetap tersimpan.
-        SceneManager.LoadScene("Day 2");
+        SceneManager.LoadScene("Opening_Day2");
 
-        Debug.Log("Melanjutkan ke Day 2!");
+        Debug.Log("Melanjutkan ke Opening Day 2!");
     }
 }
 
