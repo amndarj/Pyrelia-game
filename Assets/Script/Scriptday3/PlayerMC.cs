@@ -21,49 +21,36 @@ public class PlayerMC : MonoBehaviour
     [Header("Closing Conversation")]
     public DialogueLineDay3[] closingDialogueLines;
 
-    private bool isDialogueActive;
     private Action onDialogueFinished;
 
     void Update()
     {
-        if (!isDialogueActive)
+        if (dialogueUI == null || !dialogueUI.IsDialogueActive())
             return;
 
+        // Keyboard tetap bisa digunakan di editor
         if (Keyboard.current != null &&
             Keyboard.current.eKey.wasPressedThisFrame)
         {
             dialogueUI.NextLine();
-
-            if (!dialogueUI.IsDialogueActive())
-            {
-                isDialogueActive = false;
-
-                Action callback = onDialogueFinished;
-                onDialogueFinished = null;
-                callback?.Invoke();
-            }
         }
     }
 
-    // Memulai dialog pembuka
     public void StartOpeningDialogue(Action onFinished = null)
     {
         StartCustomDialogue(openingDialogueLines, onFinished);
     }
 
-    // Memulai dialog edukasi sebelum quiz
     public void StartEducationDialogue(Action onFinished = null)
     {
         StartCustomDialogue(educationDialogueLines, onFinished);
     }
 
-    // Memulai dialog penutup
     public void StartClosingDialogue(Action onFinished = null)
     {
         StartCustomDialogue(closingDialogueLines, onFinished);
     }
 
-    // Menampilkan dialog berdasarkan array
     void StartCustomDialogue(
         DialogueLineDay3[] lines,
         Action onFinished)
@@ -80,12 +67,18 @@ public class PlayerMC : MonoBehaviour
             return;
 
         onDialogueFinished = onFinished;
-        isDialogueActive = true;
 
-        dialogueUI.StartDialogue(lines);
+        dialogueUI.StartDialogue(lines, FinishCurrentDialogue);
     }
 
-    // Menampilkan respons otomatis setelah menjawab quiz
+    void FinishCurrentDialogue()
+    {
+        Action callback = onDialogueFinished;
+        onDialogueFinished = null;
+
+        callback?.Invoke();
+    }
+
     public void ShowQuizResponse(
         string response,
         Action onFinished = null)
@@ -106,8 +99,10 @@ public class PlayerMC : MonoBehaviour
         };
 
         onDialogueFinished = onFinished;
-        isDialogueActive = true;
 
-        dialogueUI.StartDialogue(responseLines);
+        dialogueUI.StartDialogue(
+            responseLines,
+            FinishCurrentDialogue
+        );
     }
 }

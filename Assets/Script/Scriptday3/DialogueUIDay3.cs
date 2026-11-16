@@ -37,6 +37,8 @@ public class DialogueUIDay3 : MonoBehaviour
     private RectTransform portraitRect;
     private RectTransform dialogueTextRect;
 
+    private Button dialogueButton;
+
     // Menyimpan pengaturan awal NPC
     private Vector2 originalAnchorMin;
     private Vector2 originalAnchorMax;
@@ -64,12 +66,35 @@ public class DialogueUIDay3 : MonoBehaviour
 
             originalAlignment = dialogueText.alignment;
         }
+
+        // Ambil Button dari Dialogue Panel
+        if (dialoguePanel != null)
+        {
+            dialogueButton = dialoguePanel.GetComponent<Button>();
+
+            if (dialogueButton != null)
+            {
+                dialogueButton.onClick.AddListener(NextLine);
+            }
+            else
+            {
+                Debug.LogWarning(
+                    "Dialogue Panel belum memiliki komponen Button!"
+                );
+            }
+        }
     }
 
     void Start()
     {
         if (dialoguePanel != null)
             dialoguePanel.SetActive(false);
+    }
+
+    void OnDestroy()
+    {
+        if (dialogueButton != null)
+            dialogueButton.onClick.RemoveListener(NextLine);
     }
 
     public bool IsDialogueActive()
@@ -107,26 +132,21 @@ public class DialogueUIDay3 : MonoBehaviour
         {
             if (line.side == DialogueSide.Right)
             {
-                // Anchor Stretch - Stretch
                 dialogueTextRect.anchorMin = new Vector2(0f, 0f);
                 dialogueTextRect.anchorMax = new Vector2(1f, 1f);
 
-                // Pivot pojok kanan bawah
                 dialogueTextRect.pivot = new Vector2(1f, 0f);
 
-                // Pengaturan jarak setiap sisi
                 dialogueTextRect.offsetMin =
                     new Vector2(mcLeft, mcBottom);
 
                 dialogueTextRect.offsetMax =
                     new Vector2(-mcRight, -mcTop);
 
-                // Alignment teks MC
                 dialogueText.alignment = mcDialogueAlignment;
             }
             else
             {
-                // Kembalikan pengaturan awal NPC
                 dialogueTextRect.anchorMin = originalAnchorMin;
                 dialogueTextRect.anchorMax = originalAnchorMax;
                 dialogueTextRect.pivot = originalPivot;
