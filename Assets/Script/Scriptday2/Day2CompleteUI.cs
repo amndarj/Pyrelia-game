@@ -73,9 +73,8 @@ public class Day2CompleteUI : MonoBehaviour
 
     public void LanjutDay3()
     {
-        if (Day2MissionManager.instance != null)
-            Day2MissionManager.instance.SimpanProgres();
+        SceneManager.LoadScene("Opening_Day3");
 
-        SceneManager.LoadScene("Day3");
+        Debug.Log("Melanjutkan ke Opening Day 3!");
     }
 }
