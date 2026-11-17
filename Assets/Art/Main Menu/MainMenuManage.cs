@@ -8,6 +8,11 @@ public class MainMenuManager : MonoBehaviour
         SceneManager.LoadScene("Opening_Day1");
     }
 
+    public void BukaPengaturan()
+    {
+        SceneManager.LoadScene("Setting Panel");
+    }
+
     public void Kredit()
     {
         SceneManager.LoadScene("Credit Panel");
