@@ -27,48 +27,70 @@ public class QuizDay3 : MonoBehaviour
 
     private string[] questions =
     {
-        "Kamu ingin bermain petasan. Di mana tempat yang aman?",
-        "Jika melihat api mulai membakar rumput di hutan, apa yang harus dilakukan?",
-        "Apa yang sebaiknya dilakukan untuk mencegah kebakaran hutan?"
+        "Manakah kegiatan manusia yang dapat menyebabkan kebakaran hutan?",
+        "Mengapa bermain petasan di sekitar hutan sangat berbahaya?",
+        "Apa yang sebaiknya dilakukan untuk mencegah kebakaran hutan?",
+        "Jika melihat kebakaran hutan, apa tindakan pertama yang harus dilakukan?",
+        "Apa yang harus dilakukan setelah menjauh dari lokasi kebakaran?"
     };
 
     private string[,] options =
     {
         {
-            "Di dekat hutan yang banyak daun kering",
-            "Di tempat terbuka, jauh dari bahan mudah terbakar, dengan pengawasan orang dewasa",
-            "Di dekat tumpukan kayu"
+            "Menyiram tanaman di sekitar hutan",
+            "Membuang puntung rokok sembarangan dan membakar sampah di dekat hutan",
+            "Membersihkan sampah tanpa membakarnya"
         },
         {
-            "Mendekati api untuk memadamkannya sendiri",
-            "Menjauh dan segera melapor kepada orang dewasa atau petugas",
-            "Membiarkannya karena api masih kecil"
+            "Percikan api petasan dapat mengenai tumbuhan kering dan memicu kebakaran",
+            "Petasan dapat membuat pohon tumbuh lebih cepat",
+            "Suara petasan dapat membuat hutan menjadi panas"
         },
         {
             "Membakar sampah di dekat pepohonan",
-            "Membuang puntung rokok sembarangan",
+            "Membuat api unggun tanpa pengawasan",
             "Tidak menyalakan api sembarangan di area hutan"
+        },
+        {
+            "Mendekati api untuk melihat seberapa besar kebakarannya",
+            "Segera menjauh menuju tempat yang aman",
+            "Mencoba memadamkan api sendiri"
+        },
+        {
+            "Kembali mendekati api untuk memastikan kondisinya",
+            "Diam saja dan menunggu api padam",
+            "Melapor kepada orang dewasa atau petugas mengenai lokasi kebakaran"
         }
     };
 
-    private int[] correctAnswers = { 1, 1, 2 };
+    private int[] correctAnswers = { 1, 0, 2, 1, 2 };
 
     // Penjelasan khusus untuk setiap pertanyaan
+
     private string[,] explanations =
     {
         {
-            "Benar! Petasan harus dijauhkan dari hutan dan bahan mudah terbakar. Penggunaan petasan juga harus mengikuti aturan keselamatan dan pengawasan orang dewasa.",
-            "Belum tepat. Daun kering dan tumpukan kayu mudah terbakar. Jangan bermain petasan di dekat hutan atau bahan yang mudah terbakar."
+            "Benar! Puntung rokok yang masih menyala dan aktivitas membakar sampah dapat memicu kebakaran, terutama ketika mengenai tumbuhan kering.",
+            "Belum tepat. Membuang puntung rokok sembarangan dan membakar sampah di dekat hutan dapat memicu kebakaran."
         },
         {
-            "Benar! Menjauh dari api dan segera melapor kepada orang dewasa atau petugas adalah tindakan yang tepat. Jangan mengambil risiko memadamkan api sendiri.",
-            "Belum tepat. Api sekecil apa pun dapat menyebar dengan cepat. Segera menjauh dan laporkan kepada orang dewasa atau petugas."
+            "Benar! Percikan api dari petasan dapat mengenai rumput atau daun kering sehingga memicu kebakaran yang dapat menyebar dengan cepat.",
+            "Belum tepat. Petasan menghasilkan percikan api yang dapat menyambar tumbuhan kering dan menyebabkan kebakaran hutan."
         },
         {
-            "Benar! Tidak menyalakan api sembarangan di area hutan dapat membantu mencegah kebakaran.",
-            "Belum tepat. Membakar sampah dan membuang puntung rokok sembarangan dapat memicu kebakaran. Hindari sumber api di area hutan."
+            "Benar! Menghindari penggunaan api sembarangan di kawasan hutan merupakan salah satu cara penting untuk mencegah kebakaran.",
+            "Belum tepat. Membakar sampah dan membuat api unggun tanpa pengawasan dapat meningkatkan risiko kebakaran hutan."
+        },
+        {
+            "Benar! Ketika melihat kebakaran, segera menjauh dari lokasi menuju tempat yang aman. Jangan mengambil risiko mendekati api.",
+            "Belum tepat. Jangan mendekati atau mencoba memadamkan kebakaran sendiri. Segera menjauh menuju tempat yang aman."
+        },
+        {
+            "Benar! Setelah berada di tempat aman, segera beri tahu orang dewasa atau petugas pemadam kebakaran dan sampaikan lokasi kebakaran dengan jelas.",
+            "Belum tepat. Jangan kembali mendekati lokasi kebakaran. Utamakan keselamatan dan segera laporkan kejadian kepada orang dewasa atau petugas."
         }
     };
+
 
     void Awake()
     {

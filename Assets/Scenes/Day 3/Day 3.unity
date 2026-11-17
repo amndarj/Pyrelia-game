@@ -301,6 +301,7 @@ GameObject:
   - component: {fileID: 75820262}
   - component: {fileID: 75820264}
   - component: {fileID: 75820263}
+  - component: {fileID: 75820265}
   m_Layer: 5
   m_Name: EndingPanel
   m_TagString: Untagged
@@ -366,6 +367,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 75820261}
   m_CullTransparentMesh: 1
+--- !u!114 &75820265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 75820261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c753d57ff72649549b4a3288a3d42c0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EndingPanelManager
 --- !u!1 &85226420
 GameObject:
   m_ObjectHideFlags: 0
@@ -787,7 +800,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -117, y: -31}
+  m_AnchoredPosition: {x: -117, y: -21}
   m_SizeDelta: {x: 2300, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &210842267
@@ -2068,8 +2081,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 415}
-  m_SizeDelta: {x: 2980, y: 700}
+  m_AnchoredPosition: {x: 0, y: 465.08316}
+  m_SizeDelta: {x: 2980, y: 800.166}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &535998862
 MonoBehaviour:
@@ -2218,7 +2231,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -21, y: -90}
+  m_AnchoredPosition: {x: -21, y: -15}
   m_SizeDelta: {x: 2250, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &562396635
@@ -2357,7 +2370,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -96, y: 245}
+  m_AnchoredPosition: {x: -96, y: 230}
   m_SizeDelta: {x: 2300, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &604345996
@@ -3094,7 +3107,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -165, y: 28}
+  m_AnchoredPosition: {x: -165, y: 103}
   m_SizeDelta: {x: -2050, y: -510}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &944929404
@@ -3358,7 +3371,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1093536089}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 75820265}
+        m_TargetAssemblyTypeName: EndingPanelManager, Assembly-CSharp
+        m_MethodName: KembaliKeMainMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1093536089
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4058,35 +4083,242 @@ MonoBehaviour:
   mcPortrait: {fileID: -2311659948842064771, guid: d70274627a7564040b4e998e2a2fe515, type: 3}
   openingDialogueLines:
   - characterName: Edo
-    dialogueText: kak sini main petasan bareng aku!
+    dialogueText: Kak! Kak! Mau ikut bermain petasan denganku?
     portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
     side: 0
   - characterName: Aku
-    dialogueText: 'adik kecil kenapa main petasan disini?
+    dialogueText: 'Petasan? Kamu sedang bermain petasan di sini?
 
 '
     portrait: {fileID: -2311659948842064771, guid: d70274627a7564040b4e998e2a2fe515, type: 3}
     side: 1
+  - characterName: Edo
+    dialogueText: 'Hehe, iya! Seru, lho, Kak! Suaranya keras sekali!
+
+'
+    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
+    side: 0
+  - characterName: Aku
+    dialogueText: Memangnya kamu tidak takut bermain petasan di dekat hutan seperti
+      ini?
+    portrait: {fileID: -2311659948842064771, guid: ea3efa1ed1c3c8e4eb0b52bf879734e5, type: 3}
+    side: 1
+  - characterName: Edo
+    dialogueText: 'Enggak, kok! Kemarin juga aku bermain di sini
+
+'
+    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
+    side: 0
+  - characterName: Aku
+    dialogueText: Sebentar... Kemarin lusa, apa kamu juga bermain petasan di hutan
+      ini?
+    portrait: {fileID: -2311659948842064771, guid: ea3efa1ed1c3c8e4eb0b52bf879734e5, type: 3}
+    side: 1
+  - characterName: Edo
+    dialogueText: 'Eh...? I-iya, Kak. Memangnya kenapa?
+
+'
+    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
+    side: 0
+  - characterName: Aku
+    dialogueText: Waktu itu, apa kamu menyalakan petasan di sekitar pepohonan?
+    portrait: {fileID: -2311659948842064771, guid: ea3efa1ed1c3c8e4eb0b52bf879734e5, type: 3}
+    side: 1
+  - characterName: Edo
+    dialogueText: Iya... Aku cuma ingin bermain. Awalnya apinya kecil, tapi tiba-tiba
+      membesar dan menyambar rumput di sekitarnya.
+    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
+    side: 0
+  - characterName: Aku
+    dialogueText: Lalu, apa yang kamu lakukan?
+    portrait: {fileID: -2311659948842064771, guid: ea3efa1ed1c3c8e4eb0b52bf879734e5, type: 3}
+    side: 1
+  - characterName: Edo
+    dialogueText: Aku langsung lari karena takut, Kak. Aku benar-benar enggak menyangka
+      apinya akan membesar seperti itu...
+    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
+    side: 0
+  - characterName: Aku
+    dialogueText: Jadi, kamu tidak tahu kalau percikan api dari petasan bisa memicu
+      kebakaran hutan?
+    portrait: {fileID: -2311659948842064771, guid: ea3efa1ed1c3c8e4eb0b52bf879734e5, type: 3}
+    side: 1
+  - characterName: Edo
+    dialogueText: Enggak, Kak... Aku kira apinya akan langsung mati. Aku enggak bermaksud
+      membuat hutan terbakar.
+    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
+    side: 0
+  - characterName: Aku
+    dialogueText: Aku mengerti kamu tidak bermaksud melakukannya. Tapi, sesuatu yang
+      terlihat kecil bisa menimbulkan akibat yang sangat besar
+    portrait: {fileID: -2311659948842064771, guid: ea3efa1ed1c3c8e4eb0b52bf879734e5, type: 3}
+    side: 1
+  - characterName: Edo
+    dialogueText: Memangnya bisa separah itu, Kak?
+    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
+    side: 0
+  - characterName: Aku
+    dialogueText: Bisa. Karena itu, ada beberapa hal penting yang perlu kamu ketahui
+      agar kejadian seperti kemarin tidak terulang
+    portrait: {fileID: -2311659948842064771, guid: ea3efa1ed1c3c8e4eb0b52bf879734e5, type: 3}
+    side: 1
   educationDialogueLines:
   - characterName: Aku
-    dialogueText: dik jangan main petasan di sini lagi ya? karena bisa menyebabkan
-      kebakaran.
+    dialogueText: Kebakaran hutan bisa terjadi karena berbagai hal. Ada yang disebabkan
+      oleh faktor alam dan ada juga yang disebabkan oleh aktivitas manusia.
+    portrait: {fileID: -2311659948842064771, guid: d70274627a7564040b4e998e2a2fe515, type: 3}
+    side: 1
+  - characterName: Edo
+    dialogueText: Faktor alam itu seperti apa, Kak?
+    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
+    side: 0
+  - characterName: Aku
+    dialogueText: Misalnya sambaran petir yang mengenai pohon atau tumbuhan kering.
+      Cuaca panas dan kondisi hutan yang kering juga bisa membuat api lebih mudah
+      menyebar.
+    portrait: {fileID: -2311659948842064771, guid: d70274627a7564040b4e998e2a2fe515, type: 3}
+    side: 1
+  - characterName: Edo
+    dialogueText: Kalau karena manusia?
+    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
+    side: 0
+  - characterName: Aku
+    dialogueText: Bisa karena membuang puntung rokok sembarangan, membakar sampah
+      di dekat hutan, membuat api unggun tanpa pengawasan, atau bermain petasan di
+      kawasan hutan.
+    portrait: {fileID: -2311659948842064771, guid: d70274627a7564040b4e998e2a2fe515, type: 3}
+    side: 1
+  - characterName: Edo
+    dialogueText: Berarti petasan yang aku nyalakan kemarin juga bisa menjadi penyebab
+      kebakaran, ya?
+    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
+    side: 0
+  - characterName: Aku
+    dialogueText: Betul. Percikan api dari petasan bisa mengenai daun atau rumput
+      kering, lalu memicu kebakaran.
+    portrait: {fileID: -2311659948842064771, guid: d70274627a7564040b4e998e2a2fe515, type: 3}
+    side: 1
+  - characterName: Edo
+    dialogueText: Oh... sekarang aku mengerti.
+    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
+    side: 0
+  - characterName: Aku
+    dialogueText: Supaya kebakaran tidak terjadi lagi, kita harus menjaga lingkungan
+      dan menghindari hal-hal yang bisa memicu api.
+    portrait: {fileID: -2311659948842064771, guid: d70274627a7564040b4e998e2a2fe515, type: 3}
+    side: 1
+  - characterName: Edo
+    dialogueText: Memangnya apa saja yang harus dilakukan?
+    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
+    side: 0
+  - characterName: Aku
+    dialogueText: Pertama, jangan bermain petasan atau benda yang menghasilkan percikan
+      api di sekitar hutan.
+    portrait: {fileID: -2311659948842064771, guid: d70274627a7564040b4e998e2a2fe515, type: 3}
+    side: 1
+  - characterName: Edo
+    dialogueText: Baik, Kak. Aku tidak akan bermain petasan di sini lagi
+    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
+    side: 0
+  - characterName: Aku
+    dialogueText: Kedua, jangan membuang puntung rokok atau benda yang masih menyala
+      sembarangan.
+    portrait: {fileID: -2311659948842064771, guid: d70274627a7564040b4e998e2a2fe515, type: 3}
+    side: 1
+  - characterName: Edo
+    dialogueText: Kalau melihat orang membuang puntung rokok sembarangan, aku harus
+      mengingatkannya?
+    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
+    side: 0
+  - characterName: Aku
+    dialogueText: Kalau aman, kamu boleh mengingatkannya. Kamu juga bisa meminta
+      bantuan orang dewasa.
     portrait: {fileID: -2311659948842064771, guid: d70274627a7564040b4e998e2a2fe515, type: 3}
     side: 1
   - characterName: Aku
-    dialogueText: di area hutan sini banyak rumput dan daun daun kering, mudah memicu
-      terjadinya kebakaran.
+    dialogueText: Ketiga, jangan membakar sampah atau membuat api unggun sembarangan.
+      Kalau ada aktivitas yang melibatkan api, harus ada pengawasan orang dewasa
+      dan dilakukan di tempat yang aman.
+    portrait: {fileID: -2311659948842064771, guid: d70274627a7564040b4e998e2a2fe515, type: 3}
+    side: 1
+  - characterName: Edo
+    dialogueText: Jadi, kita harus lebih berhati-hati dengan api, ya?
+    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
+    side: 0
+  - characterName: Aku
+    dialogueText: Tepat sekali. Jangan pernah menganggap remeh api, sekecil apa pun.
+    portrait: {fileID: -2311659948842064771, guid: d70274627a7564040b4e998e2a2fe515, type: 3}
+    side: 1
+  - characterName: Edo
+    dialogueText: Kak, kalau suatu saat aku melihat hutan terbakar lagi, aku harus
+      bagaimana?
+    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
+    side: 0
+  - characterName: Aku
+    dialogueText: Pertama, jangan mendekati api atau mencoba memadamkannya sendiri.
+      Api bisa menyebar dengan cepat dan membahayakan keselamatanmu.
+    portrait: {fileID: -2311659948842064771, guid: d70274627a7564040b4e998e2a2fe515, type: 3}
+    side: 1
+  - characterName: Edo
+    dialogueText: Lalu aku harus apa?
+    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
+    side: 0
+  - characterName: Aku
+    dialogueText: Segera menjauh dari lokasi kebakaran menuju tempat yang aman. Kalau
+      ada asap, usahakan tetap berada serendah mungkin dan lindungi hidung serta
+      mulut dengan kain.
+    portrait: {fileID: -2311659948842064771, guid: d70274627a7564040b4e998e2a2fe515, type: 3}
+    side: 1
+  - characterName: Edo
+    dialogueText: Setelah itu?
+    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
+    side: 0
+  - characterName: Aku
+    dialogueText: Segera beri tahu orang dewasa dan hubungi petugas pemadam kebakaran
+      atau layanan darurat. Berikan informasi lokasi kebakaran dengan jelas.
+    portrait: {fileID: -2311659948842064771, guid: d70274627a7564040b4e998e2a2fe515, type: 3}
+    side: 1
+  - characterName: Edo
+    dialogueText: Berarti aku tidak boleh mencoba memadamkannya sendiri?
+    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
+    side: 0
+  - characterName: Aku
+    dialogueText: Benar. Keselamatan dirimu adalah yang paling utama. Biarkan petugas
+      yang menangani kebakaran dengan peralatan yang sesuai.
     portrait: {fileID: -2311659948842064771, guid: d70274627a7564040b4e998e2a2fe515, type: 3}
     side: 1
   closingDialogueLines:
-  - characterName: Bocil
-    dialogueText: jadi begitu ya kan. lain kali aku tidak akan mengulanginya lagi!!!!
+  - characterName: Edo
+    dialogueText: Kak... aku jadi merasa bersalah karena kejadian kemarin.
     portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
     side: 0
-  - characterName: Mc
-    dialogueText: anak pintar!!!!
+  - characterName: Aku
+    dialogueText: Yang sudah terjadi memang tidak bisa diubah. Tapi kamu bisa belajar
+      dari kesalahan itu dan tidak mengulanginya lagi
     portrait: {fileID: -2311659948842064771, guid: d70274627a7564040b4e998e2a2fe515, type: 3}
     side: 1
+  - characterName: Edo
+    dialogueText: Aku janji tidak akan bermain petasan di hutan lagi. Aku juga akan
+      mengingatkan teman-temanku supaya tidak melakukan hal yang sama.
+    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
+    side: 0
+  - characterName: Aku
+    dialogueText: Bagus. Menjaga hutan bukan hanya tugas petugas, tetapi tanggung
+      jawab kita bersama.
+    portrait: {fileID: -2311659948842064771, guid: d70274627a7564040b4e998e2a2fe515, type: 3}
+    side: 1
+  - characterName: Edo
+    dialogueText: Terima kasih sudah menjelaskan semuanya, Kak!
+    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
+    side: 0
+  - characterName: Aku
+    dialogueText: Sama-sama. Ingat, jangan bermain-main dengan api, ya!
+    portrait: {fileID: -2311659948842064771, guid: d70274627a7564040b4e998e2a2fe515, type: 3}
+    side: 1
+  - characterName: Edo
+    dialogueText: Siap, Kak!
+    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
+    side: 0
 --- !u!114 &1194287737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5197,6 +5429,135 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1577292715}
   m_CullTransparentMesh: 1
+--- !u!1 &1645349110
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1645349112}
+  - component: {fileID: 1645349111}
+  m_Layer: 0
+  m_Name: sound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1645349111
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645349110}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: abac53a5426811c4c993f386f23aae9d, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.5
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1645349112
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645349110}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -33.5017, y: -2.11037, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1671050713
 GameObject:
   m_ObjectHideFlags: 0
@@ -5801,7 +6162,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -112, y: 58}
+  m_AnchoredPosition: {x: -112, y: 93}
   m_SizeDelta: {x: 2300, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1956275113
@@ -5995,7 +6356,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 656.1475, y: 502.0492}
+  m_AnchoredPosition: {x: 646, y: 577}
   m_SizeDelta: {x: 1950, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1973943682
@@ -7199,3 +7560,4 @@ SceneRoots:
   - {fileID: 67992846}
   - {fileID: 2049700033}
   - {fileID: 294802991}
+  - {fileID: 1645349112}
