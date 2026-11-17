@@ -1,3 +1,4 @@
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -11,6 +12,11 @@ public class MainMenuManager : MonoBehaviour
     public void Kredit()
     {
         SceneManager.LoadScene("Credit Panel");
+    }
+
+    public void Pengaturan()
+    {
+        SceneManager.LoadScene("Setting Panel");
     }
 
     public void KeluarGame()
