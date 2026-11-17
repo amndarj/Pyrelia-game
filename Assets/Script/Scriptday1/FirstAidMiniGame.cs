@@ -18,25 +18,77 @@ public class FirstAidMiniGame : MonoBehaviour
     [Header("Day 1 Ending")]
     public GameObject day1CompletePanel;
 
+    private bool missionCompleted;
+
+    private bool EvakuasiSelesai()
+    {
+        return PlayerPrefs.GetInt("MisiEvakuasiGokilSelesai", 0) == 1;
+    }
+
+    private void Start()
+    {
+        missionCompleted =
+            PlayerPrefs.GetInt("MisiPertolonganSelesai", 0) == 1;
+
+        if (missionCompleted)
+        {
+            if (firstAidPanelRoot != null)
+                firstAidPanelRoot.SetActive(false);
+
+            return;
+        }
+
+        if (firstAidPanelRoot != null)
+            firstAidPanelRoot.SetActive(false);
+
+        ResetMiniGame();
+    }
+
+    public void BukaMiniGame()
+    {
+        if (!EvakuasiSelesai() || missionCompleted)
+            return;
+
+        if (firstAidPanelRoot != null)
+            firstAidPanelRoot.SetActive(true);
+    }
+
     public void PasangKayuBerhasil()
     {
-        kakiSakitImage.SetActive(false);
-        kakiKayuImage.SetActive(true);
+        if (missionCompleted || !EvakuasiSelesai())
+            return;
 
-        kayuDrag.SetActive(false);
-        perbanDrag.SetActive(true);
+        if (kakiSakitImage != null)
+            kakiSakitImage.SetActive(false);
 
-        Debug.Log("Kayu berhasil dipasang!");
+        if (kakiKayuImage != null)
+            kakiKayuImage.SetActive(true);
+
+        if (kayuDrag != null)
+            kayuDrag.SetActive(false);
+
+        if (perbanDrag != null)
+            perbanDrag.SetActive(true);
     }
 
     public void PasangPerbanBerhasil()
     {
-        kakiKayuImage.SetActive(false);
-        kakiSelesaiImage.SetActive(true);
+        if (missionCompleted || !EvakuasiSelesai())
+            return;
 
-        perbanDrag.SetActive(false);
+        missionCompleted = true;
 
-        npcKorban.SetTreated();
+        if (kakiKayuImage != null)
+            kakiKayuImage.SetActive(false);
+
+        if (kakiSelesaiImage != null)
+            kakiSelesaiImage.SetActive(true);
+
+        if (perbanDrag != null)
+            perbanDrag.SetActive(false);
+
+        if (npcKorban != null)
+            npcKorban.SetTreated();
 
         PlayerPrefs.SetInt("MisiPertolonganSelesai", 1);
         PlayerPrefs.Save();
@@ -48,16 +100,43 @@ public class FirstAidMiniGame : MonoBehaviour
             );
         }
 
-        successPanel.SetActive(true);
+        if (successPanel != null)
+            successPanel.SetActive(true);
 
-        Debug.Log("Pertolongan pertama berhasil!");
+        if (GameSaveManager.Instance != null)
+            GameSaveManager.Instance.SaveScene("Day 1");
     }
 
     public void CloseMiniGame()
     {
-        firstAidPanelRoot.SetActive(false);
-        day1CompletePanel.SetActive(true);
+        if (!missionCompleted)
+            return;
 
-        Debug.Log("DAY 1 COMPLETED!");
+        if (firstAidPanelRoot != null)
+            firstAidPanelRoot.SetActive(false);
+
+        if (day1CompletePanel != null)
+            day1CompletePanel.SetActive(true);
+    }
+
+    private void ResetMiniGame()
+    {
+        if (kakiSakitImage != null)
+            kakiSakitImage.SetActive(true);
+
+        if (kakiKayuImage != null)
+            kakiKayuImage.SetActive(false);
+
+        if (kakiSelesaiImage != null)
+            kakiSelesaiImage.SetActive(false);
+
+        if (kayuDrag != null)
+            kayuDrag.SetActive(true);
+
+        if (perbanDrag != null)
+            perbanDrag.SetActive(false);
+
+        if (successPanel != null)
+            successPanel.SetActive(false);
     }
 }

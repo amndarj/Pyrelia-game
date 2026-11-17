@@ -3731,7 +3731,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 3.469512, y: 0}
+  m_Offset: {x: 5.52582, y: -0.09346962}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3741,7 +3741,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 16.939024, y: 30}
+  m_Size: {x: 21.051643, y: 38.03831}
   m_EdgeRadius: 0
 --- !u!114 &785374663
 MonoBehaviour:
@@ -4561,6 +4561,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireMissionReturnManager
   gokilNPC: {fileID: 785374658}
+  firefighterNPC: {fileID: 231011702}
   forestBurning: {fileID: 180876329}
   forestBurned: {fileID: 180876328}
   missionObjective: {fileID: 610913746}
@@ -6411,7 +6412,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 8.239601, y: -3.2958374}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -6421,7 +6422,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 97.63983, y: 61.385597}
   m_EdgeRadius: 0
 --- !u!4 &1330257207
 Transform:
@@ -6963,7 +6964,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1426875174
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8286,6 +8287,7 @@ MonoBehaviour:
   npcBandagedSprite: {fileID: 21300000, guid: 80b7a8497aa3dfd4e8e829f306f68178, type: 3}
   playerImage: {fileID: -2311659948842064771, guid: ea3efa1ed1c3c8e4eb0b52bf879734e5, type: 3}
   npcImage: {fileID: 5678168945493486331, guid: 3fdd4cc26a74ae6468359a0696ac27c5, type: 3}
+  missionObjective: {fileID: 610913746}
 --- !u!58 &1580496564
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -10582,7 +10584,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.3764534, y: -1.2405853}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -10592,7 +10594,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 1
-  m_Size: {x: 5, y: 2}
+  m_Size: {x: 5.752907, y: 1.2642045}
   m_EdgeRadius: 0
 --- !u!114 &2049700035
 MonoBehaviour:

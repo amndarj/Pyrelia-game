@@ -153,7 +153,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 739, y: -2}
+  m_AnchoredPosition: {x: 739, y: -23}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &40254344
@@ -176,7 +176,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'IDENTITAS PROYEK
+  m_text: 'IDENTITAS INSTITUSI
 
     Program Studi D4 Manajemen Informatika
 
@@ -185,11 +185,7 @@ MonoBehaviour:
 
     Universitas Negeri Surabaya
 
-
-    DOSEN PEMBIMBING
-
-    Moch. Badrus
-    Sholeh, S.kom., M.Kom'
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b28e42975d7280241b7ac072690e4855, type: 2}
   m_sharedMaterial: {fileID: 7913711267189072707, guid: b28e42975d7280241b7ac072690e4855, type: 2}
@@ -587,7 +583,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: 1.193512}
+  m_AnchoredPosition: {x: 0, y: -1.5}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &499475118
@@ -857,12 +853,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "TIM PENGEMBANG\nFatwa Nurhikmah\nAmanda Riyahotul Jannah\nRisma Nurus
-    Sa\u2019adah\n\nTEKNOLOGI PENGEMBANGAN\nGame Engine: Unity\nProgramming Language:
-    C#\n\nTENTANG PYRELIA\nPYRELIA merupakan game petualangan edukatif 2D yang mengajak
-    pemain untuk membantu masyarakat menghadapi bencana kebakaran, menyelamatkan
-    lingkungan, dan mempelajari pentingnya menjaga alam.\n\nTERIMA KASIH\nTerima
-    kasih kepada semua pihak yang telah mendukung proses pengembangan game PYRELIA.\n\n\xA9
-    2026 PYRELIA. All Rights Reserved."
+    Sa\u2019adah\nMoch. Badrus Sholeh, S.kom., M.Kom\n\nTEKNOLOGI PENGEMBANGAN\nGame
+    Engine: Unity\nProgramming Language: C#\n\nTERIMA KASIH\nTerima kasih kepada
+    semua pihak yang telah mendukung proses pengembangan game PYRELIA.\n\n\xA9 2026
+    PYRELIA. All Rights Reserved."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b28e42975d7280241b7ac072690e4855, type: 2}
   m_sharedMaterial: {fileID: 7913711267189072707, guid: b28e42975d7280241b7ac072690e4855, type: 2}
@@ -1106,7 +1100,7 @@ RectTransform:
   m_GameObject: {fileID: 1398727382}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 19.628633, y: 11.673526, z: 5.235}
+  m_LocalScale: {x: 21.00264, y: 11.673526, z: 5.235}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 483796586}
@@ -1181,7 +1175,7 @@ RectTransform:
   m_GameObject: {fileID: 2123767412}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 16.366629, y: 9.277636, z: 16.366629}
+  m_LocalScale: {x: 16.366629, y: 8.742363, z: 16.366629}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 499475117}

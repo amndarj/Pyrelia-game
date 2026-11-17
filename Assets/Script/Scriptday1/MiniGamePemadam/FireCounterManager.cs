@@ -1,4 +1,3 @@
-
 using UnityEngine;
 using TMPro;
 using System.Collections;
@@ -11,7 +10,12 @@ public class FireCounterManager : MonoBehaviour
     public CanvasGroup missionCanvasGroup;
     public FireTimer fireTimer;
 
-    public float fadeDuration = 5f;
+    public FirePoint[] firePoints;
+
+    public float fadeDuration = 2f;
+
+    private const string COUNT_KEY = "Day1_FireCount";
+    private const string STARTED_KEY = "Day1_FireMiniGameStarted";
 
     private int jumlahApiPadam = 0;
     private int totalApi = 4;
@@ -19,7 +23,25 @@ public class FireCounterManager : MonoBehaviour
 
     private void Start()
     {
-        missionCompletePanel.SetActive(false);
+        if (missionCompletePanel != null)
+            missionCompletePanel.SetActive(false);
+
+        missionCompleted =
+            PlayerPrefs.GetInt("MisiPemadamanSelesai", 0) == 1;
+
+        if (missionCompleted)
+        {
+            jumlahApiPadam = totalApi;
+            UpdateCounter();
+            return;
+        }
+
+        jumlahApiPadam = PlayerPrefs.GetInt(COUNT_KEY, 0);
+        jumlahApiPadam = Mathf.Clamp(jumlahApiPadam, 0, totalApi);
+
+        PlayerPrefs.SetInt(STARTED_KEY, 1);
+        PlayerPrefs.Save();
+
         UpdateCounter();
     }
 
@@ -30,10 +52,21 @@ public class FireCounterManager : MonoBehaviour
 
         jumlahApiPadam++;
 
-        if (jumlahApiPadam > totalApi)
-            jumlahApiPadam = totalApi;
+        jumlahApiPadam = Mathf.Clamp(
+            jumlahApiPadam, 0, totalApi
+        );
+
+        PlayerPrefs.SetInt(STARTED_KEY, 1);
+        PlayerPrefs.Save();
 
         UpdateCounter();
+
+        // Mini-game sudah benar-benar dibuka.
+        // Timer mulai berjalan dari sini.
+        if (fireTimer != null)
+        {
+            fireTimer.MulaiTimer();
+        }
 
         if (jumlahApiPadam >= totalApi)
         {
@@ -48,37 +81,79 @@ public class FireCounterManager : MonoBehaviour
 
     private IEnumerator ShowMissionComplete()
     {
-        missionCompletePanel.SetActive(true);
-        missionCanvasGroup.alpha = 0f;
+        if (missionCompletePanel != null)
+            missionCompletePanel.SetActive(true);
 
-        float elapsedTime = 0f;
-
-        while (elapsedTime < fadeDuration)
+        if (missionCanvasGroup != null)
         {
-            elapsedTime += Time.deltaTime;
+            missionCanvasGroup.alpha = 0f;
 
-            missionCanvasGroup.alpha =
-                Mathf.Clamp01(elapsedTime / fadeDuration);
+            float elapsedTime = 0f;
 
-            yield return null;
+            while (elapsedTime < fadeDuration)
+            {
+                elapsedTime += Time.deltaTime;
+
+                missionCanvasGroup.alpha =
+                    Mathf.Clamp01(elapsedTime / fadeDuration);
+
+                yield return null;
+            }
+
+            missionCanvasGroup.alpha = 1f;
         }
 
-        missionCanvasGroup.alpha = 1f;
-
-        // Simpan status bahwa misi sudah berhasil.
         PlayerPrefs.SetInt("MisiPemadamanSelesai", 1);
+        PlayerPrefs.SetInt(COUNT_KEY, totalApi);
+        PlayerPrefs.SetInt(STARTED_KEY, 0);
         PlayerPrefs.Save();
+
+        if (GameSaveManager.Instance != null)
+            GameSaveManager.Instance.SaveScene("Day 1");
 
         Debug.Log("Misi pemadaman berhasil!");
 
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.5f);
 
         SceneManager.LoadScene("Day 1");
     }
 
     private void UpdateCounter()
     {
-        fireCounterText.text =
-            "Api Dipadamkan: " + jumlahApiPadam + "/" + totalApi;
+        if (fireCounterText != null)
+        {
+            fireCounterText.text =
+                "Api Dipadamkan: " + jumlahApiPadam + "/" + totalApi;
+        }
+    }
+
+    public void ResetFireMission()
+    {
+        StopAllCoroutines();
+
+        jumlahApiPadam = 0;
+        missionCompleted = false;
+
+        PlayerPrefs.DeleteKey(COUNT_KEY);
+        PlayerPrefs.DeleteKey("Day1_FireTimer");
+        PlayerPrefs.DeleteKey(STARTED_KEY);
+        PlayerPrefs.DeleteKey("Day1_FireTimerStarted");
+
+        PlayerPrefs.SetInt("MisiPemadamanSelesai", 0);
+        PlayerPrefs.Save();
+
+        if (firePoints != null)
+        {
+            foreach (FirePoint point in firePoints)
+            {
+                if (point != null)
+                    point.ResetFirePoint();
+            }
+        }
+
+        if (missionCompletePanel != null)
+            missionCompletePanel.SetActive(false);
+
+        UpdateCounter();
     }
 }

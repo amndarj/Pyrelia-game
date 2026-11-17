@@ -1,4 +1,3 @@
-
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -33,13 +32,12 @@ public class DialogueUIDay3 : MonoBehaviour
     private int currentLine;
 
     private Action onDialogueFinished;
+    private Action<int> onLineChanged;
 
     private RectTransform portraitRect;
     private RectTransform dialogueTextRect;
-
     private Button dialogueButton;
 
-    // Menyimpan pengaturan awal NPC
     private Vector2 originalAnchorMin;
     private Vector2 originalAnchorMax;
     private Vector2 originalPivot;
@@ -47,12 +45,12 @@ public class DialogueUIDay3 : MonoBehaviour
     private Vector2 originalOffsetMax;
     private TextAlignmentOptions originalAlignment;
 
-    void Awake()
+    public int CurrentLineIndex => currentLine;
+
+    private void Awake()
     {
         if (characterPortrait != null)
-        {
             portraitRect = characterPortrait.GetComponent<RectTransform>();
-        }
 
         if (dialogueText != null)
         {
@@ -67,31 +65,26 @@ public class DialogueUIDay3 : MonoBehaviour
             originalAlignment = dialogueText.alignment;
         }
 
-        // Ambil Button dari Dialogue Panel
         if (dialoguePanel != null)
         {
             dialogueButton = dialoguePanel.GetComponent<Button>();
 
             if (dialogueButton != null)
-            {
                 dialogueButton.onClick.AddListener(NextLine);
-            }
             else
-            {
                 Debug.LogWarning(
                     "Dialogue Panel belum memiliki komponen Button!"
                 );
-            }
         }
     }
 
-    void Start()
+    private void Start()
     {
         if (dialoguePanel != null)
             dialoguePanel.SetActive(false);
     }
 
-    void OnDestroy()
+    private void OnDestroy()
     {
         if (dialogueButton != null)
             dialogueButton.onClick.RemoveListener(NextLine);
@@ -102,23 +95,57 @@ public class DialogueUIDay3 : MonoBehaviour
         return dialoguePanel != null && dialoguePanel.activeSelf;
     }
 
+    // Memulai dialog dari awal (kompatibel dengan pemanggilan lama).
     public void StartDialogue(
         DialogueLineDay3[] lines,
         Action onFinished = null)
     {
-        if (lines == null || lines.Length == 0)
-            return;
-
-        dialogueLines = lines;
-        currentLine = 0;
-        onDialogueFinished = onFinished;
-
-        dialoguePanel.SetActive(true);
-        ShowCurrentLine();
+        StartDialogue(lines, 0, onFinished, null);
     }
 
-    void ShowCurrentLine()
+    // Memulai dialog dari baris tertentu.
+    public void StartDialogue(
+        DialogueLineDay3[] lines,
+        int startLine,
+        Action onFinished = null,
+        Action<int> onLineUpdated = null)
     {
+        if (lines == null || lines.Length == 0)
+        {
+            Debug.LogWarning("Data dialog kosong!");
+            return;
+        }
+
+        if (dialoguePanel == null)
+        {
+            Debug.LogError("Dialogue Panel belum dihubungkan!");
+            return;
+        }
+
+        dialogueLines = lines;
+
+        currentLine = Mathf.Clamp(
+            startLine,
+            0,
+            lines.Length - 1
+        );
+
+        onDialogueFinished = onFinished;
+        onLineChanged = onLineUpdated;
+
+        dialoguePanel.SetActive(true);
+
+        ShowCurrentLine();
+        BeritahuPerubahanBaris();
+    }
+
+    private void ShowCurrentLine()
+    {
+        if (dialogueLines == null ||
+            currentLine < 0 ||
+            currentLine >= dialogueLines.Length)
+            return;
+
         DialogueLineDay3 line = dialogueLines[currentLine];
 
         if (nameText != null)
@@ -127,7 +154,7 @@ public class DialogueUIDay3 : MonoBehaviour
         if (dialogueText != null)
             dialogueText.text = line.dialogueText;
 
-        // Pengaturan posisi dan ukuran kotak teks
+        // Pengaturan posisi dan ukuran kotak teks.
         if (dialogueTextRect != null && dialogueText != null)
         {
             if (line.side == DialogueSide.Right)
@@ -158,28 +185,34 @@ public class DialogueUIDay3 : MonoBehaviour
             }
         }
 
-        // Pengaturan portrait
+        // Pengaturan portrait.
         if (characterPortrait == null || portraitRect == null)
             return;
 
         characterPortrait.sprite = line.portrait;
-        characterPortrait.gameObject.SetActive(line.portrait != null);
+
+        characterPortrait.gameObject.SetActive(
+            line.portrait != null
+        );
 
         if (line.portrait == null)
             return;
 
-        // Portrait NPC
         if (line.side == DialogueSide.Left)
         {
             portraitRect.sizeDelta = npcPortraitSize;
             portraitRect.anchoredPosition = npcPortraitPosition;
         }
-        // Portrait MC
         else
         {
             portraitRect.sizeDelta = mcPortraitSize;
             portraitRect.anchoredPosition = mcPortraitPosition;
         }
+    }
+
+    private void BeritahuPerubahanBaris()
+    {
+        onLineChanged?.Invoke(currentLine);
     }
 
     public void NextLine()
@@ -192,6 +225,7 @@ public class DialogueUIDay3 : MonoBehaviour
         if (currentLine < dialogueLines.Length)
         {
             ShowCurrentLine();
+            BeritahuPerubahanBaris();
         }
         else
         {
@@ -199,12 +233,15 @@ public class DialogueUIDay3 : MonoBehaviour
         }
     }
 
-    void FinishDialogue()
+    private void FinishDialogue()
     {
-        dialoguePanel.SetActive(false);
+        if (dialoguePanel != null)
+            dialoguePanel.SetActive(false);
 
         Action callback = onDialogueFinished;
+
         onDialogueFinished = null;
+        onLineChanged = null;
 
         callback?.Invoke();
     }

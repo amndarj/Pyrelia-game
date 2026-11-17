@@ -44,6 +44,7 @@ public class NPCMaskerInteractable : MonoBehaviour, IInteractable
     private void Start()
     {
         MuatStatusNPC();
+        PerbaruiMarker();
     }
 
     public void Interact()
@@ -174,6 +175,10 @@ public class NPCMaskerInteractable : MonoBehaviour, IInteractable
     private void SimpanStatusNPC()
     {
         PlayerPrefs.SetInt(SaveKey, 1);
+
+        if (GameSaveManager.Instance != null)
+            GameSaveManager.Instance.RegisterProgressKey(SaveKey);
+
         PlayerPrefs.Save();
     }
 
@@ -197,6 +202,7 @@ public class NPCMaskerInteractable : MonoBehaviour, IInteractable
         currentLine = 0;
 
         PlayerPrefs.DeleteKey(SaveKey);
+        PlayerPrefs.Save();
 
         if (npcRenderer != null && spriteAwal != null)
             npcRenderer.sprite = spriteAwal;

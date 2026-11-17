@@ -15,11 +15,29 @@ public class PlayerController : MonoBehaviour
     private Vector2 lastInput;
     private Animator animator;
     private Rigidbody2D rb;
+    private const string PLAYER_X_KEY = "Day1_PlayerX";
+    private const string PLAYER_Y_KEY = "Day1_PlayerY";
+    private const string PLAYER_SAVED_KEY = "Day1_PlayerPositionSaved";
+
+    private float saveTimer;
 
     private void Awake()
     {
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+
+        if (UnityEngine.SceneManagement.SceneManager
+            .GetActiveScene().name == "Day 1")
+        {
+            if (PlayerPrefs.GetInt(PLAYER_SAVED_KEY, 0) == 1)
+            {
+                float savedX = PlayerPrefs.GetFloat(PLAYER_X_KEY);
+                float savedY = PlayerPrefs.GetFloat(PLAYER_Y_KEY);
+
+                rb.position = new Vector2(savedX, savedY);
+                transform.position = new Vector3(savedX, savedY, transform.position.z);
+            }
+        }
     }
 
     private void Update()
@@ -93,6 +111,22 @@ public class PlayerController : MonoBehaviour
                 animator.SetFloat("moveY", lastInput.y);
             }
         }
+
+        // Simpan posisi setiap 1 detik ketika Player diam.
+        if (!isMoving)
+        {
+            saveTimer += Time.deltaTime;
+
+            if (saveTimer >= 1f)
+            {
+                SavePlayerPosition();
+                saveTimer = 0f;
+            }
+        }
+        else
+        {
+            saveTimer = 0f;
+        }
     }
 
 
@@ -127,5 +161,32 @@ public class PlayerController : MonoBehaviour
 
         isMoving = false;
     }
+
+    private void SavePlayerPosition()
+    {
+        if (UnityEngine.SceneManagement.SceneManager
+            .GetActiveScene().name != "Day 1")
+            return;
+
+        if (rb == null || isMoving)
+            return;
+
+        PlayerPrefs.SetFloat(PLAYER_X_KEY, rb.position.x);
+        PlayerPrefs.SetFloat(PLAYER_Y_KEY, rb.position.y);
+        PlayerPrefs.SetInt(PLAYER_SAVED_KEY, 1);
+
+        PlayerPrefs.Save();
+    }
+
+    private void OnApplicationPause(bool paused)
+    {
+        if (paused)
+            SavePlayerPosition();
+    }
+
+    private void OnApplicationQuit()
+    {
+        SavePlayerPosition();
+    }   
 
 }
