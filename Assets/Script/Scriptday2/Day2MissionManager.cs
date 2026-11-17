@@ -160,7 +160,7 @@ public class Day2MissionManager : MonoBehaviour
                     "MISI 1: BAGIKAN MASKER",
                     new string[]
                     {
-                        "Ambil masker di posko.",
+                        "Cari posko kemudian ambil masker disana.",
                         "Berikan masker kepada warga yang tidak memakai masker.",
                         "Berikan masker kepada warga yang tidak memakai masker.",
                         "Berikan masker kepada warga yang tidak memakai masker."
@@ -172,9 +172,9 @@ public class Day2MissionManager : MonoBehaviour
                     "MISI 2: RAWAT HEWAN",
                     new string[]
                     {
-                        "Rawat hewan pertama: sikat, obat, dan perban.",
-                        "Rawat hewan kedua: sikat, obat, dan perban.",
-                        "Rawat hewan ketiga: sikat, obat, dan perban."
+                        "Pergi ke hutan dan temukan hewan yang butuh pertolongan.",
+                        "Telusuri area lain dan temukan hewan yang butuh pertolongan.",
+                        "Telusuri area lain dan temukan hewan yang butuh pertolongan."
                     });
                 break;
 
@@ -183,7 +183,7 @@ public class Day2MissionManager : MonoBehaviour
                     "MISI 3: BERSIHKAN SAMPAH",
                     new string[]
                     {
-                        "Kumpulkan 6 sampah di sekitar lingkungan.",
+                        "Kumpulkan 6 sampah di sekitar sungai.",
                         "Cari tempat sampah dan pilah sesuai kategorinya."
                     });
                 break;
@@ -193,9 +193,9 @@ public class Day2MissionManager : MonoBehaviour
                     "MISI 4: TANAM POHON",
                     new string[]
                     {
-                        "Tanam pohon pertama.",
-                        "Tanam pohon kedua.",
-                        "Tanam pohon ketiga."
+                        "Kembali ke hutan kemudian cari area tanam.",
+                        "Telusuri area lain untuk menemukan titik tanam.",
+                        "Telusuri area lain untuk menemukan titik tanam."
                     });
                 break;
 

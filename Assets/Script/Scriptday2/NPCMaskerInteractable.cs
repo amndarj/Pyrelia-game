@@ -9,6 +9,13 @@ public class NPCMaskerInteractable : MonoBehaviour, IInteractable
     [TextArea(2, 4)]
     public string[] dialogueLines;
 
+    [Header("Pengaturan Dialog Player")]
+    public string playerName = "Aku";
+    public Sprite playerPortrait;
+
+    [Tooltip("Centang jika baris tersebut diucapkan Player.")]
+    public bool[] playerSpeakingLines;
+
     [Header("Sprite NPC")]
     public SpriteRenderer npcRenderer;
     public Sprite npcMaskerSprite;
@@ -50,7 +57,6 @@ public class NPCMaskerInteractable : MonoBehaviour, IInteractable
         if (!Day2MissionManager.instance.BolehInteraksiMasker)
             return;
 
-        // Pemain harus memiliki masker sebelum berbicara.
         if (Day2MissionManager.instance.maskerDimiliki <= 0)
             return;
 
@@ -65,14 +71,34 @@ public class NPCMaskerInteractable : MonoBehaviour, IInteractable
         dialogueStarted = true;
         currentLine = 0;
 
-        dialogueUI.StartDialogue(
-            this,
-            npcName,
-            dialogueLines,
-            npcPortrait
-        );
+        dialogueUI.StartDialogue(this);
 
         Debug.Log("Dialog dimulai oleh NPC: " + npcName);
+    }
+
+    public void TampilkanBarisDialog(int index)
+    {
+        if (index < 0 || index >= dialogueLines.Length)
+            return;
+
+        bool playerSpeaking =
+            playerSpeakingLines != null &&
+            index < playerSpeakingLines.Length &&
+            playerSpeakingLines[index];
+
+        string speakerName = playerSpeaking
+            ? playerName
+            : npcName;
+
+        Sprite portrait = playerSpeaking
+            ? playerPortrait
+            : npcPortrait;
+
+        dialogueUI.TampilkanBaris(
+            speakerName,
+            dialogueLines[index],
+            portrait
+        );
     }
 
     public void NextDialogueLine()
@@ -84,8 +110,7 @@ public class NPCMaskerInteractable : MonoBehaviour, IInteractable
 
         if (currentLine < dialogueLines.Length)
         {
-            dialogueUI.dialogueText.text =
-                dialogueLines[currentLine];
+            TampilkanBarisDialog(currentLine);
         }
         else
         {
@@ -116,22 +141,14 @@ public class NPCMaskerInteractable : MonoBehaviour, IInteractable
             return;
         }
 
-        // Kurangi masker yang dimiliki pemain.
         manager.maskerDimiliki--;
 
-        // Tandai NPC sudah menerima masker.
         sudahMenerimaMasker = true;
-
-        // Ganti sprite NPC.
         npcRenderer.sprite = npcMaskerSprite;
 
-        // Simpan status NPC.
         SimpanStatusNPC();
 
-        // Catat pembagian masker pada Mission Manager.
         manager.CatatPembagianMasker();
-
-        // Perbarui marker seluruh NPC.
         manager.PerbaruiSemuaMarkerNPC();
 
         Debug.Log(npcName + " sudah menerima masker!");

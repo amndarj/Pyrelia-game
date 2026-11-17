@@ -530,10 +530,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 89807aaa35da10349982b4a7733e56f5, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 8065808934022934395, guid: 89807aaa35da10349982b4a7733e56f5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -599,7 +599,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &81290314
@@ -811,7 +811,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 9}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &88299616
@@ -834,17 +834,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Main lagi
+  m_text: Ulangi day 2
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 89807aaa35da10349982b4a7733e56f5, type: 2}
-  m_sharedMaterial: {fileID: 8065808934022934395, guid: 89807aaa35da10349982b4a7733e56f5, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: dbd5816dee2dad44fb28bd1643a8c667, type: 2}
+  m_sharedMaterial: {fileID: -8600052464786862257, guid: dbd5816dee2dad44fb28bd1643a8c667, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -6669,10 +6669,13 @@ MonoBehaviour:
   npcName: Ratna
   dialogueUI: {fileID: 148692859}
   dialogueLines:
-  - Permisi, apakah masih ada bantuan masker?
-  - Saya khawatir menghirup asap sisa kebakaran saat berada di luar.
-  - Tentu, ini masker untukmu. Tetap jaga kesehatan, ya.
-  - Terima kasih banyak! Bantuan ini sangat berarti bagi saya.
+  - 'Duh, ini asapnya ke menganggu banget!  '
+  - Rambutku aja udah bau asap. Mana panas lagi!
+  - Hehe, sabar ya. Kebetulan aku bawa masker. Ini, kamu bisa pakai dulu.
+  - Nah, akhirnya.  Makasih, ya!
+  playerName: Aku
+  playerPortrait: {fileID: -2311659948842064771, guid: ea3efa1ed1c3c8e4eb0b52bf879734e5, type: 3}
+  playerSpeakingLines: 00000100
   npcRenderer: {fileID: 186452675}
   npcMaskerSprite: {fileID: -2837897120881403592, guid: 19449633052e34b2b9fcfeaa3edb8371, type: 3}
   npcPortrait: {fileID: -2630228987044370731, guid: cd9079b5358e84c5fa57f8e974e37ac4, type: 3}
@@ -6757,7 +6760,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -2}
+  m_AnchoredPosition: {x: 0, y: 8}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &191792262
@@ -6780,17 +6783,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Day 3
+  m_text: Lanjut day 3
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 89807aaa35da10349982b4a7733e56f5, type: 2}
-  m_sharedMaterial: {fileID: 8065808934022934395, guid: 89807aaa35da10349982b4a7733e56f5, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: dbd5816dee2dad44fb28bd1643a8c667, type: 2}
+  m_sharedMaterial: {fileID: -8600052464786862257, guid: dbd5816dee2dad44fb28bd1643a8c667, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -12524,8 +12527,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -343, y: -183}
-  m_SizeDelta: {x: 160, y: 40}
+  m_AnchoredPosition: {x: -343, y: -168}
+  m_SizeDelta: {x: 200, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &257807519
 MonoBehaviour:
@@ -12603,7 +12606,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -13097,7 +13100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -14564,10 +14567,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Selesai
+  m_text: Close
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 89807aaa35da10349982b4a7733e56f5, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 8065808934022934395, guid: 89807aaa35da10349982b4a7733e56f5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -14591,8 +14594,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 34
+  m_fontSizeBase: 34
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -14633,7 +14636,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &472441994
@@ -14802,8 +14805,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -120}
-  m_SizeDelta: {x: 160, y: 40}
+  m_AnchoredPosition: {x: 18, y: -1}
+  m_SizeDelta: {x: 220, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &478667851
 MonoBehaviour:
@@ -14874,7 +14877,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8235295, g: 0.7058824, b: 0.5490196, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -14933,7 +14936,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 747, y: 483}
+  m_AnchoredPosition: {x: 694, y: 487}
   m_SizeDelta: {x: 1950, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &482521431
@@ -14991,8 +14994,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 60
-  m_fontSizeBase: 60
+  m_fontSize: 70
+  m_fontSizeBase: 70
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -16452,7 +16455,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -370, y: -185}
+  m_AnchoredPosition: {x: -370, y: -173}
   m_SizeDelta: {x: 350, y: 55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &705134227
@@ -16968,7 +16971,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &806104062
 RectTransform:
   m_ObjectHideFlags: 0
@@ -23194,10 +23197,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Selesai
+  m_text: Close
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 89807aaa35da10349982b4a7733e56f5, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 8065808934022934395, guid: 89807aaa35da10349982b4a7733e56f5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -23221,8 +23224,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 34
+  m_fontSizeBase: 34
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -23263,7 +23266,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &927736754
@@ -23783,8 +23786,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 293, y: -183}
-  m_SizeDelta: {x: 160, y: 40}
+  m_AnchoredPosition: {x: 293, y: -168}
+  m_SizeDelta: {x: 200, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &981135722
 MonoBehaviour:
@@ -23855,14 +23858,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -29208,7 +29211,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1105687463
 RectTransform:
   m_ObjectHideFlags: 0
@@ -29216,7 +29219,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1105687462}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -29226,8 +29229,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -120}
-  m_SizeDelta: {x: 160, y: 40}
+  m_AnchoredPosition: {x: 0, y: 37}
+  m_SizeDelta: {x: 220, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1105687464
 MonoBehaviour:
@@ -29298,7 +29301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8235295, g: 0.7058824, b: 0.5490196, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -32414,7 +32417,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 220, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1397877729
 MonoBehaviour:
@@ -32485,7 +32488,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8235295, g: 0.7058824, b: 0.5490196, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -33038,9 +33041,13 @@ MonoBehaviour:
   npcName: Siti
   dialogueUI: {fileID: 148692859}
   dialogueLines:
-  - Apakah kamu membawa masker?
-  - Asap kebakaran membuat saya sulit bernapas.
-  - Terima kasih sudah datang membantu saya.
+  - Aduh, kasihan ya warga di sini. Asapnya masih tebal sekali.
+  - Ibu jadi khawatir kalau terlalu lama menghirup udara seperti ini.
+  - Iya bu. Ini ada masker, dipakai dulu ya supaya lebih terlindungi.
+  - Terima kasih, nak. Sehat selalu ya kamu.
+  playerName: Aku
+  playerPortrait: {fileID: -2311659948842064771, guid: ea3efa1ed1c3c8e4eb0b52bf879734e5, type: 3}
+  playerSpeakingLines: 00000100
   npcRenderer: {fileID: 1513552862}
   npcMaskerSprite: {fileID: -4811641583703351529, guid: a7be9314f7292496e8778fd2bc5061f7, type: 3}
   npcPortrait: {fileID: -4030514886533273847, guid: 6b77e80bf294e4506a5f01d771b211bb, type: 3}
@@ -44666,7 +44673,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Selesai
+  m_text: Close
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 89807aaa35da10349982b4a7733e56f5, type: 2}
   m_sharedMaterial: {fileID: 8065808934022934395, guid: 89807aaa35da10349982b4a7733e56f5, type: 2}
@@ -44693,8 +44700,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 34
+  m_fontSizeBase: 34
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -50754,8 +50761,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 8, y: 223}
-  m_SizeDelta: {x: 900, y: 50}
+  m_AnchoredPosition: {x: 24, y: 170}
+  m_SizeDelta: {x: 1200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1894263640
 MonoBehaviour:
@@ -50777,7 +50784,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Day 2 Completed !!!
+  m_text: DAY 2 COMPLETED!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dbd5816dee2dad44fb28bd1643a8c667, type: 2}
   m_sharedMaterial: {fileID: -8600052464786862257, guid: dbd5816dee2dad44fb28bd1643a8c667, type: 2}
@@ -50804,8 +50811,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 75
-  m_fontSizeBase: 75
+  m_fontSize: 110
+  m_fontSizeBase: 110
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -52123,7 +52130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8039216, g: 0.5215687, b: 0.2470588, a: 1}
+  m_Color: {r: 0.9607844, g: 0.9607844, b: 0.8627452, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -52319,7 +52326,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -359, y: -281}
+  m_AnchoredPosition: {x: -359, y: -263}
   m_SizeDelta: {x: 350, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2006829801
@@ -53496,7 +53503,7 @@ Transform:
   m_GameObject: {fileID: 2080794047}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 26.81, y: 0.86, z: 0}
+  m_LocalPosition: {x: 24.31, y: -5.32, z: 0}
   m_LocalScale: {x: 0.11853364, y: 0.11853364, z: 0.11853364}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -53518,10 +53525,13 @@ MonoBehaviour:
   npcName: Budi
   dialogueUI: {fileID: 148692859}
   dialogueLines:
-  - Syukurlah, akhirnya ada bantuan yang datang.
-  - Akhir-akhir ini banyak debu dan asap beterbangan di sekitar rumah saya.
-  - Ini ada masker untukmu. Gunakan agar kamu lebih terlindungi.
-  - Terima kasih! Semoga keadaan desa segera pulih kembali.
+  - Wah, asapnya tebal juga, ya. Jalan sebentar aja rasanya kayak habis bakar sate.
+  - Kalau begini terus, bisa-bisa batuk Bapak nggak berhenti-berhenti.
+  - Waduh, jangan sampai Pak. Oh iya ini saya bawakan masker.
+  - Wahh terimaksaih semoga keadaan desa segera pulih kembali yaa.
+  playerName: Aku
+  playerPortrait: {fileID: -2311659948842064771, guid: ea3efa1ed1c3c8e4eb0b52bf879734e5, type: 3}
+  playerSpeakingLines: 00000100
   npcRenderer: {fileID: 2080794048}
   npcMaskerSprite: {fileID: 656902694400511900, guid: 5cd04ad93381c4622abb0f1ea1373ba3, type: 3}
   npcPortrait: {fileID: 4670891115054034340, guid: eba642716c9b64169a67716b8130a1b7, type: 3}

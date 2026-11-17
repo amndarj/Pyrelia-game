@@ -19,11 +19,7 @@ public class DialogueUIDay2 : MonoBehaviour
         return dialoguePanel != null && dialoguePanel.activeSelf;
     }
 
-    public void StartDialogue(
-        NPCMaskerInteractable npc,
-        string npcName,
-        string[] lines,
-        Sprite portrait)
+    public void StartDialogue(NPCMaskerInteractable npc)
     {
         if (npc == null)
         {
@@ -31,39 +27,43 @@ public class DialogueUIDay2 : MonoBehaviour
             return;
         }
 
-        if (lines == null || lines.Length == 0)
+        if (npc.dialogueLines == null || npc.dialogueLines.Length == 0)
         {
             Debug.LogWarning("Dialog belum diisi!");
             return;
         }
 
         activeNPC = npc;
-
         dialoguePanel.SetActive(true);
-        nameText.text = npcName;
-        dialogueText.text = lines[0];
 
-        SetPortrait(portrait);
+        npc.TampilkanBarisDialog(0);
 
-        Debug.Log("Dialog dimulai: " + npcName);
+        Debug.Log("Dialog dimulai: " + npc.npcName);
     }
 
-    public void SetPortrait(Sprite portrait)
+    public void TampilkanBaris(
+        string speakerName,
+        string line,
+        Sprite portrait)
     {
-        if (characterPortrait == null)
-        {
-            Debug.LogError("Character Portrait belum dihubungkan!");
-            return;
-        }
+        if (nameText != null)
+            nameText.text = speakerName;
 
-        if (portrait == null)
-        {
-            Debug.LogWarning("Portrait NPC kosong!");
-            return;
-        }
+        if (dialogueText != null)
+            dialogueText.text = line;
 
-        characterPortrait.sprite = portrait;
-        characterPortrait.gameObject.SetActive(true);
+        if (characterPortrait != null)
+        {
+            if (portrait != null)
+            {
+                characterPortrait.sprite = portrait;
+                characterPortrait.gameObject.SetActive(true);
+            }
+            else
+            {
+                Debug.LogWarning("Portrait pembicara belum dihubungkan!");
+            }
+        }
     }
 
     public void NextLine()
@@ -79,7 +79,9 @@ public class DialogueUIDay2 : MonoBehaviour
 
     public void HideDialogue()
     {
-        dialoguePanel.SetActive(false);
+        if (dialoguePanel != null)
+            dialoguePanel.SetActive(false);
+
         activeNPC = null;
     }
 
