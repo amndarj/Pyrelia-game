@@ -4216,11 +4216,20 @@ MonoBehaviour:
       api di sekitar hutan.
     portrait: {fileID: -2311659948842064771, guid: d70274627a7564040b4e998e2a2fe515, type: 3}
     side: 1
+  - characterName: Edo
+    dialogueText: Baik, Kak. Aku tidak akan bermain petasan di sini lagi
+    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
+    side: 0
   - characterName: Aku
     dialogueText: Kedua, jangan membuang puntung rokok atau benda yang masih menyala
       sembarangan.
     portrait: {fileID: -2311659948842064771, guid: d70274627a7564040b4e998e2a2fe515, type: 3}
     side: 1
+  - characterName: Edo
+    dialogueText: Kalau melihat orang membuang puntung rokok sembarangan, aku harus
+      mengingatkannya?
+    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
+    side: 0
   - characterName: Aku
     dialogueText: Kalau aman, kamu boleh mengingatkannya. Kamu juga bisa meminta
       bantuan orang dewasa.
@@ -4232,71 +4241,84 @@ MonoBehaviour:
       dan dilakukan di tempat yang aman.
     portrait: {fileID: -2311659948842064771, guid: d70274627a7564040b4e998e2a2fe515, type: 3}
     side: 1
+  - characterName: Edo
+    dialogueText: Jadi, kita harus lebih berhati-hati dengan api, ya?
+    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
+    side: 0
   - characterName: Aku
     dialogueText: Tepat sekali. Jangan pernah menganggap remeh api, sekecil apa pun.
     portrait: {fileID: -2311659948842064771, guid: d70274627a7564040b4e998e2a2fe515, type: 3}
     side: 1
+  - characterName: Edo
+    dialogueText: Kak, kalau suatu saat aku melihat hutan terbakar lagi, aku harus
+      bagaimana?
+    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
+    side: 0
   - characterName: Aku
     dialogueText: Pertama, jangan mendekati api atau mencoba memadamkannya sendiri.
       Api bisa menyebar dengan cepat dan membahayakan keselamatanmu.
     portrait: {fileID: -2311659948842064771, guid: d70274627a7564040b4e998e2a2fe515, type: 3}
     side: 1
+  - characterName: Edo
+    dialogueText: Lalu aku harus apa?
+    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
+    side: 0
   - characterName: Aku
     dialogueText: Segera menjauh dari lokasi kebakaran menuju tempat yang aman. Kalau
       ada asap, usahakan tetap berada serendah mungkin dan lindungi hidung serta
       mulut dengan kain.
     portrait: {fileID: -2311659948842064771, guid: d70274627a7564040b4e998e2a2fe515, type: 3}
     side: 1
+  - characterName: Edo
+    dialogueText: Setelah itu?
+    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
+    side: 0
   - characterName: Aku
     dialogueText: Segera beri tahu orang dewasa dan hubungi petugas pemadam kebakaran
       atau layanan darurat. Berikan informasi lokasi kebakaran dengan jelas.
     portrait: {fileID: -2311659948842064771, guid: d70274627a7564040b4e998e2a2fe515, type: 3}
     side: 1
+  - characterName: Edo
+    dialogueText: Berarti aku tidak boleh mencoba memadamkannya sendiri?
+    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
+    side: 0
   - characterName: Aku
     dialogueText: Benar. Keselamatan dirimu adalah yang paling utama. Biarkan petugas
       yang menangani kebakaran dengan peralatan yang sesuai.
     portrait: {fileID: -2311659948842064771, guid: d70274627a7564040b4e998e2a2fe515, type: 3}
     side: 1
-  - characterName: Edo
-    dialogueText: Baik, Kak. Aku tidak akan bermain petasan di sini lagi.Baik, Kak.
-      Aku tidak akan bermain petasan di sini lagi.
-    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
-    side: 0
-  - characterName: Edo
-    dialogueText: Kalau melihat orang membuang puntung rokok sembarangan, aku harus
-      mengingatkannya?
-    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
-    side: 0
-  - characterName: Edo
-    dialogueText: Jadi, kita harus lebih berhati-hati dengan api, ya?
-    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
-    side: 0
-  - characterName: Edo
-    dialogueText: Kak, kalau suatu saat aku melihat hutan terbakar lagi, aku harus
-      bagaimana?
-    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
-    side: 0
-  - characterName: Edo
-    dialogueText: Lalu aku harus apa?
-    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
-    side: 0
-  - characterName: Edo
-    dialogueText: Setelah itu?
-    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
-    side: 0
-  - characterName: Edo
-    dialogueText: erarti aku tidak boleh mencoba memadamkannya sendiri?
-    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
-    side: 0
   closingDialogueLines:
-  - characterName: Bocil
-    dialogueText: jadi begitu ya kan. lain kali aku tidak akan mengulanginya lagi!!!!
+  - characterName: Edo
+    dialogueText: Kak... aku jadi merasa bersalah karena kejadian kemarin.
     portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
     side: 0
-  - characterName: Mc
-    dialogueText: anak pintar!!!!
+  - characterName: Aku
+    dialogueText: Yang sudah terjadi memang tidak bisa diubah. Tapi kamu bisa belajar
+      dari kesalahan itu dan tidak mengulanginya lagi
     portrait: {fileID: -2311659948842064771, guid: d70274627a7564040b4e998e2a2fe515, type: 3}
     side: 1
+  - characterName: Edo
+    dialogueText: Aku janji tidak akan bermain petasan di hutan lagi. Aku juga akan
+      mengingatkan teman-temanku supaya tidak melakukan hal yang sama.
+    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
+    side: 0
+  - characterName: Aku
+    dialogueText: Bagus. Menjaga hutan bukan hanya tugas petugas, tetapi tanggung
+      jawab kita bersama.
+    portrait: {fileID: -2311659948842064771, guid: d70274627a7564040b4e998e2a2fe515, type: 3}
+    side: 1
+  - characterName: Edo
+    dialogueText: Terima kasih sudah menjelaskan semuanya, Kak!
+    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
+    side: 0
+  - characterName: Aku
+    dialogueText: Sama-sama. Ingat, jangan bermain-main dengan api, ya!
+    portrait: {fileID: -2311659948842064771, guid: d70274627a7564040b4e998e2a2fe515, type: 3}
+    side: 1
+  - characterName: Edo
+    dialogueText: Siap, Kak!
+    portrait: {fileID: -2161784467561209595, guid: bf688795543eb414789175c6c5f1187e, type: 3}
+    side: 0
 --- !u!114 &1194287737
 MonoBehaviour:
   m_ObjectHideFlags: 0
