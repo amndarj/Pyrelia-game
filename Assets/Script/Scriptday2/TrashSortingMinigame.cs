@@ -113,13 +113,11 @@ public class TrashSortingMinigame : MonoBehaviour
         if (closeButton != null)
             closeButton.SetActive(false);
 
-        indexSampah = PlayerPrefs.GetInt(SaveKey, 0);
+        indexSampah = 0;
 
-        if (indexSampah >= 6)
-        {
-            Debug.Log("Semua sampah sudah dipilah!");
-            return;
-        }
+        PlayerPrefs.DeleteKey(SaveKey);
+        PlayerPrefs.Save();
+
         kecepatanSekarang = kecepatanAwal;
         arah = 1f;
         minigameSelesai = false;
@@ -207,10 +205,6 @@ public class TrashSortingMinigame : MonoBehaviour
         resultText.text = "BENAR! Sampah berhasil dipilah!";
 
         indexSampah++;
-        PlayerPrefs.SetInt(SaveKey, indexSampah);
-        PlayerPrefs.Save();
-
-        Debug.Log("Index berikutnya: " + indexSampah);
 
         // Semua sampah sudah selesai
         if (indexSampah >= 6)
@@ -300,5 +294,6 @@ public class TrashSortingMinigame : MonoBehaviour
     {
         indexSampah = 0;
         PlayerPrefs.DeleteKey(SaveKey);
+        PlayerPrefs.Save();
     }
 }

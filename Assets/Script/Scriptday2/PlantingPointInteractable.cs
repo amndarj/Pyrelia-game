@@ -50,6 +50,10 @@ public class PlantingPointInteractable : MonoBehaviour, IInteractable
             pohonHasilTanam.SetActive(true);
 
         PlayerPrefs.SetInt(SaveKey, 1);
+        
+        if (GameSaveManager.Instance != null)
+            GameSaveManager.Instance.RegisterProgressKey(SaveKey);
+
         PlayerPrefs.Save();
 
         PerbaruiMarker();
@@ -83,6 +87,7 @@ public class PlantingPointInteractable : MonoBehaviour, IInteractable
     {
         sudahDitanam = false;
         PlayerPrefs.DeleteKey(SaveKey);
+        PlayerPrefs.Save();
 
         if (pohonHasilTanam != null)
             pohonHasilTanam.SetActive(false);

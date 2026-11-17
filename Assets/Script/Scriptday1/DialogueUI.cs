@@ -29,6 +29,9 @@ public class DialogueUI : MonoBehaviour
     private bool usingCustomDialogue = false;
 
     public event Action OnDialogueFinished;
+    public event Action<int> OnDialogueLineChanged;
+
+    public int CurrentLineIndex => currentLine;
 
     public bool IsDialogueActive()
     {
@@ -50,15 +53,30 @@ public class DialogueUI : MonoBehaviour
             speakerImage.gameObject.SetActive(false);
     }
 
-    // Dialog khusus dengan gambar pembicara
     public void StartDialogue(DialogueLine[] lines)
     {
+        StartDialogue(lines, 0);
+    }
+
+    public void StartDialogue(DialogueLine[] lines, int startLine)
+    {
+        if (lines == null || lines.Length == 0)
+            return;
+
         customDialogueLines = lines;
-        currentLine = 0;
+
+        currentLine = Mathf.Clamp(
+            startLine,
+            0,
+            lines.Length - 1
+        );
+
         usingCustomDialogue = true;
 
         dialoguePanel.SetActive(true);
         ShowCurrentLine();
+
+        OnDialogueLineChanged?.Invoke(currentLine);
     }
 
     private void ShowCurrentLine()
@@ -87,6 +105,7 @@ public class DialogueUI : MonoBehaviour
             if (currentLine < customDialogueLines.Length)
             {
                 ShowCurrentLine();
+                OnDialogueLineChanged?.Invoke(currentLine);
             }
             else
             {

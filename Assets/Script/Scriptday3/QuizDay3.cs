@@ -1,4 +1,3 @@
-
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -24,6 +23,12 @@ public class QuizDay3 : MonoBehaviour
 
     private int currentQuestion;
     private bool answered;
+
+    private const string QUESTION_KEY = "Day3_QuizQuestion";
+    private const string STAGE_KEY = "Day3_Stage";
+    private const string ACTIVE_KEY = "Day3_QuizActive";
+    private const string COMPLETED_KEY = "Day3_QuizCompleted";
+    private const string RESPONSE_KEY = "Day3_QuizResponseText";
 
     private string[] questions =
     {
@@ -65,8 +70,6 @@ public class QuizDay3 : MonoBehaviour
 
     private int[] correctAnswers = { 1, 0, 2, 1, 2 };
 
-    // Penjelasan khusus untuk setiap pertanyaan
-
     private string[,] explanations =
     {
         {
@@ -91,7 +94,6 @@ public class QuizDay3 : MonoBehaviour
         }
     };
 
-
     void Awake()
     {
         optionA.onClick.AddListener(() => CheckAnswer(0));
@@ -104,8 +106,72 @@ public class QuizDay3 : MonoBehaviour
         currentQuestion = 0;
         answered = false;
 
+        PlayerPrefs.SetInt(QUESTION_KEY, 0);
+        PlayerPrefs.SetInt(STAGE_KEY, PlayerMC.STAGE_QUIZ);
+        PlayerPrefs.SetInt(ACTIVE_KEY, 1);
+        PlayerPrefs.SetInt(COMPLETED_KEY, 0);
+        PlayerPrefs.DeleteKey(RESPONSE_KEY);
+        PlayerPrefs.Save();
+
         gameObject.SetActive(true);
         ShowQuestion();
+    }
+
+    // Memulihkan kuis berdasarkan progres terakhir.
+    public void ResumeQuiz()
+    {
+        currentQuestion = PlayerPrefs.GetInt(QUESTION_KEY, 0);
+
+        currentQuestion = Mathf.Clamp(
+            currentQuestion,
+            0,
+            questions.Length - 1
+        );
+
+        int savedStage = PlayerPrefs.GetInt(
+            STAGE_KEY,
+            PlayerMC.STAGE_QUIZ
+        );
+
+        gameObject.SetActive(true);
+
+        // Jika sebelumnya sedang membaca penjelasan jawaban.
+        if (savedStage == PlayerMC.STAGE_QUIZ_RESPONSE)
+        {
+            answered = true;
+            gameObject.SetActive(false);
+
+            string savedResponse = PlayerPrefs.GetString(
+                RESPONSE_KEY,
+                ""
+            );
+
+            if (!string.IsNullOrEmpty(savedResponse) &&
+                playerMC != null)
+            {
+                playerMC.ShowQuizResponse(
+                    savedResponse,
+                    NextQuestion
+                );
+            }
+            else
+            {
+                Debug.LogError(
+                    "Penjelasan jawaban terakhir tidak ditemukan!"
+                );
+            }
+
+            return;
+        }
+
+        // Jika sebelumnya sedang mengerjakan soal.
+        answered = false;
+        ShowQuestion();
+
+        Debug.Log(
+            "Kuis dilanjutkan dari soal nomor " +
+            (currentQuestion + 1)
+        );
     }
 
     void ShowQuestion()
@@ -136,7 +202,13 @@ public class QuizDay3 : MonoBehaviour
             isCorrect ? 0 : 1
         ];
 
-        // Sembunyikan quiz sementara MC menjelaskan
+        // Simpan soal dan penjelasan sebelum menampilkan dialog MC.
+        PlayerPrefs.SetInt(QUESTION_KEY, currentQuestion);
+        PlayerPrefs.SetInt(STAGE_KEY, PlayerMC.STAGE_QUIZ_RESPONSE);
+        PlayerPrefs.SetInt(ACTIVE_KEY, 1);
+        PlayerPrefs.SetString(RESPONSE_KEY, response);
+        PlayerPrefs.Save();
+
         gameObject.SetActive(false);
 
         if (playerMC != null)
@@ -153,13 +225,24 @@ public class QuizDay3 : MonoBehaviour
     {
         currentQuestion++;
 
+        PlayerPrefs.SetInt(QUESTION_KEY, currentQuestion);
+        PlayerPrefs.DeleteKey(RESPONSE_KEY);
+
         if (currentQuestion < questions.Length)
         {
+            PlayerPrefs.SetInt(STAGE_KEY, PlayerMC.STAGE_QUIZ);
+            PlayerPrefs.SetInt(ACTIVE_KEY, 1);
+            PlayerPrefs.Save();
+
             gameObject.SetActive(true);
             ShowQuestion();
         }
         else
         {
+            PlayerPrefs.SetInt(COMPLETED_KEY, 1);
+            PlayerPrefs.SetInt(ACTIVE_KEY, 0);
+            PlayerPrefs.Save();
+
             if (npcBocil != null)
             {
                 npcBocil.FinishEducation();

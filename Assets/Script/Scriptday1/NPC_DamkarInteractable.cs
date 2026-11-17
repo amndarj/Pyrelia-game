@@ -3,6 +3,13 @@ using UnityEngine.SceneManagement;
 
 public class NPC_DamkarInteractable : MonoBehaviour, IInteractable
 {
+    private const string PHONE_CALL_KEY =
+        "Day1_TeleponDamkarSelesai";
+
+    private const string DECISION_KEY =
+        "Day1_KeputusanDamkar";
+
+    [Header("Dialogue")]
     public DialogueUI dialogueUI;
     public GameObject choicePanel;
 
@@ -12,15 +19,27 @@ public class NPC_DamkarInteractable : MonoBehaviour, IInteractable
     [Header("Mini Game")]
     public string miniGameSceneName = "MiniGame_PemadamanApi";
 
-    private bool dialogueStarted = false;
-    private bool dialogueFinished = false;
-    private bool decisionMade = false;
-    private bool missionCompleted = false;
+    private bool dialogueStarted;
+    private bool dialogueFinished;
+    private bool decisionMade;
+    private bool missionCompleted;
+    private bool phoneCallFinished;
 
     private DialogueLine[] dialogueLines;
 
     private void Start()
     {
+        // Ambil seluruh status tersimpan.
+        phoneCallFinished =
+            PlayerPrefs.GetInt(PHONE_CALL_KEY, 0) == 1;
+
+        decisionMade =
+            PlayerPrefs.GetInt(DECISION_KEY, 0) == 1;
+
+        missionCompleted =
+            PlayerPrefs.GetInt("MisiPemadamanSelesai", 0) == 1;
+
+        // Susun dialog.
         dialogueLines = new DialogueLine[]
         {
             new DialogueLine
@@ -44,19 +63,15 @@ public class NPC_DamkarInteractable : MonoBehaviour, IInteractable
             new DialogueLine
             {
                 speakerName = "Petugas",
-                dialogueText = "Kami akan mempersiapkan alat pemadam dan segera memadamkan api",
+                dialogueText = "Kami akan mempersiapkan alat pemadam dan segera memadamkan api.",
                 speakerImage = firefighterImage
             }
         };
 
-        missionCompleted =
-            PlayerPrefs.GetInt("MisiPemadamanSelesai", 0) == 1;
-
-        if (missionCompleted)
+        if (missionCompleted || decisionMade)
         {
             dialogueStarted = true;
             dialogueFinished = true;
-            decisionMade = true;
 
             if (choicePanel != null)
                 choicePanel.SetActive(false);
@@ -77,6 +92,10 @@ public class NPC_DamkarInteractable : MonoBehaviour, IInteractable
 
     public void Interact()
     {
+        // Pastikan telepon sudah selesai.
+        if (!phoneCallFinished)
+            return;
+
         if (missionCompleted || decisionMade)
             return;
 
@@ -91,13 +110,21 @@ public class NPC_DamkarInteractable : MonoBehaviour, IInteractable
         if (dialogueStarted)
             return;
 
+        if (dialogueUI == null)
+        {
+            Debug.LogError("Dialogue UI belum dihubungkan!");
+            return;
+        }
+
         dialogueStarted = true;
         dialogueUI.StartDialogue(dialogueLines);
     }
 
     private void OnDialogueFinished()
     {
-        if (!dialogueStarted || dialogueFinished || missionCompleted)
+        if (!dialogueStarted ||
+            dialogueFinished ||
+            missionCompleted)
             return;
 
         dialogueFinished = true;
@@ -115,9 +142,7 @@ public class NPC_DamkarInteractable : MonoBehaviour, IInteractable
             choicePanel.SetActive(false);
 
         if (!dialogueFinished && !decisionMade)
-        {
             dialogueStarted = false;
-        }
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -133,10 +158,23 @@ public class NPC_DamkarInteractable : MonoBehaviour, IInteractable
         if (decisionMade || missionCompleted)
             return;
 
+        if (!phoneCallFinished)
+            return;
+
         decisionMade = true;
+
+        // Simpan keputusan sebelum berpindah scene.
+        PlayerPrefs.SetInt(DECISION_KEY, 1);
+        PlayerPrefs.Save();
 
         if (choicePanel != null)
             choicePanel.SetActive(false);
+
+        // Simpan checkpoint minigame.
+        if (GameSaveManager.Instance != null)
+        {
+            GameSaveManager.Instance.SaveScene(miniGameSceneName);
+        }
 
         Debug.Log("Memulai mini-game pemadaman api.");
 

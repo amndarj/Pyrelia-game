@@ -1,3 +1,4 @@
+
 using UnityEngine;
 
 public class SafeZone : MonoBehaviour
@@ -10,11 +11,25 @@ public class SafeZone : MonoBehaviour
     {
         missionCompleted =
             PlayerPrefs.GetInt("MisiEvakuasiGokilSelesai", 0) == 1;
+
+        if (missionCompleted && missionObjective != null)
+        {
+            missionObjective.UpdateObjective(
+                "Temui anak SMA yang terluka dan berikan pertolongan pertama."
+            );
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (missionCompleted)
+            return;
+
+        // Evakuasi hanya boleh dilakukan setelah pemadaman selesai.
+        bool pemadamanSelesai =
+            PlayerPrefs.GetInt("MisiPemadamanSelesai", 0) == 1;
+
+        if (!pemadamanSelesai)
             return;
 
         NPCFollowPlayer npc = other.GetComponent<NPCFollowPlayer>();
@@ -31,16 +46,19 @@ public class SafeZone : MonoBehaviour
 
         missionCompleted = true;
 
-        // Simpan progres evakuasi.
         PlayerPrefs.SetInt("MisiEvakuasiGokilSelesai", 1);
         PlayerPrefs.Save();
 
-        // Ganti objektif berikutnya.
         if (missionObjective != null)
         {
             missionObjective.UpdateObjective(
                 "Temui anak SMA yang terluka dan berikan pertolongan pertama."
             );
+        }
+
+        if (GameSaveManager.Instance != null)
+        {
+            GameSaveManager.Instance.SaveScene("Day 1");
         }
 
         Debug.Log("Misi evakuasi Gokil selesai!");

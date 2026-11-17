@@ -83,6 +83,9 @@ public class Day2MissionManager : MonoBehaviour
 
     private void Start()
     {
+        if (GameSaveManager.Instance != null)
+            GameSaveManager.Instance.SaveCurrentScene();
+
         MuatProgres();
 
         UpdateTrashProgress();
@@ -206,6 +209,8 @@ public class Day2MissionManager : MonoBehaviour
                     {
                         "Terima kasih telah membantu lingkungan!"
                     });
+
+                TampilkanPanelSelesai();
 
                 Debug.Log("DAY 2 COMPLETED!");
                 break;
@@ -502,6 +507,73 @@ public class Day2MissionManager : MonoBehaviour
             missionGuide.SetIndexLangkah(0);
             TampilkanMisiAktif();
         }
+
+        // Reset status seluruh NPC masker
+        NPCMaskerInteractable[] semuaNPC =
+            FindObjectsByType<NPCMaskerInteractable>(
+                FindObjectsInactive.Include,
+                FindObjectsSortMode.None
+            );
+
+        foreach (NPCMaskerInteractable npc in semuaNPC)
+        {
+            npc.ResetStatusNPC();
+        }
+
+        // Reset status seluruh hewan
+        AnimalTreatmentInteractable[] semuaHewan =
+            FindObjectsByType<AnimalTreatmentInteractable>(
+                FindObjectsInactive.Include,
+                FindObjectsSortMode.None
+            );
+
+        foreach (AnimalTreatmentInteractable hewan in semuaHewan)
+        {
+            hewan.ResetStatusHewan();
+        }
+
+        // Reset seluruh sampah
+        TrashPickupInteractable[] semuaSampah =
+            FindObjectsByType<TrashPickupInteractable>(
+                FindObjectsInactive.Include,
+                FindObjectsSortMode.None
+            );
+
+        foreach (TrashPickupInteractable sampah in semuaSampah)
+        {
+            sampah.ResetStatusSampah();
+        }
+
+        // Reset seluruh titik penanaman
+        PlantingPointInteractable[] semuaTitik =
+            FindObjectsByType<PlantingPointInteractable>(
+                FindObjectsInactive.Include,
+                FindObjectsSortMode.None
+            );
+
+        foreach (PlantingPointInteractable titik in semuaTitik)
+        {
+            titik.ResetStatusPenanaman();
+        }
+
+
+        // Reset kotak masker di posko
+        PoskoMaskerInteractable[] semuaPosko =
+            FindObjectsByType<PoskoMaskerInteractable>(
+                FindObjectsInactive.Include,
+                FindObjectsSortMode.None
+            );
+
+        foreach (PoskoMaskerInteractable posko in semuaPosko)
+        {
+            posko.ResetStatusMasker();
+        }
+
+        // Perbarui seluruh objective marker
+        PerbaruiSemuaMarkerNPC();
+        PerbaruiSemuaMarkerHewan();
+        PerbaruiMarkerSampah();
+        PerbaruiSemuaMarkerPohon();
 
         // Reset UI progres
         UpdateTrashProgress();

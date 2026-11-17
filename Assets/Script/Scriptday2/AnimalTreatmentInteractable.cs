@@ -59,6 +59,10 @@ public class AnimalTreatmentInteractable : MonoBehaviour, IInteractable
             animalRenderer.sprite = spriteSetelahDirawat;
 
         PlayerPrefs.SetInt(SaveKey, 1);
+
+        if (GameSaveManager.Instance != null)
+            GameSaveManager.Instance.RegisterProgressKey(SaveKey);
+
         PlayerPrefs.Save();
     }
 
@@ -95,7 +99,11 @@ public class AnimalTreatmentInteractable : MonoBehaviour, IInteractable
     public void ResetStatusHewan()
     {
         sudahDirawat = false;
+        if (GameSaveManager.Instance != null)
+            GameSaveManager.Instance.RegisterProgressKey(SaveKey);
+            
         PlayerPrefs.DeleteKey(SaveKey);
+        PlayerPrefs.Save();
 
         if (animalRenderer != null && spriteAwal != null)
             animalRenderer.sprite = spriteAwal;

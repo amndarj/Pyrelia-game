@@ -1,3 +1,4 @@
+
 using UnityEngine;
 
 public class NPC_Korban : MonoBehaviour, IInteractable
@@ -11,14 +12,31 @@ public class NPC_Korban : MonoBehaviour, IInteractable
 
     public Sprite playerImage;
     public Sprite npcImage;
+    public MissionObjective missionObjective;
 
     private bool dialogueStarted = false;
     private bool dialogueFinished = false;
 
     private DialogueLine[] dialogueLines;
 
+    private bool EvakuasiSelesai()
+    {
+        return PlayerPrefs.GetInt(
+            "MisiEvakuasiGokilSelesai", 0
+        ) == 1;
+    }
+
     private void Start()
     {
+        dialogueFinished =
+            PlayerPrefs.GetInt("MisiPertolonganSelesai", 0) == 1;
+
+        if (dialogueFinished)
+        {
+            SetTreated();
+            return;
+        }
+
         dialogueLines = new DialogueLine[]
         {
             new DialogueLine
@@ -78,10 +96,11 @@ public class NPC_Korban : MonoBehaviour, IInteractable
             dialogueUI.OnDialogueFinished -= OnDialogueFinished;
     }
 
-
     public void Interact()
     {
-    
+        if (!EvakuasiSelesai())
+            return;
+
         if (dialogueFinished)
         {
             BukaFirstAidPanel();
@@ -94,13 +113,10 @@ public class NPC_Korban : MonoBehaviour, IInteractable
             dialogueUI.StartDialogue(dialogueLines);
             return;
         }
-        
-        if (dialogueUI.IsDialogueActive())
-        {
-            dialogueUI.NextLine();
-        }
-    }
 
+        if (dialogueUI.IsDialogueActive())
+            dialogueUI.NextLine();
+    }
 
     private void OnDialogueFinished()
     {
@@ -112,18 +128,26 @@ public class NPC_Korban : MonoBehaviour, IInteractable
         if (itemManager != null)
         {
             itemManager.questStarted = true;
-            Debug.Log("Misi pertolongan pertama dimulai! Quest Started = true.");
+            Debug.Log("Misi pertolongan pertama dimulai!");
+        }
+
+        if (missionObjective != null)
+        {
+            missionObjective.UpdateObjective(
+                "Cari kayu dan perban untuk menolong Fathan."
+            );
         }
     }
 
     public void BukaFirstAidPanel()
     {
-        if (!dialogueFinished)
+        if (!EvakuasiSelesai() || !dialogueFinished)
             return;
 
-        if (itemManager.HasFirstAidItems())
+        if (itemManager != null && itemManager.HasFirstAidItems())
         {
-            firstAidPanel.SetActive(true);
+            if (firstAidPanel != null)
+                firstAidPanel.SetActive(true);
         }
         else
         {
@@ -135,15 +159,14 @@ public class NPC_Korban : MonoBehaviour, IInteractable
     {
         if (other.CompareTag("Player"))
         {
-            dialogueUI.CloseDialogue();
+            if (dialogueUI != null)
+                dialogueUI.CloseDialogue();
         }
     }
 
     public void SetTreated()
     {
         if (npcRenderer != null && npcBandagedSprite != null)
-        {
             npcRenderer.sprite = npcBandagedSprite;
-        }
     }
 }

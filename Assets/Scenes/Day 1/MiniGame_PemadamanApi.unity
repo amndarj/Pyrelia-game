@@ -4964,6 +4964,11 @@ MonoBehaviour:
   missionCompletePanel: {fileID: 488979242}
   missionCanvasGroup: {fileID: 488979246}
   fireTimer: {fileID: 0}
+  firePoints:
+  - {fileID: 1475038278}
+  - {fileID: 2090082579}
+  - {fileID: 1570118097}
+  - {fileID: 732419923}
   fadeDuration: 5
 --- !u!114 &1268428783
 MonoBehaviour:

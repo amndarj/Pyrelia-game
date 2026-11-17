@@ -1,3 +1,4 @@
+
 using UnityEngine;
 
 public class ForestMissionTrigger : MonoBehaviour
@@ -8,17 +9,30 @@ public class ForestMissionTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (missionStarted || !other.CompareTag("Player"))
+        if (!other.CompareTag("Player"))
             return;
 
-        // Jangan ulangi objektif lama setelah pemadaman selesai.
-        if (PlayerPrefs.GetInt("MisiPemadamanSelesai", 0) == 1)
+        bool teleponSelesai =
+            PlayerPrefs.GetInt("Day1_TeleponDamkarSelesai", 0) == 1;
+
+        bool pemadamanSelesai =
+            PlayerPrefs.GetInt("MisiPemadamanSelesai", 0) == 1;
+
+        // Jangan mengubah objective jika telepon sudah selesai
+        // atau pemadaman sudah selesai.
+        if (teleponSelesai || pemadamanSelesai)
+            return;
+
+        if (missionStarted)
             return;
 
         missionStarted = true;
 
-        missionObjective.UpdateObjective(
-            "Kembali ke rumah dan ambil handphone."
-        );
+        if (missionObjective != null)
+        {
+            missionObjective.UpdateObjective(
+                "Pergi ke rumah dan hubungi petugas pemadam kebakaran."
+            );
+        }
     }
 }

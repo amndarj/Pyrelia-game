@@ -12,12 +12,36 @@ public class FirePoint : MonoBehaviour
 
     private bool isExtinguished = false;
 
+    private string SaveKey =>
+        "Day1_" + gameObject.name + "_Extinguished";
+
+    private void Start()
+    {
+        // Pulihkan status api dari penyimpanan.
+        isExtinguished =
+            PlayerPrefs.GetInt(SaveKey, 0) == 1;
+
+        if (isExtinguished)
+        {
+            // Api yang sudah padam tidak boleh muncul lagi.
+            if (fireVisual != null)
+                fireVisual.SetActive(false);
+
+            if (warningMarker != null)
+                warningMarker.SetActive(false);
+        }
+    }
+
     public void Extinguish()
     {
         if (isExtinguished)
             return;
 
         isExtinguished = true;
+
+        // Simpan status titik api.
+        PlayerPrefs.SetInt(SaveKey, 1);
+        PlayerPrefs.Save();
 
         if (fireCounterManager != null)
         {
@@ -29,7 +53,8 @@ public class FirePoint : MonoBehaviour
 
     private IEnumerator FadeOut()
     {
-        List<SpriteRenderer> renderers = new List<SpriteRenderer>();
+        List<SpriteRenderer> renderers =
+            new List<SpriteRenderer>();
 
         if (fireVisual != null)
         {
@@ -59,7 +84,9 @@ public class FirePoint : MonoBehaviour
         while (elapsedTime < fadeDuration)
         {
             elapsedTime += Time.deltaTime;
-            float alpha = 1f - Mathf.Clamp01(elapsedTime / fadeDuration);
+
+            float alpha =
+                1f - Mathf.Clamp01(elapsedTime / fadeDuration);
 
             foreach (var item in originalColors)
             {
@@ -86,5 +113,38 @@ public class FirePoint : MonoBehaviour
     public bool IsExtinguished()
     {
         return isExtinguished;
+    }
+
+    public void ResetFirePoint()
+    {
+        isExtinguished = false;
+
+        PlayerPrefs.DeleteKey(SaveKey);
+        PlayerPrefs.Save();
+
+        if (fireVisual != null)
+        {
+            fireVisual.SetActive(true);
+            ResetSpriteAlpha(fireVisual);
+        }
+
+        if (warningMarker != null)
+        {
+            warningMarker.SetActive(true);
+            ResetSpriteAlpha(warningMarker);
+        }
+    }
+
+    private void ResetSpriteAlpha(GameObject target)
+    {
+        SpriteRenderer[] renderers =
+            target.GetComponentsInChildren<SpriteRenderer>(true);
+
+        foreach (SpriteRenderer renderer in renderers)
+        {
+            Color color = renderer.color;
+            color.a = 1f;
+            renderer.color = color;
+        }
     }
 }

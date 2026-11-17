@@ -22,6 +22,10 @@ public class TrashPickupInteractable : MonoBehaviour, IInteractable
             return;
 
         PlayerPrefs.SetInt(SaveKey, 1);
+        
+        if (GameSaveManager.Instance != null)
+            GameSaveManager.Instance.RegisterProgressKey(SaveKey);
+
         PlayerPrefs.Save();
 
         gameObject.SetActive(false);
@@ -33,6 +37,8 @@ public class TrashPickupInteractable : MonoBehaviour, IInteractable
     public void ResetStatusSampah()
     {
         PlayerPrefs.DeleteKey(SaveKey);
+        PlayerPrefs.Save();
+
         gameObject.SetActive(true);
     }
 }

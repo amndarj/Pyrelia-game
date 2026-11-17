@@ -57,6 +57,10 @@ public class PoskoMaskerInteractable : MonoBehaviour, IInteractable
             kotakMasker.SetActive(false);
 
         PlayerPrefs.SetInt(SaveKey, 1);
+
+        if (GameSaveManager.Instance != null)
+            GameSaveManager.Instance.RegisterProgressKey(SaveKey);
+
         PlayerPrefs.Save();
 
         PerbaruiMarker();
@@ -68,6 +72,9 @@ public class PoskoMaskerInteractable : MonoBehaviour, IInteractable
 
         PlayerPrefs.DeleteKey(SaveKey);
         PlayerPrefs.Save();
+
+        if (kotakMasker != null)
+            kotakMasker.SetActive(true);
 
         PerbaruiMarker();
     }

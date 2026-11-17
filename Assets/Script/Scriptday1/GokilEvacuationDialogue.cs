@@ -1,3 +1,4 @@
+
 using UnityEngine;
 
 public class GokilEvacuationDialogue : MonoBehaviour
@@ -12,6 +13,12 @@ public class GokilEvacuationDialogue : MonoBehaviour
 
     private int currentPoint = 0;
     private bool isDialogueActive = false;
+
+    private const string KEY_POINT = "Day1_GokilDialogPoint";
+    private const string KEY_LINE = "Day1_GokilDialogLine";
+    private const string KEY_ACTIVE = "Day1_GokilDialogActive";
+
+    private const string FIRE_KEY = "MisiPemadamanSelesai";
 
     private DialogueLine[][] dialogueLines =
     {
@@ -64,9 +71,31 @@ public class GokilEvacuationDialogue : MonoBehaviour
         }
     };
 
+    private bool PemadamanSelesai()
+    {
+        return PlayerPrefs.GetInt(FIRE_KEY, 0) == 1;
+    }
+
+    private void OnEnable()
+    {
+        if (dialogueUI != null)
+        {
+            dialogueUI.OnDialogueFinished += OnDialogueFinished;
+            dialogueUI.OnDialogueLineChanged += OnDialogueLineChanged;
+        }
+    }
+
+    private void OnDisable()
+    {
+        if (dialogueUI != null)
+        {
+            dialogueUI.OnDialogueFinished -= OnDialogueFinished;
+            dialogueUI.OnDialogueLineChanged -= OnDialogueLineChanged;
+        }
+    }
+
     private void Start()
     {
-        // Isi portrait sesuai pembicara.
         foreach (DialogueLine[] point in dialogueLines)
         {
             foreach (DialogueLine line in point)
@@ -77,18 +106,37 @@ public class GokilEvacuationDialogue : MonoBehaviour
                     line.speakerImage = playerImage;
             }
         }
-    }
 
-    private void OnEnable()
-    {
-        if (dialogueUI != null)
-            dialogueUI.OnDialogueFinished += OnDialogueFinished;
-    }
+        currentPoint = PlayerPrefs.GetInt(KEY_POINT, 0);
 
-    private void OnDisable()
-    {
-        if (dialogueUI != null)
-            dialogueUI.OnDialogueFinished -= OnDialogueFinished;
+        currentPoint = Mathf.Clamp(
+            currentPoint, 0, dialogueLines.Length
+        );
+
+        // Jangan pulihkan dialog sebelum pemadaman selesai.
+        if (!PemadamanSelesai())
+            return;
+
+        bool savedDialogueActive =
+            PlayerPrefs.GetInt(KEY_ACTIVE, 0) == 1;
+
+        if (savedDialogueActive &&
+            currentPoint < dialogueLines.Length &&
+            dialogueUI != null &&
+            gokilFollow != null)
+        {
+            int savedLine = PlayerPrefs.GetInt(KEY_LINE, 0);
+
+            isDialogueActive = true;
+            gokilFollow.PauseFollowing();
+
+            dialogueUI.StartDialogue(
+                dialogueLines[currentPoint],
+                savedLine
+            );
+
+            Debug.Log("Dialog Gokil berhasil dilanjutkan.");
+        }
     }
 
     public void TryStartPointDialogue(
@@ -96,6 +144,10 @@ public class GokilEvacuationDialogue : MonoBehaviour
         NPCFollowPlayer npc
     )
     {
+        // Kunci dialog sebelum pemadaman selesai.
+        if (!PemadamanSelesai())
+            return;
+
         if (npc != gokilFollow)
             return;
 
@@ -110,13 +162,24 @@ public class GokilEvacuationDialogue : MonoBehaviour
 
         isDialogueActive = true;
 
+        PlayerPrefs.SetInt(KEY_ACTIVE, 1);
+        PlayerPrefs.SetInt(KEY_POINT, currentPoint);
+        PlayerPrefs.SetInt(KEY_LINE, 0);
+        PlayerPrefs.Save();
+
         gokilFollow.PauseFollowing();
 
         dialogueUI.StartDialogue(
             dialogueLines[currentPoint]
         );
+    }
 
-        Debug.Log("Dialog Gokil titik " + (currentPoint + 1) + " dimulai.");
+    private void OnDialogueLineChanged(int lineIndex)
+    {
+        PlayerPrefs.SetInt(KEY_POINT, currentPoint);
+        PlayerPrefs.SetInt(KEY_LINE, lineIndex);
+        PlayerPrefs.SetInt(KEY_ACTIVE, 1);
+        PlayerPrefs.Save();
     }
 
     private void OnDialogueFinished()
@@ -127,8 +190,14 @@ public class GokilEvacuationDialogue : MonoBehaviour
         currentPoint++;
         isDialogueActive = false;
 
-        gokilFollow.ResumeFollowing();
+        PlayerPrefs.SetInt(KEY_POINT, currentPoint);
+        PlayerPrefs.SetInt(KEY_LINE, 0);
+        PlayerPrefs.SetInt(KEY_ACTIVE, 0);
+        PlayerPrefs.Save();
 
-        Debug.Log("Gokil melanjutkan perjalanan.");
+        if (gokilFollow != null)
+            gokilFollow.ResumeFollowing();
+
+        Debug.Log("Dialog Gokil selesai.");
     }
 }
