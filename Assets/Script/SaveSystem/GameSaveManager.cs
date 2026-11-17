@@ -162,27 +162,42 @@ public class GameSaveManager : MonoBehaviour
             PlayerPrefs.DeleteKey(key);
         }
 
-        // Hapus data tetap Day 1.
-        string[] day1Keys =
-        {
-            "Day1_TeleponDamkarSelesai",
-            "Day1_KeputusanDamkar",
-            "MisiPemadamanSelesai",
-            "MisiEvakuasiGokilSelesai",
-            "MisiPertolonganSelesai",
 
-            "Day1_GokilProgress",
-            "Day1_GokilX",
-            "Day1_GokilY",
-            "Day1_GokilFollowing",
-            "Day1_GokilDropped",
-            "Day1_GokilDialogPoint",
-            "Day1_GokilDialogLine",
-            "Day1_GokilDialogActive",
-            "Day1_PlayerX",
-            "Day1_PlayerY",
-            "Day1_PlayerPositionSaved"
-        };
+    string[] day1Keys =
+    {
+        // Progres utama Day 1
+        "Day1_TeleponDamkarSelesai",
+        "Day1_KeputusanDamkar",
+        "MisiPemadamanSelesai",
+        "MisiEvakuasiGokilSelesai",
+        "MisiPertolonganSelesai",
+
+        // Progres mini-game pemadaman
+        "Day1_FireCount",
+        "Day1_FireMiniGameStarted",
+        "Day1_FireTimer",
+        "Day1_FireTimerStarted",
+        "Day1_Fire_1_Extinguished",
+        "Day1_Fire_2_Extinguished",
+        "Day1_Fire_3_Extinguished",
+        "Day1_Fire_4_Extinguished",
+
+        // Progres NPC Gokil
+        "Day1_GokilProgress",
+        "Day1_GokilX",
+        "Day1_GokilY",
+        "Day1_GokilFollowing",
+        "Day1_GokilDropped",
+        "Day1_GokilDialogPoint",
+        "Day1_GokilDialogLine",
+        "Day1_GokilDialogActive",
+
+        // Posisi pemain
+        "Day1_PlayerX",
+        "Day1_PlayerY",
+        "Day1_PlayerPositionSaved"
+    };
+
 
         foreach (string key in day1Keys)
         {

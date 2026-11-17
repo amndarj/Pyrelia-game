@@ -836,6 +836,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pyrelia_Map
       objectReference: {fileID: 0}
+    - target: {fileID: 4058485068054958768, guid: c1896ad5967edd042966bb441df832fd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 4058485068054958768, guid: c1896ad5967edd042966bb441df832fd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -40.16
+      objectReference: {fileID: 0}
     - target: {fileID: 4359012570617667736, guid: c1896ad5967edd042966bb441df832fd, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -6135,10 +6143,10 @@ RectTransform:
   m_Children:
   - {fileID: 711679932}
   - {fileID: 610913745}
+  - {fileID: 1844699354}
   - {fileID: 832716386}
   - {fileID: 970630348}
   - {fileID: 564043028}
-  - {fileID: 1844699354}
   - {fileID: 1780046983}
   - {fileID: 1031351315}
   m_Father: {fileID: 0}
@@ -7492,7 +7500,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -42}
-  m_SizeDelta: {x: 300, y: 50}
+  m_SizeDelta: {x: 300, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1474182789
 MonoBehaviour:
@@ -8012,8 +8020,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

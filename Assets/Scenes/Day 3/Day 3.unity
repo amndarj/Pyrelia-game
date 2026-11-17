@@ -4712,12 +4712,12 @@ RectTransform:
   m_Children:
   - {fileID: 320792558}
   - {fileID: 521744644}
-  - {fileID: 229302591}
-  - {fileID: 970630348}
   - {fileID: 1844699354}
+  - {fileID: 970630348}
   - {fileID: 1108235470}
   - {fileID: 1780046983}
   - {fileID: 415029782}
+  - {fileID: 229302591}
   - {fileID: 75820262}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
