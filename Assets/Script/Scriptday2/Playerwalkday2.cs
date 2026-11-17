@@ -1,3 +1,4 @@
+
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -5,23 +6,29 @@ public class Playerwalkday2 : MonoBehaviour
 {
     public float moveSpeed = 5f;
     public VirtualJoystickDay2 joystick;
-    
 
     private Vector2 input;
     private Vector2 lastInput;
 
     private Animator animator;
     private Rigidbody2D rb;
+    private AudioSource footstepAudio;
 
     private void Awake()
     {
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        footstepAudio = GetComponent<AudioSource>();
 
         if (rb == null)
         {
             Debug.LogError("Rigidbody2D belum dipasang pada Player!");
             enabled = false;
+        }
+
+        if (footstepAudio == null)
+        {
+            Debug.LogError("AudioSource belum dipasang pada Player!");
         }
     }
 
@@ -58,20 +65,33 @@ public class Playerwalkday2 : MonoBehaviour
 
         input = Vector2.ClampMagnitude(input, 1f);
 
-        if (input.sqrMagnitude > 0.01f)
+        bool isMoving = input.sqrMagnitude > 0.01f;
+
+        if (isMoving)
             lastInput = input;
 
+        // Animasi player
         if (animator != null)
         {
-            animator.SetBool("IsMoving",
-                input.sqrMagnitude > 0.01f);
+            animator.SetBool("IsMoving", isMoving);
 
-            Vector2 arah = input.sqrMagnitude > 0.01f
-                ? input
-                : lastInput;
+            Vector2 arah = isMoving ? input : lastInput;
 
             animator.SetFloat("moveX", arah.x);
             animator.SetFloat("moveY", arah.y);
+        }
+
+        // Sound effect langkah kaki
+        if (footstepAudio != null)
+        {
+            if (isMoving && !footstepAudio.isPlaying)
+            {
+                footstepAudio.Play();
+            }
+            else if (!isMoving && footstepAudio.isPlaying)
+            {
+                footstepAudio.Stop();
+            }
         }
     }
 
@@ -84,5 +104,8 @@ public class Playerwalkday2 : MonoBehaviour
     {
         if (rb != null)
             rb.linearVelocity = Vector2.zero;
+
+        if (footstepAudio != null)
+            footstepAudio.Stop();
     }
 }
