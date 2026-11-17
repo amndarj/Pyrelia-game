@@ -1022,7 +1022,7 @@ Transform:
   m_GameObject: {fileID: 200594346}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -14.69, y: -27.05, z: 0}
+  m_LocalPosition: {x: -14, y: -31.6, z: 0}
   m_LocalScale: {x: 1.1273, y: 1.1273, z: 1.1273}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1072,7 +1072,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 5, y: 5}
+  m_Size: {x: 4, y: 4}
   m_EdgeRadius: 0
 --- !u!114 &200594349
 MonoBehaviour:
@@ -5993,8 +5993,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PhoneCallDialogue
   dialogueUI: {fileID: 1265615256}
-  playerPhoneSprite: {fileID: -2311659948842064771, guid: ea3efa1ed1c3c8e4eb0b52bf879734e5, type: 3}
-  firefighterSprite: {fileID: 7505214435633258129, guid: 02158945923cd7c4faf6e8f23cb91826, type: 3}
+  playerPhoneSprite: {fileID: 2934362053082727754, guid: cfa7be3bf44017b4c80792c5cf84a4d6, type: 3}
+  firefighterSprite: {fileID: 8878404186681320470, guid: 6c4c614777d62c84b95cc11033109a62, type: 3}
 --- !u!1 &1274432476
 GameObject:
   m_ObjectHideFlags: 0
@@ -9440,7 +9440,7 @@ Transform:
   m_GameObject: {fileID: 1855245561}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -24.93, y: -14.15, z: 0}
+  m_LocalPosition: {x: -20.6, y: -23.6, z: 0}
   m_LocalScale: {x: 1.1273, y: 1.1273, z: 1.1273}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9490,7 +9490,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 5, y: 5}
+  m_Size: {x: 20, y: 8}
   m_EdgeRadius: 0
 --- !u!114 &1855245564
 MonoBehaviour:
