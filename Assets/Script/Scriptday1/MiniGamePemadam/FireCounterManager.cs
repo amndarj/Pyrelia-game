@@ -21,8 +21,26 @@ public class FireCounterManager : MonoBehaviour
     private int totalApi = 4;
     private bool missionCompleted = false;
 
+    [Header("Testing")]
+    public bool resetOnStartForTesting = false;
+    
     private void Start()
     {
+        if (fireTimer == null)
+        {
+            fireTimer = FindFirstObjectByType<FireTimer>();
+        }
+        
+        if (resetOnStartForTesting)
+        {
+            ResetFireMission();
+        }
+
+        if (missionCompletePanel != null)
+            missionCompletePanel.SetActive(false);
+
+        missionCompleted =
+        PlayerPrefs.GetInt("MisiPemadamanSelesai", 0) == 1;
         if (missionCompletePanel != null)
             missionCompletePanel.SetActive(false);
 
@@ -47,6 +65,10 @@ public class FireCounterManager : MonoBehaviour
 
     public void AddExtinguishedFire()
     {
+        Debug.Log("MANAGER AKTIF: " + gameObject.name);
+        Debug.Log("FIRE TIMER: " +
+            (fireTimer == null ? "NULL" : fireTimer.name));
+
         if (missionCompleted)
             return;
 
@@ -65,7 +87,12 @@ public class FireCounterManager : MonoBehaviour
         // Timer mulai berjalan dari sini.
         if (fireTimer != null)
         {
+            Debug.Log("FireTimer ditemukan, mencoba menjalankan timer.");
             fireTimer.MulaiTimer();
+        }
+        else
+        {
+            Debug.LogError("FireTimer masih NULL!");
         }
 
         if (jumlahApiPadam >= totalApi)

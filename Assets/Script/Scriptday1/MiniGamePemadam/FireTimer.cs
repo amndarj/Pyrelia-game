@@ -108,6 +108,8 @@ public class FireTimer : MonoBehaviour
 
     public void MulaiTimer()
     {
+        Debug.Log("MulaiTimer dipanggil!");
+
         if (misiSelesai || timerBerjalan)
             return;
 

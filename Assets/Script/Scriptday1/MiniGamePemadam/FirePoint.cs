@@ -45,6 +45,7 @@ public class FirePoint : MonoBehaviour
 
         if (fireCounterManager != null)
         {
+            Debug.Log("Counter dipanggil dari: " + gameObject.name);
             fireCounterManager.AddExtinguishedFire();
         }
 

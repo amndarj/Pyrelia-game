@@ -3668,7 +3668,7 @@ RectTransform:
   m_GameObject: {fileID: 921303153}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.881, y: 2.881, z: 2.881}
+  m_LocalScale: {x: 3.2883735, y: 3.2883735, z: 3.2883735}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1678157485}
@@ -3676,7 +3676,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 248, y: 150}
+  m_AnchoredPosition: {x: 248, y: 197}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &921303155
@@ -4970,6 +4970,7 @@ MonoBehaviour:
   - {fileID: 1570118097}
   - {fileID: 732419923}
   fadeDuration: 5
+  resetOnStartForTesting: 0
 --- !u!114 &1268428783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5263,6 +5264,70 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1328452800
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1328452802}
+  - component: {fileID: 1328452801}
+  m_Layer: 0
+  m_Name: FireTimerManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1328452801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328452800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56ca44f83d128e3458c1e2adaddb55ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FireTimer
+  timerText: {fileID: 2055737601}
+  waktuAwal: 120
+  waktuHabis:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  missionFailedPanel: {fileID: 1383444088}
+  missionFailedCanvasGroup: {fileID: 1383444090}
+  fadeDuration: 2
+--- !u!4 &1328452802
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328452800}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 696.7955, y: 639.8784, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1368363508
 GameObject:
   m_ObjectHideFlags: 0
@@ -5366,6 +5431,7 @@ GameObject:
   - component: {fileID: 1373187184}
   - component: {fileID: 1373187186}
   - component: {fileID: 1373187185}
+  - component: {fileID: 1373187187}
   m_Layer: 5
   m_Name: FireCounter
   m_TagString: Untagged
@@ -5492,6 +5558,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1373187183}
   m_CullTransparentMesh: 1
+--- !u!114 &1373187187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1373187183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fee20e1c94aeb934892eeb3df699d5cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FireCounterManager
+  fireCounterText: {fileID: 1373187185}
+  missionCompletePanel: {fileID: 488979242}
+  missionCanvasGroup: {fileID: 488979246}
+  fireTimer: {fileID: 0}
+  firePoints:
+  - {fileID: 1475038278}
+  - {fileID: 2090082579}
+  - {fileID: 1570118097}
+  - {fileID: 732419923}
+  fadeDuration: 2
+  resetOnStartForTesting: 0
 --- !u!1 &1383444088
 GameObject:
   m_ObjectHideFlags: 0
@@ -8889,3 +8978,4 @@ SceneRoots:
   - {fileID: 1327684629}
   - {fileID: 1748510757}
   - {fileID: 892761620}
+  - {fileID: 1328452802}

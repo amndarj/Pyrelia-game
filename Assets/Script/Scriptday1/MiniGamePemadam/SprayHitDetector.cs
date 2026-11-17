@@ -35,6 +35,7 @@ public class SprayHitDetector : MonoBehaviour
             if (jarak <= jangkauanSemprotan)
             {
                 firePoint.Extinguish();
+                break;
             }
         }
     }
