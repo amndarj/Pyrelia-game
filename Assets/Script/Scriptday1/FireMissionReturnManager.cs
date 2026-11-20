@@ -21,6 +21,9 @@ public class FireMissionReturnManager : MonoBehaviour
         bool teleponSelesai =
             PlayerPrefs.GetInt("Day1_TeleponDamkarSelesai", 0) == 1;
 
+        bool sudahKeHutan =
+            PlayerPrefs.GetInt("Day1_SudahKeHutan", 0) == 1;
+
         bool keputusanDamkar =
             PlayerPrefs.GetInt("Day1_KeputusanDamkar", 0) == 1;
 
@@ -32,6 +35,7 @@ public class FireMissionReturnManager : MonoBehaviour
 
         bool pertolonganSelesai =
             PlayerPrefs.GetInt("MisiPertolonganSelesai", 0) == 1;
+
 
         // Kondisi hutan.
         if (forestBurning != null)
@@ -60,7 +64,13 @@ public class FireMissionReturnManager : MonoBehaviour
         }
 
         // Objective mengikuti urutan progres.
-        if (!teleponSelesai)
+        if (!sudahKeHutan && !teleponSelesai)
+        {
+            UpdateObjective(
+                "Kebakaran Hutan: Pergi ke hutan."
+            );
+        }
+        else if (!teleponSelesai)
         {
             UpdateObjective(
                 "Pergi ke rumah dan hubungi petugas pemadam kebakaran."

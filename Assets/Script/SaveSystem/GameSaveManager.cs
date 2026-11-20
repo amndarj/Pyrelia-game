@@ -166,6 +166,7 @@ public class GameSaveManager : MonoBehaviour
     string[] day1Keys =
     {
         // Progres utama Day 1
+        "Day1_SudahKeHutan",
         "Day1_TeleponDamkarSelesai",
         "Day1_KeputusanDamkar",
         "MisiPemadamanSelesai",

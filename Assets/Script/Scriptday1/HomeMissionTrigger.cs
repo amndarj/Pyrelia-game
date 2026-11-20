@@ -1,10 +1,12 @@
-
 using UnityEngine;
 
 public class HomeMissionTrigger : MonoBehaviour
 {
     private const string PHONE_CALL_KEY =
         "Day1_TeleponDamkarSelesai";
+
+    private const string FOREST_KEY =
+        "Day1_SudahKeHutan";
 
     public MissionObjective missionObjective;
     public PhoneCallDialogue phoneCallDialogue;
@@ -39,6 +41,15 @@ public class HomeMissionTrigger : MonoBehaviour
 
         if (phoneCallStarted || phoneCallFinished)
             return;
+
+        bool sudahKeHutan =
+            PlayerPrefs.GetInt(FOREST_KEY, 0) == 1;
+
+        if (!sudahKeHutan)
+        {
+            Debug.Log("Pergi ke hutan terlebih dahulu!");
+            return;
+        }
 
         if (phoneCallDialogue == null)
         {
