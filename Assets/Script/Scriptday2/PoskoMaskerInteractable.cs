@@ -13,10 +13,13 @@ public class PoskoMaskerInteractable : MonoBehaviour, IInteractable
 
     private void Start()
     {
-        sudahDiambil = PlayerPrefs.GetInt(SaveKey, 0) == 1;
+        PlayerPrefs.DeleteKey(SaveKey);
+        PlayerPrefs.Save();
+
+        sudahDiambil = false;
 
         if (kotakMasker != null)
-            kotakMasker.SetActive(!sudahDiambil);
+            kotakMasker.SetActive(true);
 
         PerbaruiMarker();
     }
@@ -42,12 +45,28 @@ public class PoskoMaskerInteractable : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        if (sudahDiambil) return;
+        Debug.Log("INTERACT POSKO DIPANGGIL!");
 
-        if (Day2MissionManager.instance == null) return;
+        if (sudahDiambil)
+        {
+            Debug.Log("Masker sudah pernah diambil!");
+            return;
+        }
+
+        if (Day2MissionManager.instance == null)
+        {
+            Debug.LogError("Day2MissionManager tidak ditemukan!");
+            return;
+        }
+
+        Debug.Log("Boleh interaksi masker: " +
+            Day2MissionManager.instance.BolehInteraksiMasker);
 
         if (!Day2MissionManager.instance.BolehInteraksiMasker)
+        {
+            Debug.LogWarning("Misi masker belum aktif!");
             return;
+        }
 
         Day2MissionManager.instance.AmbilMasker(jumlahMasker);
 
@@ -64,6 +83,8 @@ public class PoskoMaskerInteractable : MonoBehaviour, IInteractable
         PlayerPrefs.Save();
 
         PerbaruiMarker();
+
+        Debug.Log("MASKER BERHASIL DIAMBIL!");
     }
 
     public void ResetStatusMasker()

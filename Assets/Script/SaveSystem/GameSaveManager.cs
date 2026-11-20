@@ -210,6 +210,7 @@ public class GameSaveManager : MonoBehaviour
         {
             "Day2_MisiAktif",
             "Day2_Langkah",
+            "Day2_PoskoMasker_Posko",
             "Day2_MaskerDimiliki",
             "Day2_MaskerDibagikan",
             "Day2_HewanDirawat",

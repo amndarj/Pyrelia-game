@@ -187,7 +187,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -5.000061}
+  m_AnchoredPosition: {x: 0, y: -5}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &40521676
@@ -22697,7 +22697,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 6
+  m_SortingOrder: 9
   m_MaskInteraction: 0
   m_Sprite: {fileID: -2557159669163515490, guid: 1a7a6c634268b48e5b81d451c52317ac, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -31279,7 +31279,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PoskoMaskerInteractable
   jumlahMasker: 3
   objectiveMarker: {fileID: 852747020}
-  kotakMasker: {fileID: 1514058818}
+  kotakMasker: {fileID: 1303009450}
 --- !u!1 &1316006661
 GameObject:
   m_ObjectHideFlags: 0
