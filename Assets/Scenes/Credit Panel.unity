@@ -853,10 +853,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "TIM PENGEMBANG\nFatwa Nurhikmah\nAmanda Riyahotul Jannah\nRisma Nurus
-    Sa\u2019adah\nMoch. Badrus Sholeh, S.kom., M.Kom\n\nTEKNOLOGI PENGEMBANGAN\nGame
-    Engine: Unity\nProgramming Language: C#\n\nTERIMA KASIH\nTerima kasih kepada
-    semua pihak yang telah mendukung proses pengembangan game PYRELIA.\n\n\xA9 2026
-    PYRELIA. All Rights Reserved."
+    Sa\u2019adah\nRosita\n\nTEKNOLOGI PENGEMBANGAN\nGame Engine: Unity\nProgramming
+    Language: C#\n\nTERIMA KASIH\nTerima kasih kepada semua pihak yang telah mendukung
+    proses pengembangan game PYRELIA.\n\n\xA9 2026 PYRELIA. All Rights Reserved."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b28e42975d7280241b7ac072690e4855, type: 2}
   m_sharedMaterial: {fileID: 7913711267189072707, guid: b28e42975d7280241b7ac072690e4855, type: 2}
