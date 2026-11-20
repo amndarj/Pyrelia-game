@@ -1,11 +1,18 @@
-
 using UnityEngine;
 
 public class ForestMissionTrigger : MonoBehaviour
 {
+    private const string FOREST_KEY = "Day1_SudahKeHutan";
+
     public MissionObjective missionObjective;
 
     private bool missionStarted = false;
+
+    private void Awake()
+    {
+        missionStarted =
+            PlayerPrefs.GetInt(FOREST_KEY, 0) == 1;
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -18,8 +25,6 @@ public class ForestMissionTrigger : MonoBehaviour
         bool pemadamanSelesai =
             PlayerPrefs.GetInt("MisiPemadamanSelesai", 0) == 1;
 
-        // Jangan mengubah objective jika telepon sudah selesai
-        // atau pemadaman sudah selesai.
         if (teleponSelesai || pemadamanSelesai)
             return;
 
@@ -28,11 +33,16 @@ public class ForestMissionTrigger : MonoBehaviour
 
         missionStarted = true;
 
+        PlayerPrefs.SetInt(FOREST_KEY, 1);
+        PlayerPrefs.Save();
+
         if (missionObjective != null)
         {
             missionObjective.UpdateObjective(
                 "Pergi ke rumah dan hubungi petugas pemadam kebakaran."
             );
         }
+
+        Debug.Log("Pemain sudah memasuki hutan!");
     }
 }
